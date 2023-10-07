@@ -1,5 +1,5 @@
 aself.__uv$config = {
-    prefix: '/static/tiw/',
+    prefix: '/uv/service/',
     bare: 'https://phantomnetwork.cloud/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,

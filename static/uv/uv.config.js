@@ -1,5 +1,5 @@
-self.__uv$config = {
-    prefix: '/hydro-uv/',
+aself.__uv$config = {
+    prefix: '/static/tiw/',
     bare: 'https://phantomnetwork.cloud/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,

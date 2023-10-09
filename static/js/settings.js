@@ -41,7 +41,7 @@ if (tabData.icon) {
 // Default tab settings
 var settingsDefaultTab = {
   title: "Settings | 3kh0",
-  icon: "./images/logo.png",
+  icon: "/static/img/cloaks/logo.png",
 };
 
 // Function to set the document title
@@ -121,12 +121,12 @@ function setCloak() { // applies only to premade cloaks
   switch (cloak) {
     case "search": // Google Search
       setTitle("Google");
-      setFavicon("./images/cloaks/Google Search.ico");
+      setFavicon("/static/img/cloaks/cloaks/Google Search.ico");
       location.reload();
       break;
       case "itchio": // itch.io
       setTitle("Top free NSFW games for web");
-      setFavicon("./images/cloaks/D23D344B-4CB0-4799-B525-F4E4F3A36728.ico");
+      setFavicon("/static/img/cloaks/cloaks/D23D344B-4CB0-4799-B525-F4E4F3A36728.ico");
       location.reload();
       break;
       case "wikipedia": // wikipedia
@@ -135,78 +135,78 @@ function setCloak() { // applies only to premade cloaks
       location.reload();
       break;
       case "bsite": // billibilli
-      setTitle("Billibilli");
+      setTitle("BiliBili");
       setFavicon("https://www.bilibili.com/favicon.ico");
       location.reload();
       break;
     case "drive": // Google Drive
       setTitle("My Drive - Google Drive");
-      setFavicon("./images/cloaks/Google Drive.ico");
+      setFavicon("/static/img/cloaks/cloaks/Google Drive.ico");
       location.reload();
       break;
       case "librex": // LibreX
       setTitle("LibreX");
-      setFavicon("./images/cloaks/9A58D8BC-6595-476A-AD95-B6D8880683C8.ico");
+      setFavicon("/static/img/cloaks/cloaks/9A58D8BC-6595-476A-AD95-B6D8880683C8.ico");
       location.reload();
       break;
     case "youtube": // YouTube 
       setTitle("YouTube");
-      setFavicon("./images/cloaks/YouTube.ico");
+      setFavicon("/static/img/cloaks/cloaks/YouTube.ico");
       location.reload();
       break;  
     case "gmail": // Gmail
       setTitle("Gmail");
-      setFavicon("./images/cloaks/Gmail.ico");
+      setFavicon("/static/img/cloaks/cloaks/Gmail.ico");
       location.reload();
       break;
     case "calendar": // Google Calendar
       setTitle("Google Calendar");
-      setFavicon("./images/cloaks/Calendar.ico");
+      setFavicon("/static/img/cloaks/cloaks/Calendar.ico");
       location.reload();
       break;
     case "meets": // Google Meet
       setTitle("Google Meet");
-      setFavicon("./images/cloaks/Meet.ico");
+      setFavicon("/static/img/cloaks/cloaks/Meet.ico");
       location.reload();
       break;
     case "classroom": // Google Classroom
       setTitle("Classes");
-      setFavicon("./images/cloaks/Classroom.png");
+      setFavicon("/static/img/cloaks/cloaks/Classroom.png");
       location.reload();
       break;
     case "canvas": // Canvas 
       setTitle("Canvas");
-      setFavicon("./images/cloaks/Canvas.ico");
+      setFavicon("/static/img/cloaks/cloaks/Canvas.ico");
       location.reload();
       break;
     case "zoom": // Zoom
       setTitle("Zoom");
-      setFavicon("./images/cloaks/Zoom.ico");
+      setFavicon("/static/img/cloaks/cloaks/Zoom.ico");
       location.reload();
       break;
     case "nitter": // Nitter
       setTitle("nitter");
-      setFavicon("./images/cloaks/63DFB320-0EEC-4F06-AF02-C50DFD2B49AB.ico");
+      setFavicon("/static/img/cloaks/cloaks/63DFB320-0EEC-4F06-AF02-C50DFD2B49AB.ico");
       location.reload();
       break;
       case "teddit": // Teddit
       setTitle("teddit");
-      setFavicon("./images/cloaks/EB4D8FE9-10E9-44B8-A6CE-3F9A0040F94A.ico");
+      setFavicon("/static/img/cloaks/cloaks/EB4D8FE9-10E9-44B8-A6CE-3F9A0040F94A.ico");
       location.reload();
       break;
       case "cornhub": // Cornhub
       setTitle("Cornhub");
-      setFavicon("./images/cloaks/8FE4C273-914D-431D-907E-3FCF5BB0399F.ico");
+      setFavicon("/static/img/cloaks/cloaks/8FE4C273-914D-431D-907E-3FCF5BB0399F.ico");
       location.reload();
       break;
       case "indivious": // Indivious
       setTitle("Indivious");
-      setFavicon("./images/cloaks/2255E848-AB69-43C1-B470-DBFDA40FAD10.ico");
+      setFavicon("/static/img/cloaks/cloaks/2255E848-AB69-43C1-B470-DBFDA40FAD10.ico");
       location.reload();
       break;
     case "khan": // Khan Academy
       setTitle("Dashboard | Khan Academy"); 
-      setFavicon("./images/cloaks/Khan Academy.ico");
+      setFavicon("/static/img/cloaks/cloaks/Khan Academy.ico");
       location.reload();
       break;
   }

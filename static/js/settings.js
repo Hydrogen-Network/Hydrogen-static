@@ -40,8 +40,8 @@ if (tabData.icon) {
 
 // Default tab settings
 var settingsDefaultTab = {
-  title: "Settings | 3kh0",
-  icon: "/static/img/cloaks/logo.png",
+  title: "Settings",
+  icon: "/static/gas.png",
 };
 
 // Function to set the document title

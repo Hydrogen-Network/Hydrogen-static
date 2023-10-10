@@ -1,30 +1,85 @@
-function updateTabNames() {
-  const tabNameInput = document.getElementById("tabname")
-  localStorage.setItem('tabname', tabNameInput.value)
-  localStorage.setItem("cloaktype", "clickoff")
+function setTheme(theme) {
+    document.body.setAttribute("theme", theme)
+    localStorage.setItem("theme", theme)
 }
 
-function updateFavicon() {
-  const faviconInput = document.getElementById("faviconInput")
-  localStorage.setItem('favicon', faviconInput.value)
-  localStorage.setItem("cloaktype", "clickoff")
+function setTab(name = document.querySelector('#tabname').value, icon = document.querySelector("#tabicon").value) {
+    localStorage.setItem("tabName", name)
+    localStorage.setItem("tabIcon", icon)
+
+    document.title = name 
+    document.querySelector("link[rel='shortcut icon']").href = icon
+    if (localStorage.getItem("tabName")) document.querySelector("#tabname").value = localStorage.getItem("tabName")
+    if (localStorage.getItem("tabIcon")) document.querySelector("#tabicon").value = localStorage.getItem("tabIcon")
+
 }
 
-function resetCloak() {
-  localStorage.setItem("favicon", "icon.png")
-  localStorage.setItem("tabname", "Art Class")
+var tabPresets = {
+    google: {
+        name: 'Google',
+        icon: 'https://www.google.com/favicon.ico'
+    },
+    drive: {
+        name: 'My Drive - Google Drive',
+        icon: 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+    },
+    docs: {
+        name: 'Google Docs',
+        icon: 'https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico'
+    },
+    classroom: {
+        name: 'Home',
+        icon: 'https://ssl.gstatic.com/classroom/ic_product_classroom_32.png'
+    },
+    default: {
+        name: 'Hydrogen',
+        icon: './gas.png'
+    }
 }
 
-var originalTab = document.title
-var originalFavicon = document.querySelector("link[rel~='icon']").href
+function setTabPreset(tab) {
 
-document.addEventListener('visibilitychange', (event) => {
-  if (document.title != originalTab) {
-    document.title = originalTab
-    document.querySelector("link[rel~='icon']").href = originalFavicon
-  } else {
-    if (typeof localStorage.getItem("tabname") == null || localStorage.getItem("tabname") == "null") return;
-    document.title = localStorage.getItem("tabname")
-    document.querySelector("link[rel~='icon']").href = localStorage.getItem("favicon")
-  }
+    setTab(tabPresets[tab].name, tabPresets[tab].icon)
+
+}
+
+if (localStorage.getItem("tabName")) document.querySelector("#tabname").value = localStorage.getItem("tabName")
+if (localStorage.getItem("tabIcon")) document.querySelector("#tabicon").value = localStorage.getItem("tabIcon")
+if (localStorage.getItem("theme")) document.querySelector("#theme-select").value = localStorage.getItem("theme")
+
+const themeSelect = document.getElementById('theme-select');
+
+themeSelect.addEventListener('change', () => {
+    document.body.setAttribute('theme', themeSelect.value);
+    localStorage.setItem("theme", themeSelect.value)
 });
+
+if (localStorage.getItem("panickey")) document.querySelector("#panickey").value = localStorage.getItem("panickey")
+if (localStorage.getItem("panicurl")) document.querySelector("#panicurl").value = localStorage.getItem("panicurl")
+
+
+var detecting = false;
+function detectPanic() {
+    var key = document.querySelector("#panickey")
+    var button = document.querySelector("#panickeybtn")
+    button.disabled = true
+    button.innerHTML = "Press any key..."
+
+    detecting = true
+    if (detecting) document.addEventListener("keydown", async (e) => {
+        key.value = e.key;
+        localStorage.setItem("panickey", e.key)
+        alert("Successfully set panic key to " + e.key)
+        detecting = false;
+    })
+}
+
+function setPanicKey() {
+    var key = document.querySelector("#panickey")
+    localStorage.setItem("panickey", key.value)
+}
+
+function setPanicUrl() {
+    var url = document.querySelector("#panicurl")
+    localStorage.setItem("panicurl", url.value)
+}

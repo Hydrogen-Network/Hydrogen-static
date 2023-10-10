@@ -1,36 +1,79 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Settings</title>
-  <link rel="icon" href="gas.png">
-  <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/e897e5d5dc.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/proudparrot2/quick.js/quick.js"></script>
-  <script defer data-api="/data/event" data-domain="artclass.site" src="/data/script.js"></script>
-  <script async src="https://arc.io/widget.min.js#HC4S5PSX"></script>
-  <link href="./index.css" rel="stylesheet"/>
+    <head>
+        <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png">
+        <title>Art Class</title>
 
-<body>
-  <h1>Settings</h1>
-  <!--
-  <h3>Clickoff Cloaking</h3>
-  <p>When you click off this tab, the tab's name will change to these settings.</p>
-  <p>This unfortunately does not work in about:blank.</p>
-  <input id="tabname" type="text" value="" placeholder="Tab Name">
-  <button onclick="updateTabNames()"><i class="fa-solid fa-check"></i></button><br>
-  
-  <input id="faviconInput" type="text" placeholder="Tab Icon URL">
-  <button onclick="updateFavicon()"><i class="fa-solid fa-check"></i></button><br><br>
-  <button onclick="resetCloak()">Reset Cloaking</button> <br><br>-->
-  <h3>Cloaking</h3> <br>
-  <p>Must be a valid JavaScript event.key - look <a target="_blank" href="https://www.toptal.com/developers/keycode">here</a> to get one.<br>If you don't enter a valid one, the cloaking will break.</p>
-  <button id="detectkey" onclick="keydetect()">Detect key</button><input id="cloakkey" type="text" placeholder="Cloak Key" requried> <button onclick="processkey()"><i class="fa-solid fa-check"></i></button><br>
-  <p id="isenabled">Cloaking: Enabled</p>
-  <button onclick="cloak('disabled')" id="disablecloak">Disable Cloaking</button>
-  <button onclick="cloak('enabled')" id="enablecloak">Enable Cloaking</button> <br><br>  
+        <link rel="stylesheet" href="./css/master.css">
 
-  
-  <script src="js/settings.js"></script>
+        <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+        <script src="/uv/uv.config.js"></script>
+        <script src="./js/preload.js"></script>
+    </head>
 
-  
-</body>
+    <body>
+      
+      <nav>
+        <div class="logo">
+          <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
+          <h1>Art Class</h1>
+        </div>
+    
+        <p id="time"></p>
+    
+        <div class="navitems">
+            <div class="navitem"><a href="/">Home</a></div>
+            <div class="navitem"><a href="/gs.html">Games</a></div>
+            <div class="navitem"><a href="/apps.html">Apps</a></div>
+            <div class="navitem"><a href="/emulator.html">Emulator</a></div>
+            <div class="navitem"><a href="/search.html">Search</a></div>
+        </div>
+      </nav>
+
+      <div class="center-container">
+        <h1>Settings</h1>
+
+        <h2>Tab cloaking</h2>
+        <input type="text" id="tabname" placeholder="Tab name"> <button onclick="setTab()" class="secondary">Set tab name</button> <br>
+        <input type="text" id="tabicon" placeholder="Tab icon"> <button onclick="setTab()" class="secondary">Set tab icon</button> <br>
+        
+        <button class="secondary" onclick="setTabPreset('default')"><img src="https://v4.artclass.site/assets/images/icon.png" /></button>
+        <button class="secondary" onclick="setTabPreset('google')"><img src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png" /></button>
+        <button class="secondary" onclick="setTabPreset('drive')"><img src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" /></button>
+        <button class="secondary" onclick="setTabPreset('docs')"><img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" /></button>
+        <button class="secondary" onclick="setTabPreset('classroom')"><img src="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png" /></button>
+        
+        <br><br>
+        
+        <h2>Themes</h2>
+        <select id="theme-select">
+          <option value="main">Default</option>
+          <option value="lgbtq">LGBTQIA+</option>
+          <option value="forest">Forest</option>
+          <option value="ocean">Ocean</option>
+          <option value="amoled">AMOLED</option>
+          <option value="white">MY EYES</option>
+          <option value="sunset">Sunset</option>
+          <option value="flash">Flash Bang</option>
+          <option value="matrix">Matrix</option>
+          <option value="beach">Beach</option>
+          <option value="murica">Murica'</option>
+          <option value="modern">Modern</option>
+          <!-- add more options for other themes -->
+        </select>
+
+        <br><br>
+        
+        <h2>Panic Key</h2>
+        <h4>WARNING: Panic keys trigger whenever you click that key whenever you click it, including typing on this page, so set it to a key you don't click often.</h4>
+        <input type="text" id="panickey" placeholder="Panic key"> <button onclick="setPanicKey()" class="secondary">Set panic key</button> <br>
+        <input type="text" id="panicurl" placeholder="Panic url"> <button onclick="setPanicUrl()" class="secondary">Set panic url</button> <br>
+        <button onclick="detectPanic()" id="panickeybtn" class="secondary">Auto-detect panic key</button>
+      </div>
+
+    </body>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/settings.js"></script>
+</html>

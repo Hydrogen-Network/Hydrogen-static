@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="./gas.png" type="image/png">
+        <link href="./index.css" rel="stylesheet"/>
+        <title>Settings</title>
+        <style>
+            input[type=text], button.secondary, select {
+     background-color: #111;
+     transition: 0.4s border;
+     border-radius: 5px;
+     border: none;
+     font-size: 20px;
+     color: white;
+     text-align: center;
+     padding: 5px 15px;
+     margin: 5px auto;
+  }
+  input[type=text]:focus {
+    outline: none;
+ }
+
+ button.secondary img {
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+ }
+        </style>
+    </head>
+    <body>
+      
+      <nav>
+    
+        <div class="navbar">
+            <a href="./">Home</a></div>
+            <a href="./games.html">Games</a>
+            <a href="./apps.html">Apps</a>
+            <a href="./search.html">Search</a>
+            <a href="./tabs.html">Tabs</a>
+        </div>
+      </nav>
+
+      <div class="center-container">
+        <h1>Settings</h1>
+
+        <h2>Tab cloaking</h2>
+        <input type="text" id="tabname" placeholder="Tab name"> <button onclick="setTab()" class="secondary">Set tab name</button> <br>
+        <input type="text" id="tabicon" placeholder="Tab icon"> <button onclick="setTab()" class="secondary">Set tab icon</button> <br>
+        
+        <button class="secondary" onclick="setTabPreset('default')"><img src="https://v4.artclass.site/assets/images/icon.png" /></button>
+        <button class="secondary" onclick="setTabPreset('google')"><img src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png" /></button>
+        <button class="secondary" onclick="setTabPreset('drive')"><img src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" /></button>
+        <button class="secondary" onclick="setTabPreset('docs')"><img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" /></button>
+        <button class="secondary" onclick="setTabPreset('classroom')"><img src="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png" /></button>
+        
+        <br><br>
+        
+        <h2>Themes</h2>
+        <select id="theme-select">
+          <option value="main">Default</option>
+          <option value="lgbtq">LGBTQIA+</option>
+          <option value="forest">Forest</option>
+          <option value="ocean">Ocean</option>
+          <option value="amoled">AMOLED</option>
+          <option value="white">MY EYES</option>
+          <option value="sunset">Sunset</option>
+          <option value="flash">Flash Bang</option>
+          <option value="matrix">Matrix</option>
+          <option value="beach">Beach</option>
+          <option value="murica">Murica'</option>
+          <option value="modern">Modern</option>
+          <!-- add more options for other themes -->
+        </select>
+
+        <br><br>
+        
+        <h2>Panic Key</h2>
+        <h4>WARNING: Panic keys trigger whenever you click that key whenever you click it, including typing on this page, so set it to a key you don't click often.</h4>
+        <input type="text" id="panickey" placeholder="Panic key"> <button onclick="setPanicKey()" class="secondary">Set panic key</button> <br>
+        <input type="text" id="panicurl" placeholder="Panic url"> <button onclick="setPanicUrl()" class="secondary">Set panic url</button> <br>
+        <button onclick="detectPanic()" id="panickeybtn" class="secondary">Auto-detect panic key</button>
+      </div>
+
+    </body>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/settings.js"></script>
+</html>

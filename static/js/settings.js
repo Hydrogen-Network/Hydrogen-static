@@ -1,85 +1,168 @@
-function setTheme(theme) {
-    document.body.setAttribute("theme", theme)
-    localStorage.setItem("theme", theme)
+// Key 
+var eventKey = localStorage.getItem("eventKey") || "`";
+var panicLink = localStorage.getItem("panicLink") || "https://classroom.google.com/";
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === eventKey) {
+    if (window.self !== window.top) {
+      window.parent.location.href = panicLink;
+    } else {
+      window.location.href = panicLink;
+    }
+  }
+});
+
+var eventKeyInput = document.getElementById("eventKeyInput");
+eventKeyInput.addEventListener("input", function() {
+  eventKey = eventKeyInput.value;
+});
+
+var linkInput = document.getElementById("linkInput");
+linkInput.addEventListener("input", function() {
+  panicLink = linkInput.value;
+});
+
+function saveEventKey() {
+  eventKey = eventKeyInput.value;
+  localStorage.setItem("eventKey", eventKey);
+  localStorage.setItem("panicLink", panicLink);
 }
 
-function setTab(name = document.querySelector('#tabname').value, icon = document.querySelector("#tabicon").value) {
-    localStorage.setItem("tabName", name)
-    localStorage.setItem("tabIcon", icon)
-
-    document.title = name 
-    document.querySelector("link[rel='shortcut icon']").href = icon
-    if (localStorage.getItem("tabName")) document.querySelector("#tabname").value = localStorage.getItem("tabName")
-    if (localStorage.getItem("tabIcon")) document.querySelector("#tabicon").value = localStorage.getItem("tabIcon")
-
+// Tab Cloaker
+function saveName() {
+  const name = document.getElementById("name").value;
+  localStorage.setItem("name", name);
 }
 
-var tabPresets = {
-    google: {
-        name: 'Google',
-        icon: 'https://www.google.com/favicon.ico'
-    },
-    drive: {
-        name: 'My Drive - Google Drive',
-        icon: 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
-    },
-    docs: {
-        name: 'Google Docs',
-        icon: 'https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico'
-    },
-    classroom: {
-        name: 'Home',
-        icon: 'https://ssl.gstatic.com/classroom/ic_product_classroom_32.png'
-    },
-    default: {
-        name: 'Hydrogen',
-        icon: './gas.png'
+function saveIcon() {
+  const icon = document.getElementById("icon").value;
+  localStorage.setItem("icon", icon);
+}
+
+// Function to update favicon and title based on selected option
+function updateHeadSection(selectedValue) {
+    const icon = document.getElementById('dynamic-favicon');
+    const name = document.getElementById('dynamic-title');
+    
+    if (selectedValue === 'Google') {
+        icon.setAttribute('href', '/images/favicon/google.png');
+        name.textContent = 'Google';
+        localStorage.setItem("name", "Google");
+        localStorage.setItem("icon", "/images/favicon/google.png");
+    } 
+    else if (selectedValue === 'Drive') {
+        icon.setAttribute('href', '/images/favicon/drive.png');
+        name.textContent = 'My Drive - Google Drive';
+        localStorage.setItem("name", "My Drive - Google Drive");
+        localStorage.setItem("icon", "/images/favicon/drive.png");
+    } 
+    else if (selectedValue === 'Classroom') {
+        icon.setAttribute('href', '/images/favicon/classroom.png');
+        name.textContent = 'Classes';
+        localStorage.setItem("name", "Classes");
+        localStorage.setItem("icon", "/images/favicon/classroom.png");
     }
 }
 
-function setTabPreset(tab) {
-
-    setTab(tabPresets[tab].name, tabPresets[tab].icon)
-
+// Redirect
+function handleDropdownChange(selectElement) {
+    var selectedValue = selectElement.value;
+    redirectToMainDomain(selectedValue);
 }
 
-if (localStorage.getItem("tabName")) document.querySelector("#tabname").value = localStorage.getItem("tabName")
-if (localStorage.getItem("tabIcon")) document.querySelector("#tabicon").value = localStorage.getItem("tabIcon")
-if (localStorage.getItem("theme")) document.querySelector("#theme-select").value = localStorage.getItem("theme")
+function redirectToMainDomain(selectedValue) {
+    var currentUrl = window.location.href;
+    var mainDomainUrl = currentUrl.replace(/\/[^\/]*$/, '');
+    
+    if (window != top) {
+        top.location.href = mainDomainUrl;
+    } else {
+        window.location.href = mainDomainUrl;
+    }
+}
 
-const themeSelect = document.getElementById('theme-select');
-
-themeSelect.addEventListener('change', () => {
-    document.body.setAttribute('theme', themeSelect.value);
-    localStorage.setItem("theme", themeSelect.value)
+// Dropdown event listener
+const dropdown = document.getElementById('dropdown');
+dropdown.addEventListener('change', function() {
+    const selectedValue = dropdown.value;
+    updateHeadSection(selectedValue);
+    
+    // Save selected option to localStorage
+    localStorage.setItem('selectedOption', selectedValue);
 });
 
-if (localStorage.getItem("panickey")) document.querySelector("#panickey").value = localStorage.getItem("panickey")
-if (localStorage.getItem("panicurl")) document.querySelector("#panicurl").value = localStorage.getItem("panicurl")
+const switches = document.getElementById('2');
 
-
-var detecting = false;
-function detectPanic() {
-    var key = document.querySelector("#panickey")
-    var button = document.querySelector("#panickeybtn")
-    button.disabled = true
-    button.innerHTML = "Press any key..."
-
-    detecting = true
-    if (detecting) document.addEventListener("keydown", async (e) => {
-        key.value = e.key;
-        localStorage.setItem("panickey", e.key)
-        alert("Successfully set panic key to " + e.key)
-        detecting = false;
-    })
+if(window.localStorage.getItem('v4Particles') != "") {
+  if(window.localStorage.getItem('v4Particles') == "true") {
+    switches.checked = true;
+  }
+  else {
+    switches.checked = false;
+  }
 }
 
-function setPanicKey() {
-    var key = document.querySelector("#panickey")
-    localStorage.setItem("panickey", key.value)
+switches.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    window.localStorage.setItem('v4Particles', 'true');
+  } else {
+    window.localStorage.setItem('v4Particles', 'false');
+  }
+});
+
+var themeId = localStorage.getItem("theme");
+if(themeId=="") {themeId="d"}
+
+document.getElementsByClassName("td")[0].value = themeId;
+
+const themeDropdown = document.getElementsByClassName('td');
+dropdown.addEventListener('change', function() {
+    const selectedValue = dropdown.value;
+
+    localStorage.setItem('theme', selectedValue);
+
+    window.location=window.location;
+});
+
+function themeChange(ele) {
+  const selTheme = ele.value;
+
+  localStorage.setItem('theme', selTheme);
+
+  window.location=window.location;
 }
 
-function setPanicUrl() {
-    var url = document.querySelector("#panicurl")
-    localStorage.setItem("panicurl", url.value)
-}
+        function AB() {
+            let inFrame;
+
+            try {
+                inFrame = window !== top;
+            } catch (e) {
+                inFrame = true;
+            }
+
+            if (!inFrame && !navigator.userAgent.includes("Firefox")) {
+                const popup = open("about:blank", "_blank");
+                if (!popup || popup.closed) {
+                    alert("Please allow popups and redirects.");
+                } else {
+                    const doc = popup.document;
+                    const iframe = doc.createElement("iframe");
+                    const style = iframe.style;
+                    const link = doc.createElement("link");
+                    const name = localStorage.getItem("name") || "My Drive - Google Drive";
+                    const icon = localStorage.getItem("icon") || "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+                    doc.title = name;
+                    link.rel = "icon";
+                    link.href = icon;
+                    iframe.src = location.href;
+                    style.position = "fixed";
+                    style.top = style.bottom = style.left = style.right = 0;
+                    style.border = style.outline = "none";
+                    style.width = style.height = "100%";
+                    doc.head.appendChild(link);
+                    doc.body.appendChild(iframe);
+                    location.replace("https://classroom.google.com");
+                }
+            }
+        }

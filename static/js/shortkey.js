@@ -13,7 +13,7 @@
 						document.title = "Google";
 						document.querySelector("link[rel*='icon']").href = "https://www.gstatic.com/images/branding/googleg/1x/googleg_standard_color_128dp.png";
 					} else {
-						document.title = "WhiteSpider";
+						document.title = "Hydrogen Hub";
 						document.querySelector("link[rel*='icon']").href = "/static/gas.png";
 					}
 				default:

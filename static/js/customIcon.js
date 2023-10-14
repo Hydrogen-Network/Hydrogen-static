@@ -5,46 +5,46 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const name = document.getElementById('dynamic-title');
     var selectedValue = localStorage.getItem("selectedOption");
     if (selectedValue === 'Google') {
-        icon.setAttribute('href', '/images/favicon/google.png');
+        icon.setAttribute('href', '/static/img/cloaks/google.png');
         name.textContent = 'Google';
         localStorage.setItem("name", "Google");
-        localStorage.setItem("icon", "/images/favicon/google.png");
+        localStorage.setItem("icon", "/static/img/cloaks/google.png");
     } 
     else if (selectedValue === 'Drive') {
-        icon.setAttribute('href', '/images/favicon/drive.png');
+        icon.setAttribute('href', '/static/img/cloaks/drive.png');
         name.textContent = 'My Drive - Google Drive';
         localStorage.setItem("name", "My Drive - Google Drive");
-        localStorage.setItem("icon", "/images/favicon/drive.png");
+        localStorage.setItem("icon", "/static/img/cloaks/drive.png");
     } 
     else if (selectedValue === 'Classroom') {
-        icon.setAttribute('href', '/images/favicon/classroom.png');
+        icon.setAttribute('href', '/static/img/cloaks/classroom.png');
         name.textContent = 'Classes';
         localStorage.setItem("name", "Classes");
-        localStorage.setItem("icon", "/images/favicon/classroom.png");
+        localStorage.setItem("icon", "/static/img/cloaks/classroom.png");
     }
     else if (selectedValue === 'Schoology') {
-        icon.setAttribute('href', '/images/favicon/schoology.png');
+        icon.setAttribute('href', '/static/img/cloaks/schoology.png');
         name.textContent = 'Home | Schoology';
         localStorage.setItem("name", "Home | Schoology");
-        localStorage.setItem("icon", "/images/favicon/schoology.png");
+        localStorage.setItem("icon", "/static/img/cloaks/schoology.png");
     }
     else if (selectedValue === 'Gmail') {
-        icon.setAttribute('href', '/images/favicon/gmail.png');
+        icon.setAttribute('href', '/static/img/cloaks/gmail.png');
         name.textContent = 'Gmail';
         localStorage.setItem("name", "Gmail");
-        localStorage.setItem("icon", "/images/favicon/gmail.png");
+        localStorage.setItem("icon", "/static/img/cloaks/gmail.png");
     }
     else if (selectedValue === 'Clever') {
-        icon.setAttribute('href', '/images/favicon/clever.png');
+        icon.setAttribute('href', '/static/img/cloaks/clever.png');
         name.textContent = 'Clever | Portal';
         localStorage.setItem("name", "Clever | Portal");
-        localStorage.setItem("icon", "/images/favicon/clever.png");
+        localStorage.setItem("icon", "/static/img/cloaks/clever.png");
     }
     else if (selectedValue === 'Khan') {
-        icon.setAttribute('href', '/images/favicon/khan.png');
+        icon.setAttribute('href', '/static/img/cloaks/khan.png');
         name.textContent = 'Dashboard | Khan Academy';
         localStorage.setItem("name", "Dashboard | Khan Academy");
-        localStorage.setItem("icon", "/images/favicon/khan.png");
+        localStorage.setItem("icon", "/static/img/cloaks/khan.png");
     }
     var themeid = localStorage.getItem("theme");
     //Loads theme

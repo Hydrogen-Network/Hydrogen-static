@@ -1,90 +1,92 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="shortcut icon" href="./gas.png" type="image/png">
-        <link href="./index.css" rel="stylesheet"/>
-        <title>Settings</title>
-        <style>
-            input[type=text], button.secondary, select {
-     background-color: #111;
-     transition: 0.4s border;
-     border-radius: 5px;
-     border: none;
-     font-size: 20px;
-     color: white;
-     text-align: center;
-     padding: 5px 15px;
-     margin: 5px auto;
-  }
-  input[type=text]:focus {
-    outline: none;
- }
-
- button.secondary img {
-  height: 25px;
-  width: 25px;
-  margin-top: 5px;
-  border-radius: 5px;
- }
-        </style>
-    </head>
-    <body>
-      
-      <nav>
-    
-        <div class="navbar">
-            <a href="./">Home</a></div>
-            <a href="./games.html">Games</a>
-            <a href="./apps.html">Apps</a>
-            <a href="./search.html">Search</a>
-            <a href="./tabs.html">Tabs</a>
-        </div>
-      </nav>
-
-      <div class="center-container">
-        <h1>Settings</h1>
-
-        <h2>Tab cloaking</h2>
-        <input type="text" id="tabname" placeholder="Tab name"> <button onclick="setTab()" class="secondary">Set tab name</button> <br>
-        <input type="text" id="tabicon" placeholder="Tab icon"> <button onclick="setTab()" class="secondary">Set tab icon</button> <br>
-        
-        <button class="secondary" onclick="setTabPreset('default')"><img src="https://v4.artclass.site/assets/images/icon.png" /></button>
-        <button class="secondary" onclick="setTabPreset('google')"><img src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png" /></button>
-        <button class="secondary" onclick="setTabPreset('drive')"><img src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" /></button>
-        <button class="secondary" onclick="setTabPreset('docs')"><img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico" /></button>
-        <button class="secondary" onclick="setTabPreset('classroom')"><img src="https://ssl.gstatic.com/classroom/ic_product_classroom_32.png" /></button>
-        
-        <br><br>
-        
-        <h2>Themes</h2>
-        <select id="theme-select">
-          <option value="main">Default</option>
-          <option value="lgbtq">LGBTQIA+</option>
-          <option value="forest">Forest</option>
-          <option value="ocean">Ocean</option>
-          <option value="amoled">AMOLED</option>
-          <option value="white">MY EYES</option>
-          <option value="sunset">Sunset</option>
-          <option value="flash">Flash Bang</option>
-          <option value="matrix">Matrix</option>
-          <option value="beach">Beach</option>
-          <option value="murica">Murica'</option>
-          <option value="modern">Modern</option>
-          <!-- add more options for other themes -->
-        </select>
-
-        <br><br>
-        
-        <h2>Panic Key</h2>
-        <h4>WARNING: Panic keys trigger whenever you click that key whenever you click it, including typing on this page, so set it to a key you don't click often.</h4>
-        <input type="text" id="panickey" placeholder="Panic key"> <button onclick="setPanicKey()" class="secondary">Set panic key</button> <br>
-        <input type="text" id="panicurl" placeholder="Panic url"> <button onclick="setPanicUrl()" class="secondary">Set panic url</button> <br>
-        <button onclick="detectPanic()" id="panickeybtn" class="secondary">Auto-detect panic key</button>
+<head>
+    <link rel="shortcut icon" id="dynamic-favicon" href="favicon.png">
+    <title id="dynamic-title">Classes</title>
+    <script src="./js/main.js"></script>
+   <!-- Meta Data-->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="Computer Science, Technology, Photography, Nature, Tech Support, Tech Help, Local Tech Support">
+   <!-- Site Stylesheets-->
+   <link rel="stylesheet" href="./index.css">
+   <link rel="stylesheet" href="./css/settings.css">
+</head>
+<!-- Nav Bar Start-->
+    <div class="navbar">
+      <a href="./">Home</a>
+      <a href="./games.html">Games</a>
+      <a href="./apps.html">Apps</a>
+      <a href="./search.html">Search</a>
+      <a href="./tabs.html">Tabs</a>
+      <a href="./settings.html">Settings</a>
+    </div>
+<!-- Nav Bar End-->
+<div class="main">
+   <div class="settings-container">
+      <div class="settings-card">
+         <h3>About:Blank</h3>
+         <p>Cloak the site in an about:blank page.</p>
+         <button onclick="AB()">Open Popup</button>
       </div>
-
-    </body>
-
-    <script src="./js/index.js"></script>
-    <script src="./js/settings.js"></script>
-</html>
+          <div class="settings-card">
+        <h3>Set Panic Key</h3>
+        <p>Quickly open a educational site, when the teacher comes.</p>
+        <input type="text" id="eventKeyInput" placeholder="Panic Key" class="key-form">
+        <input class="key-form" placeholder="Panic Link" type="text" id="linkInput" value>
+  <button class="key-button" value="Save" onclick="saveEventKey()">Save</button>
+          </input>
+      </div>
+       <div class="settings-card">
+        <h3>Set Background Image</h3>
+        <p>Change the site's background image.</p>
+         <input type="text" id="background-input" placeholder="Enter image URL">
+         <button class="key-button" id="save-button">Save</button>
+         <button class="key-button" id="reset-button">Reset</button>
+      </div>
+            <div class="settings-card">
+        <h3>Tab Cloaker</h3>
+        <p>Makes the site look educational.</p>
+    <select id="dropdown" onchange="handleDropdownChange(this)">
+    <option value="Classroom">Default</option>
+    <option value="Classroom">Google Classroom</option>
+    <option value="Google">Google</option>
+    <option value="Drive">Google Drive</option>
+    <option value="Clever">Clever</option>
+    <option value="Schoology">Schoology</option>
+    <option value="Gmail">Gmail</option>
+    <option value="Khan">Khan Academy</option>
+</select>
+    <input class="key-form" type="text" id="icon" placeholder="Change Tab Icon" name="icon">
+    <input class="key-form" type="text" id="name" name="name" placeholder="Change Tab Name">
+    <button class="key-button" value="Save" onclick="saveIcon(); saveName(); redirectToMainDomain()">Save</button>
+      </div>
+        <div class="settings-card">
+         <h3>Particles</h3>
+         <p>Add the particles from the previous version to the new site.</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="2">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Themes!</h3>
+         <p>Choose through a selection of themes!</p>
+         <select id="dropdown" class="td" onchange="themeChange(this)">
+            <option value="d">Default</option>
+            <option value="b">Yellow & Green</option>
+            <option value="bg">Blue & Green</option>
+            <option value="cr">Dark Red</option>
+            <option value="fg">Dark Green</option>
+            <option value="l">Light Mode</option>
+            <option value="m">Milkshake</option>
+            <option value="nb">Dark Blue</option>
+            <option value="rb">Red & Black</option>
+            <option value="s">Purple & Blue</option>
+            <option value="l4">Legacy V4</option>
+        </select>
+      </div>
+   </div>
+</div>
+<script src="./js/settings.js"></script>
+<script src="./js/customIcon.js"></script>
+</body>

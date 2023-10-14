@@ -55,7 +55,7 @@
 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-hub/)
 
- align="right">(<a href="#readme-top">back to top</a>)</p>
+ <p align="right">(<a href="#readme">back to top</a>)</p>
 
 
 ### Links
@@ -75,7 +75,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme">back to top</a>)</p>
 
 
 
@@ -84,7 +84,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme">back to top</a>)</p>
 
 
 
@@ -95,4 +95,4 @@ Your Name - blade_immovably193@simplelogin.com
 
 Project Link: [https://github.com/Hydrogen-Network/Hydrogen-Hub-Static](https://github.com/Hydrogen-Network/Hydrogen-Hub-Static)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme">back to top</a>)</p>

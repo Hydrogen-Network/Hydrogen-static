@@ -93,11 +93,14 @@
       </div>
         <div class="settings-card">
          <h3>Particles</h3>
-         <p>Add the particles from the previous version to the new site.</p>
-         <label class="switch">
-         <input type="checkbox" class="slider-checkbox" id="2">
-         <span class="slider-round"></span>
-         </label>
+         <p>Change the Search Engine used.</p>
+        <select id="dropdown" class="td" onchange="themeChange(this)">
+            <option value="d">Default</option>
+            <option value="g">Google</option>
+            <option value="b">Bing</option>
+            <option value="ddg">DuckDuckGo</option>
+            <option value="b">Brave</option>
+        </select>
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>

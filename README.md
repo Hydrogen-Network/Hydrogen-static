@@ -7,11 +7,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors](https://img.shields.io/github/contributors/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/forks)
-[![Stargazers](https://img.shields.io/github/stars/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/stargazers)
-[![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/issues)
-[![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen-hub.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-hub/blob/master/LICENSE.txt)
+[![Contributors](https://img.shields.io/github/contributors/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/forks)
+[![Stargazers](https://img.shields.io/github/stars/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/stargazers)
+[![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/issues)
+[![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/blob/master/LICENSE.txt)
 
 
 
@@ -25,7 +25,7 @@
     <br />
     <a href="https://github.com/Hydrogenv-Network/Hydrogen-hub/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Hydrogen-Network/Hydrogen-hub/issues">Request Feature</a>
+    <a href="https://github.com/Hydrogen-Network/Hydrogen-Static/issues">Request Feature</a>
   </p>
 </div>
 
@@ -53,7 +53,7 @@
 <!-- GETTING STARTED -->
 ## Deployment
 
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-hub/)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-Static/)
 
  <p align="right">(<a href="#readme">back to top</a>)</p>
 
@@ -93,6 +93,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - blade_immovably193@simplelogin.com
 
-Project Link: [https://github.com/Hydrogen-Network/Hydrogen-Hub-Static](https://github.com/Hydrogen-Network/Hydrogen-Hub-Static)
+Project Link: [https://github.com/Hydrogen-Network/Hydrogen-Static-Static](https://github.com/Hydrogen-Network/Hydrogen-Static-Static)
 
 <p align="right">(<a href="#readme">back to top</a>)</p>

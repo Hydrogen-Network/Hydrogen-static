@@ -57,34 +57,34 @@ document.addEventListener("DOMContentLoaded", function(event) {
     themeEle = document.createElement("link");
     themeEle.rel="stylesheet";
     if(themeid == "b") {
-        themeEle.href = "../css/themes/bannana.css";
+        themeEle.href = "/static/css/themes/bannana.css";
     }
     if(themeid == "bg") {
-        themeEle.href = "../css/themes/blue-green.css";
+        themeEle.href = "/static/css/themes/blue-green.css";
     }
     if(themeid == "cr") {
-        themeEle.href = "../css/themes/cherryRed.css";
+        themeEle.href = "/static/css/themes/cherryRed.css";
     }
     if(themeid == "fg") {
-        themeEle.href = "../css/themes/forestGreen.css";
+        themeEle.href = "/static/css/themes/forestGreen.css";
     }
     if(themeid == "l") {
-        themeEle.href = "../css/themes/light.css";
+        themeEle.href = "/static/css/themes/light.css";
     }
     if(themeid == "m") {
-        themeEle.href = "../css/themes/milkshake.css";
+        themeEle.href = "/static/css/themes/milkshake.css";
     }
     if(themeid == "nb") {
-        themeEle.href = "../css/themes/nightBlue.css";
+        themeEle.href = "/static/css/themes/nightBlue.css";
     }
     if(themeid == "rb") {
-        themeEle.href = "../css/themes/red-black.css";
+        themeEle.href = "/static/css/themes/red-black.css";
     }
     if(themeid == "s") {
-        themeEle.href = "../css/themes/sunset.css";
+        themeEle.href = "/static/css/themes/sunset.css";
     }
     if(themeid == "l4") {
-        themeEle.href = "../css/themes/legacy.css";
+        themeEle.href = "/static/css/themes/legacy.css";
     }
     document.body.appendChild(themeEle);
 });

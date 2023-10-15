@@ -128,9 +128,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if(themeid == "cr") {
       themeEle.href = "/css/themes/cherryRed.css";
   }
-  if(themeid == "d") {
-      themeEle.href = "/css/themes/dark.css";
-  }
   if(themeid == "fg") {
       themeEle.href = "/css/themes/forestGreen.css";
   }

@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         localStorage.setItem("icon", "/static/img/cloaks/khan.png");
     }
     else if (selectedValue == 'Default') {
-        icon.setttribute('href', '/static/gas.png');
+        icon.setttribute('href', '/static/img/gas.png');
         name.textContent = 'Hydrogen';
         localStorage.setItem("name", "Hydrogen");
         localStorage.setItem("icon", "/static/gas.png");

@@ -132,6 +132,13 @@ function themeChange(ele) {
   window.location=window.location;
 }
 
+function searchChange(ele) {
+  const selSearch = ele.value;
+  localStorage.setItem('search', selSearch);
+
+  window.location = window.location;
+}
+
         function AB() {
             let inFrame;
 

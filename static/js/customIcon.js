@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         localStorage.setItem("name", "Dashboard | Khan Academy");
         localStorage.setItem("icon", "/static/img/cloaks/khan.png");
     }
-    else if (selectedValue == 'Default') {
+    else if (selectedValue == 'Hydro') {
         icon.setttribute('href', '/static/img/gas.png');
         name.textContent = 'Hydrogen';
         localStorage.setItem("name", "Hydrogen");

@@ -166,12 +166,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if(searchid == "br") {
     themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://search.brave.com/search?q=%s';";
    }
-    document.body.appendChild(themeEle);
 
 
   var search localStorage.getItem("customSearch");
   if(search == "1") {
   themeEle.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value';
   }
-  
+      document.body.appendChild(themeEle);
 });

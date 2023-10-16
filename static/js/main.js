@@ -168,8 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    }
 
 
-  var search = localStorage.getItem("customSearch");
-  if(search == "1") {
+  if(searchid == "1") {
   themeEle.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value';
   }
       document.body.appendChild(themeEle);

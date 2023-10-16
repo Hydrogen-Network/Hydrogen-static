@@ -92,15 +92,17 @@
     <button class="key-button" value="Save" onclick="saveIcon(); saveName(); redirectToMainDomain()">Save</button>
       </div>
         <div class="settings-card">
-         <h3>Particles</h3>
+         <h3>Search Engine</h3>
          <p>Change the Search Engine used.</p>
-        <select id="dropdown" class="td" onchange="searchChange(this)">
+         <select id="dropdown" class="td" onchange="searchChange(this)">
             <option value="d">Default</option>
             <option value="g">Google</option>
             <option value="b">Bing</option>
             <option value="ddg">DuckDuckGo</option>
             <option value="br">Brave</option>
-        </select>
+         </select>
+          <h3>Custom</h3>
+          <input class="key-form" type="text" id="engine" placeholder="Change Search Engine" name="engine" onkeydown="document.getElementById('uv-search-engine').value = engine.value;">
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>

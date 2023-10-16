@@ -167,5 +167,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://search.brave.com/search?q=%s';";
    }
     document.body.appendChild(themeEle);
+
+
+  var search localStorage.getItem("customSearch");
+  if(search == "1") {
+  s = document.createElement("script");
+  s.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value';
+  }
   
 });

@@ -171,8 +171,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var search localStorage.getItem("customSearch");
   if(search == "1") {
-  s = document.createElement("script");
-  s.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value';
+  themeEle.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value';
   }
   
 });

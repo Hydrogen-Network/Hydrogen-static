@@ -102,7 +102,7 @@
             <option value="br">Brave</option>
          </select>
           <input class="key-form" type="text" id="engine" placeholder="Change Search Engine" name="engine">
-          <button class="key-button" value="Save" onclick="document.getElementById('uv-search-engine').value='https://'+document.getElementById('engine').value; window.location=window.location;">Save</button>
+          <button class="key-button" value="Save" onclick="  s = document.createElement("script");s.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value'; window.location=window.location;">Save</button>
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>

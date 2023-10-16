@@ -150,4 +150,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
       themeEle.href = "/css/themes/legacy.css";
   }
   document.body.appendChild(themeEle);
+
+  var searchid = localStorage.getItem("search");
+  //changes search engine
+  themeEle = document.createElement("script");
+  if(searchid == "g") {
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.google.com/search?q=%s';";
+  }
+  if(searchid == "b") {
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.bing.com/search?form=&q=%s';";
+  }
+  if(searchid == "ddg") {
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://duckduckgo.com/?q=%s';";
+   }
+  if(searchid == "br") {
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://search.brave.com/search?q=%s';";
+   }
+    document.body.appendChild(themeEle);
+  
 });

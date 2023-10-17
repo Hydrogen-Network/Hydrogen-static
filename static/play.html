@@ -1,0 +1,41 @@
+
+
+
+  <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="./img/gas.png">
+<link rel="stylesheet" href="index.css">
+<title id="dynamic-title">Hydrogen</title>
+<style>
+  html 
+{
+ overflow: auto;
+}
+ 
+html, body, div, iframe 
+{
+ margin: 0px; 
+ padding: 0px; 
+ height: 100%; 
+ border: none;
+}
+  iframe 
+{
+ display: block; 
+ border: none; 
+ overflow-y: auto; 
+ overflow-x: hidden;
+}
+</style>
+<iframe id="game-frame" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe>
+<!-- <iframe src="https://aboutfart.pages.dev/" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe> -->
+    <p style="font-size: 0.1px;">warwarwrwar</p>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/customIcon.js"></script>
+    <script src="./js/shortkey.js"></script>
+    <script src="./js/cookies.js"></script>    
+
+<script>
+    if (!localStorage.getItem('currentgame')) location.pathname = '/games';
+    document.getElementById('game-frame').src = localStorage.getItem("currentgame");
+  </script>

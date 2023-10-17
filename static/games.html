@@ -53,15 +53,75 @@
       <a href="./tabs.html">Tabs</a>
        <a href="./settings.html">Settings</a>
     </div>
-    <a href="/static/tiw/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Ffomdneq">Google Doodles</a>
-    <a href="/static/tiw/hvtrs8%2F-v4p%3Bd%3Bt6.qsn.jwadl.lev%2Fjtol-8396103-ildgx%2Chvmn">Sandtrix</a>
-    <a href="/static/tiw/hvtrs8%2F-cwbgs0068ko%2Ccmm-">Cubes 2048</a>
-    <a href="/static/tiw/hvtrs8%2F-ivcj.ko-">Itch.io</a>
-    <a href="/static/tiw/hvtrs8%2F-wuw%2Ccpaxyeaoeq.aoo%2F">Crazygames</a>
+
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder='Search For A Game...' title="Type in a game">
+    <div class="gamecontainer" id="gamescontainer">
+      <!--Begin card (copy here)-->
+      <li>
+        <div class="gamecard">
+          <a href="#" onclick="localStorage.setItem('currentgame', '/static/tiw/hvtrs8%2F-cwbgs0068ko%2Ccmm-'); window.location.href = 'play.html';">
+            <img src="https://cubes2048io.com/imgs/logo-cubes-2048-196.png" class="gameimage" />
+            <div class="gameinfo">
+              <b>
+                <p class="gamename">Cubes 2048</p>
+              </b>
+              <p class="gamedesc">Cubes 2048.io is an addictive online game that fuses Snake and 2048.</p>
+            </div>
+          </a>
+        </div>
+      </li>
+      <!--End card (end copy here)-->
+      <!--Begin card (copy here)-->
+      <li>
+        <div class="gamecard">
+          <a href="#" onclick="localStorage.setItem('currentgame', '/static/tiw/hvtrs8%2F-v4p%3Bd%3Bt6.qsn.jwadl.lev%2Fjtol-8396103-ildgx%2Chvmn'); window.location.href = 'play';">
+            <img src="https://www.sandtrix.net/img/favicon.png" class="gameimage" />
+            <div class="gameinfo">
+              <b>
+                <p class="gamename">Sandtrix</p>
+              </b>
+              <p class="gamedesc">Sandtrix is a puzzle game where blocks transform into the sand, offering a unique twist on classic gameplay.</p>
+            </div>
+          </a>
+        </div>
+      </li>
+      <!--End card (end copy here)-->
+     <!--Begin card (copy here)-->
+      <li>
+        <div class="gamecard">
+          <a href="#" onclick="localStorage.setItem('currentgame', '/static/tiw/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Ffomdneq'); window.location.href = 'play';">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/53/The_first_Google_Doodle.png" class="gameimage" />
+            <div class="gameinfo">
+              <b>
+                <p class="gamename">Google Doodles</p>
+              </b>
+              <p class="gamedesc">All of the Google Doodles!</p>
+            </div>
+          </a>
+        </div>
+      </li>
+      <!--End card (end copy here)-->
+    </div>
 
       <p style="font-size: 0.1px;">warwarwrwar</p>
     <script src="js/panic.js"></script>
   <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("gamescontainer");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
         console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
         console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
     </script>

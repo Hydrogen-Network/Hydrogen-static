@@ -36,6 +36,6 @@ html, body, div, iframe
     <script src="./js/cookies.js"></script>    
 
 <script>
-    if (!localStorage.getItem('currentgame')) location.pathname = '/games';
+    if (!localStorage.getItem('currentgame')) location.pathname = '/static';
     document.getElementById('game-frame').src = localStorage.getItem("currentgame");
   </script>

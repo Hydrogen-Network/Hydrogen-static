@@ -80,5 +80,6 @@ form.addEventListener("submit", async (event) => {
 	x.onclick = function() {
 		window.location.reload(1);
 	};
+	iframe.onload = "loading.style.display = 'hidden';";
 
 	document.body.appendChild(x);});

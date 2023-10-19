@@ -3,7 +3,8 @@
         const option = event.target.value;
 
         if (option === 'blob') {
-          let htmll=document.querySelector("html"),html=htmll.innerHTML;
+          var wait = open('./blob.html');
+          let htmll=wait.document.querySelector("html"),html=htmll.innerHTML;
           html+="</html>",html="<!doctype html> <html> "+html;
           let htmlA=Array(html);
           const blob=new Blob(htmlA,{type:"text/html"});

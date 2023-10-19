@@ -354,3 +354,18 @@ body {
   justify-content: center;
   padding: 10px;
 }
+
+#myInput {
+  left: 50%;
+  right: 50%;
+  width: 400px;
+  height: 65px;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  background-color: #1e2124;
+  color: #fff;
+  border-radius: 15px;
+  border-style: hidden;
+  box-shadow: 0px 5px 10px 0px #2e2e2e;
+}

@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         themeEle.href = "/static/css/themes/sunset.css";
     }
     if(themeid == "l4") {
-        themeEle.href = "/static/css/themes/legacy.css";
+        themeEle.href = "/static/index.css";
     }
     document.body.appendChild(themeEle);
 

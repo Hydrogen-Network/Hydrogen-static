@@ -74,7 +74,6 @@
 
     <div id="sfn" style="display: none" class="message">
       Requested URL: <span id="full">Fetching...</span><br />
-      Referrer: <span id="ref">Fetching...</span><br />
       Title: <span id="title">Fetching...</span><br />
       Screen height: <span id="height">Fetching...</span><br />
       Screen width: <span id="width">Fetching...</span><br />
@@ -99,7 +98,6 @@
         }
       }
       document.getElementById("full").innerText = window.location.href;
-      document.getElementById("ref").innerHTML = document.referrer;
       document.getElementById("title").innerText = document.title;
       document.getElementById("height").innerHTML = screen.height + "px";
       document.getElementById("width").innerHTML = screen.width + "px";

@@ -173,59 +173,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
       document.body.appendChild(themeEle);
 
-var login = localStorage.getItem('login');
-
-  function enableLogin() {
-    var userpass = prompt('Set Password:');
-  if (userpass === '') {
-    alert('Please enter a valid password.');
-  } else {
-    localStorage.setItem('login', 'enablelogin');
-    alert("You will now use the password '" + userpass + "' to log into the site. Join our Discord if you forget your password.");
-  localStorage.setItem('wordpass', userpass);
-    location.href = "/";
-  }
-}
-  
-  // Function to disable login
-  function disableLogin() {
-    localStorage.setItem('login', 'disablelogin');
-    location.href = "/";
-  }
-
-function showLogin() {
-  document.write("<!DOCTYPE html>\n");
-  document.write("<html>\n");
-  document.write("<head>\n");
-  document.write("  <title>Special Access</title>\n");
-  document.write('  <link rel="icon" href="null">\n');
-  document.write('  <meta name="title" content="Login - CCM Mathematics" />\n');
-  document.write('  <meta name="description"\n');
-  document.write('    content="Enhancing mathematical skills with comprehensive courses and resources for problem-solving and analytical thinking." />\n');
-  document.write('<link rel="stylesheet" href="./css/login.css">\n');
-  document.write("</head>\n");
-  document.write("<body>\n");
-  document.write('  <div class="login-container">\n');
-  document.write("    <h2>Special Access</h2>\n");
-  document.write('    <form onsubmit="return login()">\n');
-  document.write('      <div class="form-group">\n');
-  document.write('        <label for="password">Password:</label>\n');
-  document.write('        <input type="password" id="password" required>\n');
-  document.write('        <div class="error-message" id="error-message"></div>\n');
-  document.write("      </div>\n");
-  document.write('      <div class="form-group">\n');
-  document.write('        <input type="submit" value="Submit">\n');
-  document.write("      </div>\n");
-  document.write("    </form>\n");
-  document.write("  </div>\n");
-  document.write('  <script src="./js/login.js"></script>\n');
-  document.write("</body>\n");
-  document.write("</html>");
-}
-
-if (login == 'enablelogin') {
-showLogin();
-}
-
   
 });

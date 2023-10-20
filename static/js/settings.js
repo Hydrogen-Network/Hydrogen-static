@@ -179,7 +179,7 @@ document.write("<!DOCTYPE html><html><head><title>Special Access</title><link re
 }
 
 if (login == 'enablelogin') {
-showLogin();
+location.href = 'javascript:showLogin();';
 }
 
 

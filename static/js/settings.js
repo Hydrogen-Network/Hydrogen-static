@@ -179,7 +179,7 @@ document.write("<!DOCTYPE html><html><head><title>Special Access</title><link re
 }
 
         if (localStorage.getItem('login') == 'enablelogin') {
-            location.href = 'javascript:showLogin();';
+            showLogin();
         }
 
         function AB() {

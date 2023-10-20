@@ -1,3 +1,19 @@
+/*test*/
+  const recordKeyButton = document.getElementById('recordKeyButton');
+  const selectedKeyDisplay = document.getElementById('selectedKey');
+  const selectedKey = localStorage.getItem('selectedKey');
+  recordKeyButton.addEventListener('click', function () {
+    selectedKeyDisplay.innerHTML = '<kbd>Press a key</kbd>';
+    document.addEventListener('keydown', function recordKey(event) {
+      const selectedKey = event.key;
+      selectedKeyDisplay.innerHTML = `<kbd>${selectedKey}</kbd>`;
+      localStorage.setItem('eventKey', selectedKey);
+      document.removeEventListener('keydown', recordKeyButton);
+    });
+  });
+/*test end*/
+
+
 // Key 
 var eventKey = localStorage.getItem("eventKey") || "`";
 var panicLink = localStorage.getItem("panicLink") || "https://classroom.google.com/";
@@ -137,20 +153,6 @@ function searchChange(ele) {
 
   window.location = window.location;
 }
-
-  const recordKeyButton = document.getElementById('recordKeyButton');
-  const selectedKeyDisplay = document.getElementById('selectedKey');
-  const selectedKey = localStorage.getItem('selectedKey');
-  recordKeyButton.addEventListener('click', function () {
-    selectedKeyDisplay.innerHTML = '<kbd>Press a key</kbd>';
-    document.addEventListener('keydown', function recordKey(event) {
-      const selectedKey = event.key;
-      selectedKeyDisplay.innerHTML = `<kbd>${selectedKey}</kbd>`;
-      localStorage.setItem('eventKey', selectedKey);
-      document.removeEventListener('keydown', recordKeyButton);
-    });
-  });
-});
 
         function AB() {
             let inFrame;

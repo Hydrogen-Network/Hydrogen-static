@@ -178,6 +178,10 @@ function showLogin() {
 document.write("<!DOCTYPE html><html><head><title>Special Access</title><link rel='icon' href='/static/img/gas.png'><meta name='title' content='Login - CCM Mathematics' /><link rel='stylesheet' href='/static/css/login.css'></head><body><div class='login-container'><h2>Special Access</h2><form onsubmit='return login()'><div class='form-group'><label for='password'>Password:</label><input type='password' id='password' required><div class='error-message' id='error-message'></div></div><div class='form-group'><input type='submit' value='Submit'></div></form></div><script src='/static/js/login.js'></script></body></html>");
 }
 
+        if (localStorage.getItem('login') == 'enablelogin') {
+            location.href = 'javascript:showLogin();';
+        }
+
         function AB() {
             let inFrame;
 

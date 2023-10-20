@@ -174,18 +174,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.body.appendChild(themeEle);
 
 var login = localStorage.getItem('login');
-function enableLogin() {
+
+  function enableLogin() {
     var userpass = prompt('Set Password:');
   if (userpass === '') {
     alert('Please enter a valid password.');
   } else {
     localStorage.setItem('login', 'enablelogin');
-    alert("You will now use the password '" + userpass + "' to log into the site.");
+    alert("You will now use the password '" + userpass + "' to log into the site. Join our Discord if you forget your password.");
   localStorage.setItem('wordpass', userpass);
     location.href = "/";
   }
 }
-
+  
   // Function to disable login
   function disableLogin() {
     localStorage.setItem('login', 'disablelogin');

@@ -175,33 +175,7 @@ var login = localStorage.getItem('login');
   }
 
 function showLogin() {
-  document.write("<!DOCTYPE html>\n");
-  document.write("<html>\n");
-  document.write("<head>\n");
-  document.write("  <title>Special Access</title>\n");
-  document.write('  <link rel="icon" href="null">\n');
-  document.write('  <meta name="title" content="Login - CCM Mathematics" />\n');
-  document.write('  <meta name="description"\n');
-  document.write('    content="Enhancing mathematical skills with comprehensive courses and resources for problem-solving and analytical thinking." />\n');
-  document.write('<link rel="stylesheet" href="./css/login.css">\n');
-  document.write("</head>\n");
-  document.write("<body>\n");
-  document.write('  <div class="login-container">\n');
-  document.write("    <h2>Special Access</h2>\n");
-  document.write('    <form onsubmit="return login()">\n');
-  document.write('      <div class="form-group">\n');
-  document.write('        <label for="password">Password:</label>\n');
-  document.write('        <input type="password" id="password" required>\n');
-  document.write('        <div class="error-message" id="error-message"></div>\n');
-  document.write("      </div>\n");
-  document.write('      <div class="form-group">\n');
-  document.write('        <input type="submit" value="Submit">\n');
-  document.write("      </div>\n");
-  document.write("    </form>\n");
-  document.write("  </div>\n");
-  document.write('  <script src="./js/login.js"></script>\n');
-  document.write("</body>\n");
-  document.write("</html>");
+document.write("<!DOCTYPE html><html><head><title>Special Access</title><link rel='icon' href='/static/img/gas.png'><meta name='title' content='Login - CCM Mathematics' /><link rel='stylesheet' href='/static/css/login.css'></head><body><div class='login-container'><h2>Special Access</h2><form onsubmit='return login()'><div class='form-group'><label for='password'>Password:</label><input type='password' id='password' required><div class='error-message' id='error-message'></div></div><div class='form-group'><input type='submit' value='Submit'></div></form></div><script src='/static/js/login.js'></script></body></html>");
 }
 
 if (login == 'enablelogin') {

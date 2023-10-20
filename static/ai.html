@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="dynamic-title">Hydrogen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+    <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="./img/gas.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="description" content="warwarwarwarwarwar" />
+    <script src="./js/main.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/customIcon.js"></script>
+    <script src="./js/shortkey.js"></script>
+    <script src="./js/cookies.js"></script>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>    <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
+    <link rel="stylesheet" href="index.css">
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+         new Crate({
+        server: '1144432374063583302', // Unblocking It
+        channel: '1148002747065577483' // #💬︱widgetbot
+    })
+    </script>
+</head>
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url(http://fonts.googleapis.com/css?family=Arimo:700,700italic);
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+pre,
+code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+pre {
+  padding: .5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+
+a,
+a:visited {
+  color: #3498db;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #2980b9;
+}
+
+.modest-no-decoration {
+  text-decoration: none;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  line-height: 1.85;
+}
+
+p,
+.modest-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+h1,
+.modest-h1,
+h2,
+.modest-h2,
+h3,
+.modest-h3,
+h4,
+.modest-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+h1,
+.modest-h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+}
+
+h2,
+.modest-h2 {
+  font-size: 2.827rem;
+}
+
+h3,
+.modest-h3 {
+  font-size: 1.999rem;
+}
+
+h4,
+.modest-h4 {
+  font-size: 1.414rem;
+}
+
+h5,
+.modest-h5 {
+  font-size: 1.121rem;
+}
+
+h6,
+.modest-h6 {
+  font-size: .88rem;
+}
+
+small,
+.modest-small {
+  font-size: .707em;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+html {
+  font-size: 18px;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 48rem;
+  line-height: 1.45;
+  padding: .25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arimo, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 2px solid #fafafa;
+  margin-bottom: 1.15rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+blockquote {
+  border-left: 8px solid #fafafa;
+  padding: 1rem;
+}
+
+pre,
+code {
+  background-color: #fafafa;
+}
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #1e2124;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#chat-history {
+  background-color: #444;
+  border: 2px solid #666;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  min-height: 300px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+#message-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#user-message {
+  flex: 1;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  background-color: #555;
+  color: #fff;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+</style>
+<body>
+<img src="img/black.jpeg" id="black" class="black"/>
+    <img src="img/loading.gif" id="loadimg" class="loadimg"/>
+    <script>
+      function fade(){
+        document.getElementById("loadimg").style.animation="linear 1.5s 1 running fadeout";
+        document.getElementById("loadimg").addEventListener("animationend", () => {
+            document.getElementById("black").style.animation="linear 1.5s 1 running fadeout";
+            document.getElementById("black").addEventListener("animationend", () => {
+                document.getElementById("black").remove();
+            });
+            document.getElementById("loadimg").remove();
+        });
+
+    }
+    setTimeout(fade,1200);
+      var x = "Is the browser online? " + navigator.onLine;
+      if(x == false) {
+        document.write('<h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1><h1>Your OFFLINE</h1>');
+      }
+    </script>
+  <div class="navbar">
+   <a href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png"></a>
+   <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
+      <a href="./">Home</a>
+      <a href="./games.html">Games</a>
+      <a href="./apps.html">Apps</a>
+      <a href="./search.html">Search</a>
+      <a href="./ai.html">AI</a>
+      <a href="./settings.html">Settings</a>
+   </div>
+  </div>
+  <h1>AI Chatbot</h1>
+
+  <div id="chat-history">
+    <p id="Welcome-Message">Bot: Hello! ask me anything!</p>
+  </div>
+
+  <form id="message-form">
+    <input type="text" id="user-message" placeholder="Type your message..." />
+    <button type="submit">Send</button>
+  </form>
+        <p style="font-size: 0.1px;">warwarwrwar</p>
+<script>
+  const apiUrl = "https://ai.neealdon3-3f0.workers.dev/:API";
+let uuid = '';
+
+function generateUUID() {
+  let newUUID = '';
+  const chars = 'abcdef0123456789';
+  for (let i = 0; i < 32; i++) {
+    const charIndex = Math.floor(Math.random() * chars.length);
+    newUUID += chars[charIndex];
+    if (i === 7 || i === 11 || i === 15 || i === 19) {
+      newUUID += '-';
+    }
+  }
+  return newUUID;
+}
+
+function renderChatHistory(messages) {
+  const chatHistoryDiv = document.getElementById('chat-history');
+  chatHistoryDiv.innerHTML = '';
+
+  let userMessageSeen = false;
+
+  messages.forEach(message => {
+    const role = message.role;
+    let content = '';
+
+    if (message.content) {
+      if (typeof message.content === 'string') {
+        content = message.content;
+      } else if (message.content.response) {
+        content = message.content.response;
+      }
+    }
+
+    if (role === 'user') {
+      userMessageSeen = true;
+    }
+
+    if (userMessageSeen || role === 'user') {
+      let messageText;
+
+      if (role === 'system') {
+        messageText = `Bot: ${content}`;
+      } else {
+        messageText = `You: ${content}`;
+      }
+
+      const pElement = document.createElement('p');
+      pElement.textContent = messageText;
+
+      chatHistoryDiv.appendChild(pElement);
+    }
+  });
+}
+
+
+
+async function sendMessage(event) {
+  event.preventDefault();
+  const userInputField = document.getElementById('user-message');
+  const userQuery = userInputField.value.trim();
+  if (userQuery === '') {
+    return;
+  }
+
+  const chatHistoryDiv = document.getElementById('chat-history');
+  const loadingMessage = document.createElement('p');
+  loadingMessage.textContent = 'Loading...';
+  chatHistoryDiv.appendChild(loadingMessage);
+
+  try {
+    const response = await fetch(`${apiUrl}/${uuid}?q=${encodeURIComponent(userQuery)}`);
+
+    if (!response.ok) {
+      throw new Error('Error occurred while fetching data from API');
+    }
+    const jsonResponse = await response.json();
+    const messages = jsonResponse[0].response;
+    chatHistoryDiv.removeChild(loadingMessage);
+    renderChatHistory(messages);
+    userInputField.value = '';
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+const messageForm = document.getElementById('message-form');
+
+if (!uuid) {
+  uuid = generateUUID();
+}
+
+messageForm.addEventListener('submit', sendMessage);
+        console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
+        console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
+
+</script>
+</body>
+
+</html>

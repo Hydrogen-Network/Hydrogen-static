@@ -31,3 +31,60 @@ function enableLogin() {
     localStorage.setItem('login', 'disablelogin');
     location.href = "/";
   }
+
+function showLoginPopup() {
+    document.getElementById("loginPopup").style.display = "block";
+}
+
+function closeLoginPopup() {
+    const errorMessageDiv = document.getElementById("errorMessage");
+    document.getElementById("loginPopup").style.display = "none";
+    errorMessageDiv.style.display = "none";
+}
+
+function saveLogin() {
+    const userpass = document.getElementById("loginPopup-input").value;
+    const errorMessageDiv = document.getElementById("errorMessage");
+
+    if (userpass.trim() === "") {
+        errorMessageDiv.style.display = "block"; // Make the error message div visible
+    } else {
+        localStorage.setItem("wordpass", userpass);
+        localStorage.setItem('login', 'enablelogin');
+        closeLoginPopup(); // Close the popup after saving to localStorage
+        location.href = '/';
+    }
+}
+
+// login button check
+
+ // Get the button elements
+ var enableButton = document.getElementById('enabledLogin');
+var disableButton = document.getElementById('disabledLogin');
+
+// Get the value from localStorage
+var loginButtonState = localStorage.getItem('login');
+
+// Set the initial disabled states based on localStorage
+if (loginButtonState === 'disablelogin' || loginButtonState === '' || loginButtonState === null) {
+    disableButton.disabled = true;
+    enableButton.disabled = false;
+} else {
+    disableButton.disabled = false;
+    enableButton.disabled = true;
+}
+
+function login() {
+      var password = document.getElementById("password").value;
+      var errorMessage = document.getElementById("error-message");
+      var key = localStorage.getItem('wordpass');
+      if (password === key) {
+        location.href = '/app';
+        errorMessage.textContent = ""; // Clear error message
+        localStorage.setItem('pass', 'correct');
+      } else {
+        errorMessage.textContent = "Incorrect password. Please try again.";
+      }
+
+      return false; // Prevent form submission
+    }

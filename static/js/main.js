@@ -38,9 +38,9 @@ var panicLink = localStorage.getItem("panicLink") || "https://classroom.google.c
 document.addEventListener("keydown", function(event) {
   if (event.key === eventKey) {
     if (window.self !== window.top) {
-      window.parent.location.href = panicLink;
+      window.parent.window.location.replace(panicLink);
     } else {
-      window.location.href = panicLink;
+      window.parent.window.location.replace(panicLink);
     }
   }
 });

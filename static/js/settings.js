@@ -241,5 +241,5 @@ function showLogin() {
 }
 
 if (login == 'enablelogin') {
-search();
+showLogin();
 }

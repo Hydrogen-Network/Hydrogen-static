@@ -68,7 +68,12 @@
         <p>Quickly open a educational site, when the teacher comes.</p>
         <input type="text" id="eventKeyInput" placeholder="Panic Key" class="key-form">
         <input class="key-form" placeholder="Panic Link" type="text" id="linkInput" value>
-  <button class="key-button" value="Save" onclick="saveEventKey()">Save</button>
+        <div class="record-key">
+            <span id="selectedKeyDisplay"><span id="selectedKey">Press a key</span></span>
+            <br>
+            <button id="recordKeyButton"><i class="fa-solid fa-microphone"></i> Record Key</button>
+        </div>
+        <button class="key-button" value="Save" onclick="saveEventKey()">Save</button>
           </input>
       </div>
        <div class="settings-card">
@@ -106,8 +111,6 @@
             <option value="ddg">DuckDuckGo</option>
             <option value="br">Brave</option>
          </select>
-          <input class="key-form" type="text" id="engine" placeholder="Change Search Engine" name="engine">
-          <button class="key-button" value="Save" onclick="localStorage.setItem('search', '1'); window.location = window.location;">Save</button>
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>

@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
     - name: Community Support
-      url: https://discord.gg/unblock
+      url: https://github.com/Hydrogen-Network/Hydrogen-Static/discussions
       about: Please ask and answer questions here.
     - name: Heroku, Repl.it, Blocked site issues
       url: https://www.youtube.com/watch?v=BLUkgRAy_Vo

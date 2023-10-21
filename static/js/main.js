@@ -119,35 +119,96 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //Loads theme
   themeEle = document.createElement("link");
   themeEle.rel="stylesheet";
+var themeid = localStorage.getItem("theme");
+  //Loads theme
+  themeEle = document.createElement("link");
+  themeEle.rel="stylesheet";
   if(themeid == "b") {
-      themeEle.href = "/static/css/themes/bannana.css";
+      themeEle.href = "/css/themes/bannana.css";
   }
   if(themeid == "bg") {
-      themeEle.href = "/static/css/themes/blue-green.css";
+      themeEle.href = "/css/themes/blue-green.css";
   }
   if(themeid == "cr") {
-      themeEle.href = "/static/css/themes/cherryRed.css";
+      themeEle.href = "/css/themes/cherryRed.css";
+  }
+  if(themeid == "d") {
+      themeEle.href = "/css/themes/dark.css";
   }
   if(themeid == "fg") {
-      themeEle.href = "/static/css/themes/forestGreen.css";
+      themeEle.href = "/css/themes/forestGreen.css";
   }
-  if(themeid == "l") {
-      themeEle.href = "/static/css/themes/light.css";
+  if(themeid == "light") {
+      themeEle.href = "/css/theme/solid/light.css";
   }
   if(themeid == "m") {
-      themeEle.href = "/static/css/themes/milkshake.css";
+      themeEle.href = "/css/themes/milkshake.css";
   }
   if(themeid == "nb") {
-      themeEle.href = "/static/css/themes/nightBlue.css";
+      themeEle.href = "/css/themes/nightBlue.css";
   }
   if(themeid == "rb") {
-      themeEle.href = "/static/css/themes/red-black.css";
+      themeEle.href = "/css/themes/red-black.css";
   }
-  if(themeid == "s") {
-      themeEle.href = "/static/css/themes/sunset.css";
+  if(themeid == "v4") {
+      themeEle.href = "/css/theme/solid/legacy.css";
   }
-  if(themeid == "l4") {
-      themeEle.href = "/static/index.css";
+  if(themeid == "midnight") {
+    themeEle.href = "/css/theme/solid/midnight.css";
+  }
+  if(themeid == "black-red") {
+    themeEle.href = "/css/theme/gradient/black-red.css";
+  }
+  if(themeid == "black-blue") {
+    themeEle.href = "/css/theme/gradient/black-blue.css";
+  }
+  if(themeid == "black-green") {
+    themeEle.href = "/css/theme/gradient/black-green.css";
+  }
+  if(themeid == "red") {
+    themeEle.href = "/css/theme/gradient/red.css";
+  } 
+  if(themeid == "purple") {
+    themeEle.href = "/css/theme/gradient/purple.css";
+  }
+  if(themeid == "black-orange") {
+    themeEle.href = "/css/theme/gradient/black-orange.css";
+  }
+  if(themeid == "ocean-blue") {
+    themeEle.href = "/css/theme/solid/ocean-blue.css";
+  }
+  if(themeid == "black-purple") {
+    themeEle.href = "/css/theme/gradient/black-purple.css";
+  }
+  if(themeid == "black-coral") {
+    themeEle.href = "/css/theme/gradient/black-coral.css";
+  }
+  if(themeid == "black-ruby") {
+    themeEle.href = "/css/theme/gradient/black-ruby.css";
+  }
+  if(themeid == "black-yellow") {
+    themeEle.href = "/css/theme/gradient/black-yellow.css";
+  }
+  if(themeid == "black-pink") {
+    themeEle.href = "/css/theme/gradient/black-pink.css";
+  }
+  if(themeid == "black-white") {
+    themeEle.href = "/css/theme/gradient/black-white.css";
+  }
+  if(themeid == "dark-purple") {
+    themeEle.href = "/css/theme/gradient/dark-purple.css";
+  }
+  if(themeid == "sunset") {
+    themeEle.href = "/css/theme/gradient/sunset.css";
+  }
+  if(themeid == "indigo") {
+    themeEle.href = "/css/theme/gradient/indigo.css";
+  }
+  if(themeid == "fire-ice") {
+    themeEle.href = "/css/theme/gradient/fire-ice.css";
+  }
+  if(themeid == "purple-blue") {
+    themeEle.href = "/css/theme/gradient/purple-blue.css";
   }
   document.body.appendChild(themeEle);
 

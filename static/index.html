@@ -68,12 +68,20 @@
       <q id="splash"></q>
        <br/>
        <br/>
-        <select class="-my-[8px] cursor-pointer rounded-lg bg-cyan-800/50 px-4 py-[8.7px] text-lg ring-white duration-300 hover:bg-cyan-900 hover:ring-1 focus:rounded-b-none">
-          <option selected disabled>Open in...</option>
-          <option value="blob">blob:</option>
-          <option value="popup">Popup</option>
-          <option value="ab">about:blank</option>
-        </select>
+         <form id="uv-form"">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" list="urls" autocomplete="off" class="form__input w3-xlarge"/>
+         <datalist id="urls">
+            <option>google.com</option>
+            <option>discord.com</option>
+            <option>reddit.com</option>
+            <option>replit.com</option>
+        </datalist>
+          </form>
+          <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
       <script src="./js/cloak.js"></script>
       <script src="./js/splashtexts.js"></script>
     <br/>

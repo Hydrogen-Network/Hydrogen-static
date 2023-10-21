@@ -63,10 +63,12 @@
      <br/>
      <br/>
      <span class="w3-large"> <font size="+20"><b>Hydrogen Proxy</b></font><br></span>
+         <div class="center-container">
 
-         <form id="uv-form"">
-            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-            <input id="uv-address" type="text" placeholder="Search Google or type an URL" list="urls" autocomplete="off" class="form__input w3-xlarge"/>
+            <input class="pxyinput" type="text" placeholder="Search..." list="urls" autocomplete="off" class="form__input w3-xlarge"/>
+         </div>
+           <iframe class="frame"></iframe>
+
          <datalist id="urls">
             <option>https://google.com</option>
             <option>https://discord.com</option>
@@ -92,9 +94,7 @@
     </script>
       <script src="uv/uv.bundle.js" defer></script>
       <script src="uv/uv.config.js" defer></script>
-      <script src="register-sw.js" defer></script>
       <script src="search.js" defer></script>
       <script src="index.js" defer></script>
-      <script src="error.js" defer></script>
    </body>
 </html>

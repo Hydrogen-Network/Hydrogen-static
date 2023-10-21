@@ -1,10 +1,8 @@
 "use strict";
 var params = new URLSearchParams(window.location.search)
 console.log("Searching for " + params.get("q"))
-if (params.get("q")) {
   	var iframe = document.createElement('iframe');
     iframe.src = __uv$config.prefix + __uv$config.encodeUrl(search(params.get("q")));
-}
 
 function search(input) {
   const searchEngine = localStorage.getItem('searchEngine');

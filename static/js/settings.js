@@ -154,34 +154,6 @@ function searchChange(ele) {
   window.location = window.location;
 }
 
-var login = localStorage.getItem('login');
-
-  function enableLogin() {
-    var userpass = prompt('Set Password:');
-  if (userpass === '') {
-    alert('Please enter a valid password.');
-  } else {
-    localStorage.setItem('login', 'enablelogin');
-    alert("You will now use the password '" + userpass + "' to log into the site. Join our Discord if you forget your password.");
-  localStorage.setItem('wordpass', userpass);
-    location.href = "/";
-  }
-}
-  
-  // Function to disable login
-  function disableLogin() {
-    localStorage.setItem('login', 'disablelogin');
-    location.href = "/";
-  }
-
-function showLogin() {
-document.write("<!DOCTYPE html><html><head><title>Special Access</title><link rel='icon' href='/static/img/gas.png'><meta name='title' content='Login - CCM Mathematics' /><link rel='stylesheet' href='/static/css/login.css'></head><body><div class='login-container'><h2>Special Access</h2><form onsubmit='return login()'><div class='form-group'><label for='password'>Password:</label><input type='password' id='password' required><div class='error-message' id='error-message'></div></div><div class='form-group'><input type='submit' value='Submit'></div></form></div><script src='/static/js/login.js'></script></body></html>");
-}
-
-        if (localStorage.getItem('login') == 'enablelogin') {
-            showLogin();
-        }
-
         function AB() {
             let inFrame;
 

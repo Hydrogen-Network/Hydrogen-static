@@ -1,3 +1,3 @@
 const internal_pages = {
-   newtab: "../newtab.html",
+   newtab: "/static/index.html",
 }

@@ -1,7 +1,7 @@
 "use strict";
 var params = new URLSearchParams(window.location.search)
 console.log("Searching for " + params.get("q"))
-  	var iframe = document.createElement('iframe');
+  	var iframe = document.getElementById('frame');
     iframe.src = __uv$config.prefix + __uv$config.encodeUrl(search(params.get("q")));
 
 function search(input) {

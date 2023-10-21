@@ -115,11 +115,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       localStorage.setItem("name", "Dashboard | Khan Academy");
       localStorage.setItem("icon", "/static/img/cloakskhan.png");
   }
+
   var themeid = localStorage.getItem("theme");
-  //Loads theme
-  themeEle = document.createElement("link");
-  themeEle.rel="stylesheet";
-var themeid = localStorage.getItem("theme");
   //Loads theme
   themeEle = document.createElement("link");
   themeEle.rel="stylesheet";

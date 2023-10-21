@@ -1,5 +1,4 @@
 "use strict";
-
 /**
  * @type {HTMLFormElement}
  */
@@ -20,14 +19,6 @@ const error = document.getElementById("uv-error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("uv-error-code");
-/**
- * @type {HTMLDivElement}
- */
-const loadingOverlay = document.getElementById("loading-overlay");
-/**
- * @type {HTMLIFrameElement}
- */
-const iframe = document.getElementById("apploader");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -41,14 +32,54 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  const encodedURL = Ultraviolet.codec.xor.encode(url);
+  var white = document.createElement('img');
+	white.style.cursor = "pointer";
+	white.style.position = "absolute";
+	white.style.width = "100%";
+	white.style.height = "100%";
+	white.style.zIndex = "1";
+	white.src = "img/black.jpeg";
+	white.style.right = "0px";
+	white.style.top = "0px";
+	document.body.appendChild(white);
 
-  loadingOverlay.style.display = "flex";
-  iframe.style.display = "none";
-  iframe.src = `${window.location.origin}/uv/service/${encodedURL}`;
-});
+	var loading = document.createElement('img');
+	loading.style.cursor = "pointer";
+	loading.style.width = "125px";
+	loading.style.height = "125px";
+	loading.style.position = "absolute";
+	loading.style.zIndex = "2";
+	loading.src = "img/loading.gif";
+	loading.style.top = "50%";
+	loading.style.left = "50%";
+	loading.style.transform = "translate(-50%, -50%)";
+	document.body.appendChild(loading);
 
-iframe.addEventListener("load", () => {
-  loadingOverlay.style.display = "none";
-  iframe.style.display = "block";
-});
+	var iframe = document.createElement('iframe');
+
+	iframe.style.position = "absolute";
+	iframe.style.width = "100%";
+	iframe.style.height = "100%";
+	iframe.style.top = "0px";
+	iframe.style.left = "0px";
+	iframe.id = "iframe";
+	iframe.style.zIndex = "9999999999999999";
+	iframe.style.border = "none";
+	iframe.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+	document.body.appendChild(iframe);
+
+	var x = document.createElement('img');
+	x.style.cursor = "pointer";
+	x.style.position = "absolute";
+	x.style.width = "50px";
+	x.style.height = "50px";
+	x.src = "img/x.png";
+	x.style.zIndex = "99999999999999999999";
+	x.style.right = "1%";
+	x.style.top = "1%";
+	x.onclick = function() {
+		window.location.reload(1);
+	};
+	iframe.onload = "loading.style.display = 'hidden';";
+
+	document.body.appendChild(x);});

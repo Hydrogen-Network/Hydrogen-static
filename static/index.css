@@ -381,3 +381,59 @@ body {
   height: calc(100vh - 80px);
   width: calc(100vw - 30px);
 }
+
+.gameinfo {
+  color: white;
+  text-align: center;
+  padding: 3px;
+  font-size: 10px;
+  font-family: 'Nunito Sans';
+}
+
+.gameimage {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 20px;
+}
+
+.gamecard {
+  width: 170px;
+  height: 270px;
+  background-color: #2e2e2e;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: transform .5s;
+  justify-content: left;
+  float: left;
+  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
+
+}
+
+.gamecard:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 3px 0px #2e2e2e;
+}
+
+.gamename {
+  font-size: 20px;
+  font-family: 'Nunito Sans';
+}
+
+.gamecontainer {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

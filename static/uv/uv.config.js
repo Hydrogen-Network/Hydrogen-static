@@ -1,7 +1,7 @@
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/static/tiw/',
-    bare: ['https://stingrayproxy.onrender.com/bare/', 'https://coolbare.lightspeedsucks.workers.dev', 'https://tomp.app'],
+    bare: 'https://tomp.app',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',

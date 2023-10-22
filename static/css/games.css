@@ -1,3 +1,12 @@
+     body {
+        font-family: "Comfortaa";
+        font-size: "25px";
+        text-align: center;
+        background-color: #1e2124;
+        background-repeat: no-repeat;
+        background-size: cover
+      }
+
 .gamename {
   font-size: 20px;
   font-family: 'Nunito Sans';
@@ -172,10 +181,8 @@
   padding: 10px;
 }
 
-/*idk if this is part of game css
 li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-*/

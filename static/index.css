@@ -6,25 +6,6 @@
         background-repeat: no-repeat;
         background-size: cover
       }
-      
-       html {
-          scroll-behavior: smooth;
-        }
-
-      ::-webkit-scrollbar {
-          width: 16px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          background: var(--theme);
-          border: 4px solid transparent;
-          background-clip: content-box;
-          border-radius: 8px;
-        }
-
-        ::-webkit-scrollbar-corner {
-          background: transparent;
-        }
 
       .container {
         margin-top: 10%;

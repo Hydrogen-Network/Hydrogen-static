@@ -58,12 +58,44 @@
       <a href="./settings.html">Settings</a>
    </div>
 </div>
-<a href="/static/tiw/hvtrs8%2F-cjav.qhwtvlg.pir%2F">ShuttleAI</a>
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder='Search For A Game...' title="Type in a game">
+    <div class="gamecontainer" id="gamescontainer">
+       <!--Begin card (copy here)-->
+      <li>
+        <div class="gamecard">
+          <a href="#" onclick="localStorage.setItem('currentgame', 'https://shuttleproxy.com/shuttle-uv/hvtrs8%2F-cjav.qhwtvlg.pir%2F';">
+            <img src="https://shuttleproxy.com/shuttle.png" class="gameimage" />
+            <div class="gameinfo">
+              <b>
+                <p class="gamename">Shuttle AI</p>
+              </b>
+              <p class="gamedesc">Blah whatever you want!</p>
+            </div>
+          </a>
+        </div>
+      </li>
+      <!--End card (end copy here)-->
+    </div>
 <a href="/static/tiw/hvtrs8%2F-eourefic.lev%2F%60eva-eoums-">Windows Emulator</a>
 <a href="https://sdk.vercel.ai/">Doesn't work is on real url</a>
     <p style="font-size: 0.1px;">warwarwrwar</p>
-    <script src="js/panic.js"></script>
   <script>
+     function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("gamescontainer");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
         console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
         console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
     </script>

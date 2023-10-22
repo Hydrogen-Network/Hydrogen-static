@@ -263,177 +263,116 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/*games*/
-.gamename {
-  font-size: 20px;
-  font-family: 'Nunito Sans';
-}
-
-.gamecontainer {
-  display: flex;
-  flex-direction: row;
-  order: 0;
-  flex-grow: 0;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.gamedesc {
-  font-family: 'Nunito Sans';
-  font-size: 8px;
-  text-align: center;
-}
-
-.gamescategory {
-  background-color: #1f2124;
-  border-radius: 20px;
-  margin: auto;
-  width: 200px;
-  height: 55px;
+.btn {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #0f0f0f;
+  border-radius: 0.5rem;
+  position: relative;
+  top: 0;
+  text-align: left;
   box-shadow: 0px 5px 10px 0px #2e2e2e;
+}
+
+.btn:hover {
+  background-color: #2e2e2e;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #2e2e2e;
+  color: black;
+}
+
+
+.recent {
+  text-align: center;
+  background: #1e2124;
+  opacity: 0.85;
   font-family: 'Lilita One';
-  font-size: 40px;
-  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   color: white;
-}
-
-.gameinfo {
-  color: white;
+  position: relative;
+  top: 0;
   text-align: center;
-  padding: 3px;
-  font-size: 10px;
-  font-family: 'Nunito Sans';
-}
-
-.gameimage {
-  width: 150px;
-  height: 150px;
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 20px;
-}
-
-.gamecard {
-  width: 170px;
-  height: 270px;
-  background-color: #2e2e2e;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 20px;
-  transition: transform .5s;
-  justify-content: left;
-  float: left;
-  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
-
-}
-
-.gamecard:hover {
-  -ms-transform: scale(1.1);
-  /* IE 9 */
-  -webkit-transform: scale(1.1);
-  /* Safari 3-8 */
-  transform: scale(1.1);
-  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 3px 0px #2e2e2e;
-}
-
-.gamename {
-  font-size: 20px;
-  font-family: 'Nunito Sans';
-}
-
-.gamecontainer {
-  display: flex;
-  flex-direction: row;
-  order: 0;
-  flex-grow: 0;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-#myInput {
-  left: 50%;
-  right: 50%;
-  width: 400px;
-  height: 65px;
-  justify-content: center;
-  text-align: center;
-  font-size: 30px;
-  background-color: #1e2124;
-  color: #fff;
-  border-radius: 15px;
-  border-style: hidden;
   box-shadow: 0px 5px 10px 0px #2e2e2e;
 }
 
- .frame {
-  border-radius: 5px;
-  background-color: white;
-  display: block;
-  margin: auto;
-
-  border: none;
-  
-  height: calc(100vh - 80px);
-  width: calc(100vw - 30px);
-}
-
-.gameinfo {
+.recent:hover {
   color: white;
-  text-align: center;
-  padding: 3px;
-  font-size: 10px;
-  font-family: 'Nunito Sans';
-}
-
-.gameimage {
-  width: 150px;
-  height: 150px;
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 20px;
-}
-
-.gamecard {
-  width: 170px;
-  height: 270px;
+  cursor: pointer;
   background-color: #2e2e2e;
+}
+
+.recent:active {
+  background-color: #2e2e2e;
+  transform: translateY(2px);
+
+}
+
+
+.flbtn {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 2px solid #0f0f0f;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px #2e2e2e;
+}
+
+.flbtn:hover {
+  background-color: #2e2e2e;
+}
+
+.flbtn:active {
+  background-color: #2e2e2e;
+  color: black;
+}
+
+#flbutton {
+  position: fixed;
+  bottom: 20px;
+  left: 6px;
+}
+
+#closeButton {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 69420;
+  width: 40px;
+  height: 40px;
+}
+
+#appFrame {
+  border: none;
+  position: absolute;
+  top: 0;
+  z-index: 6969;
+}
+
+#frameCloser {
+  color: white;
+  top: 15px;
+  right: 15px;
+  position: absolute;
   padding: 10px;
-  margin: 10px;
-  border-radius: 20px;
-  transition: transform .5s;
-  justify-content: left;
-  float: left;
-  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
-
-}
-
-.gamecard:hover {
-  -ms-transform: scale(1.1);
-  /* IE 9 */
-  -webkit-transform: scale(1.1);
-  /* Safari 3-8 */
-  transform: scale(1.1);
-  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 3px 0px #2e2e2e;
-}
-
-.gamename {
-  font-size: 20px;
-  font-family: 'Nunito Sans';
-}
-
-.gamecontainer {
-  display: flex;
-  flex-direction: row;
-  order: 0;
-  flex-grow: 0;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  background-clip: border-box;
+  background-color: #36393e;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 10px;
 }

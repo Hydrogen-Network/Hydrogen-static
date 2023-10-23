@@ -38,7 +38,7 @@ form.addEventListener("submit", async (event) => {
 	white.style.width = "100%";
 	white.style.height = "100%";
 	white.style.zIndex = "1";
-	white.src = "img/black.jpeg";
+	white.src = "/static/img/black.jpeg";
 	white.style.right = "0px";
 	white.style.top = "0px";
 	document.body.appendChild(white);
@@ -49,7 +49,7 @@ form.addEventListener("submit", async (event) => {
 	loading.style.height = "125px";
 	loading.style.position = "absolute";
 	loading.style.zIndex = "2";
-	loading.src = "img/loading.gif";
+	loading.src = "/static/img/loading.gif";
 	loading.style.top = "50%";
 	loading.style.left = "50%";
 	loading.style.transform = "translate(-50%, -50%)";

@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="index.css">
 <title id="dynamic-title">Hydrogen</title>
     <p style="font-size: 0.1px;">warwarwrwar</p>
+  <script src="https://unpkg.com/@barba/core"></script>
+
 
     <script src="./js/main.js"></script>
     <script src="./js/settings.js"></script>
@@ -23,7 +25,30 @@
   <br/>
   <br/>
     <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" scrolling="no" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
-      <script>
+    <div id="flbutton">
+    <a href="#" class="flbtn" onclick="fullscreen()"><i class="fa-solid fa-expand"></i></a>
+  </div>
+  <style>
+    #flbutton {
+  position: fixed;
+  bottom: 20px;
+  left: 6px;
+}
+  </style>
+  <script>
+    document.addEventListener("keydown", function(event) {
+  if (event.code === "KeyF") fullscreen();
+});
+
+function fullscreen() {
+  let iframe = document.getElementById('game-frame');
+  if (!iframe) iframe = document.getElementById('app-frame');
+  
+  if (iframe.requestFullscreen) iframe.requestFullscreen();
+  else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+  else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
+  else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+};
     document.getElementById('game-frame').src = localStorage.getItem("currentgame");
   </script>
 <script src="./js/home.js"></script>

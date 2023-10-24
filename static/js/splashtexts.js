@@ -120,3 +120,5 @@ randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
   }
 randomSplash =  document.querySelector("#splash").innerHTML = randomSplash;
 }
+
+say();

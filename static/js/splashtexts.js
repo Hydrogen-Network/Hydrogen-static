@@ -102,7 +102,8 @@ var splashtexts = [
     "he on x-games mode",
     "Got to go fast!",
       ]
-randomSplash =  document.querySelector("#splash").innerHTML = splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
+say(){
+randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
 
   // If the random message is "%GAMES_NUMBER%", replace it with the number of games available
   else if (randomSplash == "%GAMES_NUMBER%") {
@@ -117,3 +118,5 @@ randomSplash =  document.querySelector("#splash").innerHTML = splashtexts[Math.f
     var splashCacheAll = says;
     randomSplash = "There are " + splashCacheAll.length + " of these messages!";
   }
+randomSplash =  document.querySelector("#splash").innerHTML = randomSplash;
+}

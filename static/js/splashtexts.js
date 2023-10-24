@@ -101,8 +101,17 @@ var splashtexts = [
     "Your ip is 69.420.69.420",
     "he on x-games mode",
     "Got to go fast!",
-     "%GAMES_NUMBER%",
+    "%GAMES_NUMBER%",
     "%SPLASH_NUMBER%",
+    "._.",
+    "Checkmate",
+    "Error\nError\nGames not Found",
+    "[insert unfunny joke here]",
+    "Free money!",
+    "Go to jail. Do not pass go. Do not collect 200 Monopoly™ Dollars",
+     "🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧",
+    "using json!",
+    "1\n2\n3\n4\n5",
 ];
 async function say(){
 randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];

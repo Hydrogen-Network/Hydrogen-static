@@ -2,21 +2,11 @@ var splashtexts = [
     "Made 10% from actual code 90% skidded",
     "And no wonder, for Piplup7575 himself hides as a normal programmer even though he is very super duper cool.",
     "goodbye to all the fallen comrades",
-    "AGE RATING 4+",
-    "Piplup7575 is the cool",
-    "Piplup is cool",
     "uwu",
     "uWu",
     "UwU",
-    "3kh0 has fell, and now 3kh0 has sadly died.",
-    "Made by students, for students:)",
-    "Fun fact: Your chromebook is likely being monitored 24/7",
     "Woe to those who don't use this game site",
     "Did you know we are open source?",
-    "goodbye 3kh0 :(",
-    "do your homework",
-    "why does this exist",
-    "who am I anymore",
     "I give up",
     "what are friends?",
     "this is splash text",
@@ -98,7 +88,7 @@ var splashtexts = [
     "Powered by 1 Gig of RAM!",
     "Are you gay?",
     "Keep it halal bro",
-    "Your momma jokes are cringe",
+    "Your jokes are cringe",
     "Now with a new splash!",
     "You just dont get it do you?",
     "Powered by hamsters!",
@@ -112,4 +102,18 @@ var splashtexts = [
     "he on x-games mode",
     "Got to go fast!",
       ]
-  document.querySelector("#splash").innerHTML = splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
+randomSplash =  document.querySelector("#splash").innerHTML = splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
+
+  // If the random message is "%GAMES_NUMBER%", replace it with the number of games available
+  else if (randomSplash == "%GAMES_NUMBER%") {
+    var gamesFetch = await fetch(location.origin + "/static/json/games.json");
+    var games = await gamesFetch.json();
+    randomSplash = "There are " + games.length + " games currently";
+  }
+  // If the random message is "%SPLASH_NUMBER%", replace it with the total number of splash messages
+  else if (randomSplash == "%SPLASH_NUMBER%") {
+    var say = await fetch("./json/say.json");
+    var says = await say.json();
+    var splashCacheAll = says;
+    randomSplash = "There are " + splashCacheAll.length + " of these messages!";
+  }

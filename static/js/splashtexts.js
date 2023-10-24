@@ -102,7 +102,7 @@ var splashtexts = [
     "he on x-games mode",
     "Got to go fast!",
       ]
-say(){
+function say(){
 randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
 
   // If the random message is "%GAMES_NUMBER%", replace it with the number of games available

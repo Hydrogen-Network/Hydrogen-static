@@ -101,7 +101,9 @@ var splashtexts = [
     "Your ip is 69.420.69.420",
     "he on x-games mode",
     "Got to go fast!",
-      ]
+     "%GAMES_NUMBER%",
+    "%SPLASH_NUMBER%",
+]
 async function say(){
 randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
 

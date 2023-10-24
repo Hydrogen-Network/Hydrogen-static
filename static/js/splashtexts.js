@@ -111,7 +111,7 @@ var splashtexts = [
     "Go to jail. Do not pass go. Do not collect 200 Monopoly™ Dollars",
      "🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧",
     "using json!",
-    "1\n2\n3\n4\n5",
+    "1\n2\n3\n4\n5"
 ];
 async function say(){
 randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];

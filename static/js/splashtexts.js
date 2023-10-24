@@ -106,7 +106,7 @@ function say(){
 randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
 
   // If the random message is "%GAMES_NUMBER%", replace it with the number of games available
-  else if (randomSplash == "%GAMES_NUMBER%") {
+  if (randomSplash == "%GAMES_NUMBER%") {
     var gamesFetch = await fetch(location.origin + "/static/json/games.json");
     var games = await gamesFetch.json();
     randomSplash = "There are " + games.length + " games currently";

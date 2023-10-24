@@ -102,8 +102,8 @@ var splashtexts = [
     "he on x-games mode",
     "Got to go fast!",
      "%GAMES_NUMBER%",
-    "%SPLASH_NUMBER%"
-]
+    "%SPLASH_NUMBER%",
+];
 async function say(){
 randomSplash =  splashtexts[Math.floor(Math.random() * 	splashtexts.length)];
 

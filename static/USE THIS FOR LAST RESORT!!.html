@@ -1,0 +1,29 @@
+<html>
+  <body>
+<form class='searchbox' id='searchbox'> <input class='search' id='search' placeholder='Search the web freely' type='text'/> </form> 
+	<script>
+const form = document.getElementById("searchbox");
+const address = document.getElementById("search");
+form.addEventListener("submit", async(event) => {
+	event.preventDefault();
+	if (!isUrl(address.value)) address.value = 'https://www.google.com/search?q=' + address.value;
+	else if (!(address.value.startsWith('https://') || address.value.startsWith('http://'))) address.value = 'http://' + address.value;
+	fetch('https://api.codetabs.com/v1/proxy?quest=' + address.value)
+		.then(
+			function(response) {
+				if (response.status !== 200) {
+					alert('there was a problem with your url.');
+					return;
+				}
+				response.text().then(function(data) {
+					document.body.innerHTML = data;
+				});
+			}
+		)
+		.catch(function(err) {
+			alert('Fetch Error', err);
+		});
+});
+    </script>
+  </body>
+</html>

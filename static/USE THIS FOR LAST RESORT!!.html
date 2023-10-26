@@ -20,7 +20,7 @@ form.addEventListener("submit", async(event) => {
 					return;
 				}
 				response.text().then(function(data) {
-					document.body.innerHTML = '<button onclick="window.location.reload(1);">Close</button>' + data;
+					document.body.innerHTML = '<button style="cursor:pointer; position: absolute; zIndex:1;" onclick="window.location.reload(1);">Close</button>' + data;
 				});
 			}
 		)
@@ -28,6 +28,7 @@ form.addEventListener("submit", async(event) => {
 			alert('Fetch Error', err);
 		});
 });
+
     </script>
   </body>
 </html>

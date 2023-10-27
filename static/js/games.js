@@ -22,7 +22,7 @@ fetch('/static/json/games.json')
     games.forEach((game) => {
       const gameEl = document.createElement('li');
       gameEl.innerHTML = `<div class="gamecard"><a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); location.href='play.html';">${game.name}</a><img src="${game.img}" class="gameimage"/><div class="gameinfo"><b><p class="gamename">${game.name}</p></b><p class="gamedesc">${game.desc}</p></div></div>`;
-      document.querySelector('.gamecontainer').appendChild(gameEl);
+      document.getElementById('gamescontainer').appendChild(gameEl);
     });
   })
   .catch((e) => {

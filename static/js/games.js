@@ -32,6 +32,5 @@ fetch('/static/json/games.json')
     });
   })
   .catch((e) => {
-    console.error('Could not load games');
-    console.error(e);
+    console.error('Could not load games'+e);
   });

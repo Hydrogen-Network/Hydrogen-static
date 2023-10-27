@@ -56,5 +56,54 @@
     "img": "https://hydrogen-network.github.io/img/awesometanks.jpg",
     "name": "Awesome tanks 2",
     "desc": "Awesome Tanks 2 is a tank game where you battle against other tanks in a 2D arena. Fire your cannons to tear down enemy tanks!"
-  }
+  },
+  {
+    "url": "https://gamesnacks.com/embed/games/archery",
+    "img": "https://hydrogen-network.github.io/img/awt.jpg",
+    "name": "Archery World Tour",
+    "desc": "Archery World Tour is a campaign based shooter game where you take on the world with nothing but your bow and aim."
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/alienhominid/index.html",
+    "img": "https://hydrogen-network.github.io/img/ah.jpg",
+    "name": "Alien Hominid",
+    "desc": "Take over as the titular hominid, who has to fend off waves of secret agents."
+  },
+  {
+    "url": "https://mathteacher.pages.dev/cdn/axisfootballleague",
+    "img": "https://www.giantbomb.com/a/uploads/scale_small/0/4647/2874583-9941755819-latest",
+    "name": "Axis Football League",
+    "desc": "is a fun and fast-paced American Football game in which you can compete in various football matches and leagues."
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/basketball-stars/index.html",
+    "img": "https://hydrogen-network.github.io/img/basketballstars.jpeg",
+    "name": "Basketball stars",
+    "desc": "Basketball Stars is the ultimate basketball/sports game where you can play as Lebron James, Stephen Curry, Derrick Williams, and more, created by Madpuffers."
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/basketbros-io/index.html",
+    "img": "https://hydrogen-network.github.io/img/basketbros.jpg",
+    "name": "Basketbros.io",
+    "desc": "BasketBros is a side-scrolling basketball game in which you compete against formidable opponents."
+  },
+  {
+    "url": "https://html5.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8/?gd_sdk_referrer_url=https://gamedistribution.com/games/basket-random",
+    "img": "https://img.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8-512x512.jpeg",
+    "name": "Basket Random",
+    "desc": "Basketball is here with its most funny and random way. In Basket Random game, try to score a basket by using only one key with different variations from each other!"
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/btts/index.html",
+    "img": "https://hydrogen-network.github.io/img/btts.png",
+    "name": "Big Tower Tiny Square",
+    "desc": "In this platformer, jump over pits of lava and dodge dangerous traps to reach the top of the tower and rescue your stolen pineapple."
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bitlife/index.html",
+    "img": "https://hydrogen-network.github.io/img/bitlife.png",
+    "name": "BitLife",
+    "desc": "BitLife is a single player life simulation game in which users make decisions based on a series of multiple choice questions. Try to survive as long as you can!"
+  },
+  
 ]

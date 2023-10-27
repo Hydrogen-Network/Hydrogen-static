@@ -23,14 +23,8 @@ fetch('/static/json/games.json')
       const gameEl = document.createElement('li');
       gameEl.innerHTML = `<div class="gamecard"><a href="#"onclick="localStorage.setItem('currentgame', ${game.url});location.href='play'>${game.name}</a><img src=${game.img} class="gameimage"/><div class="gameinfo"><b><p class="gamename">${game.name}</p></b><p class="gamedesc">${game.desc}</p></div></a></div>`;
       gamesContainer.appendChild(gameEl);
-
-
-
-
-
-    
     });
   })
   .catch((e) => {
-    console.error('Could not load games'+e);
+    console.error('Could not load games. '+e);
   });

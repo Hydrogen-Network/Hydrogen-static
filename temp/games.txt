@@ -1,88 +1,4 @@
- https://flashgamedump/bloxorz.html 
-https://hydrogen-network.github.io/img/bloxorz.png 
-
-Bloxorz
-Toss and turn all around the map in Bloxorz, the legendary block-flipping game. Make it through all 33 levels to become master of the rectangular brick.
-
-
-
-https://skoolcdn.github.io/gfiles/gfiles/html5/bounceback 
-https://hydrogen-network.github.io/img/bounceback.jpg 
-
-Bounce Back
-When life gets you down, it's never too late to...<br>- B O U N C E B A C K -<br>action
-
-
-
-https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bobtherobber2/index.html 
-https://hydrogen-network.github.io/img/btr2.jpeg 
-
-Bob The Robber 2
-Enter locations around the town and loot them, picking locks, avoiding traps, lasers, and guards in this cute action adventure.
-
-
-
-https://raw.githack.com/caracal-js/gfiles/main/breaklock/index.html
-https://maxwellito.github.io/breaklock/assets/icons/ios-180x180.png 
-
-BreakLock
-Silly HTML5 game, mobile first. BreakLock is a hybrid of Mastermind and the Android pattern lock. A game you gonna love to hate.
-
-
-
-https://www.bumpyball.io 
-https://hydrogen-network.github.io/img/bumpyball.png 
-
-Bumpy Ball
-BumpyBall.io is a fast-paced action/sports multiplayer car soccer game! Join the league and score as many goals as you can with your rocket powered football cars!
-
-
-
-https://advanced-channeler.02.gz-associates.com/?s=?url%3D%252Fflash%252FHenryStick_BreakingTheBank.swf&t=tam-flash-ruffle';">
-https://play-lh.googleusercontent.com/I9aDLwmiy5iSjeUPs5IDI3lam8iWZ1zVnLF-V_EGvClOLuccjwLNNjZ8xltu4AN60ioBreaking the Bank
-In this fast-paced game, players take on the role of a bank robber trying to break the bank and escape with as much money as possible.
-
-
-
-https://gitloaf--neealdon3.repl.co/rawgcdn/GikitSRC/duckos-games/main/chess/index.html
-https://www.chess.com/bundles/web/favicons/apple-touch-icon.7aaa2d1f.png 
-
-Chess
-Chess is a board game for two players, called White and Black, each controlling an army of chess pieces, with the objective to checkmate the opponent's king
-
-
-
-https://24glo.com/game/dino-play.html 
-https://hydrogen-network.github.io/img/chromedino.jpeg 
-
-Chrome Dino
-Google Chrome's unblocked offline game when there is no access to the internet. Press the "space" key to start.
-
-
-
-https://dinoswords.gg/ 
-https://hydrogen-network.github.io/img/chromedinomodded.jpeg 
-
-Chrome Dino (Modded)
-Essentially the chrome dino game but better. Tags: action, mods, dino game
-
-
-
-https://html5.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d/?gd_sdk_referrer_url=https://gamedistribution.com/games/climb-racing-3d 
-https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.jpeg 
-Climb Racing 3D
-Characters, cars and maps are waiting for you in the car racing game full of fun and adventure with colorful visual effects.
-
-
-
-https://raw.githack.com/3kh0/3kh0-Assets/main//cookie-clicker/index.html 
-https://hydrogen-network.github.io/img/cookie-clicker.jpeg 
-Cookie Clicker
-Cookie Clicker is an incremental web-browser game developed by Orteil. The goal of the game is to produce as many cookies as possible.
-
-
-
-/static/tiw/hvtr%3A-%2Fau%60eq224%3Aim.aoo%2F'); window.location.href = 'play.html 
+/static/tiw/hvtr%3A-%2Fau%60eq224%3Aim.aoo%2F
 https://cubes2048io.com/imgs/logo-cubes-2048-196.png 
 Cubes 2048
 Cubes 2048.io is an addictive online game that fuses Snake and 2048.
@@ -138,7 +54,7 @@ Duck Life 3 is a racing game featuring genetically modified ducks. Choose from o
 
 
 
-https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-4.xml';">
+https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-4.xml
 https://play-lh.googleusercontent.com/AUGkRrKMtUCLVE9vCvlfMY9Ny9EBqzx17yejVtEEhvpkw-H6lJlvBHgCMqPJm8HV_tMDuck Life 4
 Take on the role of a duck racing champion, competing in races and training to become the ultimate duck athlete.
 
@@ -249,7 +165,7 @@ Henry is set to a mission to save the world by a nuke, he trys to deacvate the n
 
 
 
-https://glitchyeet.github.io/IdleBreakout/';">
+https://glitchyeet.github.io/IdleBreakout/
 https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQIdle Breakout
 Build the ultimate brick-busting machine to destroy billions of bricks. Idle breakout combines classic brick breaking with an insanely addicting idle loop.
 
@@ -610,14 +526,14 @@ The fun random game series continues with Volley Random. There is a Volleyball e
 
 
 
-https://raw.githack.com/GikitSRC/duckos-games/main/worlds-hardest-game/index.html'); window.location.href = 'play'; window.location.href = 'play';">
+https://raw.githack.com/GikitSRC/duckos-games/main/worlds-hardest-game/index.html'); window.location.href = 'play'; window.location.href = 'play
 https://skyhax.xyz/system/apps/games/icons/worlds-hardest-game.jpg 
 World's Hardest Game
 trym just try
 
 
 
-https://github.com/GikitSRC/duckos-games/blob/main/worlds-hardest-game-2/index.html'); window.location.href = 'play'; window.location.href = 'play';">
+https://github.com/GikitSRC/duckos-games/blob/main/worlds-hardest-game-2/index.html'); window.location.href = 'play'; window.location.href = 'play
 https://skyhax.xyz/system/apps/games/icons/worlds-hardest-game-2.jpg 
 World's Hardest Game 2
 hardest, then even harder?!?!

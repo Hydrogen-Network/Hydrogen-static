@@ -21,8 +21,7 @@ fetch('/static/json/games.json')
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const gameEl = document.createElement('li');
-      gameEl.innerHTML = `<div class="gamecard"><a href="#"onclick="localStorage.setItem('currentgame', ${game.url});location.href='play'>${game.name}</a><img src=${game.img} class="gameimage"/><div class="gameinfo"><b><p class="gamename">${game.name}</p></b><p class="gamedesc">${game.desc}</p></div></a></div>`;
-      gamesContainer.appendChild(gameEl);
+      gameEl.innerHTML = `<div class="gamecard"><a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); location.href='play.html';">${game.name}</a><img src="${game.img}" class="gameimage"/><div class="gameinfo"><b><p class="gamename">${game.name}</p></b><p class="gamedesc">${game.desc}</p></div></div>`;      gamesContainer.appendChild(gameEl);
     });
   })
   .catch((e) => {

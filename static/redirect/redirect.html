@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Redirect generator | 3kh0</title>
+    <title>Hydrogen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/redirect.css" />
     <link rel="icon" href="/favicon.ico" />
@@ -11,7 +11,7 @@
   <body>
     <h1 class="text-center">Redirect generator</h1>
     <p class="text-center" id="message">
-      Generator for the 3kh0 redirect page
+      Generator for the Hydrogen redirect page
     </p>
     <p class="text-center">URL to redirect to: 
       <input id="userinput" type="url" pattern="https://.*" placeholder="Enter a URL" autocomplete="on" autofocus />
@@ -37,7 +37,7 @@
         if (url.length > 0) {
           var location = window.location.origin;
           var encodedURL = encodeURIComponent(url);
-          const redirect = location + "/dump/redirect.html?to=" + encodedURL + "&local=" + local;
+          const redirect = location + "/static/redirect/redirecting.html?to=" + encodedURL + "&local=" + local;
           document.getElementById("generated").innerHTML = 'Generated link: <a href="' + redirect + '">' + redirect + '</a>';
           document.getElementById("copy").disabled = false;
           if (local == true) {

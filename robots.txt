@@ -1,6 +1,0 @@
-User-agent: *
-Disallow:/
-Disallow: /static/js/
-Disallow: /static/uv/
-Disallow: /static/img/
-Disallow: /static/css

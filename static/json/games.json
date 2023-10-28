@@ -281,7 +281,7 @@
   },
   {
     "url": "https://hydrogen-network.github.io/cdn/geometrydash/ ",
-    "img": "https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.png ",
+    "img": "https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.png",
     "name": "Geometry Dash",
     "desc": "Jump and fly your way through danger in this rhythm-based action platformer! Prepare for a near impossible challenge in the world of Geometry Dash."
   },
@@ -323,7 +323,7 @@
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-wuw%2Cgmoelgtcgoalaeep.aoo%2Fetcg-jq%3Fkd%3FAU-110815%3A22",
-    "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/artworks-f07hlvRhW5qIDXxR-Yv6Fqw-t500x500.jpg ?v=1683478431676",
+    "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/artworks-f07hlvRhW5qIDXxR-Yv6Fqw-t500x500.jpg?v=1683478431676",
     "name": "Henry Stickman",
     "desc": "Henry is set to a mission to save the world by a nuke, he trys to deacvate the nuke in teh airship with his girl, help him"
   },
@@ -350,5 +350,128 @@
     "img": "//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/splash.jpg ",
     "name": "Jetpack Joyride",
     "desc": "Jetpack Joyride is a side-scrolling, endless runner game in which you are traveling through a laboratory using a stolen bullet-powered jetpack."
+  },
+  {
+    "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-wuw%2Cgmoelgtcgoalaeep.aoo%2Fetcg-jq%3Fkd%3FAU-110815%3A22",
+    "img": "https://cdn.glitch.global/40d8a6f7-c124-43fe-8544-1617c1dcc948/download%20(1).jpeg?v=1680006191209Kirka",
+    "name": "Kirka",
+    "desc": "Kirka is a multiplayer shooter game, its like fortnite but blocky"
+  },
+  {
+    "url": "//raw.githack.com/3kh0/3kh0-assets/main/learntofly/index.html",
+    "img": "https://hydrogen-network.github.io/img/learntofly.png",
+    "name": "Learn to Fly",
+    "desc": "Learn to Fly is a launcher game where you play as a penguin attempting to fly using a ramp and various gadgets."
+  },
+  {
+    "url": "//raw.githack.com/3kh0/3kh0-assets/main/edge-surf/index.html",
+    "img": "https://hydrogen-network.github.io/img/ltsf.png",
+    "name": "Lets Surf",
+    "desc": "Use your arrow keys left or right to select a surfer and press the Spacebar to start surfing."
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/the-final-earth/index.html",
+    "img": "https://img.itch.zone/aW1nLzIyMTU1NDAucG5n/original/6vGlZe.png",
+    "name": "The Final Earth",
+    "desc": "Earth has been destroyed. It's a good thing you teleported to a new planet, also known as The Final Earth. Gather resources and build a colony"
+  },
+  {
+    "url": "https://raw.githack.com/caracal-js/gfiles/main/microsoft-flight-simulator/index.html",
+    "name": "Microsoft Flight Simulator",
+    "desc": "Play and Enjoy the History of Microsoft Flight Simulator"
+  },
+  {
+    "url": "https://minecraft-hosted.github.io/mc-1.8.8/",
+    "img": "https://hydrogen-network.github.io/img/mc.jpeg",
+    "name": "Minecraft (Java)",
+    "desc": "Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds."
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/MonkeyMart/index.html",
+    "img": "https://img.doodoo.love/_next/image?url=https:%2F%2Fresource.doodoo.love%2FPmnM9U%2Fb3668d7deb043d0f43b5813b0365be8f.png&w=408&q=75",
+    "name": "Monkey Mart",
+    "desc": "aka monkey market, a fun game very cool poggers you should click here!"
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/motox3m/index.html",
+    "img": "https://play-lh.googleusercontent.com/AbQMuT4ncBfWDqNF-4ubmfaRag59nrW3fJARDsHK51_PENScmWCnMFeQX81wfPlfGBo",
+    "name": "Moto X3M",
+    "desc": "Moto X3M is an exciting motorcycle racing game for players who are terrain and speed enthusiasts. Keep an eye on the road; now is your time to shine!"
+  },
+  {
+    "url": "//io.sqeven.workers.dev/-----https://mountain658.github.io/",
+    "img": "https://mountain658.pages.dev/mountainNoFade.png",
+    "name": "Mountain Games",
+    "desc": "Roblox, Call Of Duty, Stumble Guys, PUBG, Android VM, PUBG, and more all in one website!"
+  },
+  {
+    "url": "https://raw.githack.com/3kh0/3kh0-Assets/main/osu!/index.html",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Osu%21_Logo_2016.svg/2048px-Osu%21_Logo_2016.svg.png",
+    "name": "Osu!",
+    "desc": "Osu! (stylized as osu!) is a free-to-play rhythm game primarily developed, published, and created by Dean "peppy" Herbert."
+  },
+  {
+    "url": "//raw.githack.com/3kh0/3kh0-assets/main/ovo/index.html",
+    "img": "//raw.githack.com/3kh0/3kh0-assets/main/ovo/ovo.png",
+    "name": "OvO",
+    "desc": "OvO is a fast-paced platformer where you use precise parkour and free running skills to complete each level."
+  },
+  {
+    "url": "https://raw.githack.com/GikitSRC/duckos-games/main/tanktrouble/index.html",
+    "img": "https://skyhax.xyz/system/apps/games/icons/tankt.png",
+    "name": "Tank Trouble",
+    "desc": "Tanks attacking"
+  },
+  {
+    "url": "https://raw.githack.com/GikitSRC/duckos-games/main/zelda/index.html",
+    "img": "https://skyhax.xyz/system/apps/games/icons/zelda.png",
+    "name": "The Legend of Zelda"
+  },
+  {
+    "url": "//raw.githack.com/3kh0/3kh0-assets/main//OfflineParadise/index.html",
+    "img": "https://hydrogen-network.github.io/img/ofpd.jpeg",
+    "name": "Offline Paradise",
+    "desc": "The world, a paradise, has gone offline; everything has become grey and dangerous. Traverse, jump, and dash over the obstacles to turn the world back into a paradise."
+  },
+  {
+    "url": "https://raw.githack.com/caracal-js/gfiles/main/pacman/index.html",
+    "img": "https://raw.githubusercontent.com/caracal-js/gfiles/main/pacman/img/Icon-130x130.png",
+    "name": "Pacman HTML5",
+    "desc": "An old classic, re-written in HTML5. "
+  },
+  {
+    "url": "//raw.githack.com/3kh0/3kh0-assets/main//papaspizzaria/index.html",
+    "img": "//raw.githack.com/3kh0/3kh0-assets/main//papaspizzaria/papaspizzaria.jpg",
+    "name": "Papas Pizzeria",
+    "desc": "Help Roy run the pizzeria while Papa Louie is gone!"
+  },
+  {
+    "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/21ac7257444af1713884b35045938d57e88a4993/paperio2/index.html",
+    "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSK4PSwPySjJi26ilZMiNG_L6U6DuAcyhvR3Z99p49Mil7AoVz",
+    "name": "Paper.io 2",
+    "desc": "Paper.io 2 is a multiplayer io game where you control a colored shape and try to conquer territory by drawing lines and absorbing other players' shapes"
+  },
+  {
+    "url": "https://kdata1.com/2021/03/3527391/2.1/",
+    "img": "https://img.itch.zone/aW1nLzI1MjYwNDIucG5n/original/ADuDvy.png",
+    "name": "Pizza Tower (Demo)",
+    "desc": "A game following a pizza chef, Peppino Spaghetti, who must scale a tower to prevent the destruction of his pizzeria."
+  },
+  {
+    "url": "https://raw.githack.com/GikitSRC/duckos-games/main/pokemon/emerald/index.html",
+    "img": "https://skyhax.xyz/system/apps/games/icons/emerald.jpg",
+    "name": "Pokemon Emerald (GBA)",
+    "desc": "try and try you'll have fun"
+  },
+  {
+    "url": "https://raw.githack.com/GikitSRC/duckos-games/main/pokemon/fire-red/index.html",
+    "img": "https://raw.githubusercontent.com/GikitSRC/DuckOS/main/system/apps/games/icons/fire.jpg",
+    "name": "Pokemon Fire Red (GBA)",
+  },
+  {
+    "url": "https://www.prisonlifegame.com/",
+    "img": "https://hydrogen-network.github.io/img/prisonlife.png",
+    "name": "Prison Life",
+    "desc": "Made by a member of the Skool Discord server, <b>bruh9000</b>!"
   }
 ]

@@ -19,11 +19,15 @@
           document.getElementById("message").innerText = "Oh no! This link is invalid. Please make sure you are using the correct link.";
         }
         var redirect = urlParams.get("to");
+        if(redirect.startsWith('javascript:') || redirect.startsWith('vbscript:')) {
+          alert("your being hacked");
+          location.href = "/";
+        } else {
         decodeURI(redirect);
         if (local == "true") {
           redirect = window.location.origin + redirect;
         } else {
-          document.getElementById("ext").innerText = "This link will be redirected to the external website that is not 3kh0.github.io, Please be cautious!";
+          document.getElementById("ext").innerText = "This link will be redirected to the external website that is not Hydrogen, Please be cautious!";
         }
         function go() {
           window.location.href = redirect;
@@ -45,6 +49,7 @@
           }
           timeleft -= 1;
         }, 1000);
+      }
       }
     </script>
   </body>

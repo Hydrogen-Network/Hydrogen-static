@@ -119,9 +119,9 @@
             <br/>
             <br/>
             <br/>
-            <input type="text" name="search" id="engine" onchange=`searchchange();`></input>
+            <input type="text" name="search" id="engine" onkeyup=`customsearch();`></input>
             <script>
-                function searchchange() {
+                function customsearch() {
             localStorage.setItem('search', ${this.value});
                 }
             </script>

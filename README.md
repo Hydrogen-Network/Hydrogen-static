@@ -55,7 +55,9 @@
 ## Deployment
 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen/)
-
+<br/>
+<br/>
+fork the repo then go to settings and in the `Code and automation` section press on `pages`, select `Deploy From a Branch` and under the branch section click on none then the main or master branch and press save
  <p align="right">(<a href="#readme">back to top</a>)</p>
 
 

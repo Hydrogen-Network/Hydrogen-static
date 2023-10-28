@@ -118,6 +118,7 @@
             <option value="ddg">DuckDuckGo</option>
             <option value="br">Brave</option>
          </select>
+            <input type="text" name="search" id="engine">
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>
@@ -154,6 +155,7 @@
             <option disabled selected>Bonus Themes</option>
             <option value="v4">Legacy V4 Theme</option>
          </select>
+          <input type="color" value="#1e2124" onchange="localStorage.setItem('backdrop-color', this.value);">
       </div>
        <!-- nope
         <div class="settings-card">

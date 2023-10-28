@@ -39,7 +39,7 @@
     <li>
       <a href="#readme">About The Project</a>
       <ul>
-        <li><a href="#deployment">Built with</a></li>
+        <li><a href="#deployment">Deployment</a></li>
         <li><a href="#links">Links</a></li>
       </ul>
     </li>

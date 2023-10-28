@@ -227,6 +227,11 @@ var searchid = localStorage.getItem("search");
 
 
   if(searchid == "1") {
-  themeEle.innerHTML = 'document.getElementById("uv-search-engine").value="https://"+document.getElementById("engine").value';
+  themeEle.innerHTML = `document.getElementById("uv-search-engine").value="https://"+${document.getElementById("engine").value}`;
   }
-      document.body.appendChild(themeEle);
+  document.body.appendChild(themeEle);
+
+
+if(localStorage.getItem("backdrop-color")) {
+document.body.style.background = localStorage.getItem("backdrop-color")
+}

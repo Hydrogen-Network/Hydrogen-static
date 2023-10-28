@@ -1,0 +1,9 @@
+services:
+  # A Node web service
+  - type: web
+    name: webdis
+    runtime: node
+    branch: main
+    rootDir: static
+    buildCommand: npm install
+    startCommand: npm start

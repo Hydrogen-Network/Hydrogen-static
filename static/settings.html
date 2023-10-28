@@ -74,6 +74,7 @@
         <input class="key-form" placeholder="Panic Link" type="text" id="linkInput" value>
         <div class="record-key">
             <span id="selectedKeyDisplay"><span id="selectedKey">Press a key</span></span>
+            <br/>
             <button id="recordKeyButton"><i class="fa-solid fa-microphone"></i>Auto-detect</button>
         </div>
         <button class="key-button" value="Save" onclick="saveEventKey()">Save</button>
@@ -118,7 +119,7 @@
             <br/>
             <br/>
             <br/>
-            <input type="text" name="search" id="engine" onKeyDown='searchchange();'></input>
+            <input type="text" name="search" id="engine" onchange=`searchchange();`></input>
             <script>
                 function searchchange() {
             localStorage.setItem('search', ${this.value});

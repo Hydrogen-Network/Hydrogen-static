@@ -37,7 +37,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#readme">About The Project</a>
       <ul>
         <li><a href="#deployment">Built with</a></li>
         <li><a href="#links">Links</a></li>
@@ -52,8 +52,6 @@
 
 
 <!-- GETTING STARTED -->
-## About the Project
-
 ## Deployment
 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen/)

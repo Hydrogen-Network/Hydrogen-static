@@ -8,16 +8,17 @@
   <body>
     <h1 id="title" class="text-center">Redirecting...</h1>
     <h3 id="ext"></h3>
+    <h3 id="message"></h3>
     <script>
       const keysValues = window.location.search;
       const urlParams = new URLSearchParams(keysValues);
       if (!urlParams.has('to')) {
-        document.getElementById("message").innerText = "Oh no! This page is not supposed to be accessed directly. Please make sure you are using the correct link.";
+        document.getElementById("message").innerHTML = "Oh no! This page is not supposed to be accessed directly. Please make sure you are using the correct link.";
         // show error message
       } else {
         const local = urlParams.get("local");
         if (!urlParams.get("local")) {
-          document.getElementById("message").innerText = "Oh no! This link is invalid. Please make sure you are using the correct link.";
+          document.getElementById("message").innerHTML = "Oh no! This link is invalid. Please make sure you are using the correct link.";
         }
         var redirect = urlParams.get("to");
         if(redirect.startsWith('javascript:') || redirect.startsWith('vbscript:')) {

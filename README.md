@@ -7,25 +7,27 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors](https://img.shields.io/github/contributors/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/forks)
-[![Stargazers](https://img.shields.io/github/stars/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/stargazers)
-[![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/issues)
-[![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen-Static.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen-Static/blob/master/LICENSE.txt)
+[![Contributors](https://img.shields.io/github/contributors/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/forks)
+[![Stargazers](https://img.shields.io/github/stars/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/stargazers)
+[![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/issues)
+[![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/blob/master/LICENSE.txt)
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Hydrogen Hub</h3>
-
+  <a href="https://github.com/Hydrogenv-Network/Hydrogen/">
+    <img src="static/img/gas.png" alt="Logo" width="80" height="80">
+  </a>
+<h3 align="center">Hydrogen</h3>
   <p align="center">
     Hydrogen Hub is a hub for students who are bored at school!
     <br />
-    <a href="https://github.com/Hydrogenv-Network/Hydrogen-hub/issues">Report Bug</a>
+    <a href="https://github.com/Hydrogenv-Network/Hydrogen/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Hydrogen-Network/Hydrogen-Static/issues">Request Feature</a>
+    <a href="https://github.com/Hydrogen-Network/Hydrogen/issues">Request Feature</a>
   </p>
 </div>
 
@@ -51,15 +53,19 @@
 
 
 <!-- GETTING STARTED -->
-## Deployment
+## About the Project
 
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen-Static/)
+### Deployment
+
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen/)
 
  <p align="right">(<a href="#readme">back to top</a>)</p>
 
 
 ### Links
-
+[https://brrrrrr.pages.dev](https://brrrrrr.pages.dev)
+<br/>
+[https://hydrogen-hosted.github.io/](https://hydrogen-hosted.github.io/)
   
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -82,7 +88,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/Hydrogen-Network/Hydrogen/blob/main/LICENSE) for more information.
 
 <p align="right">(<a href="#readme">back to top</a>)</p>
 
@@ -93,6 +99,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - blade_immovably193@simplelogin.com
 
-Project Link: [https://github.com/Hydrogen-Network/Hydrogen-Static-Static](https://github.com/Hydrogen-Network/Hydrogen-Static-Static)
+Project Link: [https://github.com/Hydrogen-Network/Hydrogen](https://github.com/Hydrogen-Network/Hydrogen)
 
 <p align="right">(<a href="#readme">back to top</a>)</p>

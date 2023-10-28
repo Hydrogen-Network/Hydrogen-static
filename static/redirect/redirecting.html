@@ -23,6 +23,7 @@
           document.getElementById("message").innerHTML = "Oh no! This link is invalid. Please make sure you are using the correct link.";
         }
         var redirect = urlParams.get("to");
+        try{
         if(redirect.startsWith('javascript:') || redirect.startsWith('vbscript:')) {
           alert("your being hacked");
           location.href = "/";
@@ -32,6 +33,11 @@
           redirect = window.location.origin + redirect;
         } else {
           document.getElementById("ext").innerHTML = "This link will be redirected to the external website that is not Hydrogen, Please be cautious!";
+        }
+        }
+        }catch(e){
+          alert("error, redirecting...");
+          location.href = "/";
         }
         function go() {
           window.location.href = redirect;
@@ -53,7 +59,6 @@
           }
           timeleft -= 1;
         }, 1000);
-      }
       }
     </script>
   </body>

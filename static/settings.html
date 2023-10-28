@@ -122,7 +122,12 @@
             <br/>
             <br/>
             <br/>
-            <input type="text" name="search" id="engine">
+            <input type="text" name="search" id="engine" onKeyDown='searchchange();'></input>
+            <script>
+                function searchchange() {
+            localStorage.setItem('search', ${this.value});
+                }
+            </script>
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>

@@ -38,6 +38,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
         HTMLFormElement,
         HTMLImageElement,
         HTMLSourceElement,
+        ServiceWorkerAllowed,
     } = window;
 
     client.nativeMethods.defineProperty(window, '__uv', {

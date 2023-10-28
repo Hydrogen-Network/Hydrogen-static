@@ -292,7 +292,7 @@ document.querySelector("#urlbar").addEventListener("keydown", (event) => {
   }
   // if user is entering a new URL!
   URL_BAR.blur();
-  if (URL_BAR.value.startsWith("javascript:")) {
+  if (URL_BAR.value.startsWith("javascript:") || URL_BAR.value.startsWith("data:") || URL_BAR.value.startsWith("vbscript:")) {
     try {
       jsUri = decodeURIComponent(
         URL_BAR.value.substring(11)

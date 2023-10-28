@@ -1,0 +1,10 @@
+language = "nix"
+run = ["npm", "start"]
+
+[packager]
+language = "nodejs-npm"
+
+[debugger]
+
+[unitTest]
+language = "nodejs"

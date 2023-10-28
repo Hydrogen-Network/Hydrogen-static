@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1 id="title" class="text-center">Redirecting...</h1>
+    <h3 id="ext"></h3>
     <script>
       const keysValues = window.location.search;
       const urlParams = new URLSearchParams(keysValues);
@@ -27,7 +28,7 @@
         if (local == "true") {
           redirect = window.location.origin + redirect;
         } else {
-          document.getElementById("ext").innerText = "This link will be redirected to the external website that is not Hydrogen, Please be cautious!";
+          document.getElementById("ext").innerHTML = "This link will be redirected to the external website that is not Hydrogen, Please be cautious!";
         }
         function go() {
           window.location.href = redirect;

@@ -83,6 +83,54 @@
     </div>
      <p style="font-size: 0.1px;">warwarwrwar</p>
      <script>
+        const gamesContainer = document.querySelector('.gamecontainer');
+
+// Fetch the games data from a JSON file
+fetch('/static/json/games.json')
+  .then((res) => res.json())
+  .then((games) => {
+    // Loop through each game and create a new game element for it
+    games.forEach((game) => {
+      const gameEl = document.createElement('li');
+      gameEl.innerHTML = `
+      <div class="gamecard" data-category=${game.categories}>
+          <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); location.href='play.html';">
+          <img src="${game.img}" class="gameimage"/>
+              <div class="gameinfo">
+                  <b>
+                      <p class="gamename">${game.name}</p>
+                  </b>
+                      <p class="gamedesc">${game.desc}</p>
+              </div>
+          </a>
+      </div>
+      `;
+      gamesContainer.appendChild(gameEl);
+    });
+  })
+  .catch((e) => {
+    console.error('Could not load games. '+e);
+  });
+
+
+
+function showImages() {
+  var selectedCategories = Array.from(document.querySelectorAll("#category option:checked")).map(option => option.value);
+  var games = document.getElementsByClassName("gamecard");
+
+  for (var i = 0; i < games.length; i++) {
+    var game = games[i];
+    var categories = game.getAttribute("data-category").split(" ");
+    if (selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category))) {
+      game.style.display = "block";
+    } else {
+      game.style.display = "none";
+    }
+  }
+}
+
+
+        
          function myFunction() {
            var input, filter, ul, li, a, i, txtValue;
            input = document.getElementById("myInput");

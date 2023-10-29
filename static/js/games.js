@@ -1,5 +1,3 @@
-const gamesContainer = document.querySelector('.gamecontainer');
-
 // Fetch the games data from a JSON file
 fetch('/static/json/games.json')
   .then((res) => res.json())
@@ -20,7 +18,7 @@ fetch('/static/json/games.json')
           </a>
       </div>
       `;
-      gamesContainer.appendChild(gameEl);
+      document.querySelector('.gamecontainer').appendChild(gameEl);
     });
   })
   .catch((e) => {

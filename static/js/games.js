@@ -20,7 +20,7 @@ fetch('/static/json/games.json')
           </a>
       </div>
       `;
-      gamesContainer.appendChild(gameEl);
+      document.querySelector('.gamecontainer').appendChild(gameEl);
     });
   })
   .catch((e) => {

@@ -42,7 +42,7 @@ fetch('/static/json/games.json')
   });
 
 
-
+/*
 function showImages() {
   var selectedCategories = Array.from(document.querySelectorAll("#category option:checked")).map(option => option.value);
   var games = document.getElementsByClassName("gamecard");
@@ -57,3 +57,4 @@ function showImages() {
     }
   }
 }
+*/

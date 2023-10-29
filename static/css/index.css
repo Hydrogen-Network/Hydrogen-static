@@ -1,4 +1,6 @@
-     body {
+@import url(navbar.css);
+
+body {
         font-family: "Comfortaa";
         font-size: "25px";
         text-align: center;
@@ -91,35 +93,6 @@
         box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
       }
 
-      .navbar a {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: Comfortaa;
-        margin: 0;
-      }
-
-.navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  border-bottom: 3px solid transparent;
-}
-
-.navbar a:hover {
-  border-bottom: 3px solid red;
-}
-
-.navbar a.active {
-  border-bottom: 3px solid red;
-}
       black{
         position:absolute;
         left:0px;

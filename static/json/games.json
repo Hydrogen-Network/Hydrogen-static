@@ -4,1001 +4,749 @@
       "url":"https://forms.gle/5bAXNYzuN4Ymj5ve7",
       "img":"https://static.vecteezy.com/system/resources/previews/009/266/327/original/plus-sign-icon-free-png.png",
       "desc":"Click the link to make a game request!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "name":"1",
       "url":"https://gitloaf.com/cdn/3kh0/3kh0-Assets/main/1/index.html",
       "img":"https://raw.githack.com/3kh0/3kh0-assets/main/1/meta/apple-touch-icon.png",
       "desc":"Divide the numbers and get to the 1 tile!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "name":"1v1.lol",
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/1v1lol/index.html",
       "img":"https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co",
       "desc":"1v1.lol is a fast-paced and action-packed multiplayer game where players compete against each other in a variety of challenges.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://raw.githubusercontent.com/3kh0/3kh0-assets/main/1v1space/index.html",
       "img":"https://raw.githubusercontent.com/3kh0/3kh0-assets/main/1v1space/splash.png",
       "name":"1v1 space",
       "desc":"Embark a thrilling adventure through the cosmos, navigating through galaxies, and engaging in intense space combat with an AI opponent.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/10-minutes-till-dawn/index.html",
       "img":"https://images.crazygames.com/games/10-minutes-till-dawn/cover-1652811077990.png?auto=format%2Ccompress&q=75&cs=strip&w=461&ch=DPR",
       "name":"10 Minutes Till Dawn",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/2048/index.html",
       "img":"https://2048.wtf/2048-multitask/meta/apple-touch-icon.png",
       "name":"2048",
       "desc":"Merge numbers to create 2048!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githubusercontent.com/3kh0/3kh0-assets/main/99balls/index.html",
       "img":"https://raw.githubusercontent.com/3kh0/3kh0-assets/main/99balls/99-balls-evo.jpg",
       "name":"99 Balls",
       "desc":"99 Balls is a fast-paced, addictive game where you must avoid the walls and collect as many balls as possible while avoiding the obstacles.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/among-us/index.html",
       "img":"https://hydrogen-network.github.io/img/amongus.png",
       "name":"Among Us",
       "desc":"Among Us is a 2018 online multiplayer action social deduction game developed and published by American game studio Innersloth.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/astray/index.html",
       "name":"Astray",
       "desc":"Astray",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/awesometanks2/index.html",
       "img":"https://hydrogen-network.github.io/img/awesometanks.jpg",
       "name":"Awesome tanks 2",
       "desc":"Awesome Tanks 2 is a tank game where you battle against other tanks in a 2D arena. Fire your cannons to tear down enemy tanks!",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://gamesnacks.com/embed/games/archery",
       "img":"https://hydrogen-network.github.io/img/awt.jpg",
       "name":"Archery World Tour",
       "desc":"Archery World Tour is a campaign based shooter game where you take on the world with nothing but your bow and aim.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/alienhominid/index.html",
       "img":"https://hydrogen-network.github.io/img/ah.jpg",
       "name":"Alien Hominid",
       "desc":"Take over as the titular hominid, who has to fend off waves of secret agents.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://mathteacher.pages.dev/cdn/axisfootballleague",
       "img":"https://www.giantbomb.com/a/uploads/scale_small/0/4647/2874583-9941755819-latest",
       "name":"Axis Football League",
       "desc":"is a fun and fast-paced American Football game in which you can compete in various football matches and leagues.",
-      "categories":[
-         "all",
-         "sports"
-      ]
+      "categories": "all sports"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/basketball-stars/index.html",
       "img":"https://hydrogen-network.github.io/img/basketballstars.jpeg",
       "name":"Basketball stars",
       "desc":"Basketball Stars is the ultimate basketball/sports game where you can play as Lebron James, Stephen Curry, Derrick Williams, and more, created by Madpuffers.",
-      "categories":[
-         "all",
-         "2P",
-         "sports"
-      ]
+      "categories": "all 2P sports"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/basketbros-io/index.html",
       "img":"https://hydrogen-network.github.io/img/basketbros.jpg",
       "name":"Basketbros.io",
       "desc":"BasketBros is a side-scrolling basketball game in which you compete against formidable opponents.",
-      "categories":[
-         "all",
-         "2P",
-         "sports"
-      ]
+      "categories": "all 2P sports"
    },
    {
       "url":"https://html5.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8/?gd_sdk_referrer_url=https://gamedistribution.com/games/basket-random",
       "img":"https://img.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8-512x512.jpeg",
       "name":"Basket Random",
       "desc":"Basketball is here with its most funny and random way. In Basket Random game, try to score a basket by using only one key with different variations from each other!",
-      "categories":[
-         "all",
-         "2P",
-         "sports"
-      ]
+      "categories": "all 2P sports"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/btts/index.html",
       "img":"https://hydrogen-network.github.io/img/btts.png",
       "name":"Big Tower Tiny Square",
       "desc":"In this platformer, jump over pits of lava and dodge dangerous traps to reach the top of the tower and rescue your stolen pineapple.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bitlife/index.html",
       "img":"https://hydrogen-network.github.io/img/bitlife.png",
       "name":"BitLife",
       "desc":"BitLife is a single player life simulation game in which users make decisions based on a series of multiple choice questions. Try to survive as long as you can!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bloonstd2/index.html ",
       "img":"https://hydrogen-network.github.io/img/btd2.png ",
       "name":"Bloons TD2",
       "desc":"Bloons Tower Defense 2 is a popular tower defense game originally released in Flash by Ninja Kiwi.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://obliged-gisele-thetatertotgod.koyeb.app/uv/service/hvtrs8%2F-ioaeeq-mpgnqoaicl%2Cgmoelguqepcmnvelt%2Ccmm-gcdeevs-idr%3Dupl%3Fhvtrs8%2F-s1.cmczmncwq.aoo%2Frrmdwcvimn%2Faqsgtqbwciev-%3Alhv%7Br3xazob-1ge00423-41%60c%2F4gc%3A-c8gc%2F5g819a2g6gda%250F%60lmols%2Ftmwgr%2Fdgfgnqe%2F4%2Cxol ",
       "img":"https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(3).jpeg?v=1682455359468",
       "name":"Bloons TD4",
       "desc":"Bloons Tower Defense 4 is a popular tower defense game originally released in Flash by Ninja Kiwi.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://ludicrous.icu/gfiles/html5/blackholesquare/ ",
       "img":"https://hydrogen-network.github.io/img/blackholesquare.png ",
       "name":"Black Hole Square",
       "desc":"Clean up all the other squares in the universe, just tap them and see what happens.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://skoolcdn.github.io/gfiles/gfiles/html5/bounceback ",
       "img":"https://hydrogen-network.github.io/img/bounceback.jpg ",
       "name":"Bounce Back",
       "desc":"When life gets you down, it's never too late to...<br>- B O U N C E B A C K -<br>action",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bobtherobber2/index.html ",
       "img":"https://hydrogen-network.github.io/img/btr2.jpeg ",
       "name":"Bob The Robber 2",
       "desc":"Enter locations around the town and loot them, picking locks, avoiding traps, lasers, and guards in this cute action adventure.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/breaklock/index.html",
       "img":"https://maxwellito.github.io/breaklock/assets/icons/ios-180x180.png ",
       "name":"BreakLock",
       "desc":"Silly HTML5 game, mobile first. BreakLock is a hybrid of Mastermind and the Android pattern lock. A game you gonna love to hate.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://www.bumpyball.io ",
       "img":"https://hydrogen-network.github.io/img/bumpyball.png ",
       "name":"Bumpy Ball",
       "desc":"BumpyBall.io is a fast-paced action/sports multiplayer car soccer game! Join the league and score as many goals as you can with your rocket powered football cars!",
-      "categories":[
-         "all",
-         "sports",
+      "categories": "all sports",
          "2P"
-      ]
    },
    {
       "url":"https://advanced-channeler.02.gz-associates.com/?s=?url%3D%252Fflash%252FHenryStick_BreakingTheBank.swf&t=tam-flash-ruffle",
       "img":"https://play-lh.googleusercontent.com/I9aDLwmiy5iSjeUPs5IDI3lam8iWZ1zVnLF-V_EGvClOLuccjwLNNjZ8xltu4AN60io",
       "name":"Breaking the Bank",
       "desc":"In this fast-paced game, players take on the role of a bank robber trying to break the bank and escape with as much money as possible.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://gitloaf--neealdon3.repl.co/rawgcdn/GikitSRC/duckos-games/main/chess/index.html",
       "img":"https://www.chess.com/bundles/web/favicons/apple-touch-icon.7aaa2d1f.png ",
       "name":"Chess",
       "desc":"Chess is a board game for two players, called White and Black, each controlling an army of chess pieces, with the objective to checkmate the opponent's king",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://24glo.com/game/dino-play.html ",
       "img":"https://hydrogen-network.github.io/img/chromedino.jpeg ",
       "name":"Chrome Dino",
       "desc":"Google Chrome's unblocked offline game when there is no access to the internet. Press the spacebar to start.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://dinoswords.gg/ ",
       "img":"https://hydrogen-network.github.io/img/chromedinomodded.jpeg ",
       "name":"Chrome Dino (Modded)",
       "desc":"Essentially the chrome dino game but better. Tags: action, mods, dino game",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://html5.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d/",
       "img":"https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.jpeg ",
       "name":"Climb Racing 3D",
       "desc":"Characters, cars and maps are waiting for you in the car racing game full of fun and adventure with colorful visual effects.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://raw.githack.com/3kh0/3kh0-Assets/main//cookie-clicker/index.html ",
       "img":"https://hydrogen-network.github.io/img/cookie-clicker.jpeg ",
       "name":"Cookie Clicker",
       "desc":"Cookie Clicker is an incremental web-browser game developed by Orteil. The goal of the game is to produce as many cookies as possible.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"/static/tiw/hvtr%3A-%2Fau%60eq224%3Aim.aoo%2F",
       "img":"https://cubes2048io.com/imgs/logo-cubes-2048-196.png ",
       "name":"Cubes 2048",
       "desc":"Cubes 2048.io is an addictive online game that fuses Snake and 2048.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main//crossyroad/index.html ",
       "img":"https://hydrogen-network.github.io/img/crossyroad.png ",
       "name":"Crossy Road",
       "desc":"Crossy Road is a retro-arcade-styled game in which the player controls a chicken and a seemingly endless range of animals, in order to get across a busy road.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main//ctr/index.html ",
       "img":"https://hydrogen-network.github.io/img/ctr.png ",
       "name":"Cut the Rope",
       "desc":"Cut the Rope is a physics-based puzzle game. The game revolves around feeding a creature named Om Nom with candy by cutting ropes in a certain manner.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/dante/index.html ",
       "img":"https://hydrogen-network.github.io/img/dat.jpg",
       "name":"Dante",
       "desc":"Collect souls in this platformer set in hell.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-dgfny%2Cim%2F",
       "img":"https://cdn.glitch.global/82c5292a-89b3-4a53-84e2-abbc0fa27724/defly_io.webp?v=1679319580067",
       "name":"Defly.io",
       "desc":"Defly.io Is a multiplayer shooting game, you are a helicopter and can build, shoot, and upgrade your abilities, yo must cover the whole mape with your builds and rule over the land.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F5d3f7e1dg6c5655dc0c1580ec3c00a%3B5-%3Fed%5Dsfk%5Drgfgrpep_wrn%3Djtvpq%3A-%2Feaoefiqtpi%60uvimn%2Ccmm-gcmgs-dkg%2Ftjiq",
       "img":"https://img.gamedistribution.com/7d1f5e3de6a5457da0a1782ea3a02a95-512x512.jpg ",
       "name":"Dig This",
       "desc":"Grab your hard hats and ready your shovels for hours and hours of playing in the dirt. Addictive digging game play made possible thanks to the innovative, realistic dirt and gravity physics.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/drift/index.html",
       "img":"https://drift-hunters.co/upload/cache/upload/imgs/drift-hunters.png1-c72x72.PNG",
       "name":"Drift Hunters",
       "desc":"Drift Hunters is an awesome 3D car driving game in which you score points by drifting various cars. These points earn you money, that you can spend to upgrade your current car or buy a new one. The game stands out because of its realistic drifting physics and its various driving environments.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/ducklife3/index.html ",
       "img":"https://hydrogen-network.github.io/img/ducklife3.png ",
       "name":"Duck Life 3",
       "desc":"Duck Life 3 is a racing game featuring genetically modified ducks. Choose from one of four duck breeds and evolve as you complete each league.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-4.xml",
       "img":"https://play-lh.googleusercontent.com/AUGkRrKMtUCLVE9vCvlfMY9Ny9EBqzx17yejVtEEhvpkw-H6lJlvBHgCMqPJm8HV_tM",
       "name":"Duck Life 4",
       "desc":"Take on the role of a duck racing champion, competing in races and training to become the ultimate duck athlete.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/DogeMiner/index.html ",
       "img":"https://dogeminer.se/img/dogeminer_300x300.png ",
       "name":"Dogeminer",
       "desc":"Dogeminer is a lighthearted and addictive game where you play as a dog mining for coins. With simple gameplay and cute graphics, it's easy to get hooked on digging for digital treasures!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/Dogeminer2/index.html ",
       "img":"https://dogeminer2.com/img/dogeminer2.png ",
       "name":"Dogeminer 2",
       "desc":"Build such mining operation, get much dogecoins. Hire many help to increase dogecoin per second. Buy Space Rockets to reach the moon and beyond.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/drive-mad/index.html ",
       "img":"https://hydrogen-network.github.io/img/dmd.jpg ",
       "name":"Drive Mad",
       "desc":"Drive Mad is a car game where you drive on a track filled with obstacles.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://htmlgames.github.io/htmlgames/differences/jump ",
       "img":"https://hydrogen-network.github.io/img/doodle.png ",
       "name":"Doodle Jump",
       "desc":"In Doodle Jump, the aim is to guide a four-legged creature called the Doodler up an unending series of platforms without falling.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
       "img":"https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
       "name":"Fireboy and Watergirl",
       "desc":"Fireboy and Watergirl are exploring the Forest Temple in search of diamonds.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/flappybird/index.html ",
       "img":"https://hydrogen-network.github.io/img/fp.png ",
       "name":"Flappy Bird",
       "desc":"Flappy Bird is a game where you tap the screen to make the bird fly.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/fruitninja/index.html ",
       "img":"https://hydrogen-network.github.io/img/fn.png ",
       "name":"Fruit Ninja",
       "desc":"Fruit Ninja is an addictive arcade game where you slash fruit to reach a high score. Make sure you avoid slicing bombs, though!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://hydrogen-network.github.io/cdn/geometrydash/ ",
       "img":"https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.png",
       "name":"Geometry Dash",
       "desc":"Jump and fly your way through danger in this rhythm-based action platformer! Prepare for a near impossible challenge in the world of Geometry Dash.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/getaway-shootout/index.html ",
       "img":"https://hydrogen-network.github.io/img/getawayshootout.jpeg ",
       "name":"Getaway Shootout",
       "desc":"This is a chaotic two-player game where you race three others to the extraction point. You can only move by jumping left or right.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc873%3B9fd0eg26dc9%3A4%609c7ca233b6a40-",
       "img":"https://hydrogen-network.github.io/img/gta.png ",
       "name":"GTA 6",
       "desc":"Gear up for an adventure in this leaked version of Rockstars next big game.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/twitch-tetris/index.html ",
       "img":"https://hydrogen-network.github.io/img/hackertetris.png ",
       "name":"Hacker Tetris",
       "desc":"Fast-paced puzzle tetris with a hacker theme. The goal is to fit all the pieces into the board. Look up how to play tetris if you dont get it.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://games-online.io/game/HappyWheels ",
       "img":"https://hydrogen-network.github.io/img/happywheels.jpeg ",
       "name":"Happy Wheels",
       "desc":"Happy Wheels is an obstacle scooter extreme adventure game. Your goal is to reach the destination successfully. Obstacles on the road may kill you at any time!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/HexGL/index.html ",
       "img":"https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.jpeg ",
       "name":"HexGL",
       "desc":"Compete to capture and control territory on a hexagonal grid. With simple yet deep gameplay mechanics, HexGL offers a challenging and rewarding experience for players of all skill levels.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/hextris/index.html",
       "img":"https://raw.githubusercontent.com/caracal-js/gfiles/main/hextris/favicon.ico ",
       "name":"Hextris",
       "desc":"An addictive puzzle game inspired by Tetris. ",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-wuw%2Cgmoelgtcgoalaeep.aoo%2Fetcg-jq%3Fkd%3FAU-110815%3A22",
       "img":"https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/artworks-f07hlvRhW5qIDXxR-Yv6Fqw-t500x500.jpg?v=1683478431676",
       "name":"Henry Stickman",
       "desc":"Henry is set to a mission to save the world by a nuke, he trys to deacvate the nuke in teh airship with his girl, help him",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://glitchyeet.github.io/IdleBreakout/",
       "img":"https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ",
       "name":"Idle Breakout",
       "desc":"Build the ultimate brick-busting machine to destroy billions of bricks. Idle breakout combines classic brick breaking with an insanely addicting idle loop.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/there-is-no-game/index.html ",
       "img":"https://play-lh.googleusercontent.com/a6DfrYUL6viV0LAZFplqqA44gE0LHE0PyDnKHgdlydiUvccwzSBWrmRQSx5cjdL74Us=w240-h480-rw",
       "name":"There Is No Game",
       "desc":"There is No Game! Or is there? Complete various challenges as the narrator attempts to convince you there is no game.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://educationgg-23704.web.app/games/FBWG4-main/index.html ",
       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRWaerLDpxHaPNdfRCn8XuQosN4Al8tP5Lw&usqp=CAU",
       "name":"Fireboy and Watergirl",
       "desc":"A 2 player game where you have to work together using logic and teamwork to get to the finish line.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/index.html ",
       "img":"//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/splash.jpg ",
       "name":"Jetpack Joyride",
       "desc":"Jetpack Joyride is a side-scrolling, endless runner game in which you are traveling through a laboratory using a stolen bullet-powered jetpack.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-wuw%2Cgmoelgtcgoalaeep.aoo%2Fetcg-jq%3Fkd%3FAU-110815%3A22",
       "img":"https://cdn.glitch.global/40d8a6f7-c124-43fe-8544-1617c1dcc948/download%20(1).jpeg?v=1680006191209Kirka",
       "name":"Kirka",
       "desc":"Kirka is a multiplayer shooter game, its like fortnite but blocky",
-      "categories":[
-         "all",
-         "2p"
-      ]
+      "categories": "all 2p"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/learntofly/index.html",
       "img":"https://hydrogen-network.github.io/img/learntofly.png",
       "name":"Learn to Fly",
       "desc":"Learn to Fly is a launcher game where you play as a penguin attempting to fly using a ramp and various gadgets.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/edge-surf/index.html",
       "img":"https://hydrogen-network.github.io/img/ltsf.png",
       "name":"Lets Surf",
       "desc":"Use your arrow keys left or right to select a surfer and press the Spacebar to start surfing.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/the-final-earth/index.html",
       "img":"https://img.itch.zone/aW1nLzIyMTU1NDAucG5n/original/6vGlZe.png",
       "name":"The Final Earth",
       "desc":"Earth has been destroyed. It's a good thing you teleported to a new planet, also known as The Final Earth. Gather resources and build a colony",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/microsoft-flight-simulator/index.html",
       "name":"Microsoft Flight Simulator",
       "desc":"Play and Enjoy the History of Microsoft Flight Simulator",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://minecraft-hosted.github.io/mc-1.8.8/",
       "img":"https://hydrogen-network.github.io/img/mc.jpeg",
       "name":"Minecraft (Java)",
       "desc":"Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/MonkeyMart/index.html",
       "img":"https://img.doodoo.love/_next/image?url=https:%2F%2Fresource.doodoo.love%2FPmnM9U%2Fb3668d7deb043d0f43b5813b0365be8f.png&w=408&q=75",
       "name":"Monkey Mart",
       "desc":"aka monkey market, a fun game very cool poggers you should click here!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/motox3m/index.html",
       "img":"https://play-lh.googleusercontent.com/AbQMuT4ncBfWDqNF-4ubmfaRag59nrW3fJARDsHK51_PENScmWCnMFeQX81wfPlfGBo",
       "name":"Moto X3M",
       "desc":"Moto X3M is an exciting motorcycle racing game for players who are terrain and speed enthusiasts. Keep an eye on the road; now is your time to shine!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//io.sqeven.workers.dev/-----https://mountain658.github.io/",
       "img":"https://mountain658.pages.dev/mountainNoFade.png",
       "name":"Mountain Games",
       "desc":"Roblox, Call Of Duty, Stumble Guys, PUBG, Android VM, PUBG, and more all in one website!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/3kh0/3kh0-Assets/main/osu!/index.html",
       "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Osu%21_Logo_2016.svg/2048px-Osu%21_Logo_2016.svg.png",
       "name":"Osu!",
       "desc":"Osu! (stylized as osu!) is a free-to-play rhythm game primarily developed, published, and created by Dean 'peppy' Herbert.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/ovo/index.html",
       "img":"//raw.githack.com/3kh0/3kh0-assets/main/ovo/ovo.png",
       "name":"OvO",
       "desc":"OvO is a fast-paced platformer where you use precise parkour and free running skills to complete each level.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/tanktrouble/index.html",
       "img":"https://skyhax.xyz/system/apps/games/icons/tankt.png",
       "name":"Tank Trouble",
       "desc":"Tanks attacking",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/zelda/index.html",
       "img":"https://skyhax.xyz/system/apps/games/icons/zelda.png",
       "name":"The Legend of Zelda",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main//OfflineParadise/index.html",
       "img":"https://hydrogen-network.github.io/img/ofpd.jpeg",
       "name":"Offline Paradise",
       "desc":"The world, a paradise, has gone offline; everything has become grey and dangerous. Traverse, jump, and dash over the obstacles to turn the world back into a paradise.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/pacman/index.html",
       "img":"https://raw.githubusercontent.com/caracal-js/gfiles/main/pacman/img/Icon-130x130.png",
       "name":"Pacman HTML5",
       "desc":"An old classic, re-written in HTML5. ",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main//papaspizzaria/index.html",
       "img":"//raw.githack.com/3kh0/3kh0-assets/main//papaspizzaria/papaspizzaria.jpg",
       "name":"Papas Pizzeria",
       "desc":"Help Roy run the pizzeria while Papa Louie is gone!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/21ac7257444af1713884b35045938d57e88a4993/paperio2/index.html",
       "img":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSK4PSwPySjJi26ilZMiNG_L6U6DuAcyhvR3Z99p49Mil7AoVz",
       "name":"Paper.io 2",
       "desc":"Paper.io 2 is a multiplayer io game where you control a colored shape and try to conquer territory by drawing lines and absorbing other players' shapes",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://kdata1.com/2021/03/3527391/2.1/",
       "img":"https://img.itch.zone/aW1nLzI1MjYwNDIucG5n/original/ADuDvy.png",
       "name":"Pizza Tower (Demo)",
       "desc":"A game following a pizza chef, Peppino Spaghetti, who must scale a tower to prevent the destruction of his pizzeria.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/pokemon/emerald/index.html",
       "img":"https://skyhax.xyz/system/apps/games/icons/emerald.jpg",
       "name":"Pokemon Emerald (GBA)",
       "desc":"try and try you'll have fun",
-      "categories":[
-         "all",
-         "flash"
-      ]
+      "categories": "all flash"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/pokemon/fire-red/index.html",
       "img":"https://raw.githubusercontent.com/GikitSRC/DuckOS/main/system/apps/games/icons/fire.jpg",
       "name":"Pokemon Fire Red (GBA)",
-      "categories":[
-         "all",
-         "flash"
-      ]
+      "categories": "all flash"
    },
    {
       "url":"https://www.prisonlifegame.com/",
       "img":"https://hydrogen-network.github.io/img/prisonlife.png",
       "name":"Prison Life",
       "desc":"Made by a member of the Skool Discord server, <b>bruh9000</b>!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://beta.sodium-5h8.pages.dev/service/route?url=https%3A%2F%2Fnow.gg",
       "img":"https://hydrogen-network.github.io/img/nowggicon.jpeg",
       "name":"Now.gg Games",
       "desc":"All of the now.gg games. Roblox, Call Of Duty, Stumble Guys, PUBG, Android VM, PUBG, and more!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://ultraviolet-2.jakarricoats2.repl.co/service/hvtrs8%2F-wuw%2Crmbnoz.aoo%2F ",
       "img":"https://hydrogen-network.github.io/img/roblox.png",
       "name":"ROBLOX",
       "desc":"Roblox is an online game platform and game creation system developed by Roblox Corporation that allows users to program games and play games created by other users.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://schoolarcade.glitch.me/games/rocketsoccer.html",
       "img":"https://cdn.glitch.global/3903520d-41db-4f08-8519-64c816231d7b/download%20(5).jpeg?v=1683823623345",
       "name":"RocketSoccer",
       "desc":"Fast-paced multiplayer Cars playing soccer. PLay with bots or players and win the soccer game!!!",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://rooftop-snipers.git-dev.repl.co ",
       "img":"https://hydrogen-network.github.io/img/rooftop-snipers.png",
       "name":"Rooftop Snipers",
       "desc":"Rooftop Snipers is a pixel-style shooting game where you have to shoot famous characters off of the roof.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rooftop-snipers-2.application08.repl.co ",
       "img":"https://hydrogen-network.github.io/img/rooftop-snipers-2.png",
       "name":"Rooftop Snipers 2",
       "desc":"Rooftop Snipers 2 is an exciting online shooting game. You must use your sniper skills to stay on the roof.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rocketer.glitch.me",
       "name":"Rocketer.io",
       "desc":"its pretty good",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F2fca6448f1%3Ae6f5ac2g0363b6fgfc1%3B3-",
       "img":"https://img.gamedistribution.com/0faa4468d18e4f7aa2e0161b4fefa193-512x512.jpeg",
       "name":"Rotate",
       "desc":"With the ability to rotate gravity, you traverse a series of test chambers. As you complete these challenges, the rogue intelligence running the facility reveals your purpose. And your time is almost up.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"/static/tiw/hvtr%3A-%2Fqaldvrkx%2Cngt- ",
       "img":"https://www.sandtrix.net/img/favicon.png",
       "name":"Sandtrix",
       "desc":"Sandtrix is a puzzle game where blocks transform into the sand, offering a unique twist on classic gameplay.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/shellshockers/index.html",
       "img":"https://play-lh.googleusercontent.com/P-nde227L29s8w5U44kTPLiEnMEJUhJpEr4jL6tD6LV65Xz0JZtI4wEyFN-smsNrx-Q",
       "name":"Shell Shockers",
       "desc":"Shell Shockers is a unique online shooter in first-person perspective where all the characters are represented exclusively by eggs.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/slope/index.html",
       "img":"//raw.githack.com/3kh0/3kh0-assets/main/slope/slope4.jpeg",
       "name":"Slope",
       "desc":"Slope, a new arcade game from Y8 games, engage you in a simple yet deadly challenge: roll down the slope for as long as possible without falling off the edge or hitting any obstacles along the way.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F10%3Ad%3A24f00236d5b%3B70f0505%3Ac%3Ad2a64-",
       "img":"https://img.gamedistribution.com/308d826f20034d7b972f25258c8d0a44-512x512.jpeg",
       "name":"Soccer Random",
       "desc":"Football is here with its most funny and random way. In Soccer Random game, try to score a goal by using only one key with different variations from each other!",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/spaceinvaders/index.html",
       "img":"https://i.pinimg.com/originals/5f/2b/eb/5f2beb1888ce042305b06412dbe2057f.jpg",
       "name":"Space Invaders",
       "desc":"A classic remade in HTML5!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/stack/index.html",
       "img":"//raw.githack.com/3kh0/3kh0-assets/main/stack/stack.png",
       "name":"Stack",
       "desc":"Create a tower out of thin squares.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://hydrogen-network.github.io/cdn/stickman-hook/index.html",
       "img":"https://hydrogen-network.github.io/cdn/stickman-hook/stickman-hook.jpg",
       "name":"Stickman Hook",
       "desc":"Tap to hook and make incredible jumps; Avoid every obstacle that stands in your way.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-wuw%2Csvuobneeu%7Bs%2Ccmm-",
       "img":"https://cdn.glitch.global/d6a32c9f-c8ae-4e12-8cfc-c91b3f83b883/unnamed.png?v=1679092009203",
       "name":"Stumble Guys",
       "desc":"Stumble is an online game platform to play with others, you must dodge obstacles like fall guys, made by Kita games.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html",
       "img":"https://hydrogen-network.github.io/img/subwaysurfers.png",
       "name":"Subway Surfers",
       "desc":"Subway Surfers is an endless runner mobile game co-developed by Kiloo and SYBO Games, private companies based in Denmark.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/surviv/index.html",
       "img":"https://skyhax.xyz/system/apps/games/icons/surviv.jpg",
       "name":"Surviv.io",
       "desc":"surviv.io!",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/superhot/index.html",
       "img":"//raw.githack.com/3kh0/3kh0-assets/main/superhot/hot.jpg",
       "name":"SuperHot",
       "desc":"SUPERHOT is the first person shooter where time moves only when you move.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/flashtetris/index.html",
       "img":"https://hydrogen-network.github.io/img/tetris.png",
       "name":"Tetris",
       "desc":"Tetris is a puzzle video game created by Soviet software engineer Alexey Pajitnov in 1984. Look up 'how to play tetris' for more info.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://proudparrot2.github.io/msg-archive/g_mes/impossiblequiz1/impossiblequiz1/index.html",
       "img":"https://ih1.redbubble.net/image.489460698.9522/st,small,507x507-pad,600x600,f8f8f8.jpg",
       "name":"The Impossible Quiz",
       "desc":"The Impossible Quiz is a challenging and hilarious trivia game that will test your knowledge and sanity. ",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-tpi%60ans%2Cim%2F",
       "img":"https://www.gamenora.com/upload/games/thumbnails/Tribals.io.webp",
       "name":"Tribals.io",
       "desc":"Tribals.io is an interesting multiplayer game where you find yourself on an island with only a stone in your hand. Your objective will be to survive.",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://hydrogen-network.github.io/cdn/tunnelrush ",
       "img":"https://hydrogen-network.github.io/cdn/tunnelrush/tunnel-rush.png",
       "name":"Tunnel Rush",
       "desc":"Get ready for this new colourful experience, Tunnel Rush! Slide down a colorful tunnel and get as far as you can. But beware! Different obstacles are in the way, so try to avoid as many as possible while making your way through the tunnel.",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/vex3/index.html",
       "img":"https://vex-3.com/upload/cache/upload/imgs/options/vex-3-logo-m72x72.png",
       "name":"Vex 3",
       "desc":"Vex v3",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/vex4/index.html",
       "name":"Vex 4",
       "desc":"Vex v4",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/caracal-js/gfiles/main/vex5/index.html",
       "name":"Vex 5",
       "desc":"Vex v5",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F%606d01bfc707e6d58c15359c5c81e004b-",
       "img":"https://img.gamedistribution.com/b6f03bdc505e4d78a17379a5a83e206b-512x512.jpeg",
       "name":"Volley Random",
       "desc":"The fun random game series continues with Volley Random. There is a Volleyball experience unlike any before. With fun ragdoll physics and a variety of variations!",
-      "categories":[
-         "all",
-         "2P"
-      ]
+      "categories": "all 2P"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/worlds-hardest-game/index.html",
       "img":"https://skyhax.xyz/system/apps/games/icons/worlds-hardest-game.jpg",
       "name":"World's Hardest Game",
       "desc":"trym just try",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"https://raw.githack.com/GikitSRC/duckos-games/main/worlds-hardest-game-2/index.html",
       "img":"https://skyhax.xyz/system/apps/games/icons/worlds-hardest-game-2.jpg",
       "name":"World's Hardest Game 2",
       "desc":"hardest, then even harder?!?!",
-      "categories":[
-         "all"
-      ]
+      "categories": "all"
    },
    {
       "url":"//raw.githack.com/3kh0/3kh0-assets/main/xx142-b2exe/index.html",

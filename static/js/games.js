@@ -22,7 +22,7 @@ fetch('/static/json/games.json')
     games.forEach((game) => {
       const gameEl = document.createElement('li');
       gameEl.innerHTML = `
-      <div class="gamecard" data-category=${game.categories.join(' ')}>
+      <div class="gamecard" data-category="${game.categories.join(' ')}">
           <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); location.href='play.html';">
           <img src="${game.img}" class="gameimage"/>
               <div class="gameinfo">

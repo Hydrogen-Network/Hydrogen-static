@@ -28,3 +28,20 @@ fetch('/static/json/games.json')
   .catch((e) => {
     console.error('Could not load games. '+e);
   });
+
+
+
+function showImages() {
+  var selectedCategories = Array.from(document.querySelectorAll("#category option:checked")).map(option => option.value);
+  var games = document.getElementsByClassName("gamecard");
+
+  for (var i = 0; i < games.length; i++) {
+    var game = games[i];
+    var categories = game.getAttribute("data-category").split(" ");
+    if (selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category))) {
+      game.style.display = "block";
+    } else {
+      game.style.display = "none";
+    }
+  }
+}

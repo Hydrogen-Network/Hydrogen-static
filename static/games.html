@@ -73,7 +73,17 @@
    </div>
 </div> 
    <br>
+     <form>
    <input type="text" id="myInput" onkeyup="myFunction()" placeholder='Search For A Game...' title="Type in a game">
+     <select id="category" name="category" onchange="showImages()">
+        <option value="all">All</option>
+        <option value="2P">Multiplayer</option>
+        <option value="sports">Sports</option>
+        <option value="flash">Flash</option>
+        <option value="emu">Emulator</option>
+        <option value="local">Local</option>
+      </select>
+      </form>
     <div class="gamecontainer" id="gamescontainer">
 
     </div>

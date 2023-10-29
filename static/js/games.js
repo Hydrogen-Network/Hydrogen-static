@@ -1,19 +1,5 @@
 const gamesContainer = document.querySelector('.gamecontainer');
 
-
-
-/* Adds Element BEFORE NeighborElement */
-Element.prototype.appendBefore = function (element) {
-    element.parentNode.insertBefore(this, element);
-}, false;
-
-/* Adds Element AFTER NeighborElement */
-Element.prototype.appendAfter = function (element) {
-    element.parentNode.insertBefore(this, element.nextSibling);
-}, false;
-
-
-
 // Fetch the games data from a JSON file
 fetch('/static/json/games.json')
   .then((res) => res.json())
@@ -34,7 +20,7 @@ fetch('/static/json/games.json')
           </a>
       </div>
       `;
-      document.getElementById('gamescontainer').appendChild(gameEl);
+      gamesContainer.appendChild(gameEl);
     });
   })
   .catch((e) => {

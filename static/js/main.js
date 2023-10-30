@@ -233,7 +233,7 @@ var searchid = localStorage.getItem("search");
 
 
 if(localStorage.getItem('customcolor') == true) {
-document.style.background = localStorage.getItem("backdrop-color")
+document.body.style.background = localStorage.getItem("backdrop-color")
 } else {
 
 }

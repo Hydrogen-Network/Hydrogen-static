@@ -1,3 +1,10 @@
+if(localStorage.getItem('customcolor') == true) {
+document.body.style.background = localStorage.getItem("backdrop-color")
+} 
+
+
+
+
 //Loads custom icons
 
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -230,10 +237,3 @@ var searchid = localStorage.getItem("search");
   themeEle.innerHTML = `document.getElementById("uv-search-engine").value="https://"+"${document.getElementById("engine").value}"`;
   }
   document.body.appendChild(themeEle);
-
-
-if(localStorage.getItem('customcolor') == true) {
-document.body.style.background = localStorage.getItem("backdrop-color")
-} else {
-
-}

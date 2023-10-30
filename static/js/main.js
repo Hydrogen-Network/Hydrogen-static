@@ -231,6 +231,8 @@ var searchid = localStorage.getItem("search");
   }
   document.body.appendChild(themeEle);
 
+async function aaaa(){
 if(localStorage.getItem('customcolor') == 'true') {
 document.body.style.background = localStorage.getItem("backdrop-color")
 } 
+}

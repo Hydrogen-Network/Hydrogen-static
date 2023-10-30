@@ -227,7 +227,7 @@ var searchid = localStorage.getItem("search");
 
 
   if(searchid == "1") {
-  themeEle.innerHTML = `document.getElementById("uv-search-engine").value="https://"+${document.getElementById("engine").value}"`;
+  themeEle.innerHTML = `document.getElementById("uv-search-engine").value="https://"+"${document.getElementById("engine").value}"`;
   }
   document.body.appendChild(themeEle);
 

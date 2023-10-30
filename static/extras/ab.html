@@ -191,13 +191,14 @@
         </div>
       </div>
       <div class="button-wrapper">
-        <button id="create" class="console-button">Create page</button>
+        <button onclick="a(); id="create" class="console-button">Create page</button>
         <button class="console-button" onclick="document.getElementById('url-target').value = ''">Clear input</button>
       </div>
     </div>
     <script>
       var url = document.getElementById("url-target");
       var urlObj = new window.URL(window.location.href);
+      function a() {
       document.getElementById("create").onclick = function () {
         if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
           url.value = "https://" + url.value.split("https://").pop();
@@ -214,9 +215,10 @@
         iframe.style.margin = "0";
         iframe.referrerpolicy = "no-referrer";
         iframe.allow = "fullscreen";
-        iframe.src = $.find(url.value);
+        iframe.src = ${url.value};
         win.document.body.appendChild(iframe);
       };
+      }
     </script>
   </body>
 </html>

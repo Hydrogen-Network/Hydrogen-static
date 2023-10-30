@@ -1,6 +1,6 @@
 const appsContainer = document.querySelector('.appcontainer');
 
-
+async function loadgame() {
 // Fetch the apps data from a JSON file
 fetch('/static/json/apps.json')
   .then((res) => res.json())
@@ -15,3 +15,6 @@ fetch('/static/json/apps.json')
   .catch((e) => {
     console.error('Could not load apps. '+e);
   });
+}
+
+

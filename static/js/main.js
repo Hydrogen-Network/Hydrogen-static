@@ -232,6 +232,8 @@ var searchid = localStorage.getItem("search");
   document.body.appendChild(themeEle);
 
 
-if(localStorage.getItem("backdrop-color")) {
+if(localStorage.getItem('customcolor') == true) {
 document.style.background = localStorage.getItem("backdrop-color")
+} else {
+
 }

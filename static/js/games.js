@@ -1,5 +1,7 @@
 const gamesContainer = document.querySelector('.gamecontainer');
 
+
+async function loadgame() {
 // Fetch the games data from a JSON file
 fetch('/static/json/games.json')
   .then((res) => res.json())
@@ -26,7 +28,7 @@ fetch('/static/json/games.json')
   .catch((e) => {
     console.error('Could not load games. '+e);
   });
-
+}
 
 
 function showImages() {

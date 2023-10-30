@@ -170,7 +170,7 @@
             <input type="text" name="search" id="engine" onkeyup=`customsearch();`></input>
             <script>
                 function customsearch() {
-            localStorage.setItem('search', ${this.value});
+            localStorage.setItem('search', `${this.value}`);
                 }
             </script>
       </div>

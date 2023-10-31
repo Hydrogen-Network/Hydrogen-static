@@ -1,4 +1,6 @@
-        const select = document.querySelector('select');
+/*
+
+const select = document.querySelector('select');
         select.addEventListener('change', event => {
         const option = event.target.value;
 
@@ -33,3 +35,4 @@
         }
           select.option = "Open in...";
           });
+*/

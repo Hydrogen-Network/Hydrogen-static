@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+    <meta http-equiv="X-Frame-Option" content="DENY">
     <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="./img/gas.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="./js/main.js"></script>
     <script src="./js/shortkey.js"></script>
     <script src="./js/cookies.js"></script>
     <script src="./js/home.js"></script>
-    <script src="./js/clock.js"></script>
+    <script src="./js/clock.js" async defe>
+       showTime();
+    </script>
     <script>
        aaaa();
     </script>
@@ -92,12 +95,6 @@
     <br/>
     <br/>
     <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
    <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
     <div style="display: flex; justify-content: space-between !important; align-items: left;">
       <div style="margin-right:45rem;">
@@ -107,19 +104,19 @@
         >Hydrogen Network</a
         >
 
-        <p style="text-align: center; color: white; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;     text-decoration: none;
+        <p style="text-align: center; color: white; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;
     position: absolute;
     background-color: rgba(48, 48, 48, 0.693);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
     width: 150px;
-    font-family: poppins;
     font-size: 18px;
-    bottom: 1px;
+    margin-bottom: 200px;
     left: 50%;
     right: 50%;
     border-radius: 10px;
     transform: translateX(-60%);
     background-attachment: fixed;" id="time" class="clock"></p>
+        
         <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
         title="The Hydrogen Network Discord"
         href="https://discord.gg/Y3Amtwk27U"

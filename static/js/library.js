@@ -4,6 +4,7 @@ const objectStoreName = document.getElementById('mp3File').value;
 
 const request = window.indexedDB.open(dbName, dbVersion);
 
+function abcdefghihj() {
 request.onupgradeneeded = function(event) {
   const db = event.target.result;
 
@@ -43,11 +44,14 @@ request.onsuccess = function(event) {
 request.onerror = function(event) {
   console.error('Error opening IndexedDB');
 };
+}
 
+
+async function fetch() {
 // Retrieve the file from IndexedDB
 request.onsuccess = function(event) {
   const db = event.target.result;
-  const transaction = db.transaction(objectStoreName, 'readonly');
+  const transaction = db.transaction(objectStoreName, 'readwrite');
   const objectStore = transaction.objectStore(objectStoreName);
 
   const getRequest = objectStore.get(1); // Assuming the file is stored with key 1
@@ -79,3 +83,4 @@ request.onsuccess = function(event) {
 request.onerror = function(event) {
   console.error('Error opening IndexedDB');
 };
+}

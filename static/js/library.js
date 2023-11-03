@@ -45,8 +45,6 @@ request.onerror = function(event) {
 };
 
 // Retrieve the file from IndexedDB
-const request = window.indexedDB.open(dbName, dbVersion);
-
 request.onsuccess = function(event) {
   const db = event.target.result;
   const transaction = db.transaction('files', 'readonly');

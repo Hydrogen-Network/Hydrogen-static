@@ -56,8 +56,12 @@ request.onsuccess = function(event) {
     const fileData = event.target.result;
 
     if (fileData) {
+      console.log('File retrieved successfully:', fileData);
+
       const audioPlayer = document.getElementById('audioPlayer');
       const audioURL = URL.createObjectURL(fileData.data);
+      console.log('Audio URL:', audioURL);
+
       audioPlayer.src = audioURL;
       audioPlayer.play();
     }

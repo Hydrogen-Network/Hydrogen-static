@@ -8,11 +8,16 @@
 
 <body>
   <form id="uploadForm">
+  <label>URL</label>
+  <input name="url" type="text" id="url" onkeydown="document.getElementById('audioPlayer').src = document.getElementById('url').value">
+  <br/>
   <input type="file" id="mp3File" accept=".mp3">
   <button type="submit">Upload</button>
 </form>
   <audio id="audioPlayer" controls></audio>
-</audio>
+  <script>
+  
+  </script>
 </body>
 <script src="js/library.js"></script>
 </html>

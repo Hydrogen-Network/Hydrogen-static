@@ -46,11 +46,6 @@ uploadForm.addEventListener('submit', function(event) {
   mp3FileInput.value = '';
 });
 
-
-// Retrieve the file from IndexedDB
-const dbName = 'songs';
-const dbVersion = 1;
-
 const request = window.indexedDB.open(dbName, dbVersion);
 
 request.onsuccess = function(event) {

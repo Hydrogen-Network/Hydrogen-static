@@ -9,7 +9,7 @@
 <body>
   <form id="uploadForm">
   <label>URL</label>
-  <input name="url" type="text" id="url" onchange="document.getElementById('audioPlayer').src = 'https://' + document.getElementById('url').value">
+  <input name="url" type="text" id="url" onchange="document.getElementById('audioPlayer').src = 'https://' + `${document.getElementById('url').value}`">
   <br/>
   <input type="file" id="mp3File" accept=".mp3">
   <button type="submit">Upload</button>

@@ -46,30 +46,39 @@ uploadForm.addEventListener('submit', function(event) {
   mp3FileInput.value = '';
 });
 
-// Retrieve the file from IndexedDB
-const dbName = 'songs';
+const dbName = 'myDatabase';
 const dbVersion = 1;
+const objectStoreName = 'files';
 
 const request = window.indexedDB.open(dbName, dbVersion);
 
+request.onupgradeneeded = function(event) {
+  const db = event.target.result;
+
+  if (!db.objectStoreNames.contains(objectStoreName)) {
+    db.createObjectStore(objectStoreName, { keyPath: 'id', autoIncrement: true });
+  }
+};
+
 request.onsuccess = function(event) {
   const db = event.target.result;
-  const transaction = db.transaction('files', 'readonly');
-  const objectStore = transaction.objectStore('files');
+  const transaction = db.transaction(objectStoreName, 'readwrite');
+  const objectStore = transaction.objectStore(objectStoreName);
   
-  const getRequest = objectStore.get(1); // Assuming the file is stored with key 1
-  
-  getRequest.onsuccess = function(event) {
-    const fileData = event.target.result;
-    
-    if (fileData) {
-      const audioPlayer = document.getElementById('audioPlayer');
-      audioPlayer.src = URL.createObjectURL(fileData.data);
-    }
+  const fileData = {
+    name: file.name,
+    type: file.type,
+    data: file
   };
   
-  getRequest.onerror = function(event) {
-    console.error('Error retrieving file from IndexedDB');
+  const addRequest = objectStore.add(fileData);
+  
+  addRequest.onsuccess = function(event) {
+    console.log('File added to IndexedDB');
+  };
+  
+  addRequest.onerror = function(event) {
+    console.error('Error adding file to IndexedDB');
   };
   
   transaction.oncomplete = function(event) {

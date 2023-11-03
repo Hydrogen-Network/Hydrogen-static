@@ -1,6 +1,6 @@
 const dbName = 'songs';
 const dbVersion = 1;
-const objectStoreName = document.getElementById('mp3File').value;
+const objectStoreName = 'files';
 
 const request = window.indexedDB.open(dbName, dbVersion);
 

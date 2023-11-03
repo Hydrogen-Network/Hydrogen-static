@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anouncement sender</title>
+  </head>
+  <body>
+    <label>Webhook Link</label>
+    <input id="webhook" name="link"/>
+    <br/>
+    <label>Username</label>
+    <input name="username" id="username"/>
+    <br/>
+    <label>Avatar URL</label>
+    <input name="avater" id="avatar"/>
+    <br/>
+    <label>Message</label>
+    <input name="message" id="message"/>
+    <br/>
+    <button onclick="sendMessage()">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+      let webhook = document.getElementById('webhook');
+      let username = document.getElementById('webhook');
+      let avatar = document.getElementById('avatar');
+      let message = document.getElementById('message');
+      var request = new XMLHttpRequest();
+      request.open("POST", webhook);
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: username,
+        avatar_url: avatar,
+        content: message
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+</html>

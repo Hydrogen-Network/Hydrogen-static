@@ -1,4 +1,4 @@
-const dbName = 'myDatabase';
+const dbName = 'songs';
 const dbVersion = 1;
 const objectStoreName = 'files';
 

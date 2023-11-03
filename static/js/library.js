@@ -47,24 +47,26 @@ request.onerror = function(event) {
 // Retrieve the file from IndexedDB
 request.onsuccess = function(event) {
   const db = event.target.result;
-  const transaction = db.transaction('files', 'readonly');
-  const objectStore = transaction.objectStore('files');
-  
+  const transaction = db.transaction(objectStoreName, 'readonly');
+  const objectStore = transaction.objectStore(objectStoreName);
+
   const getRequest = objectStore.get(1); // Assuming the file is stored with key 1
-  
+
   getRequest.onsuccess = function(event) {
     const fileData = event.target.result;
-    
+
     if (fileData) {
       const audioPlayer = document.getElementById('audioPlayer');
-      audioPlayer.src = URL.createObjectURL(fileData.data);
+      const audioURL = URL.createObjectURL(fileData.data);
+      audioPlayer.src = audioURL;
+      audioPlayer.play();
     }
   };
-  
+
   getRequest.onerror = function(event) {
     console.error('Error retrieving file from IndexedDB');
   };
-  
+
   transaction.oncomplete = function(event) {
     db.close();
   };

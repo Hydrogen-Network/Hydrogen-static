@@ -45,7 +45,6 @@ request.onerror = function(event) {
 };
 
 // Retrieve the file from IndexedDB
-const dbName = 'songs';
 const dbVersion = 1;
 
 const request = window.indexedDB.open(dbName, dbVersion);

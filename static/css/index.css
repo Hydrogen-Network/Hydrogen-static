@@ -77,14 +77,3 @@ body {
 ::-webkit-scrollbar {
   width: 15px;
 }
-
-/* Track */
-
-::-webkit-scrollbar-track {
-}
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-}

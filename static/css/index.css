@@ -2,10 +2,6 @@
 @import url(buttons.css);
 @import url(other.css);
 
-* {
-  overflow-y: none;
-}
-
 body {
   font-family: "Comfortaa";
   font-size: "25px";

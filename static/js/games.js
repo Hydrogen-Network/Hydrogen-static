@@ -3,7 +3,7 @@ const gamesContainer = document.querySelector('.gamecontainer');
 
 async function loadgame() {
 // Fetch the games data from a JSON file
-fetch('/static/json/games.json')
+fetch('/static/js/json/games.json')
   .then((res) => res.json())
   .then((games) => {
     // Loop through each game and create a new game element for it

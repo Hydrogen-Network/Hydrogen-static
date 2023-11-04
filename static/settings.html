@@ -135,9 +135,10 @@
          <h3>Set Background Image</h3>
          <p>Change the site's background image.</p>
          <input type="text" id="background-input" placeholder="Enter image URL">
-         <span><span>Turn on Random Background image</span></span>
+         <span><span>Random Background</span></span>
+         <br/>
           <label class="switch">
-          <input type="checkbox" class="slider-checkbox" id="3">
+          <input oncheck="localStorage.setItem('RandomBG', 'true');" type="checkbox" class="slider-checkbox" id="3">
           <span class="slider-round"></span>
           </label>
          <br/>

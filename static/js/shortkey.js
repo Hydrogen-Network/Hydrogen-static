@@ -6,7 +6,7 @@
 					e.stopPropagation();
 					window.location.replace("https://classroom.google.com/");
 					break;
-				case: "b":
+				case "b":
 					e.preventDefault();
 					e.stopPropagation();
 					let input = prompt("what background image would you like?");

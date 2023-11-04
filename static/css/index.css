@@ -2,6 +2,13 @@
 @import url(buttons.css);
 @import url(other.css);
 
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    overflow-y: none;
+}
+
 body {
   font-family: "Comfortaa";
   font-size: "25px";
@@ -70,4 +77,25 @@ body {
   border-radius: 10px;
   transform: translateX(-60%);
   background-attachment: fixed;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #110024;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

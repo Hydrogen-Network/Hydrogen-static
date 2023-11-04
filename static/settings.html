@@ -97,14 +97,13 @@
    link.click();
    URL.revokeObjectURL(url);
    }
-   const randombgswitch = document.getElementById("3");
 
 if(window.localStorage.getItem('RandomBG') != "") {
   if(window.localStorage.getItem('RandomBG') == "true") {
-    randombgswitch.checked = true;
+    document.getElementById("3").checked = true;
   }
   else {
-    randombgswitch.checked = false;
+    document.getElementById("3").checked = false;
   }
 }
 

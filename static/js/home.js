@@ -42,4 +42,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       scr.src="./js/particles.js";
       document.body.appendChild(scr);
     }
+    if(localStorage.getItem('customcolor') == "true") {
+        document.body.style.background = localStorage.getItem("backdrop-color");
+    }
+    if(localStorage.getItem('RandomBG') == "true") {
+        var bg = await fetch("/static/js/json/bg.json");
+        var bga = await say.json();
+        var randombg = says[Math.floor(Math.random() *  says.length)];
+        document.body.style.background = `url(${randombg})`;
+    }
   });

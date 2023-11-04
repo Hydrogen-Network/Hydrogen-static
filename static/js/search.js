@@ -12,7 +12,7 @@ if(params.get("q")) {
   
 function search(input) {
   const searchEngine = localStorage.getItem('searchEngine');
-  const template = searchEngine || 'https://google.com/search?q=%s';
+  const template = searchEngine || 'https://search.braveS.com/search?q=%s';
 
   try {
     return new URL(input).toString();

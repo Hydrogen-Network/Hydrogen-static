@@ -134,6 +134,8 @@ switches.addEventListener('change', (event) => {
 
 const randombgswitch = document.getElementById('3');
 
+function randombga() {
+
 if(window.localStorage.getItem('RandomBG') != "") {
   if(window.localStorage.getItem('RandomBG') == "true") {
     randombgswitch.checked = true;
@@ -150,6 +152,7 @@ randombgswitch.addEventListener('change', (event) => {
     localStorage.setItem('RandomBG', 'false');
   }
 });
+}
 
 var themeId = localStorage.getItem("theme");
 if(themeId=="") {themeId="d"}

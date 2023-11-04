@@ -132,6 +132,25 @@ switches.addEventListener('change', (event) => {
   }
 });
 
+const randombgswitch = doument.getElementById('3');
+
+if(window.localStorage.getItem('RandomBG') != "") {
+  if(window.localStorage.getItem('RandomBG') == "true") {
+    randombgswitch.checked = true;
+  }
+  else {
+    randombgswitch.checked = false;
+  }
+}
+
+randombgswitch.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    window.localStorage.setItem('RandomBG', 'true');
+  } else {
+    window.localStorage.setItem('RandomBG', 'false');
+  }
+});
+
 var themeId = localStorage.getItem("theme");
 if(themeId=="") {themeId="d"}
 

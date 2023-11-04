@@ -1,15 +1,15 @@
-     body {
-        font-family: "Comfortaa";
-        font-size: "25px";
-        text-align: center;
-        background-color: #1e2124;
-        background-repeat: no-repeat;
-        background-size: cover
-      }
+body {
+  font-family: "Comfortaa";
+  font-size: "25px";
+  text-align: center;
+  background-color: #1e2124;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .appname {
   font-size: 20px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .appcontainer {
@@ -24,7 +24,7 @@
 }
 
 .appdesc {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-size: 8px;
   text-align: center;
 }
@@ -36,7 +36,7 @@
   width: 200px;
   height: 55px;
   box-shadow: 0px 5px 10px 0px #2e2e2e;
-  font-family: 'Lilita One';
+  font-family: "Lilita One";
   font-size: 40px;
   text-align: center;
   color: white;
@@ -47,7 +47,7 @@
   text-align: center;
   padding: 3px;
   font-size: 10px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .appimage {
@@ -66,11 +66,10 @@
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
-  transition: transform .5s;
+  transition: transform 0.5s;
   justify-content: left;
   float: left;
   box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
-
 }
 
 .appcard:hover {
@@ -84,7 +83,7 @@
 
 .appname {
   font-size: 20px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .appcontainer {
@@ -113,14 +112,14 @@
   box-shadow: 0px 5px 10px 0px #2e2e2e;
 }
 
- .frame {
+.frame {
   border-radius: 5px;
   background-color: white;
   display: block;
   margin: auto;
 
   border: none;
-  
+
   height: calc(100vh - 80px);
   width: calc(100vw - 30px);
 }
@@ -130,7 +129,7 @@
   text-align: center;
   padding: 3px;
   font-size: 10px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .appimage {
@@ -149,11 +148,10 @@
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
-  transition: transform .5s;
+  transition: transform 0.5s;
   justify-content: left;
   float: left;
   box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
-
 }
 
 .appcard:hover {
@@ -167,7 +165,7 @@
 
 .appname {
   font-size: 20px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .appcontainer {
@@ -187,11 +185,9 @@ li {
   margin: 0;
 }
 
-
-
 .gamename {
   font-size: 20px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .gamecontainer {
@@ -206,7 +202,7 @@ li {
 }
 
 .gamedesc {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-size: 8px;
   text-align: center;
 }
@@ -218,7 +214,7 @@ li {
   width: 200px;
   height: 55px;
   box-shadow: 0px 5px 10px 0px #2e2e2e;
-  font-family: 'Lilita One';
+  font-family: "Lilita One";
   font-size: 40px;
   text-align: center;
   color: white;
@@ -229,7 +225,7 @@ li {
   text-align: center;
   padding: 3px;
   font-size: 10px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .gameimage {
@@ -248,11 +244,10 @@ li {
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
-  transition: transform .5s;
+  transition: transform 0.5s;
   justify-content: left;
   float: left;
   box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
-
 }
 
 .gamecard:hover {
@@ -266,7 +261,7 @@ li {
 
 .gamename {
   font-size: 20px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .gamecontainer {
@@ -295,14 +290,14 @@ li {
   box-shadow: 0px 5px 10px 0px #2e2e2e;
 }
 
- .frame {
+.frame {
   border-radius: 5px;
   background-color: white;
   display: block;
   margin: auto;
 
   border: none;
-  
+
   height: calc(100vh - 80px);
   width: calc(100vw - 30px);
 }
@@ -312,7 +307,7 @@ li {
   text-align: center;
   padding: 3px;
   font-size: 10px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .gameimage {
@@ -331,11 +326,10 @@ li {
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
-  transition: transform .5s;
+  transition: transform 0.5s;
   justify-content: left;
   float: left;
   box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
-
 }
 
 .gamecard:hover {
@@ -349,7 +343,7 @@ li {
 
 .gamename {
   font-size: 20px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .gamecontainer {

@@ -134,8 +134,6 @@ switches.addEventListener('change', (event) => {
 
 const randombgswitch = document.getElementById('3');
 
-function randombga() {
-
 if(window.localStorage.getItem('RandomBG') != "") {
   if(window.localStorage.getItem('RandomBG') == "true") {
     randombgswitch.checked = true;
@@ -145,14 +143,13 @@ if(window.localStorage.getItem('RandomBG') != "") {
   }
 }
 
-randombgswitch.addEventListener('change', (event) => {
+switches.addEventListener('change', (event) => {
   if (event.currentTarget.checked) {
     localStorage.setItem('RandomBG', 'true');
   } else {
     localStorage.setItem('RandomBG', 'false');
   }
 });
-}
 
 var themeId = localStorage.getItem("theme");
 if(themeId=="") {themeId="d"}

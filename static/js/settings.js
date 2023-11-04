@@ -132,7 +132,7 @@ switches.addEventListener('change', (event) => {
   }
 });
 
-const randombgswitch = doument.getElementById('3');
+const randombgswitch = document.getElementById('3');
 
 if(window.localStorage.getItem('RandomBG') != "") {
   if(window.localStorage.getItem('RandomBG') == "true") {

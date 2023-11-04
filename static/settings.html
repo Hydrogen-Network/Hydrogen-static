@@ -168,12 +168,13 @@
             <option value="br">Brave</option>
          </select>
          <br/>
+         <br/>
          <input type="text" name="search" id="engine"></input>
          <br/>
          <button onclick="customsearch();">Save</button>
          <script>
             function customsearch() {
-            localStorage.setItem('search', `${document.getElementById('engine').value}`);
+            localStorage.setItem('search', 'https://' + `${document.getElementById('engine').value}`);
             localStorage.setItem('customsearch', 'true');
             }
          </script>

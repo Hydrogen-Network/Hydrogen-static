@@ -168,9 +168,9 @@
             <option value="br">Brave</option>
          </select>
          <br/>
+         <input type="text" name="search" id="engine"></input>
          <br/>
-         <br/>
-         <input type="text" name="search" id="engine" onchange=`customsearch();`></input>
+         <button onclick="customsearch();">Save</button>
          <script>
             function customsearch() {
             localStorage.setItem('search', `${this.value}`);

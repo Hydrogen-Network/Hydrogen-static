@@ -120,7 +120,7 @@ if(window.localStorage.getItem('v4Particles') != "") {
     switches.checked = true;
   }
   else {
-    switches.checked = false;
+    //switches.checked = false;
   }
 }
 

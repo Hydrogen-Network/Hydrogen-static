@@ -45,10 +45,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if(localStorage.getItem('customcolor') == "true") {
         document.body.style.background = localStorage.getItem("backdrop-color");
     }
+    async function randombgs() {
     if(localStorage.getItem('RandomBG') == "true") {
         var bg = await fetch("/static/js/json/bg.json");
         var bga = await say.json();
         var randombg = says[Math.floor(Math.random() *  says.length)];
         document.body.style.background = `url(${randombg})`;
     }
+    }
+    randombgs();
   });

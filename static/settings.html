@@ -97,25 +97,6 @@
    link.click();
    URL.revokeObjectURL(url);
    }
-
-const switche = document.getElementById('3');
-
-if(window.localStorage.getItem('RandomBG') != "") {
-  if(window.localStorage.getItem('RandomBG') == "true") {
-    switche.checked = true;
-  }
-  else {
-    switche.checked = false;
-  }
-}
-
-switche.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    window.localStorage.setItem('RandomBG', 'true');
-  } else {
-    window.localStorage.setItem('RandomBG', 'false');
-  }
-});
 </script>
 <!-- Nav Bar Start-->
 <div class="navbar">
@@ -157,7 +138,7 @@ switche.addEventListener('change', (event) => {
          <span><span>Random Background</span></span>
          <br/>
           <label class="switch">
-          <input type="checkbox" class="slider-checkbox" id="3">
+          <input type="checkbox" class="slider-checkbox" id="2">
           <span class="slider-round"></span>
           </label>
          <br/>
@@ -251,7 +232,7 @@ switche.addEventListener('change', (event) => {
          <button onclick="exportCache()">Export Cache</button>
          <button id="unregisterButton">Unregister Service Workers</button>
       </div>
-      
+      <!--
          <div class="settings-card">
           <h3>Particles</h3>
           <p>Add the particles from the to the site.</p>
@@ -260,7 +241,7 @@ switche.addEventListener('change', (event) => {
           <span class="slider-round"></span>
           </label>
          </div>
-         
+         -->
    </div>
    <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
       <div style="display: flex; justify-content: space-between !important; align-items: left;">

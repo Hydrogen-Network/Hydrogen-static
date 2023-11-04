@@ -173,7 +173,7 @@
          <button onclick="customsearch();">Save</button>
          <script>
             function customsearch() {
-            localStorage.setItem('search', `${this.value}`);
+            localStorage.setItem('search', `${document.getElementById('engine').value}`);
             localStorage.setItem('customsearch', 'true');
             }
          </script>

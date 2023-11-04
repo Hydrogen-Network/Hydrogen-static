@@ -224,10 +224,8 @@ var searchid = localStorage.getItem("search");
   if(searchid == "br") {
     themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://search.brave.com/search?q=%s';";
    }
-
-
-  if(searchid == "1") {
-  themeEle.innerHTML = `document.getElementById("uv-search-engine").value="https://"+${document.getElementById("engine").value}"`;
+  if(localStorage.getItem("customsearch") === "true") {
+  themeEle.innerHTML = `document.getElementById("uv-search-engine").value=${localStorage.getItem('search')}`;
   }
   document.body.appendChild(themeEle);
 

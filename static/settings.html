@@ -107,13 +107,11 @@ if(window.localStorage.getItem('RandomBG') != "") {
   }
 }
 
-randombgswitch.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
+  if (document.getElementById("3").checked == true) {
     localStorage.setItem('RandomBG', 'true');
-  } else {
+  } else if(document.getElementById("3").checked == false) {
     localStorage.setItem('RandomBG', 'false');
   }
-});
 </script>
 <!-- Nav Bar Start-->
 <div class="navbar">

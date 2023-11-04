@@ -2,74 +2,106 @@
 @import url(buttons.css);
 @import url(other.css);
 
-body {
-        font-family: "Comfortaa";
-        font-size: "25px";
-        text-align: center;
-        background-color: #1e2124;
-        background-repeat: no-repeat;
-        background-size: cover
-      }
+* {
+  scroll-behavior: smooth;
 
-      .container {
-        margin-top: 10%;
-        font-family: "Comfortaa";
-        font-size: "50px";
-        color: #6886ed;
-      }
+  margin: 0;
 
-      .container p {
-        font-size: 50px;
-        margin-bottom: 2px;
-      }
-
-      .container a {
-        height: 20px;
-        background: inherit;
-        background-size: cover;
-        color: #ddd;
-        border: 0;
-        cursor: pointer;
-        font-family: "Comfortaa";
-        font-size: 17px;
-        transition: 0.3s;
-      }
-
-      .container a:hover {
-        font-size: 23;
-      }
-
-      .url {
-        width: 300px;
-        margin: auto;
-      }
-
-        .w3-xlarge {
-          outline: none;
-          background: transparent;
-          border: 1px solid #6886ed;
-          padding: 0 10px;
-          border-radius: 6px;
-          height: 3.5rem;
-          width: 40rem;
-          margin: 10px;
-          color: white;
-        }
-      }
-
-.clock {
-    text-decoration: none;
-    position: absolute;
-    background-color: rgba(48, 48, 48, 0.693);
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
-    width: 150px;
-    font-family: poppins;
-    font-size: 18px;
-    bottom: 1px;
-    left: 50%;
-    right: 50%;
-    border-radius: 10px;
-    transform: translateX(-60%);
-    background-attachment: fixed;
+  overflow-y: none;
 }
 
+body {
+  font-family: "Comfortaa";
+  font-size: "25px";
+  text-align: center;
+  background-color: #1e2124;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin-top: 10%;
+  font-family: "Comfortaa";
+  font-size: "50px";
+  color: #6886ed;
+}
+
+.container p {
+  font-size: 50px;
+  margin-bottom: 2px;
+}
+
+.container a {
+  height: 20px;
+  background: inherit;
+  background-size: cover;
+  color: #ddd;
+  border: 0;
+  cursor: pointer;
+  font-family: "Comfortaa";
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.container a:hover {
+  font-size: 23;
+}
+
+.url {
+  width: 300px;
+  margin: auto;
+}
+
+.w3-xlarge {
+  outline: none;
+  background: transparent;
+  border: 1px solid #6886ed;
+  padding: 0 10px;
+  border-radius: 6px;
+  height: 3.5rem;
+  width: 40rem;
+  margin: 10px;
+  color: white;
+}
+
+.clock {
+  text-decoration: none;
+  position: absolute;
+  background-color: rgba(48, 48, 48, 0.693);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
+  width: 150px;
+  font-family: poppins;
+  font-size: 18px;
+  bottom: 1px;
+  left: 50%;
+  right: 50%;
+  border-radius: 10px;
+  transform: translateX(-60%);
+  background-attachment: fixed;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #110024;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #f9f9f9;
+
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

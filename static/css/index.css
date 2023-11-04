@@ -86,13 +86,10 @@ body {
 /* Track */
 
 ::-webkit-scrollbar-track {
-  background: #110024;
 }
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-  background: #f9f9f9;
-
   border-radius: 10px;
 }

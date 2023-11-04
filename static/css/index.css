@@ -3,7 +3,6 @@
 @import url(other.css);
 
 * {
-  scroll-behavior: smooth;
   overflow-y: none;
 }
 

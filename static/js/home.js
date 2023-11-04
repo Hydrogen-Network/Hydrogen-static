@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     async function randombgs() {
         var bg = await fetch("/static/js/json/bg.json");
-        var bga = await say.json();
-        var randombg = says[Math.floor(Math.random() * says.length)];
+        var bga = await bg.json();
+        var randombg = bga[Math.floor(Math.random() * bga.length)];
         if (localStorage.getItem('RandomBG') == "true") {
             document.body.style.background = `url(${randombg})`;
         }

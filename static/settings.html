@@ -98,20 +98,24 @@
    URL.revokeObjectURL(url);
    }
 
+const switche = document.getElementById('3');
+
 if(window.localStorage.getItem('RandomBG') != "") {
   if(window.localStorage.getItem('RandomBG') == "true") {
-    document.getElementById("3").checked = true;
+    switche.checked = true;
   }
   else {
-    document.getElementById("3").checked = false;
+    switche.checked = false;
   }
 }
 
-  if (document.getElementById("3").checked == true) {
-    localStorage.setItem('RandomBG', 'true');
-  } else if(document.getElementById("3").checked == false) {
-    localStorage.setItem('RandomBG', 'false');
+switche.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    window.localStorage.setItem('RandomBG', 'true');
+  } else {
+    window.localStorage.setItem('RandomBG', 'false');
   }
+});
 </script>
 <!-- Nav Bar Start-->
 <div class="navbar">

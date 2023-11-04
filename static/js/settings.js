@@ -143,7 +143,7 @@ if(window.localStorage.getItem('RandomBG') != "") {
   }
 }
 
-switches.addEventListener('change', (event) => {
+randombgswitch.addEventListener('change', (event) => {
   if (event.currentTarget.checked) {
     localStorage.setItem('RandomBG', 'true');
   } else {

@@ -21,3 +21,13 @@ if (file) {
 }
 
 });
+
+// Retrieve the file from localStorage
+const file = localStorage.getItem('mp3File');
+
+if (file) {
+  const audioPlayer = document.getElementById('audioPlayer');
+  var binaryData = [];
+  binaryData.push(file);
+  audioPlayer.src = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
+}

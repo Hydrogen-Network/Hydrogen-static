@@ -84,10 +84,10 @@ fork the repo then go to settings and in the `Code and automation` section press
 
 <!-- ROADMAP -->
 ## Roadmap
-- [] about:blank cloaking(also hosted at https://5l6gqq.csb.app/ and https://vqfnhg.csb.app/)
-- [] URL cloaking
-- [] panic key
-     
+- [ ] about:blank cloaking(also hosted at https://5l6gqq.csb.app/ and https://vqfnhg.csb.app/)
+- [ ] URL cloaking
+- [ ] panic key
+
  <p align="right">(<a href="#readme">back to top</a>)</p>
   
 <!-- CONTRIBUTING -->

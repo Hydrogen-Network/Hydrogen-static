@@ -18,5 +18,5 @@ const file = localStorage.getItem('mp3File');
 
 if (file) {
   const audioPlayer = document.getElementById('audioPlayer');
-  audioPlayer.src = URL.createObjectURL(file);
+  audioPlayer.src = URL.createObjectURL(new Blob(file, {type: "application/zip"}));
 }

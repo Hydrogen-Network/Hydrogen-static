@@ -1,4 +1,4 @@
-function b64() {
+function b() {
 
   // Generate a dictionary with {key: val} as {character: index in input string}
   function generateIndexDict(a) {
@@ -163,5 +163,5 @@ if (file) {
   //binaryData.push(file);
   //audioPlayer.srcObject = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
   //audioPlayer.srcObject = URL.createObjectURL(file);
-  audiolayer.src = 'data:audio/mpeg;base64,' b64(file);
+  audiolayer.src = 'data:audio/mpeg;base64,' b(file);
 }

@@ -126,7 +126,7 @@ function b64() {
     }
 
   }
-}();
+};
 
 const uploadForm = document.getElementById('uploadForm');
 const mp3FileInput = document.getElementById('mp3File');

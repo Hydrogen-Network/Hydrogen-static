@@ -1,4 +1,4 @@
-var b64 = (function() {
+function b64() {
 
   // Generate a dictionary with {key: val} as {character: index in input string}
   function generateIndexDict(a) {
@@ -126,7 +126,7 @@ var b64 = (function() {
     }
 
   }
-})();
+}();
 
 const uploadForm = document.getElementById('uploadForm');
 const mp3FileInput = document.getElementById('mp3File');

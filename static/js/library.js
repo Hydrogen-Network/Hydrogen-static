@@ -3,21 +3,21 @@ const mp3FileInput = document.getElementById('mp3File');
 
 uploadForm.addEventListener('submit', function(event) {
   event.preventDefault();
-  
-  const file = mp3FileInput.files[0];
-  
+    
+  console.log(mp3FileInput.files[0])
   // Store the file in localStorage
-  localStorage.setItem('mp3File', file);
+  localStorage.setItem('mp3File', mp3FileInput.files[0]);
   
   // Clear the file input value
   mp3FileInput.value = '';
-});
-
-// Retrieve the file from localStorage
+  // Retrieve the file from localStorage
 const file = localStorage.getItem('mp3File');
 
 if (file) {
   const audioPlayer = document.getElementById('audioPlayer');
-  file.push(data);
-  audioPlayer.src = URL.createObjectURL(new Blob(file, {type: "audio/mp3"}));
+  var binaryData = [];
+  binaryData.push(file);
+  audioPlayer.src = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
 }
+
+});

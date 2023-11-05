@@ -215,7 +215,10 @@
             <option disabled selected>Bonus Themes</option>
             <option value="v4">Legacy V4 Theme</option>
          </select>
+         <br/>
          <input type="color" onchange="localStorage.setItem('customcolor', 'true'); localStorage.setItem('backdrop-color', this.value);">
+         <br/>
+         <button onclick="localStorage.setItem('customcolor', 'false'); localStorage.setItem('backdrop-color', null);">Reset</button>
       </div>
       <div class="settings-card">
          <h3>Cache</h3>

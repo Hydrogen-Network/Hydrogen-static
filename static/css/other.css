@@ -72,3 +72,22 @@ black {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+input[type="color" i] {
+    appearance: auto;
+    inline-size: 50px;
+    block-size: 27px;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    color: buttontext;
+    border-width: 1px;
+    border-style: solid;
+    border-color: buttonborder;
+    border-image: initial;
+    padding: 1px 2px;
+}
+
+input[type="color"] {
+    writing-mode: horizontal-tb !important;
+}

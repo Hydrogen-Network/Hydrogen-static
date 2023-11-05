@@ -17,7 +17,8 @@ if (file) {
   const audioPlayer = document.getElementById('audioPlayer');
   var binaryData = [];
   binaryData.push(file);
-  audioPlayer.srcObject = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
+  //audioPlayer.srcObject = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
+  audioPlayer.srcObject = URL.createObjectURL(file);
 }
 
 });
@@ -29,5 +30,6 @@ if (file) {
   const audioPlayer = document.getElementById('audioPlayer');
   var binaryData = [];
   binaryData.push(file);
-  audioPlayer.srcObject = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
+  //audioPlayer.srcObject = URL.createObjectURL(new Blob(binaryData, {type: "audio/mp3"}));
+  audioPlayer.srcObject = URL.createObjectURL(file);
 }

@@ -62,6 +62,13 @@
       "categories": "all 2P"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/asciispace/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/asciispace.png",
+      "name": "Ascii Space",
+      "desc": "In the vast expanse of space, you are a lone astronaut adrift in a cosmic sea of ASCII. Explore procedurally generated galaxies, mine for resources, and build your own space station. But beware, for the void is full of danger, and your survival depends on your wits and your ability to adapt to the harsh realities of space. Will you survive the ASCII void, or will you succumb to the infinite darkness?",
+      "categories": "all"
+   },
+   {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/astray/index.html",
       "name": "Astray",
       "desc": "Astray",
@@ -194,11 +201,25 @@
       "categories": "all sports 2P"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/burger-and-frights/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/burger-frights.png",
+      "name": "Burger Frights",
+      "desc": "Burger Frights is a fast-paced, action-packed game where you play as a burger-delivery driver navigating through a spooky and hilarious world filled with ghostly customers, creepy kitchens, and boss battles.",
+      "categories": "all"
+   },
+   {
       "url": "https://advanced-channeler.02.gz-associates.com/?s=?url%3D%252Fflash%252FHenryStick_BreakingTheBank.swf&t=tam-flash-ruffle",
       "img": "https://play-lh.googleusercontent.com/I9aDLwmiy5iSjeUPs5IDI3lam8iWZ1zVnLF-V_EGvClOLuccjwLNNjZ8xltu4AN60io",
       "name": "Breaking the Bank",
       "desc": "In this fast-paced game, players take on the role of a bank robber trying to break the bank and escape with as much money as possible.",
       "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/cars-simulator/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/cars-sim.png",
+      "name": "Cars Simulator",
+      "desc": "Race against other cars on various tracks, upgrade your ride, and climb the leaderboards to become the ultimate champion.",
+      "categories": "all 2P"
    },
    {
       "url": "https://gitloaf--neealdon3.repl.co/rawgcdn/GikitSRC/duckos-games/main/chess/index.html",
@@ -306,7 +327,7 @@
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/drift/index.html",
-      "img": "https://drift-hunters.co/upload/cache/upload/imgs/drift-hunters.png1-c72x72.PNG",
+      "img": "https://thelandofreading.com/src/static/icons/drift-hunters.jfif",
       "name": "Drift Hunters",
       "desc": "Drift Hunters is an awesome 3D car driving game in which you score points by drifting various cars. These points earn you money, that you can spend to upgrade your current car or buy a new one. The game stands out because of its realistic drifting physics and its various driving environments.",
       "categories": "all 2P"
@@ -354,6 +375,13 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/soccer-skills/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/euro_soccer.png",
+      "name": "Euro Soccer",
+      "desc": "Euro Soccer is a fast-paced, action-packed soccer game where players can compete against each other in a variety of game modes, including exhibition matches, tournaments, and leagues. With realistic graphics and intuitive controls, Euro Soccer provides an immersive and exciting soccer experience for players of all skill levels.",
+      "categories": "all sports 2P"
+   },
+   {
       "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
       "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
       "name": "Fireboy and Watergirl",
@@ -394,6 +422,13 @@
       "name": "Getaway Shootout",
       "desc": "This is a chaotic two-player game where you race three others to the extraction point. You can only move by jumping left or right.",
       "categories": "all 2P"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/gravity-soccer/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/gravity-soccer.png",
+      "name": "Gravity Soccer",
+      "desc": "Gravity Soccer is a fast-paced, physics-based sports game where players control their characters with gravity-defying abilities to score goals in a futuristic arena.",
+      "categories": "all sports 2P"
    },
    {
       "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc873%3B9fd0eg26dc9%3A4%609c7ca233b6a40-",
@@ -445,6 +480,13 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/holeio/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/holeio.ico",
+      "name": "Hole.io",
+      "desc": "Survive the void by consuming everything in your path, while avoiding obstacles and other players in this fast-paced, massively multiplayer game.",
+      "categories": "all 2P"
+   },
+   {
       "url": "https://glitchyeet.github.io/IdleBreakout/",
       "img": "https://play-lh.googleusercontent.com/e5jzYTn7Mjh9Ghn-DFpVedkOlRfSOyCS2AFgXdTrADIuuUbjx6vP6r_YOM2j5m7uLQ",
       "name": "Idle Breakout",
@@ -456,6 +498,13 @@
       "img": "https://play-lh.googleusercontent.com/a6DfrYUL6viV0LAZFplqqA44gE0LHE0PyDnKHgdlydiUvccwzSBWrmRQSx5cjdL74Us=w240-h480-rw",
       "name": "There Is No Game",
       "desc": "There is No Game! Or is there? Complete various challenges as the narrator attempts to convince you there is no game.",
+      "categories": "all"
+   },
+   {
+      "url": "/cdn/tombofthemask/",
+      "img": "https://tombofthemask.github.io/images/banner.webp",
+      "name": "Tomb of the Mask",
+      "desc": "Tomb of the Mask is an immersive and challenging adventure game where players must navigate a mysterious tomb, solving puzzles and avoiding deadly traps to uncover its secrets. With a unique mask-based gameplay mechanic, players must use their wits and cunning to overcome obstacles and uncover the truth about the tomb and its ancient secrets.",
       "categories": "all"
    },
    {
@@ -624,6 +673,13 @@
       "categories": "all flash"
    },
    {
+      "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/index.html?core=autodetect&amp;rom=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/embed/roms/Pokemon+Ruby.zip",
+      "img": "https://thelandofreading.com/src/static/icons/pokemon-ruby.webp",
+      "name": "Pokemon Ruby",
+      "desc": "Pokémon Ruby is an adventure-filled video game where players embark on a journey to become the Pokémon Master. Explore the Hoenn region, catch and train Pokémon, and battle other trainers to become the champion.",
+      "categories": "all flash"
+   },
+   {
       "url": "https://silvereen.s3.amazonaws.com/moonlight-network/Moon%20Light%20Unblocker/src/flash/index.html?swf=https://silvereen.s3.amazonaws.com/moonlight-network/Moon%20Light%20Unblocker/src/flash/gstore-master/portal.swf",
       "img": "https://thelandofreading.com/src/static/icons/portal.jpg",
       "name": "Portal",
@@ -638,6 +694,13 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/miniputt/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/miniputt.png",
+      "name": "Mini Putt",
+      "desc": "Mini Putt is a fun and challenging miniature golf game that takes you on a journey through various themed courses, from ancient ruins to outer space. With simple controls and addictive gameplay, Mini Putt is perfect for players of all ages and skill levels.",
+      "categories": "all sports"
+   },
+   {
       "url": "https://beta.sodium-5h8.pages.dev/service/route?url=https%3A%2F%2Fnow.gg",
       "img": "https://hydrogen-network.github.io/img/nowggicon.jpeg",
       "name": "Now.gg Games",
@@ -650,6 +713,13 @@
       "name": "Resturaunt Rush",
       "desc": "Manage a bustling restaurant, take orders, and serve food to hungry customers in this fast-paced time management game.",
       "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/retro-bowl/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/retrobowl.jpg",
+      "name": "Retro Bowl",
+      "desc": "Retro Bowl is a retro-style football game where you can play as a team from the 80s and 90s, complete with neon colors and pixelated graphics. The game features simple controls and a variety of game modes, including exhibition matches, tournaments, and even a mini-golf game. Can you lead your team to victory in this nostalgic throwback to classic football games?",
+      "categories": "all 2P sports"
    },
    {
       "url": "https://ultraviolet-2.jakarricoats2.repl.co/service/hvtrs8%2F-wuw%2Crmbnoz.aoo%2F ",
@@ -763,6 +833,20 @@
       "categories": "all 2P"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/madalin-stunt-cars-2/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/stunt-cars-2.jpg",
+      "name": "Stunt Cars 2",
+      "desc": "Stunt Cars 2 is a high-octane racing game where players compete in death-defying stunts and races on various tracks, showcasing their driving skills and creativity.",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/madalin-stunt-cars-3/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/stuntcars3.jpg",
+      "name": "Stunt Cars 3",
+      "desc": "Stunt Cars 3 is a high-octane racing game where players perform death-defying stunts and tricks to earn points and beat their opponents. With a variety of cars and tracks, players can show off their driving skills and compete in intense races.",
+      "categories": "all 2P"
+   },
+   {
       "url": "//raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html",
       "img": "https://hydrogen-network.github.io/img/subwaysurfers.png",
       "name": "Subway Surfers",
@@ -795,6 +879,13 @@
       "img": "//raw.githack.com/3kh0/3kh0-assets/main/superhot/hot.jpg",
       "name": "SuperHot",
       "desc": "SUPERHOT is the first person shooter where time moves only when you move.",
+      "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/synesthesia/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/synesthesia.png",
+      "name": "Synesthesia",
+      "desc": "Synesthesia is a surreal and immersive video game that blurs the lines between reality and perception. As players delve deeper into the game's dreamlike world, they must navigate a series of increasingly complex puzzles and challenges, all while uncovering the mysteries of the game's enigmatic narrative. With a unique blend of visual and auditory elements, Synesthesia is an experience unlike any other.",
       "categories": "all"
    },
    {

@@ -55,6 +55,13 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/adarkroom/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/adr.png",
+      "name": "A Dark Room",
+      "desc": "A Dark Room is a minimalist, atmospheric, and challenging indie game where you navigate a dark, mysterious world by clicking on objects to progress through a narrative that unfolds through cryptic messages and puzzles.",
+      "categories": "all"
+   },
+   {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/among-us/index.html",
       "img": "https://hydrogen-network.github.io/img/amongus.png",
       "name": "Among Us",
@@ -243,6 +250,13 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/chill-radio/",
+      "img": "https://thelandofreading.com/src/static/icons/chill-radio.jpg",
+      "name": "Chill Radio",
+      "desc": "Chill Radio: Your go-to destination for relaxing tunes and soothing sounds, designed to help you unwind and de-stress.",
+      "categories": "all"
+   },
+   {
       "url": "https://html5.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d/",
       "img": "https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.jpeg ",
       "name": "Climb Racing 3D",
@@ -382,6 +396,13 @@
       "categories": "all sports 2P"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/falling-sand/boredhumans.com/falling_sand/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/falling-sand.png",
+      "name": "Falling Sand",
+      "desc": "Falling Sand is a simple yet addictive puzzle game where you manipulate sand to create structures and patterns, all while avoiding obstacles and challenges. With its relaxing atmosphere and endless possibilities, Falling Sand is a must-play for anyone looking for a fun and challenging puzzle experience.",
+      "categories": "all"
+   },
+   {
       "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
       "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
       "name": "Fireboy and Watergirl",
@@ -422,6 +443,13 @@
       "name": "Getaway Shootout",
       "desc": "This is a chaotic two-player game where you race three others to the extraction point. You can only move by jumping left or right.",
       "categories": "all 2P"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/google-feud/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/feud.png",
+      "name": "Google Feud",
+      "desc": "Google Feud is a hilarious and addictive online game where you compete against friends or strangers to guess the most popular search queries on Google. With a simple and intuitive interface, you'll be laughing and scratching your head as you try to outsmart your opponents. So grab a few friends or some popcorn and get ready to feud your way to victory!",
+      "categories": "all"
    },
    {
       "url": "https://thelandofreading.com/src/static/games/gravity-soccer/index.html",
@@ -563,6 +591,13 @@
       "categories": "all 2P"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/minesweeper/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/minesweeper.png",
+      "name": "Minesweeper",
+      "desc": "Minesweeper is a classic puzzle game where you navigate a grid of squares to avoid stepping on hidden mines. With simple gameplay and addictive challenges, Minesweeper is a timeless favorite for players of all ages.",
+      "categories": "all"
+   },
+   {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/MonkeyMart/index.html",
       "img": "https://img.doodoo.love/_next/image?url=https:%2F%2Fresource.doodoo.love%2FPmnM9U%2Fb3668d7deb043d0f43b5813b0365be8f.png&w=408&q=75",
       "name": "Monkey Mart",
@@ -694,6 +729,13 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/planetlife/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/planetlife.gif",
+      "name": "Planet Life",
+      "desc": "Planet Life is a relaxing and immersive sandbox game where you explore a beautiful, alien world, discovering new species, crafting tools, and uncovering the secrets of the planet.",
+      "categories": "all"
+   },
+   {
       "url": "https://thelandofreading.com/src/static/games/miniputt/index.html",
       "img": "https://thelandofreading.com/src/static/icons/miniputt.png",
       "name": "Mini Putt",
@@ -760,6 +802,20 @@
       "img": "https://img.gamedistribution.com/0faa4468d18e4f7aa2e0161b4fefa193-512x512.jpeg",
       "name": "Rotate",
       "desc": "With the ability to rotate gravity, you traverse a series of test chambers. As you complete these challenges, the rogue intelligence running the facility reveals your purpose. And your time is almost up.",
+      "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/sandboxels/",
+      "img": "https://thelandofreading.com/src/static/icons/sandboxels.png",
+      "name": "Sandboxels",
+      "desc": "Sandboxels is a colorful and creative sandbox game where you can build and explore a vibrant world filled with blocks, enemies, and secrets.",
+      "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/sand-game/",
+      "img": "https://thelandofreading.com/src/static/icons/sand-game.png",
+      "name": "Sand Game",
+      "desc": "Sand Game is a challenging and addictive puzzle game where you must navigate a sand-covered board, moving your piece one square at a time, while avoiding obstacles and using special abilities to reach the end. With simple yet engaging gameplay, Sand Game will keep you hooked for hours on end.",
       "categories": "all"
    },
    {
@@ -896,11 +952,17 @@
       "categories": "all"
    },
    {
+      "url": "https://thelandofreading.com/src/static/games/tiny-fishing/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/tiny-fishing.png",
+      "name": "Tiny Fishing",
+      "desc": "Tiny Fishing is a relaxing and addictive fishing game where you navigate a small boat to catch fish in various locations. With simple controls and a calming atmosphere, it's easy to get hooked on this underwater adventure! 🎣🏞️",
+      "categories": "all"
+   },
+   {
       "url": "//thelandofreading.com/src/static/games/temple-run-2/",
       "img": "https://thelandofreading.com/src/static/icons/templerun.jpg",
-      "name": "",
-      "desc": "",
-      "categories": ""
+      "name": "Temple Run",
+      "categories": "all"
    },
    {
       "url": "https://proudparrot2.github.io/msg-archive/g_mes/impossiblequiz1/impossiblequiz1/index.html",
@@ -925,21 +987,37 @@
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/vex3/index.html",
-      "img": "https://vex-3.com/upload/cache/upload/imgs/options/vex-3-logo-m72x72.png",
+      "img": "https://thelandofreading.com/src/static/icons/vex3.jpg",
       "name": "Vex 3",
-      "desc": "Vex v3",
+      "desc": "Vex3 is a challenging and addictive puzzle-platformer game that requires quick reflexes and strategic thinking. Players must navigate through increasingly complex levels, using their wits and reflexes to overcome obstacles and defeat enemies. With its fast-paced gameplay and colorful graphics, Vex3 is a must-play for fans of platformer games.",
       "categories": "all"
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/vex4/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/vex4.png",
       "name": "Vex 4",
-      "desc": "Vex v4",
+      "desc": "Vex4 is a challenging and addictive platformer that will test your reflexes and timing skills. With increasingly difficult levels and obstacles, you'll need to be quick on your feet and have lightning-fast reactions to progress. Can you conquer the vexing challenges and reach the end of the game?",
       "categories": "all"
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/vex5/index.html",
+      "img": "https://thelandofreading.com/src/static/icons/vex5.jpg",
       "name": "Vex 5",
-      "desc": "Vex v5",
+      "desc": "Vex5 is a fast-paced, action-packed platformer game where players control a futuristic robot named Vex as he navigates through increasingly challenging levels, fighting off enemies and avoiding obstacles to reach the end of each level. With a variety of weapons and abilities at his disposal, Vex must use his skills and quick reflexes to overcome the challenges ahead and defeat the evil forces of the game's villainous organization.",
+      "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/vex6/",
+      "img": "https://thelandofreading.com/src/static/icons/vex6.jpeg",
+      "name": "Vex6",
+      "desc": "Vex6 is a challenging and addictive puzzle game that will test your problem-solving skills to the limit. With increasingly complex levels and obstacles, you'll need to think outside the box and use your wits to overcome the challenges ahead. Can you conquer the Vex6 and reach the top of the leaderboards?",
+      "categories": "all"
+   },
+   {
+      "url": "https://thelandofreading.com/src/static/games/vex7/",
+      "img": "https://thelandofreading.com/src/static/icons/vex7.jpeg",
+      "name": "Vex7",
+      "desc": "Vex7 is a challenging and addictive puzzle-platformer game that requires quick reflexes and strategic thinking. Players must navigate a series of increasingly complex levels, using their wits and reflexes to overcome obstacles and defeat enemies. With its fast-paced gameplay and colorful graphics, Vex7 is a must-play for fans of platformer games.",
       "categories": "all"
    },
    {

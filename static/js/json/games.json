@@ -113,9 +113,16 @@
       "url": "https://thelandofreading.com/src/static/games/ball-dodge/index.html",
       "img": "https://thelandofreading.com/src/static/icons/ball-dodge.png",
       "name": "Ball Dodge",
-      "desc": "Balldodge is a fast-paced, hilarious party game where players dodge balls while trying to score points by hitting their opponents with them. It's a fun and active game that's perfect for groups of all ages and skill levels.",
+      "desc": "Ball Dodge is a fast-paced, hilarious party game where players dodge balls while trying to score points by hitting their opponents with them. It's a fun and active game that's perfect for groups of all ages and skill levels.",
       "categories": "all"
    },
+   {
+      "url": "https://gointerstellar.app/reviews/hvtrs8%2F-wuw%2Cbcsievbclnlgggnfs%2Cfwn-gcmgdctc%2F%60aqkgt%60anl%2Flgggnfs%2F2222",
+      "img": "https://gointerstellar.app/images/icons/basketball-legends.webp",
+      "name": "Basketball Legends",
+      "desc": "Basketball Legends is a fast-paced, action-packed basketball game that allows players to compete against each other in one-on-one matches or team games.",
+      "categories": "all 2P sports"
+   }
    {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/basketball-stars/index.html",
       "img": "https://hydrogen-network.github.io/img/basketballstars.jpeg",

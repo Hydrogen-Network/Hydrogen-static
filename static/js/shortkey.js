@@ -6,11 +6,10 @@
 					e.stopPropagation();
 					window.location.replace("https://classroom.google.com/");
 					break;
-				case "b":
+				case "e":
 					e.preventDefault();
 					e.stopPropagation();
-					let input = prompt("what background image would you like?");
-					localStorage.setItem(backgroundImage, input);
+					location.href = "https://github.com/Hydrogen-Network/Hydrogen/tree/main/" + document.URL.split('/').slice(0, -1).join('/');
 					break;
 				case "h":
 					e.preventDefault();

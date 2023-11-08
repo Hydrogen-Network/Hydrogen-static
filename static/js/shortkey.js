@@ -1,6 +1,6 @@
-const a = document.URL.substr(0,document.URL.lastIndexOf('/'))
-const aone = "https://github.com/Hydrogen-Network/Hydrogen/edit/main" + a;
-//let athree = aone.replace('https://brrrrrr.pages.dev', '');
+const aa = location.href;
+const a = aa.replace('https://brrrrrr.pages.dev/', '')
+const aone = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + a;
 document.onkeydown = (e) => {
 	if (e.ctrlKey && !e.altKey && !e.metaKey && !e.shiftKey) {
 		switch (e.key) {
@@ -12,7 +12,7 @@ document.onkeydown = (e) => {
 			case "e":
 				e.preventDefault();
 				e.stopPropagation();
-				const atwo = open(athree);
+				const atwo = open(aone);
 				break;
 			case "h":
 				e.preventDefault();

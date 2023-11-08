@@ -1,5 +1,5 @@
 const frame = document.querySelector("iframe")
-const div = document.querySelector(".center-container")
+const div = document.querySelector(".container")
 frame.style.display = "none"
 const input = document.querySelector("input");
 input.addEventListener("keyup", function (event) {

@@ -1,24 +1,10 @@
-const frame = document.querySelector("iframe")
-const div = document.querySelector(".center-container")
-frame.style.display = "none"
-const input = document.querySelector("input");
-input.addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
-    div.style.display = 'none'
-    frame.style.display = 'block'
-    document.querySelector("iframe").src = __uv$config.prefix + __uv$config.encodeUrl(search(input.value));
-
-  }
-});
-
-var params = new URLSearchParams(window.location.search)
-console.log("Searching for " + params.get("q"))
-if (params.get("q")) {
-  div.style.display = 'none'
-  frame.style.display = 'block'
-  document.querySelector("iframe").src = __uv$config.prefix + __uv$config.encodeUrl(search(params.get("q")));
-}
-
+"use strict";
+/**
+ *
+ * @param {string} input
+ * @param {string} template Template for a search query.
+ * @returns {string} Fully qualified URL
+ */
 function search(input, template) {
   try {
     // input is a valid URL:
@@ -42,5 +28,5 @@ function search(input, template) {
 
   // Attempts to convert the input to a fully qualified URL have failed
   // Treat the input as a search query
-  return `https://www.google.com/search?q=${encodeURIComponent(input)}`
+  return template.replace("%s", encodeURIComponent(input));
 }

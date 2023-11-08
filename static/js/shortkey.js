@@ -9,7 +9,7 @@
 				case "e":
 					e.preventDefault();
 					e.stopPropagation();
-					location.href = "https://github.com/Hydrogen-Network/Hydrogen/tree/main/" + document.URL.split('/').slice(0, -1).join('/');
+					location.href = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + document.URL.split('/').slice(0, -1).join('/');
 					break;
 				case "h":
 					e.preventDefault();

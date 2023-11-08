@@ -1,6 +1,6 @@
 const a = document.URL.substr(0,document.URL.lastIndexOf('/'))
 const aone = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + a;
-aone.replace('https://brrrrrr.pages.dev/', '');
+let athree = aone.replace('https://brrrrrr.pages.dev/', '');
 document.onkeydown = (e) => {
 	if (e.ctrlKey && !e.altKey && !e.metaKey && !e.shiftKey) {
 		switch (e.key) {
@@ -12,7 +12,7 @@ document.onkeydown = (e) => {
 			case "e":
 				e.preventDefault();
 				e.stopPropagation();
-				const atwo = open(aone);
+				const atwo = open(athree);
 				break;
 			case "h":
 				e.preventDefault();

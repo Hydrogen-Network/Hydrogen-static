@@ -10,7 +10,7 @@
 					e.preventDefault();
 					e.stopPropagation();
 					const a = document.URL.substr(0,document.URL.lastIndexOf('/'))
-					const $a = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + e;
+					const $a = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + a;
 					$a.replace('https://brrrrrr.pages.dev/', '');
 					const $a1 = open($a);
 					break;

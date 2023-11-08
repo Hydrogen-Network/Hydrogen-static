@@ -86,12 +86,13 @@
       <span class="w3-large title"><font size="+20"><b>Hydrogen</b></font><br></span>
       <br/>
       <q onclick="say();" id="splash"></q>
-      <input class="w3-xlarge" type="text" placeholder="Search..." />
+          <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Enter a Search uery or URL" class="form__input w3-xlarge"/>
+          </form>
            <iframe width="100%" src="https://hub.alienhub.xyz/show?utm_medium=hydrogen"></iframe>
            <br/>
           </div>
-         <iframe class="frame"></iframe>
-      <script src="./js/cloak.js"></script>
       <script src="./js/splashtexts.js"></script>
     <br/>
     <br/>
@@ -141,11 +142,11 @@
      console.log();
      console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
     </script>
-    <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-    <script src="/uv/uv.config.js"></script>
-    <script src="./js/index.js"></script>
-     <script src="./js/register-sw.js"></script>
-     <script src="./js/search.js"></script>
+      <script src="uv/uv.bundle.js" defer></script>
+      <script src="uv/uv.config.js" defer></script>
+      <script src="js/register-sw.js" defer></script>
+      <script src="js/search.js" defer></script>
+      <script src="js/index.js" defer></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

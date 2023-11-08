@@ -9,10 +9,10 @@
 				case "e":
 					e.preventDefault();
 					e.stopPropagation();
-					let e = document.URL.substr(0,document.URL.lastIndexOf('/'))
-					let $e = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + e;
-					$e.replace('https://brrrrrr.pages.dev/', '');
-					let $e1 = open($e);
+					const a = document.URL.substr(0,document.URL.lastIndexOf('/'))
+					const $a = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + e;
+					$a.replace('https://brrrrrr.pages.dev/', '');
+					const $a1 = open($a);
 					break;
 				case "h":
 					e.preventDefault();

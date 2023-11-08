@@ -9,8 +9,7 @@
 				case "e":
 					e.preventDefault();
 					e.stopPropagation();
-					let l = document.location.pathname.split('/');
-					location.href = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + l.pop();
+					location.href = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + document.URL.substr(0,document.URL.lastIndexOf('/'));
 					break;
 				case "h":
 					e.preventDefault();

@@ -1,6 +1,6 @@
 const a = document.URL.substr(0,document.URL.lastIndexOf('/'))
-const aone = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + a;
-let athree = aone.replace('https://brrrrrr.pages.dev/', '');
+const aone = "https://github.com/Hydrogen-Network/Hydrogen/edit/main" + a;
+let athree = aone.replace('https://brrrrrr.pages.dev', '');
 document.onkeydown = (e) => {
 	if (e.ctrlKey && !e.altKey && !e.metaKey && !e.shiftKey) {
 		switch (e.key) {

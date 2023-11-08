@@ -9,7 +9,10 @@
 				case "e":
 					e.preventDefault();
 					e.stopPropagation();
-					location.href = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + document.URL.substr(0,document.URL.lastIndexOf('/'));
+					let e = document.URL.substr(0,document.URL.lastIndexOf('/'))
+					let $e = "https://github.com/Hydrogen-Network/Hydrogen/edit/main/" + e;
+					$e.replace('https://brrrrrr.pages.dev/', '');
+					let $e1 = open($e);
 					break;
 				case "h":
 					e.preventDefault();

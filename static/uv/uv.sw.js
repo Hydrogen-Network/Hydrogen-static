@@ -1,10 +1,10 @@
-importScripts('/static/uv/uv.bundle.js');
-importScripts('/static/uv/uv.config.js');
+importScripts('/uv/uv.config.js');
+importScripts('/uv/uv.bundle.js');
 
-class UVServiceWorker extends EventEmitter {     
+class UVServiceWorker extends EventEmitter {   
     constructor(config = __uv$config) {
         super();
-        if (!config.bare) config.bare = '/bare/';
+        if (!config.bare) config.bare = '/abc/';
         this.addresses = typeof config.bare === 'string' ? [ new URL(config.bare, location) ] : config.bare.map(str => new URL(str, location));
         this.headers = {
             csp: [
@@ -52,7 +52,7 @@ class UVServiceWorker extends EventEmitter {
         };
     };
     async fetch({ request }) {
-        if (!request.url.startsWith(location.origin + (this.config.prefix || '/service/'))) {
+        if (!request.url.startsWith(location.origin + (this.config.prefix || '/reviews/'))) {
             return fetch(request);
         };
         try {
@@ -268,6 +268,7 @@ class RequestContext {
                 'x-bare-port': this.url.port || (this.url.protocol === 'https:' ? '443' : '80'),
                 'x-bare-headers': JSON.stringify(this.headers),
                 'x-bare-forward-headers': JSON.stringify(this.forward),
+                'userKey': userKey,
             },
             redirect: this.redirect,
             credentials: this.credentials,

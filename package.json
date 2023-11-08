@@ -28,8 +28,8 @@
     "@tomphttp/bare-server-node": "^1.2.2",
     "express": "^4.18.2",
     "express-basic-auth": "^1.2.1",
-    "express-rate-limit": "^7.0.2"
-    "cors": "^2.8.5",
+    "express-rate-limit": "^7.0.2",
+    "cors": "^2.8.5"
   }
   "devDependencies": {
     "eslint": "^8.36.0",

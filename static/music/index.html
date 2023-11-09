@@ -161,7 +161,7 @@
           try {
            for (i = 0; i < li.length; i++) {
              div = li[i].getElementsByTagName("div")[0];
-             txtValue = a.textContent || div.innerText;
+             txtValue = div.textContent || div.innerText;
              if (txtValue.toUpperCase().indexOf(filter) > -1) {
                li[i].style.display = "";
              } else {

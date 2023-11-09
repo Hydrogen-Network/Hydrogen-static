@@ -278,12 +278,12 @@ async function displayRecentSongs() {
     if (song) { // Check if song is null or not
       if (song.image) {
         recentlyPlayedHtml += `
-	<span>
+	
           <div class="song-container">
             <img class="song-image" src="${song.image}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
             <div class="song-Title">${song.name}</div>
           </div>
-	</span>
+	
         `;
       } else {
         console.log(`Missing image property for song: ${JSON.stringify(song)}`);
@@ -907,13 +907,13 @@ function createSongTiles() {
           aud.addEventListener("loadedmetadata", function() {
             const songDuration = formatTime(this.duration);
             const songTile = `
-	    <span>
+	    
               <div class="song" onclick="playSong('${cursor.value.name}'); currentSongIndex = ${cursor.key};">
                 <div class="song-title">${title || 'Unknown Title'}</div>
                 <div class="song-duration">${songDuration}</div>
                 <div class="song-date">${year || 'Unknown Year'}</div>
               </div>
-	    </span>
+	    
             `;
             document.getElementById("song-tiles").innerHTML += songTile;
           });

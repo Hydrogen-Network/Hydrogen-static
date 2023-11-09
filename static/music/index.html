@@ -152,12 +152,13 @@
 </div>
 </div>
   <script>
-    function myFunction() {
+        function myFunction() {
            var input, filter, ul, li, div, i, txtValue;
            input = document.getElementById("input-search");
            filter = input.value.toUpperCase();
            ul = document.getElementById("songsDiv") && document.getElementById("albumsDiv");
            li = ul.getElementsByTagName("span");
+          try {
            for (i = 0; i < li.length; i++) {
              div = li[i].getElementsByTagName("div")[0];
              txtValue = a.textContent || div.innerText;
@@ -167,6 +168,9 @@
                li[i].style.display = "none";
              }
            }
+          } catch(e) {
+            console.error("error" + e);
+          }
          }
         console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
         console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');

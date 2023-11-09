@@ -779,7 +779,7 @@ function getID3Data(songData, isUpload, fileName) {
         let artist = "" || "Unknown Artist";
         let album = "" || "Unknown Album";
         let year = "" || "Unknown Year";
-        let imageStr = "assets/defaultSong.jpg";
+        let imageStr = "../img/defaultSong.jpg";
         let trackNum = "" || "Unknown Track Number";
         let songTitle = document.getElementById("songTitle");
     songTitle.innerHTML = title;

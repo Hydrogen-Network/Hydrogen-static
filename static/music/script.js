@@ -2,14 +2,111 @@ const navLinks = document.querySelectorAll(".link");
 const linkBack = document.querySelectorAll(".linkBack");
 var jsmediatags = window.jsmediatags;
 
+
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement &&    // alternative standard method
+   !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+     if (document.cancelFullScreen) {
+        document.cancelFullScreen();
+     } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+     } else if (document.webkitCancelFullScreen) {
+       document.webkitCancelFullScreen();
+     }
+  }
+}
+
+function noDiscord() {
+  let widg = document.getElementsByTagName("widgetbot-crate")[0];
+  if (widg.style.display == "none") {
+    widg.style.display = "block";
+  }
+  else {
+    widg.style.display = "none";
+  }
+}
+
+function reloadSite () {
+  location.reload();
+}
+
+function darkLightSwitch() {
+  if (document.documentElement.getAttribute('data-theme') == 'dark') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+function changeurl(url, title) {
+  var new_url = '/' + url;
+  if (location.href.includes("static")) {
+    window.history.pushState('data', title, new_url);
+  } else {
+    window.history.pushState('data', title, new_url);
+  }
+  
+  
+}
+
+function settingsChange() {
+    let host = window.location.hostname;
+    let port = window.location.port;
+    if (port != "") {
+      host = host + ":" + port;
+    }
+    window.location.href = "https://" + host + "/static/settings";
+}
+
+function homeChange() {
+    let host = window.location.hostname;
+  let port = window.location.port;
+  if (port != "") {
+    host = host + ":" + port;
+  }
+  window.location.href = "https://" + host + "/static/";
+}
+
 function musicChange() {
-  let host = window.location.hostname;
+    let host = window.location.hostname;
   let port = window.location.port;
   if (port != "") {
     host = host + ":" + port;
   }
   window.location.href = "https://" + host + "/static/music/";
+
 }
+
+function gameChange() {
+    let host = window.location.hostname;
+    let port = window.location.port;
+    if (port != "") {
+      host = host + ":" + port;
+    }
+    window.location.href = "https://" + host + "/static/games.html";
+}
+
+function gptChange() {
+    let host = window.location.hostname;
+    let port = window.location.port;
+    if (port != "") {
+      host = host + ":" + port;
+    }
+    window.location.href = "https://" + host + "/static/ai.html";
+}
+
+
 
 /**
  * Get HTML asynchronously
@@ -461,6 +558,69 @@ function webhookSend(songTitle, songArtist, songAlbum, songLength, lyrics) {
 }
 }
 
+function settingsLoad() {
+  let musicSettingsOpen = document.getElementById("musicSettings");
+musicSettingsOpen.addEventListener("click", function() {
+  musicSettingsOpen.className = '';
+  musicSettingsOpen.classList.add("musicSettingsOpen");
+  console.log(musicSettingsOpen.classList);
+  document.getElementById("musicSettingsContainer").style.display = "block";
+});
+
+let webhookUser = document.getElementById("webhookUser");
+webhookUser.addEventListener("change", function() {
+  localStorage.setItem("webhookUser", webhookUser.value);
+  console.log(webhookUser.value);
+});
+
+let webhookPic = document.getElementById("webhookPic");
+webhookPic.addEventListener("change", function() {
+  localStorage.setItem("webhookPic", webhookPic.value);
+  console.log(webhookPic.value);
+});
+
+let webhookURL = document.getElementById("webhookURL");
+webhookURL.addEventListener("change", function() {
+  localStorage.setItem("webhookURL", webhookURL.value);
+  console.log(webhookURL.value);
+});
+}
+
+
+function musicSettings() {
+  let musicSettingsOpen = document.getElementById("musicSettings");
+  musicSettingsOpen.className = '';
+  musicSettingsOpen.classList.add("musicSettingsOpen");
+  console.log(musicSettingsOpen.classList);
+  document.getElementById("musicSettingsContainer").style.display = "block";
+  console.log(document.getElementById("musicSettingsContainer").style.display);
+  }
+/*
+    var container = document.getElementById('musicSettings');
+        container.classList.add("settings-card");
+        container.classList.remove("musicSettingsOpen");
+        document.getElementById("musicSettingsContainer").style.display = "none";
+  
+  let webhookUser = document.getElementById("webhookUser");
+  webhookUser.addEventListener("change", function() {
+    localStorage.setItem("webhookUser", webhookUser.value);
+    console.log(webhookUser.value);
+  });
+  
+  let webhookPic = document.getElementById("webhookPic");
+  webhookPic.addEventListener("change", function() {
+    localStorage.setItem("webhookPic", webhookPic.value);
+    console.log(webhookPic.value);
+  });
+  
+  let webhookURL = document.getElementById("webhookURL");
+  webhookURL.addEventListener("change", function() {
+    localStorage.setItem("webhookURL", webhookURL.value);
+    console.log(webhookURL.value);
+  });
+  console.log("Clicked")
+
+*/
 function clearDatabase() {
   const openRequest = indexedDB.open("songs_db", 2);
   openRequest.onsuccess = function(event) {
@@ -481,6 +641,10 @@ function clearDatabase() {
   openRequest.onerror = function(event) {
     console.error("IndexedDB error: ", event.target.errorCode);
   };
+}
+
+function clearStreams() {
+  localStorage.setItem("data_streams", 0);
 }
 
 function createEventListeners() {
@@ -506,7 +670,14 @@ menuExpand.addEventListener("click", function() {
     navBar.style.display = "block";
   }
 });
-
+/*
+let nameTitle = document.getElementById("nameTitle");
+if (localStorage.getItem("referredName") === null) {
+  nameTitle.innerHTML = "Hello User!";
+} else {
+    nameTitle.innerHTML = ("Hello " + localStorage.getItem("referredName") + "!");
+}*/
+}
 createEventListeners();
 function getID3Data(songData, isUpload, fileName) {
   try {
@@ -608,7 +779,7 @@ function getID3Data(songData, isUpload, fileName) {
         let artist = "" || "Unknown Artist";
         let album = "" || "Unknown Album";
         let year = "" || "Unknown Year";
-        let imageStr = "../img/defaultSong.jpg";
+        let imageStr = "assets/defaultSong.jpg";
         let trackNum = "" || "Unknown Track Number";
         let songTitle = document.getElementById("songTitle");
     songTitle.innerHTML = title;

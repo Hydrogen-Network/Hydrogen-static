@@ -94,7 +94,6 @@
     <h1 class="top-page-bar-title">MSGMusic</h1>
     <div class="search-box">
         <button class="btn-search"><i class="fas fa-search"></i></button>
-        <input type="text" onkeyup="myFunction()" id="input-search" class="input-search" placeholder="Type to Search...">
       </div>
       <div class="upload-button">
         <label for="f">
@@ -152,22 +151,6 @@
 </div>
 </div>
   <script>
-        function myFunction() {
-           var input, filter, ul, li, div, i, txtValue;
-           input = document.getElementById("input-search");
-           filter = input.value.toUpperCase();
-           ul = document.getElementById("songsDiv") && document.getElementById("albumsDiv");
-           li = ul.getElementsByTagName("span");
-           for (i = 0; i < li.length; i++) {
-             div = li[i].getElementsByTagName("div")[0];
-             txtValue = div.textContent || div.innerText;
-             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-               li[i].style.display = "";
-             } else {
-               li[i].style.display = "none";
-             }
-           }
-         }
         console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
         console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
     </script>

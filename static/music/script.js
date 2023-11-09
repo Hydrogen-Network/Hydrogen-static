@@ -702,7 +702,7 @@ function getID3Data(songData, isUpload, fileName) {
             window.btoa(base64String);
           imageStr = base64;
         } else {
-          imageStr = "assets/defaultSong.jpg";
+          imageStr = "/static/img/defaultSong.jpg";
         }
 
         if (isUpload) {

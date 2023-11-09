@@ -31,12 +31,12 @@ function displayAllSongs(isMore) {
             if (song.artist == "Unknown Artist") {
               song.artist = "";
               }
-            songDiv.innerHTML = `<span>
+            songDiv.innerHTML = `
                                  <img class="songImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
                                  <div class="songTitle">${songName}</div>
                                  <div class="songArtist">${song.artist || ''}</div>
                                  <div class="expand-song" onclick="showMore('${song.name}')">Song Info</div>
-                                 </span>`;
+                                 `;
             songsDiv.appendChild(songDiv);
           });
         } else {
@@ -53,12 +53,12 @@ function displayAllSongs(isMore) {
           if (song.artist == "Unknown Artist") {
             song.artist = "";
             }
-          songDiv.innerHTML = `<span>
+          songDiv.innerHTML = `
                                <img class="songImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
                                <div class="songTitle">${songName}</div>
                                <div class="songArtist">${song.artist || ''}</div>
                                <div class="expand-song" onclick="showMore('${song.name}')">Song Info</div>
-                               </span>`;
+                               `;
           songsDiv.appendChild(songDiv);
         });
         if (allSongs.length > 14) {
@@ -102,12 +102,12 @@ function displayAllSongs(isMore) {
       if (song) { // Check if song is null or not
         if (song.image) {
           recentlyPlayedHtml += `
-          <span>
+          
             <div class="song-container">
               <img class="song-image" src="${song.image}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
               <div class="song-Title">${song.name}</div>
             </div>
-          </span>
+          
           `;
         } else {
           console.log(`Missing image property for song: ${JSON.stringify(song)}`);

@@ -31,7 +31,7 @@ function displayAllSongs(isMore) {
             if (song.artist == "Unknown Artist") {
               song.artist = "";
               }
-            songDiv.innerHTML = `<img class="songImage" src="${song.image || '../assets/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
+            songDiv.innerHTML = `<img class="songImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
                               <div class="songTitle">${songName}</div>
                                  <div class="songArtist">${song.artist || ''}</div>
                                  <div class="expand-song" onclick="showMore('${song.name}')">Song Info</div>`;
@@ -51,7 +51,7 @@ function displayAllSongs(isMore) {
           if (song.artist == "Unknown Artist") {
             song.artist = "";
             }
-          songDiv.innerHTML = `<img class="songImage" src="${song.image || '../assets/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
+          songDiv.innerHTML = `<img class="songImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = ${i};">
                             <div class="songTitle">${songName}</div>
                                <div class="songArtist">${song.artist || ''}</div>
                                <div class="expand-song" onclick="showMore('${song.name}')">Song Info</div>`;

@@ -29,13 +29,15 @@ async function showSongInfo() {
     pageTitle.innerHTML = song.name;
   
     songInfoDiv.innerHTML = `
-        <div class="songsDiv">
-      <img class="songsImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = 0;">
-      <div class="songsArtist">${song.artist || ''}</div>
-      <div class="songsAlbum">Album: ${song.album || ''}</div>
-      <div class="songsYear">Released: ${song.year || ''}</div>
-        </div>
-    `;
+                            <span>
+                            <div class="songsDiv">
+                            <img class="songsImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playSong('${song.name}'); currentSongIndex = 0;">
+                            <div class="songsArtist">${song.artist || ''}</div>
+                            <div class="songsAlbum">Album: ${song.album || ''}</div>
+                            <div class="songsYear">Released: ${song.year || ''}</div>
+                            </div>
+                            </span>
+                            `;
   
     songInfoDiv.appendChild(songInfoDiv);
   }

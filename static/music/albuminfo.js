@@ -53,7 +53,7 @@ function displayAlbumSongs(albumName) {
                     if (song.year == "Unknown Year") {
                         song.year = "";
                     }
-                    songDiv.innerHTML = `<img class="songImage" src="${song.image || '../assets/defaultSong.jpg'}" onclick="playAlbumSong('${song.name}'); albumSongIndex = ${i};">
+                    songDiv.innerHTML = `<img class="songImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playAlbumSong('${song.name}'); albumSongIndex = ${i};">
                                         <div class="songTitle">${songName}</div>
                                         <div class="songArtist">${song.artist || ''}</div>
                                         <div class="songAlbum">${song.album || ''}</div>
@@ -301,7 +301,7 @@ function pausePlay() {
               window.btoa(base64String);
             imageStr = base64;
           } else {
-            imageStr = "../assets/defaultSong.jpg";
+            imageStr = "/static/img/defaultSong.jpg";
           }
   
           if (isUpload) {
@@ -378,7 +378,7 @@ function pausePlay() {
           let artist = "" || "Unknown Artist";
           let album = "" || "Unknown Album";
           let year = "" || "Unknown Year";
-          let imageStr = "../assets/defaultSong.jpg";
+          let imageStr = "/static/img/defaultSong.jpg";
           let trackNum = "" || "Unknown Track Number";
           let songTitle = document.getElementById("songTitle");
       songTitle.innerHTML = title;

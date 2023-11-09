@@ -53,7 +53,7 @@ function displayAlbumSongs(albumName) {
                     if (song.year == "Unknown Year") {
                         song.year = "";
                     }
-                    songDiv.innerHTML = `<span>
+                    songDiv.innerHTML = `
                                         <img class="songImage" src="${song.image || '/static/img/defaultSong.jpg'}" onclick="playAlbumSong('${song.name}'); albumSongIndex = ${i};">
                                         <div class="songTitle">${songName}</div>
                                         <div class="songArtist">${song.artist || ''}</div>
@@ -61,7 +61,7 @@ function displayAlbumSongs(albumName) {
                                         <div class="songYear">${song.year || ''}</div>
                                         <div class="expand-song" onclick="showMore('${song.name}')">Song Info</div>
                                         <div class="songInfo" onclick="playPreviousSong()"> Back </div>
-                                        </span>`;
+                                        `;
                     songsDiv.appendChild(songDiv);
                 });
             }

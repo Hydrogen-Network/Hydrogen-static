@@ -153,14 +153,14 @@
 </div>
   <script>
     function myFunction() {
-           var input, filter, ul, li, a, i, txtValue;
+           var input, filter, ul, li, div, i, txtValue;
            input = document.getElementById("input-search");
            filter = input.value.toUpperCase();
            ul = document.getElementById("songsDiv") && document.getElementById("albumsDiv");
            li = ul.getElementsByTagName("span");
            for (i = 0; i < li.length; i++) {
-             a = li[i].getElementsByTagName("a")[0];
-             txtValue = a.textContent || a.innerText;
+             div = li[i].getElementsByTagName("div")[0];
+             txtValue = a.textContent || div.innerText;
              if (txtValue.toUpperCase().indexOf(filter) > -1) {
                li[i].style.display = "";
              } else {

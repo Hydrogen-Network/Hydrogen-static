@@ -1,4 +1,4 @@
-         const switches = document.getElementById('2');
+         let switches = document.getElementById('2');
 
          if(window.localStorage.getItem('v4Particles') != "") {
            if(window.localStorage.getItem('v4Particles') == "true") {

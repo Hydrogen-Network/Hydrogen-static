@@ -1,7 +1,8 @@
 # Google Search Engine Robot
 # ==========================
 User-agent: Googlebot
-Disallow: /
+Disallow: /other/
+Disallow: *
 Allow: /static/*
 Allow: /cdn/*
 
@@ -14,7 +15,3 @@ Disallow: *
 User-agent: Bingbot
 Disallow: *
 
-# Every bot that might possibly read and respect this file
-# ========================================================
-User-agent: *
-Disallow: /

@@ -2,7 +2,6 @@
 # ==========================
 User-agent: Googlebot
 Disallow: /other/
-Disallow: *
 Allow: /static/*
 Allow: /cdn/*
 

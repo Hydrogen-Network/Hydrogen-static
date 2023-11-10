@@ -1,4 +1,4 @@
-let inFrame
+alet inFrame
 
 try {
     inFrame = window !== top
@@ -39,7 +39,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
 document.addEventListener("DOMContentLoaded", function(event) {
     if (window.localStorage.getItem("v4Particles") == "true") {
         const scr = document.createElement("script");
-        scr.src = "./js/particles.js";
+        scr.src = "./js/snow.js";
         document.body.appendChild(scr);
     }
     if (localStorage.getItem('customcolor') == "true") {

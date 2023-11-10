@@ -76,6 +76,13 @@
       "categories": "all"
    },
    {
+      "url": "/cdn/asteroids/eroi",
+      "img": "https://upload.wikimedia.org/wikipedia/en/1/13/Asteroi1.png",
+      "name": "Asteroids",
+      "desc": "Asteroids is a space-themed multidirectional shooter game.",
+      "categories": "all"
+   },
+   {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/astray/index.html",
       "name": "Astray",
       "desc": "Astray",
@@ -108,6 +115,13 @@
       "name": "Axis Football League",
       "desc": "is a fun and fast-paced American Football game in which you can compete in various football matches and leagues.",
       "categories": "all sports"
+   },
+   {
+      "url": "/cdn/backcountry/",
+      "img": "",
+      "name": "",
+      "desc": "",
+      "categories": "all"
    },
    {
       "url": "https://thelandofreading.com/src/static/games/ball-dodge/index.html",

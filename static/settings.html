@@ -229,16 +229,34 @@
          <button onclick="exportCache()">Export Cache</button>
          <button id="unregisterButton">Unregister Service Workers</button>
       </div>
-      <!--
+      <script>
+         const abc = document.getElementById('2');
+
+         if(window.localStorage.getItem('v4Particles') != "") {
+           if(window.localStorage.getItem('v4Particles') == "true") {
+             abc.checked = true;
+           }
+           else {
+             abc.checked = false;
+           }
+         }
+
+         abc.addEventListener('change', (event) => {
+           if (event.currentTarget.checked) {
+             window.localStorage.setItem('v4Particles', 'true');
+           } else {
+             window.localStorage.setItem('v4Particles', 'false');
+           }
+         });
+      </script>
          <div class="settings-card">
           <h3>Particles</h3>
-          <p>Add the particles from the to the site.</p>
+          <p>Add the particles from to the site.</p>
           <label class="switch">
           <input type="checkbox" class="slider-checkbox" id="2">
           <span class="slider-round"></span>
           </label>
          </div>
-         -->
    </div>
    <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
       <div style="display: flex; justify-content: space-between !important; align-items: left;">

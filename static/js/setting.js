@@ -10,7 +10,6 @@
          }
 
          async function particles() {
-                  switches = document.getElementById('3');
                   switches.addEventListener('change', (event) => {
                     if (event.currentTarget.checked) {
                       window.localStorage.setItem('v4Particles', 'true');

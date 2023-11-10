@@ -113,25 +113,6 @@ dropdown.addEventListener('change', function() {
     localStorage.setItem('selectedOption', selectedValue);
 });
 
-const switches = document.getElementById('2');
-
-if(window.localStorage.getItem('RandomBG') != "") {
-  if(window.localStorage.getItem('RandomBG') == "true") {
-    switches.checked = true;
-  }
-  else {
-    switches.checked = false;
-  }
-}
-
-switches.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    window.localStorage.setItem('RandomBG', 'true');
-  } else {
-    window.localStorage.setItem('RandomBG', 'false');
-  }
-});
-
 var themeId = localStorage.getItem("theme");
 if(themeId=="") {themeId="d"}
 

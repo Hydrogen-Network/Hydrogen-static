@@ -1,0 +1,21 @@
+# Google Search Engine Robot
+# ==========================
+User-agent: Googlebot
+Disallow: *
+Allow: /static/*
+Allow: /index.html
+Allow: /cdn/*
+
+User-Agent: FacebookBot
+Disallow: *
+
+User-agent: facebookexternalhit
+Disallow: *
+
+User-agent: Bingbot
+Disallow: *
+
+# Every bot that might possibly read and respect this file
+# ========================================================
+User-agent: *
+Disallow: /

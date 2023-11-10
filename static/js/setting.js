@@ -1,4 +1,5 @@
          const switches2 = document.getElementById('3');
+         const switches = document.getElementById('2');
 
          /*
          if(window.localStorage.getItem('v4Particles') != "") {

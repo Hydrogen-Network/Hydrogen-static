@@ -1,5 +1,6 @@
          const switches2 = document.getElementById('3');
 
+         /*
          if(window.localStorage.getItem('v4Particles') != "") {
            if(window.localStorage.getItem('v4Particles') == "true") {
              switches2.checked = true;
@@ -16,7 +17,7 @@
              window.localStorage.setItem('v4Particles', 'false');
            }
          });
-
+         */
 
 
 

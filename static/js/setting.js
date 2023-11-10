@@ -1,23 +1,24 @@
-         const switc = document.getElementById('3');
          const switches = document.getElementById('2');
 
          if(window.localStorage.getItem('v4Particles') != "") {
            if(window.localStorage.getItem('v4Particles') == "true") {
-             switc.checked = true;
+             switches.checked = true;
            }
            else {
-             switc.checked = false;
+             switches.checked = false;
            }
          }
 
-         switc.addEventListener('change', (event) => {
-           if (event.currentTarget.checked) {
-             window.localStorage.setItem('v4Particles', 'true');
-           } else {
-             window.localStorage.setItem('v4Particles', 'false');
-           }
-         });
-
+         async function particles() {
+                  switches = document.getElementById('3');
+                  switches.addEventListener('change', (event) => {
+                    if (event.currentTarget.checked) {
+                      window.localStorage.setItem('v4Particles', 'true');
+                    } else {
+                      window.localStorage.setItem('v4Particles', 'false');
+                    }
+                  });
+         }
 
 
 

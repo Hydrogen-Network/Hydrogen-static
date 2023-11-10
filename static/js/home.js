@@ -37,26 +37,26 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    if (window.localStorage.getItem("v4Particles") == "true") {
-        const scr = document.createElement("script");
-        scr.src = "./js/snow.js";
-        document.body.appendChild(scr);
-    }
-    if (localStorage.getItem('customcolor') == "true") {
-        document.body.style.background = localStorage.getItem("backdrop-color");
-    }
-    async function randombgs() {
+    async function start() {
         var bg = await fetch("/static/js/json/bg.json");
         var bga = await bg.json();
         var randombg = bga[Math.floor(Math.random() * bga.length)];
         if (localStorage.getItem('RandomBG') == "true") {
             document.body.style.background = `url(${randombg})`;
         }
+        if (window.localStorage.getItem("cursor") == "true") {
+            const cur = document.createElement("script");
+            cur.src = "./js/cursor.js";
+            document.body.appendChild(cur);
+        }
+        if (window.localStorage.getItem("v4Particles") == "true") {
+            const scr = document.createElement("script");
+            scr.src = "./js/snow.js";
+            document.body.appendChild(scr);
+        }
+        if (localStorage.getItem('customcolor') == "true") {
+            document.body.style.background = localStorage.getItem("backdrop-color");
+        }   
     }
     randombgs();
-    if (window.localStorage.getItem("cursor") == "true") {
-        const cur = document.createElement("script");
-        cur.src = "./js/cursor.js";
-        document.body.appendChild(cur);
-    }
 });

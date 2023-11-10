@@ -54,4 +54,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
     randombgs();
+    if (window.localStorage.getItem("cursor") == "true") {
+        const cur = document.createElement("script");
+        cur.src = "./js/cursor.js";
+        document.body.appendChild(cur);
+    }
 });

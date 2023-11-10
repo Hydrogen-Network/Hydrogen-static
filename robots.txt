@@ -2,9 +2,9 @@
 # ==========================
 User-agent: Googlebot
 Disallow: *
-Allow: /static/*
+Allow: /static/
 Allow: /index.html
-Allow: /cdn/*
+Allow: /cdn/
 
 User-Agent: FacebookBot
 Disallow: *

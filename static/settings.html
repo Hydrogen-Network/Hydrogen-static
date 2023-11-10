@@ -229,26 +229,7 @@
          <button onclick="exportCache()">Export Cache</button>
          <button id="unregisterButton">Unregister Service Workers</button>
       </div>
-      <script>
-         const switches2 = document.getElementById('3');
-
-         if(window.localStorage.getItem('v4Particles') != "") {
-           if(window.localStorage.getItem('v4Particles') == "true") {
-             switches2.checked = true;
-           }
-           else {
-             switches2.checked
-           }
-         }
-
-         switches2.addEventListener('change', (event) => {
-           if (event.currentTarget.checked) {
-             window.localStorage.setItem('v4Particles', 'true');
-           } else {
-             window.localStorage.setItem('v4Particles', 'false');
-           }
-         });
-      </script>
+      <script src="js/setting.js"></script>
          <div class="settings-card">
           <h3>Particles</h3>
           <p>Add the particles from to the site.</p>

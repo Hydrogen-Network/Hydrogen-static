@@ -37,3 +37,27 @@
              window.localStorage.setItem('RandomBG', 'false');
            }
          });
+
+
+
+
+
+         if(window.localStorage.getItem('cursor') != "") {
+           if(window.localStorage.getItem('cursor') == "true") {
+             switches.checked = true;
+           }
+           else {
+             switches.checked = false;
+           }
+         }
+
+
+         async function cursor() {
+                  switches.addEventListener('change', (event) => {
+                    if (event.currentTarget.checked) {
+                      window.localStorage.setItem('cursor', 'true');
+                    } else {
+                      window.localStorage.setItem('cursor', 'false');
+                    }
+                  });         
+         }

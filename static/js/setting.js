@@ -1,16 +1,16 @@
-         const switches2 = document.getElementById('3');
+         const switc = document.getElementById('3');
          const switches = document.getElementById('2');
 
          if(window.localStorage.getItem('v4Particles') != "") {
            if(window.localStorage.getItem('v4Particles') == "true") {
-             switches2.checked = true;
+             switc.checked = true;
            }
            else {
-             switches2.checked = false;
+             switc.checked = false;
            }
          }
 
-         switches2.addEventListener('change', (event) => {
+         switc.addEventListener('change', (event) => {
            if (event.currentTarget.checked) {
              window.localStorage.setItem('v4Particles', 'true');
            } else {
@@ -21,7 +21,6 @@
 
 
 
-         /*
          if(window.localStorage.getItem('RandomBG') != "") {
            if(window.localStorage.getItem('RandomBG') == "true") {
              switches.checked = true;
@@ -38,4 +37,3 @@
              window.localStorage.setItem('RandomBG', 'false');
            }
          });
-         */

@@ -230,18 +230,18 @@
          <button id="unregisterButton">Unregister Service Workers</button>
       </div>
       <script>
-         const abc = document.getElementById('3');
+         const switches2 = document.getElementById('3');
 
          if(window.localStorage.getItem('v4Particles') != "") {
            if(window.localStorage.getItem('v4Particles') == "true") {
-             abc.checked = true;
+             switches2.checked = true;
            }
            else {
-             abc.checked = null;
+             switches2.checked
            }
          }
 
-         abc.addEventListener('change', (event) => {
+         switches2.addEventListener('change', (event) => {
            if (event.currentTarget.checked) {
              window.localStorage.setItem('v4Particles', 'true');
            } else {

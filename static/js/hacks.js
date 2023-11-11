@@ -1,5 +1,7 @@
 let iframe = document.getElementById('game-frame');
 
+
+/*
 function retroBowl() {
     function updateLocalStorage(key, newValue) { 
         let savedata = localStorage.getItem('RetroBowl.0.savedata.ini'); 
@@ -18,3 +20,4 @@ function retroBowl() {
     updateLocalStorage('coach_credit', tokens);
     alert("Now refresh and your credits will be there.")
 }
+*/

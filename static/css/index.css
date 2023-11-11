@@ -1,7 +1,7 @@
 @import url(navbar.css);
 @import url(buttons.css);
 @import url(other.css);
-
+@import url(cookies.css);
 
 * {
     scroll-behavior: smooth;
@@ -99,76 +99,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-#cookieNotice.display-right {
-    right: 30px;
-    bottom: 30px;
-    max-width: 395px;
-  }
-  #cookieNotice.light {
-    background-color: #222;
-    color: #fff;
-  }
-  #cookieNotice {
-    box-sizing: border-box;
-    position: fixed;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 6px rgb(0 0 0 / 25%);
-    font-family: inherit;
-    z-index: 999997;
-    color: #111;
-  }
-  #cookieNotice #closeIcon {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    color: #31ffff;
-    overflow: hidden;
-    opacity: 0.85;
-    z-index: 999999;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  #cookieNotice * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  #cookieNotice .title-wrap {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    padding-left: 45px;
-    height: 40px;
-  }
-  #cookieNotice .title-wrap svg {
-    margin-right: 10px;
-  }
-  #cookieNotice h4 {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-  }
-  #cookieNotice.light p,
-  #cookieNotice.light ul {
-    color: #fff;
-  }
-  #cookieNotice p,
-  #cookieNotice ul {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  #cookieNotice .btn-wrap {
-    display: flex;
-    flex-direction: row;
-    font-weight: 700;
-    justify-content: center;
-    margin: 0 -5px 0 -5px;
-    flex-wrap: wrap;
-    color: #000;
-  }

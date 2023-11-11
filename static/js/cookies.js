@@ -45,14 +45,17 @@ function checkCookie() {
 
 function acceptCookieConsent() {
 	localStorage.setItem('cookiesaccepted', 'true');
+	let cookiEl = document.getElementById('cookieNotice');
+	cookieEl.style = "display: hidden;";
 }
 
 
 async function cookieconsent() {
-	let cookiEl = document.getElementById('cookieNotice');
         if(localStorage.getItem('cookiesaccepted') === null || localStorage.getItem('cookiesaccepted') === 'false') {
+		let cookiEl = document.getElementById('cookieNotice');
 		cookieEl.style = "display: block;";
 	} else {
+		let cookiEl = document.getElementById('cookieNotice');
 		cookieEl.style = "display: hidden;";
         }
 }

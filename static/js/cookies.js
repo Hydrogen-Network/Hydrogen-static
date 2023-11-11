@@ -47,17 +47,14 @@ function acceptCookieConsent() {
 	localStorage.setItem('cookiesaccepted', 'true');
 }
 
-/*
-async function cookieconsent() {
-        if(localStorage.getItem('cookiesaccepted') === null || localStorage.getItem('cookiesaccepted') === 'false') {
-                let cookiEl = document.createElement('div');
-                cookiEl.id = "cookieNotice";
-                cookiEl.class = "light display-right";
-                cookiEl.style = "display: block;";
-		document.body.appendChild(cookiEl)
-	} else {
 
+async function cookieconsent() {
+	let cookiEl = document.getElementById('cookieNotice');
+        if(localStorage.getItem('cookiesaccepted') === null || localStorage.getItem('cookiesaccepted') === 'false') {
+		cookieEl.style = "display: block;";
+	} else {
+		cookieEl.style = "display: hidden;";
         }
 }
 cookieconsent();
-*/
+

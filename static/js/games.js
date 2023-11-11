@@ -12,7 +12,7 @@ fetch('/static/js/json/games.json')
       gameEl.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
           <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); location.href='play.html';">
-          <img title=`${game.name}` src="${game.img}" class="gameimage"/>
+          <img title="${game.name}" src="${game.img}" class="gameimage"/>
               <div class="gameinfo">
                   <b>
                       <p class="gamename">${game.name}</p>

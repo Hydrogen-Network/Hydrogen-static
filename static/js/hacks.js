@@ -20,4 +20,3 @@ function retroBowlhack() {
     updateLocalStorage('coach_credit', tokens);
     alert("Now refresh and your credits will be there.")
 }
-*/

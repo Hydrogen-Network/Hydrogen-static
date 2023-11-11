@@ -1,8 +1,8 @@
-let iframe = document.getElementById('game-frame');
+function hacks(name) {
+    name();
+}
 
-
-
-async function retroBowlhack() {
+async function retroBowl() {
     function updateLocalStorage(key, newValue) { 
         let savedata = localStorage.getItem('RetroBowl.0.savedata.ini'); 
         let lines = savedata.split('\n'); 

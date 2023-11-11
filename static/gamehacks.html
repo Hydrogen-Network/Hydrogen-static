@@ -18,6 +18,67 @@
         <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
         <link rel="stylesheet" href="./css/index.css" />
         <title id="dynamic-title">Hydrogen</title>
+        <script>
+            
+function addHack(target, button) {
+    let hacks = JSON.parse(localStorage.getItem('hacks')) || [];
+
+    if (hacks.includes(target)) {
+        hacks = hacks.filter(hack => hack !== target);
+        button.innerHTML = 'Install<i class="fa-solid fa-circle-down"></i>';
+        button.classList.remove('remove');
+    } else {
+        hacks.push(target);
+        button.innerHTML = 'Remove<i class="fa-solid fa-trash"></i>';
+        button.classList.add('remove');
+    }
+
+    localStorage.setItem('hacks', JSON.stringify(hacks));
+    console.log(hacks);
+}
+            fetch('/js/json/hacks.json')
+    .then(response => response.json())
+    .then(data => {
+        const gameHacksElement = document.getElementById('game-hacks');
+      
+        data.forEach(hack => {
+            const pluginDiv = document.createElement('div');
+            pluginDiv.className = 'plugin';
+  
+            const img = document.createElement('img');
+            img.src = hack.image;
+            img.alt = 'plugin icon';
+            pluginDiv.appendChild(img);
+  
+            const span = document.createElement('span');
+  
+            const h2 = document.createElement('h2');
+            h2.textContent = hack.name;
+            span.appendChild(h2);
+  
+            const button = document.createElement('button');
+            button.innerHTML = 'Install<i class="fa-solid fa-circle-down"></i>';
+            button.addEventListener('click', () => addHack(hack.target, button));
+            span.appendChild(button);
+  
+            pluginDiv.appendChild(span);
+            gameHacksElement.appendChild(pluginDiv);
+
+            let hacks = JSON.parse(localStorage.getItem('hacks')) || [];
+            if (hacks.includes(hack.target)) {
+                button.innerHTML = 'Remove<i class="fa-solid fa-trash"></i>';
+                button.classList.add('remove');
+            }
+        });
+    })
+    .catch(error => console.error('An error occurred:', error));
+
+
+function hacks(name) {
+    name();
+}
+
+        </script>
        <style>
           .plugins {
     width: 5vw;
@@ -153,14 +214,6 @@
         <div class="container" id="particles-js">
             <h1>Game Cheats &#38; Hacks!</h1>
             <div class="plugins" id="game-hacks">
-                <div class="plugin">
-                    <img src="https://play-lh.googleusercontent.com/WRM5Y1xZmzcCP1YtO5zl6G2g7CU5c5ZfjX4UVrgi1bpNgkfy-wuB-bQx3kkeRfaGYQ=w240-h480-rw" alt="plugin icon" />
-                    <span>
-                        <h2>RetroBowl Token Hack</h2>
-                        <button class="">Install<i class="fa-solid fa-circle-down"></i></button>
-                    </span>
-                </div>
-            </div>
         </div>
         <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between;">
             <div style="display: flex; justify-content: space-between !important; align-items: left;">

@@ -49,7 +49,7 @@ function acceptCookieConsent() {
 
 async function cookieconsent() {
         let cookiestorage = localStorage.getItem('cookiesaccepted');
-        if(cookiestorage === 'false') {
+        if(cookiestorage === 'false' || cookiestorage === null) {
                 let cookiEl = document.createElement('div');
                 cookiEl.id = "cookieNotice";
                 cookiEl.class = "light display-right";

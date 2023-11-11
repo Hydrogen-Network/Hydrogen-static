@@ -8,7 +8,7 @@
    },
    {
       "name": "1",
-      "url": "https://gitloaf.com/cdn/3kh0/3kh0-Assets/main/1/index.html",
+      "url": "https://raw.githack.com/3kh0/3kh0-Assets/main/1/index.html",
       "img": "https://raw.githack.com/3kh0/3kh0-assets/main/1/meta/apple-touch-icon.png",
       "desc": "Divide the numbers and get to the 1 tile!",
       "categories": "all"
@@ -21,7 +21,7 @@
       "categories": "all 2P"
    },
    {
-      "url": "https://raw.githubusercontent.com/3kh0/3kh0-assets/main/1v1space/index.html",
+      "url": "https://raw.githack.com/3kh0/3kh0-assets/main/1v1space/index.html",
       "img": "https://raw.githubusercontent.com/3kh0/3kh0-assets/main/1v1space/splash.png",
       "name": "1v1 space",
       "desc": "Embark a thrilling adventure through the cosmos, navigating through galaxies, and engaging in intense space combat with an AI opponent.",
@@ -29,7 +29,7 @@
    },
    {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/10-minutes-till-dawn/index.html",
-      "img": "https://images.crazygames.com/games/10-minutes-till-dawn/cover-1652811077990.png?auto=format%2Ccompress&q=75&cs=strip&w=461&ch=DPR",
+      "img": "https://api7.iloveimg.com/v1/download/6kdt0jvxzzccj974tn3pAttf86t70jh3xpf84lrkhmmkbpjk6gbybnfxggAAz8p137hkbwcx54g809ffrpl27kxbshkl4635cj6jjlf5gy4vcn4t2xjw8vc56px2lw0v5htk5gcgq768bbs75c6hr9pwyt0t0ltp8hb9A71d7w0pzvd80r41",
       "name": "10 Minutes Till Dawn",
       "categories": "all 2P"
    },
@@ -41,7 +41,7 @@
       "categories": "all"
    },
    {
-      "url": "https://raw.githubusercontent.com/3kh0/3kh0-assets/main/99balls/index.html",
+      "url": "https://raw.githack.com/3kh0/3kh0-assets/main/99balls/index.html",
       "img": "https://raw.githubusercontent.com/3kh0/3kh0-assets/main/99balls/99-balls-evo.jpg",
       "name": "99 Balls",
       "desc": "99 Balls is a fast-paced, addictive game where you must avoid the walls and collect as many balls as possible while avoiding the obstacles.",
@@ -70,7 +70,7 @@
    {
       "url": "https://thelandofreading.com/src/static/games/asciispace/index.html",
       "img": "https://thelandofreading.com/src/static/icons/asciispace.png",
-      "name": "Ascii Space",
+      "name": "ASCII Space",
       "desc": "You are a lone astronaut adrift in a cosmic sea of ASCII. Explore procedurally generated galaxies, mine for resources, and build your own space station.",
       "categories": "all"
    },
@@ -90,7 +90,7 @@
    {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/awesometanks2/index.html",
       "img": "https://hydrogen-network.github.io/img/awesometanks.jpg",
-      "name": "Awesome tanks 2",
+      "name": "Awesome Tanks 2",
       "desc": "Awesome Tanks 2 is a tank game where you battle against other tanks in a 2D arena. Fire your cannons to tear down enemy tanks!",
       "categories": "all 2P"
    },

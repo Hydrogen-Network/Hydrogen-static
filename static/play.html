@@ -36,6 +36,7 @@
 </div>
   <br/>
   <br/>
+  <h3 id="gamename"></h3>
     <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
     <div id="flbutton">
     <a href="#" class="flbtn" onclick="fullscreen()"><i class="flbtnicon fa-solid fa-expand"></i></a>
@@ -66,6 +67,7 @@ function fullscreen() {
   else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
 };
     document.getElementById('game-frame').src = localStorage.getItem("currentgame");
+    document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
   </script>
 <script src="./js/home.js"></script>
 <!--Start of Tawk.to Script-->

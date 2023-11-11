@@ -54,7 +54,7 @@ async function cookieconsent() {
                 cookiEl.class = "light display-right";
                 cookiEl.style = "display: block;";
                 cookiEl.innerHTML = '<div id="closeIcon" style="display: none;"></div><div class="title-wrap"><h4>Cookie Consent</h4></div><div class="content-wrap"><div class="msg-wrap"><p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our <a style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a></p><div class="btn-wrap"><button class="popupbutton" onclick="acceptCookieConsent();">Accept</button></div></div></div>';
-		document.appendChild(cookiEl)
+		document.body.appendChild(cookiEl)
 	} else {
 
         }

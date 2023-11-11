@@ -45,18 +45,15 @@ function checkCookie() {
 
 function acceptCookieConsent() {
 	localStorage.setItem('cookiesaccepted', 'true');
-	let cookiEl = document.getElementById('cookieNotice');
-	cookiEl.style.display = "none";
+	document.getElementById('cookieNotice').style.display = "none";
 }
 
 
 async function cookieconsent() {
         if(localStorage.getItem('cookiesaccepted') === null || localStorage.getItem('cookiesaccepted') === 'false') {
-		let cookiEl = document.getElementById('cookieNotice');
-		cookiEl.style.display = "block";
+		document.getElementById('cookieNotice').style.display = "block";
 	} else {
-		let cookiEl = document.getElementById('cookieNotice');
-		cookiEl.style.display = "none";
+		document.getElementById('cookieNotice').style.display = "none";
         }
 }
 cookieconsent();

@@ -35,9 +35,7 @@
    <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
       <a href="./games.html">Games</a>
       <a href="./apps.html">Apps</a>
-      <a href="./ai.html">AI</a>
       <a href="./extras.html">Extras</a>
-      <a href="./tabs.html">Tabs</a>
       <a href="./settings.html">Settings</a>
    </div>
 </div>

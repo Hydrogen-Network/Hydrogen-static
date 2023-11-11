@@ -46,7 +46,7 @@ function checkCookie() {
 function acceptCookieConsent() {
 	localStorage.setItem('cookiesaccepted', 'true');
 	let cookiEl = document.getElementById('cookieNotice');
-	cookieEl.style = "display: hidden;";
+	cookieEl.style = "display: none;";
 }
 
 
@@ -56,7 +56,7 @@ async function cookieconsent() {
 		cookieEl.style = "display: block;";
 	} else {
 		let cookiEl = document.getElementById('cookieNotice');
-		cookieEl.style = "display: hidden;";
+		cookieEl.style = "display: none;";
         }
 }
 cookieconsent();

@@ -47,6 +47,7 @@ function acceptCookieConsent() {
 	localStorage.setItem('cookiesaccepted', 'true');
 }
 
+/*
 async function cookieconsent() {
         if(localStorage.getItem('cookiesaccepted') === null || localStorage.getItem('cookiesaccepted') === 'false') {
                 let cookiEl = document.createElement('div');
@@ -59,3 +60,4 @@ async function cookieconsent() {
         }
 }
 cookieconsent();
+*/

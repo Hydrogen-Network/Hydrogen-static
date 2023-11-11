@@ -1,3 +1,4 @@
+/*
 let inFrame
 
 try {
@@ -35,6 +36,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         location.replace("https://www.nasa.gov/")
     }
 }
+*/
 
 document.addEventListener("DOMContentLoaded", function(event) {
     async function start() {

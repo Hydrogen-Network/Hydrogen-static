@@ -1,10 +1,10 @@
 let iframe = document.getElementById('game-frame');
 
 
-/*
-function retroBowl() {
+
+function retroBowlhack() {
     function updateLocalStorage(key, newValue) { 
-        let savedata = localStorage.getItem('RetroBowl.0.savedata.ini'); 
+        let savedata = iframe.localStorage.getItem('RetroBowl.0.savedata.ini'); 
         let lines = savedata.split('\n'); 
         for (let i = 0; i < lines.length; i++) { 
             let line = lines[i]; 
@@ -14,7 +14,7 @@ function retroBowl() {
             } 
         } 
         savedata = lines.join('\n'); 
-        localStorage.setItem('RetroBowl.0.savedata.ini', savedata); 
+        iframe.localStorage.setItem('RetroBowl.0.savedata.ini', savedata); 
     } 
     let tokens = prompt('Enter your coach credit token amount:'); 
     updateLocalStorage('coach_credit', tokens);

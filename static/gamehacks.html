@@ -36,7 +36,7 @@ function addHack(target, button) {
     localStorage.setItem('hacks', JSON.stringify(hacks));
     console.log(hacks);
 }
-            fetch('/js/json/hacks.json')
+            fetch('js/json/hacks.json')
     .then(response => response.json())
     .then(data => {
         const gameHacksElement = document.getElementById('game-hacks');

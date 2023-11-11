@@ -1,7 +1,6 @@
 let iframe = document.getElementById('game-frame');
 
 function retroBowl() {
-  if(iframe.src = "https://thelandofreading.com/src/static/games/retro-bowl/index.html") {
     function updateLocalStorage(key, newValue) { 
         let savedata = localStorage.getItem('RetroBowl.0.savedata.ini'); 
         let lines = savedata.split('\n'); 
@@ -18,5 +17,4 @@ function retroBowl() {
     let tokens = prompt('Enter your coach credit token amount:'); 
     updateLocalStorage('coach_credit', tokens);
     alert("Now refresh and your credits will be there.")
-  } 
 }

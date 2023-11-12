@@ -73,11 +73,21 @@ function fullscreen() {
 };
     document.getElementById('game-frame').src = localStorage.getItem("currentgame");
     document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
-    let hacks = JSON.parse(localStorage.getItem('hacks'));
+    let gamehaks = JSON.parse(localStorage.getItem('hacks'));
     let game = localStorage.getItem('currentgamecheat');
-    if (hacks.includes(game)) {
-      document.getElementById('hack').style.display = 'block';
-      document.getElementById('hack').onclick = gameFunctions[game];
+    let gameFunctions = {
+      "retrobowl": retroBowl,
+      "vexsix": vexSix,
+      "templeruntwo": templeRunTwo,
+      "bobtherobbertwo": bobTheRobberTwo,
+      "cookieclicker": cookieClicker,
+      "jetpackjoyride": jetPackJoyride,
+      "monkeymart": monkeyMart,
+      "eggycar": eggyCar,
+      };
+    if (gamehaks.includes(game)) {
+      document.getElementById('cheat').style.display = 'block';
+      document.getElementById('cheat').onclick = gameFunctions[game];
     }
   </script>
 <script src="./js/home.js"></script>

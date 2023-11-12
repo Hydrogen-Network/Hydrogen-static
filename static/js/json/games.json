@@ -203,7 +203,7 @@
    },
    {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bobtherobber2/index.html ",
-      "img": "https://hydrogen-network.github.io/img/btr2.jpeg ",
+      "img": "https://hydrogen-network.github.io/img/btr2.jpeg",
       "name": "Bob The Robber 2",
       "desc": "Enter locations around the town and loot them, picking locks, avoiding traps, lasers, and guards in this cute action adventure.",
       "categories": "all"
@@ -259,14 +259,14 @@
    },
    {
       "url": "/cdn/chromedino/",
-      "img": "https://hydrogen-network.github.io/img/chromedino.jpeg ",
+      "img": "https://hydrogen-network.github.io/img/chromedino.jpeg",
       "name": "Chrome Dino",
       "desc": "Google Chrome's unblocked offline game when there is no access to the internet. Press the spacebar to start.",
       "categories": "all"
    },
    {
       "url": "https://dinoswords.gg/",
-      "img": "https://hydrogen-network.github.io/img/chromedinomodded.jpeg ",
+      "img": "https://hydrogen-network.github.io/img/chromedinomodded.jpeg",
       "name": "Chrome Dino (Modded)",
       "desc": "Essentially the chrome dino game but better. Tags: action, mods, dino game",
       "categories": "all"
@@ -280,7 +280,7 @@
    },
    {
       "url": "https://html5.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d/",
-      "img": "https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.jpeg ",
+      "img": "https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.jpeg",
       "name": "Climb Racing 3D",
       "desc": "Characters, cars and maps are waiting for you in the car racing game full of fun and adventure with colorful visual effects.",
       "categories": "all 2P"
@@ -294,7 +294,7 @@
    },
    {
       "url": "https://raw.githack.com/3kh0/3kh0-Assets/main//cookie-clicker/index.html ",
-      "img": "https://hydrogen-network.github.io/img/cookie-clicker.jpeg ",
+      "img": "https://hydrogen-network.github.io/img/cookie-clicker.jpeg",
       "name": "Cookie Clicker",
       "desc": "Cookie Clicker is an incremental web-browser game developed by Orteil. The goal of the game is to produce as many cookies as possible.",
       "categories": "all"
@@ -436,9 +436,51 @@
    },
    {
       "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
-      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
+      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
       "name": "Fireboy and Watergirl",
       "desc": "Fireboy and Watergirl are exploring the Forest Temple in search of diamonds.",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://slope-game.github.io/fireboy-water-2/",
+      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
+      "name": "Fireboy and Watergirl",
+      "desc": "Fireboy and Watergirl are exploring the Light Temple.",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
+      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
+      "name": "Fireboy and Watergirl",
+      "desc": "Fireboy and Watergirl are exploring the Forest Temple in search of diamonds.",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://slope-game.github.io/fireboy-water-3/",
+      "img": "https://img.gamedistribution.com/a55c9cc9c214fc683c8c6857f3d0c75-512x512.jpeg",
+      "name": "Fireboy and Watergirl",
+      "desc": "Click here! this is so fun",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://slope-game.github.io/fireboy-water-4/",
+      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
+      "name": "Fireboy and Watergirl",
+      "desc": "Fireboy and Watergirl are exploring the Crystal Temple in search of crystals.",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://slope-game.github.io/fireboy-water-5/",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRWaerLDpxHaPNdfRCn8XuQosN4Al8tP5Lw&usqp=CAU",
+      "name": "Fireboy and Watergirl",
+      "desc": "A 2 player game where you have to work together using logic and teamwork to get to the finish line.",
+      "categories": "all 2P"
+   },
+   {
+      "url": "https://slope-game.github.io/fireboy-water-6/",
+      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
+      "name": "Fireboy and Watergirl",
+      "desc": "this is real?",
       "categories": "all 2P"
    },
    {
@@ -470,7 +512,7 @@
    },
    {
       "url": "//raw.githack.com/3kh0/3kh0-assets/main/getaway-shootout/index.html ",
-      "img": "https://hydrogen-network.github.io/img/getawayshootout.jpeg ",
+      "img": "https://hydrogen-network.github.io/img/getawayshootout.jpeg",
       "name": "Getaway Shootout",
       "desc": "This is a chaotic two-player game where you race three others to the extraction point. You can only move by jumping left or right.",
       "categories": "all 2P"
@@ -511,14 +553,14 @@
    },
    {
       "url": "https://games-online.io/game/HappyWheels ",
-      "img": "https://hydrogen-network.github.io/img/happywheels.jpeg ",
+      "img": "https://hydrogen-network.github.io/img/happywheels.jpeg",
       "name": "Happy Wheels",
       "desc": "Happy Wheels is an obstacle scooter extreme adventure game. Your goal is to reach the destination successfully. Obstacles on the road may kill you at any time!",
       "categories": "all"
    },
    {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/HexGL/index.html ",
-      "img": "https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.jpeg ",
+      "img": "https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.jpeg",
       "name": "HexGL",
       "desc": "Compete to capture and control territory on a hexagonal grid. With simple yet deep gameplay mechanics, HexGL offers a challenging and rewarding experience for players of all skill levels.",
       "categories": "all"
@@ -563,13 +605,6 @@
       "img": "https://tombofthemask.github.io/images/banner.webp",
       "name": "Tomb of the Mask",
       "categories": "all"
-   },
-   {
-      "url": "https://educationgg-23704.web.app/games/FBWG4-main/index.html ",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRWaerLDpxHaPNdfRCn8XuQosN4Al8tP5Lw&usqp=CAU",
-      "name": "Fireboy and Watergirl",
-      "desc": "A 2 player game where you have to work together using logic and teamwork to get to the finish line.",
-      "categories": "all 2P"
    },
    {
       "url": "//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/index.html ",

@@ -1,7 +1,7 @@
          let switches = document.getElementById('2');
 
-         if(window.localStorage.getItem('v4Particles') != "") {
-           if(window.localStorage.getItem('v4Particles') == "true") {
+         if(localStorage.getItem('v4Particles') != "") {
+           if(localStorage.getItem('v4Particles') == "true") {
              switches.checked = true;
            }
            else {
@@ -10,19 +10,20 @@
          }
 
          async function particles() {
+                  switches = document.getElementById('3');
                   switches.addEventListener('change', (event) => {
                     if (event.currentTarget.checked) {
-                      window.localStorage.setItem('v4Particles', 'true');
+                      localStorage.setItem('v4Particles', 'true');
                     } else {
-                      window.localStorage.setItem('v4Particles', 'false');
+                      localStorage.setItem('v4Particles', 'false');
                     }
                   });
          }
 
 
 
-         if(window.localStorage.getItem('RandomBG') != "") {
-           if(window.localStorage.getItem('RandomBG') == "true") {
+         if(localStorage.getItem('RandomBG') != "") {
+           if(localStorage.getItem('RandomBG') == "true") {
              switches.checked = true;
            }
            else {
@@ -32,9 +33,9 @@
 
          switches.addEventListener('change', (event) => {
            if (event.currentTarget.checked) {
-             window.localStorage.setItem('RandomBG', 'true');
+             localStorage.setItem('RandomBG', 'true');
            } else {
-             window.localStorage.setItem('RandomBG', 'false');
+             localStorage.setItem('RandomBG', 'false');
            }
          });
 
@@ -42,8 +43,8 @@
 
 
 
-         if(window.localStorage.getItem('cursor') != "") {
-           if(window.localStorage.getItem('cursor') == "true") {
+         if(localStorage.getItem('cursor') != "") {
+           if(localStorage.getItem('cursor') == "true") {
              switches.checked = true;
            }
            else {
@@ -55,9 +56,9 @@
          async function cursor() {
                   switches.addEventListener('change', (event) => {
                     if (event.currentTarget.checked) {
-                      window.localStorage.setItem('cursor', 'true');
+                      localStorage.setItem('cursor', 'true');
                     } else {
-                      window.localStorage.setItem('cursor', 'false');
+                      localStorage.setItem('cursor', 'false');
                     }
                   });         
          }
@@ -66,8 +67,8 @@
 
 
 
-         if(window.localStorage.getItem('clickoff_cloaking') != "") {
-           if(window.localStorage.getItem('clickoff_cloaking') == "true") {
+         if(localStorage.getItem('clickoff_cloaking') != "") {
+           if(localStorage.getItem('clickoff_cloaking') == "true") {
              switches.checked = true;
            }
            else {
@@ -76,11 +77,12 @@
          }
 
          async function clickofflcloak() {
+                  switches = document.getElementById('4');
                   switches.addEventListener('change', (event) => {
                     if (event.currentTarget.checked) {
-                      window.localStorage.setItem('clickoff_cloaking', 'true');
+                      localStorage.setItem('clickoff_cloaking', 'true');
                     } else {
-                      window.localStorage.setItem('clickoff_cloaking', 'false');
+                      localStorage.setItem('clickoff_cloaking', 'false');
                     }
                   });         
          }

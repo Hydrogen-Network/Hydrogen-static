@@ -61,19 +61,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }   
     }
     start();
-    let originalTitle = document.title;
-    let originalFavicon = document.querySelector("link[rel='icon']").href;
-
-    function handleVisibilityChange() {
-     if (localStorage.getItem('clickoff_cloaking') === 'true') {
-       if (document.hidden) {
-         document.title = "Google";
-         document.querySelector("link[rel*='icon']").href = "https://raw.githubusercontent.com/whitespider-dev/whitespider/Main/res/google.ico";
-       } else {
-          document.title = originalTitle;
-          document.querySelector("link[rel='icon']").href = originalFavicon;
-        }
-       }
-    }
-    document.addEventListener("visibilitychange", handleVisibilityChange);
 });

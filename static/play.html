@@ -38,20 +38,23 @@
   <br/>
   <h1 style="color:white;" id="gamename"></h1>
     <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
-    <div id="flbutton">
-    <a href="#" class="flbtn" onclick="fullscreen()"><i class="flbtnicon fa-solid fa-expand"></i></a>
+    <div id="controls">
+    <i onclick="fullscreen()" class="fa-solid fa-expand"></i>
+    <a href="#" class="" onclick="" style="display: none;"></a.
     </div>
   <style>
     #gamename {
       color: red;
     }
-    #flbutton {
-  bottom: 15px;
-  right: 2px;
+    .controls {
+    width: max-content;
+    z-index: 100;
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 117, 226);
 }
-    #flbtnicon {
-      color: red;
-    }
   </style>
   <script>
     cookieconsent();

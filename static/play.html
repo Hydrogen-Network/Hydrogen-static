@@ -73,8 +73,8 @@ function fullscreen() {
 };
     document.getElementById('game-frame').src = localStorage.getItem("currentgame");
     document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
-    if(localStorage.getItem('currentgamecheat')) {
-      document.getElementById('cheat').onclick = localStorage.getItem('currentgamecheat');
+    if(localStorage.getItem('currentgamecheat') === "retrobowl") {
+      document.getElementById('cheat').onclick = "retroBowl();";
     }
   </script>
 <script src="./js/home.js"></script>

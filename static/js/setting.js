@@ -61,3 +61,26 @@
                     }
                   });         
          }
+
+
+
+
+
+         if(window.localStorage.getItem('clickoff_cloaking') != "") {
+           if(window.localStorage.getItem('clickoff_cloaking') == "true") {
+             switches.checked = true;
+           }
+           else {
+             switches.checked = false;
+           }
+         }
+
+         async function clickofflcloak() {
+                  switches.addEventListener('change', (event) => {
+                    if (event.currentTarget.checked) {
+                      window.localStorage.setItem('clickoff_cloaking', 'true');
+                    } else {
+                      window.localStorage.setItem('clickoff_cloaking', 'false');
+                    }
+                  });         
+         }

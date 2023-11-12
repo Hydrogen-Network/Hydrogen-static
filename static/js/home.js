@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let originalFavicon = document.querySelector("link[rel='icon']").href;
 
     function handleVisibilityChange() {
-     if (toggleCheckbox.checked) {
+     if (localStorage.getItem('clickoff_cloaking') === 'true') {
        if (document.hidden) {
          document.title = "Google";
          document.querySelector("link[rel*='icon']").href = "https://raw.githubusercontent.com/whitespider-dev/whitespider/Main/res/google.ico";

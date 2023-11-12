@@ -11,7 +11,7 @@ fetch('/static/js/json/games.json')
       const gameEl = document.createElement('li');
       gameEl.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
-          <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
               <div class="gameinfo">
                   <b>

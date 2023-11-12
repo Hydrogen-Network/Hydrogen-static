@@ -786,10 +786,10 @@
       "categories": "all"
    },
    {
-      "url": "//cdn/retro-bowl",
+      "url": "/cdn/retro-bowl",
       "img": "https://thelandofreading.com/src/static/icons/retrobowl.jpg",
       "name": "Retro Bowl",
-      "cheat": "retroBowl();"
+      "cheat": "retrobowl"
       "desc": "Play as a team from the 80s and 90s, complete with neon colors and pixelated graphics. The game features simple controls and a variety of game modes, including exhibition matches, tournaments, and even a mini-golf game. Can you lead your team to victory in this nostalgic throwback to classic football games?",
       "categories": "all 2P sports"
    },

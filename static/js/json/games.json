@@ -738,6 +738,13 @@
       "categories": "all 2P"
    },
    {
+      "url": "/cdn/papermc",
+      "img": "https://feeshmaster.github.io/Assets/paper%20minecraft.jpeg",
+      "name": "Paper Minecraft",
+      "desc": "Minecraft but 2D!",
+      "categories": "all"
+   },
+   {
       "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/flash/index.html?swf=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/flash/pandemic.swf",
       "img": "https://thelandofreading.com/src/static/icons/pandemic.webp",
       "name": "Pandemic",

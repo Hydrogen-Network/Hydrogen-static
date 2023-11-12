@@ -48,7 +48,7 @@ const select = document.querySelector('select');
          document.title = "Google";
          document.querySelector("link[rel*='icon']").href = "https://raw.githubusercontent.com/whitespider-dev/whitespider/Main/res/google.ico";
        } else {
-          document.title = originalTitle;
+          document.title = "Hydrogen";
           document.getElementById('dynamic-favicon').href = originalFavicon;
         }
        }

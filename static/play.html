@@ -40,7 +40,7 @@
     <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
     <div id="controls">
     <i onclick="fullscreen()" class="fa-solid fa-expand"></i>
-    <a href="#" class="" onclick="" style="display: none;"></a.
+    <a id="cheat" href="#" style="display: none;">Run Cheat</a>
     </div>
   <style>
     #gamename {
@@ -73,6 +73,9 @@ function fullscreen() {
 };
     document.getElementById('game-frame').src = localStorage.getItem("currentgame");
     document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
+    if(localStorage.getItem('currentgamecheat')) {
+      document.getElementById('cheat').onclick = localStorage.getItem('currentgamecheat');
+    }
   </script>
 <script src="./js/home.js"></script>
 <!--Start of Tawk.to Script-->

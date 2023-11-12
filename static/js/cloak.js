@@ -40,7 +40,7 @@ const select = document.querySelector('select');
 
 
     let originalTitle = document.title;
-    let originalFavicon = document.querySelector("link[rel='icon']").href;
+    let originalFavicon = document.getElementById('dynamic-title').href;
 
     function handleVisibilityChange() {
      if (localStorage.getItem('clickoff_cloaking') === 'true') {

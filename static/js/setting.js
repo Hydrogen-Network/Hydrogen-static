@@ -54,6 +54,7 @@
 
 
          async function cursor() {
+                  switches = document.getElementById('4');
                   switches.addEventListener('change', (event) => {
                     if (event.currentTarget.checked) {
                       localStorage.setItem('cursor', 'true');
@@ -77,7 +78,7 @@
          }
 
          async function clickofflcloak() {
-                  switches = document.getElementById('4');
+                  switches = document.getElementById('5');
                   switches.addEventListener('change', (event) => {
                     if (event.currentTarget.checked) {
                       localStorage.setItem('clickoff_cloaking', 'true');

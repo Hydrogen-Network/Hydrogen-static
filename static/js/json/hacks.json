@@ -23,7 +23,7 @@
     "testtarget": "cookieclicker",
     "testimage": "./assets/cookie-clicker.png",
     "name": "Monkey Mart Coins",
-    "creator": "blazer",
+    "creator": "coding4hours",
     "target": "monkeymart",
     "image": "./assets/monkey-mart.png"
   }

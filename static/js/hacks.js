@@ -30,7 +30,7 @@ function vexSix() {
 
     localStorage.setItem('vex6_sg', JSON.stringify(vex6_sg));
 
-    alert("Now refresh PhantomGames and your vex 6 coins will be set!")
+    alert("Now refresh Hydrogen and your vex 6 coins will be set!")
 }
 
 function monkeyMart() {
@@ -42,7 +42,7 @@ function monkeyMart() {
 
     localStorage.setItem('monkeymart_config', JSON.stringify(vex6_sg));
 
-    alert("Now refresh PhantomGames and your vex 6 coins will be set!");
+    alert("Now refresh Hydrogen and your vex 6 coins will be set!");
 }
 
 function templeRunTwo() {
@@ -54,7 +54,7 @@ function templeRunTwo() {
 
     localStorage.setItem('TR2_GAME_STATE', JSON.stringify(storage));
 
-    alert("Now refresh PhantomGames and your coins will be set!")
+    alert("Now refresh Hydrogen and your coins will be set!")
 }
 
 function bobTheRobberTwo() {
@@ -62,7 +62,7 @@ function bobTheRobberTwo() {
 
     localStorage.setItem('totalMoneyBOB2Robb3r', newValue)
 
-    alert("Now refresh PhantomGames and your money in Bob The Robber 2 will be set!")
+    alert("Now refresh Hydrogen and your money in Bob The Robber 2 will be set!")
 }
 
 function cookieClicker() {
@@ -77,7 +77,7 @@ function jetPackJoyride() {
     if (storage && typeof storage.coin !== 'undefined') {
         storage.coin = Number(newValue);
         localStorage.setItem('data', JSON.stringify(storage));
-        alert("Now refresh PhantomGames and your coins will be set!");
+        alert("Now refresh Hydrogen and your coins will be set!");
     } else {
         alert("Error: JetPackJoyride game state not found or is corrupted!");
     }
@@ -113,7 +113,7 @@ function eggyCar() {
         store.put(newValue, 'eggcar_coins');
 
         transaction.oncomplete = function() {
-            alert("Now refresh PhantomGames and your Egg Cart coins will be set!");
+            alert("Now refresh Hydrogen and your Egg Cart coins will be set!");
         };
 
         transaction.onerror = function() {

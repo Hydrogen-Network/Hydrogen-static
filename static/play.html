@@ -6,6 +6,7 @@
 <title id="dynamic-title">Hydrogen</title>
     <p style="font-size: 0.1px;">warwarwrwar</p>
   <script src="https://kit.fontawesome.com/204c1cf7c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 
     <script src="./js/main.js"></script>
     <script src="./js/shortkey.js"></script>
@@ -35,29 +36,19 @@
                 <a href="./settings.html">Settings</a>
             </div>
         </div>
-  <br/>
-  <br/>
   <h1 style="color:white;" id="gamename"></h1>
     <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
     <div id="controls">
       <div id="flbutton">
           <a href="#" class="flbtn" onclick="fullscreen()"><i class="fa-solid fa-expand"></i></a>
       </div>
-    <a id="cheat" href="#" style="display: none;">Run Cheat</a>
+      <span id="hack" style="display: block;">
+                        <i class="fa-solid fa-code hack"></i>
+                        <h3>Run Hack</h3>
+                    </span>
     </div>
+  
   <style>
-    #gamename {
-      color: red;
-    }
-    .controls {
-    width: max-content;
-    z-index: 100;
-    border-radius: 0.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 117, 226);
-}
     .flbtn {
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -87,6 +78,43 @@
   left: 6px;
 }
 
+.controls #hack {
+    position: relative;
+    display: none;
+}
+
+.controls i.hack {
+    background-color: #006bcf;
+    color: #fff;
+    text-shadow: none;
+    margin: .5vw;
+    padding: .5vw;
+    border-radius: .5vw;
+}
+
+.controls #hack:hover h3 {
+    opacity: 1;
+    z-index: 9999;
+    transition: opacity .2s ease;
+}
+
+.controls span h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: opacity .2s ease;
+    opacity: 0;
+    background-color: #292929ee;
+    padding: .2vw .5vw;
+    margin-top: -.2vw;
+    border-radius: .5vw;
+    box-shadow: 0 0 5px #181818;
+    font-size: 1vw;
+    cursor: pointer;
+    width: max-content;
+    text-align: center;
+}
+    
 #closeButton {
   position: absolute;
   right: 15px;

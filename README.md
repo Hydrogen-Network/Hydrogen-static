@@ -50,8 +50,6 @@
 
 
 <!-- GETTING STARTED -->
-[![Stargazers over time](https://starchart.cc/radmanplays/radmanplays.github.io.svg)](https://starchart.cc/radmanplays/radmanplays.github.io)
-
 ## Deployment
 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen/)

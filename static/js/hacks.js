@@ -34,11 +34,11 @@ function vexSix() {
 }
 
 function monkeyMart() {
-    let vex6_sg = JSON.parse(localStorage.getItem('monkeymart_config'));
+    let mart_sg = JSON.parse(localStorage.getItem('monkeymart_config'));
 
     let newValue = prompt('Enter your new amount of Coins:');
 
-    vex6_sg.coins = Number(newValue);
+    mart_sg.coins = Number(newValue);
 
     localStorage.setItem('monkeymart_config', JSON.stringify(vex6_sg));
 

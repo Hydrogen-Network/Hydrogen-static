@@ -13,8 +13,6 @@
 [![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/issues)
 [![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/blob/master/LICENSE.txt)
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -52,6 +50,8 @@
 
 
 <!-- GETTING STARTED -->
+[![Stargazers over time](https://starchart.cc/radmanplays/radmanplays.github.io.svg)](https://starchart.cc/radmanplays/radmanplays.github.io)
+
 ## Deployment
 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen/)

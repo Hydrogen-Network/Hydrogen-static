@@ -12,16 +12,18 @@
     "image": "https://phantoms.gq/assets/vex6.jpeg"
   },
   {
-    "name": "BobTheRobber Money",
-    "creator": "blazer",
-    "target": "bobtherobbertwo",
-    "image": "./assets/bob-the-robber-2.png"
+    "testname": "BobTheRobber Money",
+    "testcreator": "coding4hours",
+    "testtarget": "bobtherobbertwo",
+    "testimage": "./assets/bob-the-robber-2.png"
   },
   {
     "testname": "Cookie Clicker Hack",
     "testcreator": "coding4hours",
     "testtarget": "cookieclicker",
     "testimage": "./assets/cookie-clicker.png",
+  },
+    {
     "name": "Monkey Mart Coins",
     "creator": "coding4hours",
     "target": "monkeymart",

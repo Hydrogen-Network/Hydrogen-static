@@ -38,7 +38,7 @@
         </div>
   <h1 style="color:white;" id="gamename"></h1>
     <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
-    <div id="controls">
+    <div class="controls">
       <div id="flbutton">
           <a href="#" class="flbtn" onclick="fullscreen()"><i class="fa-solid fa-expand"></i></a>
       </div>
@@ -155,8 +155,8 @@ function fullscreen() {
       "eggycar": eggyCar,
       };
     if (gamehaks.includes(game)) {
-      document.getElementById('cheat').style.display = 'block';
-      document.getElementById('cheat').onclick = gameFunctions[game];
+      document.getElementById('hack').style.display = 'block';
+      document.getElementById('hack').onclick = gameFunctions[game];
     }
   </script>
 <script src="./js/home.js"></script>

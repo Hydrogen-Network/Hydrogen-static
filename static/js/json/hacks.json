@@ -12,10 +12,10 @@
       "image":"https://phantoms.gq/assets/vex6.jpeg"
    },
    {
-      "testname":"BobTheRobber Money",
-      "testcreator":"coding4hours",
-      "testtarget":"bobtherobbertwo",
-      "testimage":"./assets/bob-the-robber-2.png"
+      "name":"BobTheRobber Money",
+      "creator":"coding4hours",
+      "target":"bobtherobbertwo",
+      "image":"./assets/bob-the-robber-2.png"
    },
    {
       "testname":"Cookie Clicker Hack",

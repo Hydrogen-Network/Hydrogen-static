@@ -55,8 +55,6 @@
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Hydrogen-Network/Hydrogen/)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/Hydrogen-Network/Hydrogen) 
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Hydrogen-Network/Hydrogen)
-[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/Hydrogen-Network/Hydrogen)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Hydrogen-Network/Hydrogen&branch=main&name=Hydrogen)
 ```bash
 git clone https://github.com/Hydrogen-Network/Hydrogen
 # clone the repo
@@ -79,6 +77,8 @@ fork the repo then go to settings and in the `Code and automation` section press
 [https://hydrogen-hosted.github.io/](https://hydrogen-hosted.github.io/)
 <br/>
 [https://3v3ry0n3.github.io/Hydrogen/](https://3v3ry0n3.github.io/Hydrogen/)
+<br/>
+[https://coding4hours.github.io/Hydrogen-Static/static/](https://coding4hours.github.io/Hydrogen-Static/static/)
 
  <p align="right">(<a href="#readme">back to top</a>)</p>
 

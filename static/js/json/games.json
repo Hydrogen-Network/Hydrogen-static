@@ -525,6 +525,13 @@
       "categories": "all 2P"
    },
    {
+      "url": "https://games.defnotgxmes.ink/getting-over-it/",
+      "img": "https://bchs.pages.dev/assets/img/thumbnails/getting-over-it-scratch-edition.png",
+      "name": "Getting Over It",
+      "desc": "Fun Play it",
+      "categories": "all"
+   },
+   {
       "url": "https://thelandofreading.com/src/static/games/google-feud/index.html",
       "img": "https://thelandofreading.com/src/static/icons/feud.png",
       "name": "Google Feud",
@@ -632,6 +639,13 @@
       "img": "https://hydrogen-network.github.io/img/learntofly.png",
       "name": "Learn to Fly",
       "desc": "Learn to Fly is a launcher game where you play as a penguin attempting to fly using a ramp and various gadgets.",
+      "categories": "all"
+   },
+   {
+      "url": "https://games-cloudflare.defnotgxmes.ink/learntofly2/",
+      "img": "assets/img/thumbnails/learn-to-fly-2.png",
+      "name": "Learn to Fly2",
+      "desc": "wow the second version",
       "categories": "all"
    },
    {

@@ -146,7 +146,7 @@
       "categories": "all 2P sports"
    },
    {
-      "url": "https://html5.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8/?gd_sdk_referrer_url=https://gamedistribution.com/games/basket-random",
+      "url": "https://games-cloudflare.defnotgxmes.ink/basket-random/",
       "img": "https://img.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8-512x512.jpeg",
       "name": "Basket Random",
       "desc": "Basketball is here with its most funny and random way. In Basket Random game, try to score a basket by using only one key with different variations from each other!",
@@ -167,7 +167,7 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bloonstd2/index.html ",
+      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bloonstd2/index.html",
       "img": "https://hydrogen-network.github.io/img/btd2.png ",
       "name": "Bloons TD2",
       "desc": "Bloons Tower Defense 2 is a popular tower defense game originally released in Flash by Ninja Kiwi.",
@@ -202,11 +202,18 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bobtherobber2/index.html ",
+      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bobtherobber2/index.html",
       "img": "https://hydrogen-network.github.io/img/btr2.jpeg",
       "name": "Bob The Robber 2",
       "desc": "Enter locations around the town and loot them, picking locks, avoiding traps, lasers, and guards in this cute action adventure.",
       "categories": "all"
+   },
+   {
+      "url": "https://games-cloudflare.defnotgxmes.ink/boxing-random/",
+      "img": "https://bchs.pages.dev/assets/img/thumbnails/boxing-random.png",
+      "name": "Boxing Random",
+      "desc": "AAAAAA I GOT HIT!!!!!!!!!!",
+      "categories": "all 2P"
    },
    {
       "url": "/cdn/breaklock/",
@@ -293,7 +300,7 @@
       "categories": "all 2P"
    },
    {
-      "url": "https://raw.githack.com/3kh0/3kh0-Assets/main//cookie-clicker/index.html ",
+      "url": "https://raw.githack.com/3kh0/3kh0-Assets/main//cookie-clicker/index.html",
       "img": "https://hydrogen-network.github.io/img/cookie-clicker.jpeg",
       "name": "Cookie Clicker",
       "desc": "Cookie Clicker is an incremental web-browser game developed by Orteil. The goal of the game is to produce as many cookies as possible.",
@@ -314,14 +321,14 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main//crossyroad/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main//crossyroad/index.html",
       "img": "https://hydrogen-network.github.io/img/crossyroad.png ",
       "name": "Crossy Road",
       "desc": "Crossy Road is a retro-arcade-styled game in which the player controls a chicken and a seemingly endless range of animals, in order to get across a busy road.",
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main//ctr/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main//ctr/index.html",
       "img": "https://hydrogen-network.github.io/img/ctr.png ",
       "name": "Cut the Rope",
       "desc": "Cut the Rope is a physics-based puzzle game. The game revolves around feeding a creature named Om Nom with candy by cutting ropes in a certain manner.",
@@ -334,7 +341,7 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/dante/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/dante/index.html",
       "img": "https://hydrogen-network.github.io/img/dat.jpg",
       "name": "Dante",
       "desc": "Collect souls in this platformer set in hell.",
@@ -368,7 +375,7 @@
       "categories": "all 2P"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/ducklife3/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/ducklife3/index.html",
       "img": "https://hydrogen-network.github.io/img/ducklife3.png ",
       "name": "Duck Life 3",
       "desc": "Duck Life 3 is a racing game featuring genetically modified ducks. Choose from one of four duck breeds and evolve as you complete each league.",
@@ -382,21 +389,21 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/DogeMiner/index.html ",
+      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/DogeMiner/index.html",
       "img": "https://dogeminer.se/img/dogeminer_300x300.png ",
       "name": "Dogeminer",
       "desc": "Dogeminer is a lighthearted and addictive game where you play as a dog mining for coins. With simple gameplay and cute graphics, it's easy to get hooked on digging for digital treasures!",
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/Dogeminer2/index.html ",
+      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/Dogeminer2/index.html",
       "img": "https://dogeminer2.com/img/dogeminer2.png ",
       "name": "Dogeminer 2",
       "desc": "Build such mining operation, get much dogecoins. Hire many help to increase dogecoin per second. Buy Space Rockets to reach the moon and beyond.",
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/drive-mad/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/drive-mad/index.html",
       "img": "https://hydrogen-network.github.io/img/dmd.jpg ",
       "name": "Drive Mad",
       "desc": "Drive Mad is a car game where you drive on a track filled with obstacles.",
@@ -484,14 +491,14 @@
       "categories": "all 2P"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/flappybird/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/flappybird/index.html",
       "img": "https://hydrogen-network.github.io/img/fp.png ",
       "name": "Flappy Bird",
       "desc": "Flappy Bird is a game where you tap the screen to make the bird fly.",
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/fruitninja/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/fruitninja/index.html",
       "img": "https://hydrogen-network.github.io/img/fn.png ",
       "name": "Fruit Ninja",
       "desc": "Fruit Ninja is an addictive arcade game where you slash fruit to reach a high score. Make sure you avoid slicing bombs, though!",
@@ -511,7 +518,7 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/getaway-shootout/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/getaway-shootout/index.html",
       "img": "https://hydrogen-network.github.io/img/getawayshootout.jpeg",
       "name": "Getaway Shootout",
       "desc": "This is a chaotic two-player game where you race three others to the extraction point. You can only move by jumping left or right.",
@@ -538,7 +545,7 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/twitch-tetris/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/twitch-tetris/index.html",
       "img": "https://hydrogen-network.github.io/img/hackertetris.png ",
       "name": "Hacker Tetris",
       "desc": "Fast-paced puzzle tetris with a hacker theme. The goal is to fit all the pieces into the board. Look up how to play tetris if you dont get it.",
@@ -559,7 +566,7 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/HexGL/index.html ",
+      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/HexGL/index.html",
       "img": "https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.jpeg",
       "name": "HexGL",
       "desc": "Compete to capture and control territory on a hexagonal grid. With simple yet deep gameplay mechanics, HexGL offers a challenging and rewarding experience for players of all skill levels.",
@@ -594,7 +601,7 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/there-is-no-game/index.html ",
+      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/e3144855e924629d8f7c41238660a823a5336705/there-is-no-game/index.html",
       "img": "https://play-lh.googleusercontent.com/a6DfrYUL6viV0LAZFplqqA44gE0LHE0PyDnKHgdlydiUvccwzSBWrmRQSx5cjdL74Us=w240-h480-rw",
       "name": "There Is No Game",
       "desc": "There is No Game! Or is there? Complete various challenges as the narrator attempts to convince you there is no game.",
@@ -607,7 +614,7 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/index.html ",
+      "url": "//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/index.html",
       "img": "//raw.githack.com/3kh0/3kh0-assets/main/jetpack-joyride/splash.jpg ",
       "name": "Jetpack Joyride",
       "desc": "Jetpack Joyride is a side-scrolling, endless runner game in which you are traveling through a laboratory using a stolen bullet-powered jetpack.",
@@ -1090,7 +1097,7 @@
       "categories": "all"
    },
    {
-      "url": "https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F%606d01bfc707e6d58c15359c5c81e004b-",
+      "url": "https://games-cloudflare.defnotgxmes.ink/volley-random/",
       "img": "https://img.gamedistribution.com/b6f03bdc505e4d78a17379a5a83e206b-512x512.jpeg",
       "name": "Volley Random",
       "desc": "The fun random game series continues with Volley Random. There is a Volleyball experience unlike any before. With fun ragdoll physics and a variety of variations!",

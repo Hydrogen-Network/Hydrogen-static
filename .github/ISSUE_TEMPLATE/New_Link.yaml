@@ -1,0 +1,12 @@
+name: New Link
+description: Send a Link to put from mirrors.md
+title: "[Link]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+    validations:
+      required: true

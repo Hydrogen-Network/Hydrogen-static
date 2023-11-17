@@ -1,5 +1,5 @@
 name: New Link
-description: Send a Link to put from mirrors.md
+description: Send a Link to put in mirrors.md
 title: "[Link]: "
 labels:
   - bug

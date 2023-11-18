@@ -61,6 +61,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (localStorage.getItem('customcolor') == "true") {
             document.body.style.background = localStorage.getItem("backdrop-color");
         }   
+        const css = localStorage.getItem('websiteCSS');
+        if (css) {
+          applyCSS(css);
+
+      const cssSelect = document.getElementById('css-select');
+      if (cssSelect) {
+        for (let i = 0; i < cssSelect.options.length; i++) {
+          if (cssSelect.options[i].value === css) {
+            cssSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
     }
     start();
 });

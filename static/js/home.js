@@ -67,18 +67,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 document.addEventListener('keydown', function (event) {
       console.log('Keydown event:', event);
-      const target = event.target;
-      const customCSS = localStorage.getItem('emergencyHotkey');
-      if (customCSS && (!target || (target.nodeName !== 'INPUT' || target.getAttribute('id') !== 'uv-address'))) {
-        const pressedKey = event.key.toLowerCase();
-        const emergencyHotkey = localStorage.getItem('emergencyHotkey');
-  
-        if (pressedKey === emergencyHotkey) {
-          const emergencyURL = localStorage.getItem('emergencyURL');
-  
-          if (emergencyURL) {
-            window.location.href = emergencyURL;
-          }
-        }
-      }
 });

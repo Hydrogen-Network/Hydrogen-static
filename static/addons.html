@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
@@ -10,86 +10,235 @@
     <script src="./js/shortkey.js"></script>
     <script src="./js/cookies.js" async defe>
       cookieconsent();
-   </script>
+    </script>
     <script src="./js/home.js"></script>
     <script src="./js/cloak.js"></script>
     <meta name="description" content="warwarwarwarwarwar" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
     <link rel="stylesheet" href="./css/index.css">
-        <title id="dynamic-title">Hydrogen</title>
+    <title id="dynamic-title">Hydrogen</title>
   </head>
-   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1GKR3GL1R"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1GKR3GL1R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-Y1GKR3GL1R');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-Y1GKR3GL1R');
+  </script>
   <body>
+    <script>
+      function addPlugin(target, button) {
+        let plugins = JSON.parse(localStorage.getItem('plugins')) || [];
+        if (plugins.includes(target)) {
+          plugins = plugins.filter(plugin => plugin !== target);
+          button.innerHTML = 'Install < i class = "fa-solid fa-circle-down" > < /i>';
+          button.classList.remove('remove');
+        } else {
+          plugins.push(target);
+          button.innerHTML = 'Remove < i class = "fa-solid fa-trash" > < /i>';
+          button.classList.add('remove');
+        }
+        localStorage.setItem('plugins', JSON.stringify(plugins));
+        console.log(plugins);
+      }
+      fetch('js/json/plugins.json').then(response => response.json()).then(data => {
+        const pluginsElement = document.getElementById('plugins');
+        data.forEach(hack => {
+          const pluginDiv = document.createElement('div');
+          pluginDiv.className = 'plugin';
+          const img = document.createElement('img');
+          img.src = hack.image;
+          img.alt = 'plugin icon';
+          pluginDiv.appendChild(img);
+          const span = document.createElement('span');
+          const h2 = document.createElement('h2');
+          h2.textContent = hack.name;
+          span.appendChild(h2);
+          const button = document.createElement('button');
+          button.innerHTML = 'Install < i class = "fa-solid fa-circle-down" > < /i>';
+          button.addEventListener('click', () => addPlugin(hack.target, button));
+          span.appendChild(button);
+          pluginDiv.appendChild(span);
+          pluginsElement.appendChild(pluginDiv);
+          let hacks = JSON.parse(localStorage.getItem('plugins')) || [];
+          if (hacks.includes(hack.target)) {
+            button.innerHTML = 'Remove < i class = "fa-solid fa-trash" > < /i>';
+            button.classList.add('remove');
+          }
+        });
+      }).catch(error => console.error('An error occurred:', error));
+    </script>
+    <style>
+      .plugins {
+        width: 5vw;
+        height: 70.5vh;
+        display: block;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: .5vw;
+        overflow-x: scroll;
+      }
+
+      .plugins::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 6px;
+      }
+
+      .plugins h3 {
+        font-size: .9vw;
+        font-weight: 500;
+        margin-top: .2vw;
+      }
+
+      .plugins h3 a {
+        color: #008cff;
+        font-weight: 700;
+      }
+
+      .plugins .plugin:first-of-type {
+        margin-top: 0;
+      }
+
+      .plugins .plugin {
+        position: relative;
+        background-color: #292929;
+        color: #fff;
+        display: block;
+        width: 94%;
+        height: max-content;
+        margin-top: .5vw;
+        border-radius: .5vw;
+        display: flex;
+      }
+
+      .plugins .plugin span {
+        margin-left: .8vw;
+        text-align: left;
+      }
+
+      .plugins .plugin h2 {
+        font-size: 1.5vw;
+        width: 100%;
+        height: min-content;
+        overflow: hidden;
+      }
+
+      .plugins .plugin img {
+        width: 5vw;
+        height: 5vw;
+        border-radius: .8vw;
+        object-fit: cover;
+      }
+
+      .plugins .plugin p {
+        position: absolute;
+        left: .5vw;
+        bottom: .5vw;
+        font-size: .9vw;
+        margin-top: .5vw;
+      }
+
+      .plugins .plugin button {
+        color: #fff;
+        background-color: #1287fc;
+        font-family: 'Montserrat', sans-serif;
+        outline: 2px solid #54aaff;
+        outline-offset: 2px;
+        border: none;
+        border-radius: .3vw;
+        font-size: 1vw;
+        padding: .2vw .6vw;
+        cursor: pointer;
+        font-weight: 500;
+        margin: .6vw 0;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .2s ease;
+      }
+
+      .plugins .plugin button:hover {
+        background-color: #0d73da;
+        transition: background-color .2s ease;
+      }
+
+      .plugins .plugin button i {
+        font-size: .9vw;
+        margin-left: .2vw;
+      }
+
+      .plugins .plugin button.remove {
+        background-color: #ff4141;
+        outline: 2px solid #d63333;
+      }
+    </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-         <div id="cookieNotice" class="light display-right" style="display: none;">
-        <div id="closeIcon" style="display: none;"></div>
-        <div class="title-wrap">
-            <h4>Cookie Consent</h4>
-        </div>
-        <div class="content-wrap">
-            <div class="msg-wrap">
-                <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience
-                    and provide personalized recommendations. By continuing to use our website, you agree to our <a
-                        style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a></p>
-                <div class="btn-wrap">
-                    <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
-                </div>
-                <div class="btn-wrap">
-                    <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="navbar">
-            <a href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png" /></a>
-            <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
-                <a href="./apps.html">Apps</a>
-                <a href="./extras.html">Extras</a>
-                <a href="./games.html">Games</a>
-                <a href="./faq.html">FAQ</a>
-                <a href="./settings.html">Settings</a>
-            </div>
-        </div>
-    <div class="container" id="particles-js">
-    </div>
-   <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
-    <div style="display: flex; justify-content: space-between !important; align-items: left;">
-      <div style="margin-right:45rem;">
-        <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
-        title="The Hydrogen Network GitHub organization" 
-        href="https://github.com/Hydrogen-Network"
-        >Hydrogen Network</a
-        >
-        <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
-        title="The Hydrogen Network Discord"
-        href="https://discord.gg/Y3Amtwk27U"
-        >Discord</a
-        >
-        
+    <div id="cookieNotice" class="light display-right" style="display: none;">
+      <div id="closeIcon" style="display: none;"></div>
+      <div class="title-wrap">
+        <h4>Cookie Consent</h4>
       </div>
-    
+      <div class="content-wrap">
+        <div class="msg-wrap">
+          <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our <a style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a>
+          </p>
+          <div class="btn-wrap">
+            <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
+          </div>
+          <div class="btn-wrap">
+            <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="navbar">
+      <a href="./">
+        <img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png" />
+      </a>
+      <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
+        <a href="./apps.html">Apps</a>
+        <a href="./extras.html">Extras</a>
+        <a href="./games.html">Games</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./settings.html">Settings</a>
+      </div>
+    </div>
+    <div class="container" id="particles-js">
+        <h1>Plugins!</h1>
+            <div class="plugins" id="plugins">
+        </div>
+        <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between;">
+            <div style="display: flex; justify-content: space-between !important; align-items: left;">
+                <div style="margin-right: 45rem;">
+                    <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;" title="The Hydrogen Network GitHub organization" href="https://github.com/Hydrogen-Network">Hydrogen Network</a>
+                    <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;" title="The Hydrogen Network Discord" href="https://discord.gg/Y3Amtwk27U">Discord</a>
+                </div>
+            </div>
+    </div>
+    <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
+      <div style="display: flex; justify-content: space-between !important; align-items: left;">
+        <div style="margin-right:45rem;">
+          <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;" title="The Hydrogen Network GitHub organization" href="https://github.com/Hydrogen-Network">Hydrogen Network</a>
+          <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;" title="The Hydrogen Network Discord" href="https://discord.gg/Y3Amtwk27U">Discord</a>
+        </div>
+      </div>
       <div>
         <span style="align-items: right !important; text-decoration: none; color: #fff;">Hydrogen &copy; Hydrogen Network 2023</span>
       </div>
-    </div>
-      
+      </div>
     </footer>
     <p style="font-size: 0.1px;">warwarwrwar</p>
-<script>
-        cookieconsent();
-        console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
-        console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
+    <script>
+      cookieconsent();
+      console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
+      console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
     </script>
-   </body>
+  </body>
 </html>

@@ -23,6 +23,7 @@
             
 function addHack(target, button) {
     let hacks = JSON.parse(localStorage.getItem('plugins')) || [];
+    let currentplugin
 
     if (hacks.includes(target)) {
         hacks = hacks.filter(hack => hack !== target);

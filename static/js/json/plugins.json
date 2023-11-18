@@ -3,6 +3,7 @@
       "name":"[Test]",
       "creator":"[creator]",
       "target":"[whatever]",
+      "code": "alert('test');",
       "image":"[whatever]"
    }
 ]

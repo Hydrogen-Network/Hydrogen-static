@@ -33,151 +33,212 @@
   </script>
   <body>
     <script>
-      function addPlugin(target, button) {
-        let plugins = JSON.parse(localStorage.getItem('plugins')) || [];
-        if (plugins.includes(target)) {
-          plugins = plugins.filter(plugin => plugin !== target);
-          button.innerHTML = 'Install < i class = "fa-solid fa-circle-down" > < /i>';
-          button.classList.remove('remove');
-        } else {
-          plugins.push(target);
-          button.innerHTML = 'Remove < i class = "fa-solid fa-trash" > < /i>';
-          button.classList.add('remove');
-        }
-        localStorage.setItem('plugins', JSON.stringify(plugins));
-        console.log(plugins);
+const addons = [
+      {
+        name: 'DuoPower for Sodium',
+        category: 'plugins',
+        description: 'School Blocked Tampermonkey? No Sweat use DuoPower on Sodium!',
+        publisher: 'âœ… Sodium Addons',
+        url: 'https://cdn.z1g-project.pages.dev/sodium/plugins/duopower.js',
       }
-      fetch('js/json/plugins.json').then(response => response.json()).then(data => {
-        const pluginsElement = document.getElementById('plugins');
-        data.forEach(hack => {
-          const pluginDiv = document.createElement('div');
-          pluginDiv.className = 'plugin';
-          const img = document.createElement('img');
-          img.src = hack.image;
-          img.alt = 'plugin icon';
-          pluginDiv.appendChild(img);
-          const span = document.createElement('span');
-          const h2 = document.createElement('h2');
-          h2.textContent = hack.name;
-          span.appendChild(h2);
-          const button = document.createElement('button');
-          button.innerHTML = 'Install < i class = "fa-solid fa-circle-down" > < /i>';
-          button.addEventListener('click', () => addPlugin(hack.target, button));
-          span.appendChild(button);
-          pluginDiv.appendChild(span);
-          pluginsElement.appendChild(pluginDiv);
-          let hacks = JSON.parse(localStorage.getItem('plugins')) || [];
-          if (hacks.includes(hack.target)) {
-            button.innerHTML = 'Remove < i class = "fa-solid fa-trash" > < /i>';
-            button.classList.add('remove');
-          }
-        });
-      }).catch(error => console.error('An error occurred:', error));
+  ];
+  
+  function populateAddons() {
+    const addonCategory = document.getElementById('addon-category');
+    const addonSearch = document.getElementById('addon-search');
+    const addonGrid = document.querySelector('.addon-grid');
+  
+    addonGrid.innerHTML = '';
+  
+    const selectedCategory = addonCategory.value;
+    const searchQuery = addonSearch.value.toLowerCase();
+  
+    const filteredAddons = addons.filter(addon => {
+      const matchCategory = selectedCategory === 'all' || addon.category === selectedCategory;
+      const matchSearch = addon.name.toLowerCase().includes(searchQuery) ||
+                         addon.description.toLowerCase().includes(searchQuery);
+      return matchCategory && matchSearch;
+    });
+  
+    filteredAddons.forEach(addon => {
+      const addonHtml = `
+        <div class="addon-item">
+          <h3>${addon.name}</h3>
+          <p>${addon.description}</p>
+          <p class="addon-publisher">By: ${addon.publisher}</p>
+          <button class="download-button" data-type="${addon.category}" data-url="${addon.url}">Download</button>
+          <button class="uninstall-button" data-type="${addon.category}" data-url="${addon.url}">Uninstall</button>
+        </div>
+      `;
+      addonGrid.insertAdjacentHTML('beforeend', addonHtml);
+    });
+  
+    const downloadButtons = document.querySelectorAll('.download-button');
+    downloadButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const addonType = button.getAttribute('data-type');
+        const addonUrl = button.getAttribute('data-url');
+  
+        if (addonType === 'themes') {
+          localStorage.setItem('websiteCSS', addonUrl);
+          console.log('Theme downloaded:', addonUrl);
+          const notification = document.getElementById('notification');
+            notification.textContent = 'Theme Downloaded! Refresh to see Changes';
+            notification.classList.remove('hidden');
+          
+            setTimeout(() => {
+              notification.style.top = '40px';
+            }, 10);
+          
+            setTimeout(() => {
+              notification.style.top = '-50px';
+              setTimeout(() => {
+                notification.classList.add('hidden');
+              }, 500);
+            }, 3000);
+        } else if (addonType === 'plugins') {
+          let websitePlugins = JSON.parse(localStorage.getItem('websitePlugins')) || [];
+          websitePlugins.push(addonUrl);
+          localStorage.setItem('websitePlugins', JSON.stringify(websitePlugins));
+          console.log('Plugin downloaded:', addonUrl);
+            const notification = document.getElementById('notification');
+            notification.textContent = 'Plugin Downloaded!';
+            notification.classList.remove('hidden');
+          
+            setTimeout(() => {
+              notification.style.top = '40px';
+            }, 10);
+          
+            setTimeout(() => {
+              notification.style.top = '-50px';
+              setTimeout(() => {
+                notification.classList.add('hidden');
+              }, 500);
+            }, 3000);
+        }
+      });
+    });
+
+    const uninstallButtons = document.querySelectorAll('.uninstall-button');
+    uninstallButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const addonType = button.getAttribute('data-type');
+        const addonUrl = button.getAttribute('data-url');
+        
+        if (addonType === 'themes') {
+          localStorage.removeItem('websiteCSS');
+          console.log('Theme uninstalled:', addonUrl);
+        } else if (addonType === 'plugins') {
+          let websitePlugins = JSON.parse(localStorage.getItem('websitePlugins')) || [];
+          websitePlugins = websitePlugins.filter(pluginUrl => pluginUrl !== addonUrl);
+          localStorage.setItem('websitePlugins', JSON.stringify(websitePlugins));
+          console.log('Plugin uninstalled:', addonUrl);
+        }
+      });
+    });   
+  }
+   
+  document.getElementById('addon-category').addEventListener('change', populateAddons);
+  document.getElementById('addon-search').addEventListener('input', populateAddons);
+  populateAddons();
     </script>
     <style>
-      .plugins {
-        width: 5vw;
-        height: 70.5vh;
-        display: block;
-        width: 95%;
-        margin-left: 2.5%;
-        margin-top: .5vw;
-        overflow-x: scroll;
-      }
+.sidebar {
+  background-color: transparent;
+  width: 250px;
+  padding: 20px;
+  height: 75vh;
+  position: fixed;
+  left: 0;
+  top: 45px;
+  overflow-y: auto;
+}
 
-      .plugins::-webkit-scrollbar-thumb {
-        background: #ffffff;
-        border-radius: 6px;
-      }
+.sidebar h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-      .plugins h3 {
-        font-size: .9vw;
-        font-weight: 500;
-        margin-top: .2vw;
-      }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
 
-      .plugins h3 a {
-        color: #008cff;
-        font-weight: 700;
-      }
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
 
-      .plugins .plugin:first-of-type {
-        margin-top: 0;
-      }
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
 
-      .plugins .plugin {
-        position: relative;
-        background-color: #292929;
-        color: #fff;
-        display: block;
-        width: 94%;
-        height: max-content;
-        margin-top: .5vw;
-        border-radius: .5vw;
-        display: flex;
-      }
+.section {
+  display: none;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
 
-      .plugins .plugin span {
-        margin-left: .8vw;
-        text-align: left;
-      }
+.section.active {
+  display: block;
+  opacity: 1;
+}
 
-      .plugins .plugin h2 {
-        font-size: 1.5vw;
-        width: 100%;
-        height: min-content;
-        overflow: hidden;
-      }
+.reset-button {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards;
+}
 
-      .plugins .plugin img {
-        width: 5vw;
-        height: 5vw;
-        border-radius: .8vw;
-        object-fit: cover;
-      }
+.reset-button:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
 
-      .plugins .plugin p {
-        position: absolute;
-        left: .5vw;
-        bottom: .5vw;
-        font-size: .9vw;
-        margin-top: .5vw;
-      }
+.sidebar-buttons {
+  position: absolute;
+  bottom: 0px;
+  width: 75%;
+}
 
-      .plugins .plugin button {
-        color: #fff;
-        background-color: #1287fc;
-        font-family: 'Montserrat', sans-serif;
-        outline: 2px solid #54aaff;
-        outline-offset: 2px;
-        border: none;
-        border-radius: .3vw;
-        font-size: 1vw;
-        padding: .2vw .6vw;
-        cursor: pointer;
-        font-weight: 500;
-        margin: .6vw 0;
-        user-select: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background-color .2s ease;
-      }
+.addon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
 
-      .plugins .plugin button:hover {
-        background-color: #0d73da;
-        transition: background-color .2s ease;
-      }
+.addon-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
 
-      .plugins .plugin button i {
-        font-size: .9vw;
-        margin-left: .2vw;
-      }
+.notification {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  transition: top 0.5s ease-in-out;
+}
 
-      .plugins .plugin button.remove {
-        background-color: #ff4141;
-        outline: 2px solid #d63333;
-      }
+.hidden {
+  visibility: hidden;
+}
     </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="cookieNotice" class="light display-right" style="display: none;">
@@ -211,8 +272,21 @@
       </div>
     </div>
     <div class="container" id="particles-js">
-        <h1>Plugins!</h1>
-            <div class="plugins" id="plugins">
+    <div class="section" data-section="addons">
+      <h2>Addons</h2>
+      <div class="addon-controls">
+        <label for="addon-category">Category:</label>
+        <select id="addon-category" name="addonCategory" class="config-select">
+          <option value="all">All</option>
+          <option value="plugins">Plugins</option>
+          <option value="themes">Themes</option>
+        </select>
+        <input type="text" id="addon-search" class="config-input" placeholder="Search Addons">
+        <button onclick="window.open('https://forms.gle/QcnfUxXCc3UjChaG8', '_blank');">Submit New Addon</button> 
+      </div>
+      <div class="addon-grid">
+      </div>
+    </div>
         </div>
         <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between;">
             <div style="display: flex; justify-content: space-between !important; align-items: left;">

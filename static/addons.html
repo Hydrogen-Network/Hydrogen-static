@@ -19,6 +19,112 @@
         <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
         <link rel="stylesheet" href="./css/index.css" />
         <title id="dynamic-title">Hydrogen</title>
+       <style>
+          .plugins {
+    width: 5vw;
+    height: 70.5vh;
+    display: block;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: .5vw;
+    overflow-x: scroll;
+}
+
+.plugins::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.plugins h3 {
+    font-size: .9vw;
+    font-weight: 500;
+    margin-top: .2vw;
+}
+
+.plugins h3 a {
+    color: #008cff;
+    font-weight: 700;
+}
+
+.plugins .plugin:first-of-type {
+    margin-top: 0;
+}
+
+.plugins .plugin {
+    position: relative;
+    background-color: #292929;
+    color: #fff;
+    display: block;
+    width: 94%;
+    height: max-content;
+    margin-top: .5vw;
+    border-radius: .5vw;
+    display: flex;
+}
+
+
+.plugins .plugin span {
+    margin-left: .8vw;
+    text-align: left;
+}
+
+.plugins .plugin h2 {
+    font-size: 1.5vw;
+    width: 100%;
+    height: min-content;
+    overflow: hidden;
+}
+
+.plugins .plugin img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: .8vw;
+    object-fit: cover;
+}
+
+.plugins .plugin p {
+    position: absolute;
+    left: .5vw;
+    bottom: .5vw;
+    font-size: .9vw;
+    margin-top: .5vw;
+}
+
+.plugins .plugin button {
+    color:#fff;
+    background-color: #1287fc;
+    font-family: 'Montserrat', sans-serif;
+    outline: 2px solid #54aaff;
+    outline-offset: 2px;
+    border:none;
+    border-radius: .3vw;
+    font-size: 1vw;
+    padding: .2vw .6vw;
+    cursor: pointer;
+    font-weight: 500;
+    margin: .6vw 0;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s ease;
+}
+
+.plugins .plugin button:hover {
+    background-color: #0d73da;
+    transition: background-color .2s ease;
+}
+
+.plugins .plugin button i {
+    font-size: .9vw;
+    margin-left: .2vw;
+}
+
+.plugins .plugin button.remove {
+    background-color: #ff4141;
+    outline: 2px solid #d63333;
+}
+       </style>
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1GKR3GL1R"></script>
@@ -32,104 +138,6 @@
         gtag("config", "G-Y1GKR3GL1R");
     </script>
     <body>
-          <style>
-.sidebar {
-  background-color: transparent;
-  width: 250px;
-  padding: 20px;
-  height: 75vh;
-  position: fixed;
-  left: 0;
-  top: 45px;
-  overflow-y: auto;
-}
-
-.sidebar h1 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.content {
-  margin-left: 250px;
-  padding: 20px;
-}
-
-.section {
-  display: none;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-
-.section.active {
-  display: block;
-  opacity: 1;
-}
-
-.reset-button {
-  height: 40px;
-  padding: 0 20px;
-  font-size: 16px;
-  margin-left: 10px;
-  background-color: red;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  opacity: 0;
-  animation: fade-in 0.5s ease-in-out forwards;
-}
-
-.reset-button:hover {
-  background-color: darkred;
-  transform: scale(1.1);
-}
-
-.sidebar-buttons {
-  position: absolute;
-  bottom: 0px;
-  width: 75%;
-}
-
-.addon-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
-
-.addon-item {
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-}
-
-.notification {
-  position: fixed;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  transition: top 0.5s ease-in-out;
-}
-
-.hidden {
-  visibility: hidden;
-}
-      </style>  
         <noscript>You need to enable JavaScript to run this app.</noscript>
          <div id="cookieNotice" class="light display-right" style="display: none;">
              <div id="closeIcon" style="display: none;"></div>
@@ -161,26 +169,14 @@
         </div>
         <div class="container" id="particles-js">
             <h1>Plugins!</h1>
-            <div class="section" data-section="addons">
-              <h2>Addons</h2>
-              <div class="addon-controls">
-                <label for="addon-category">Category:</label>
-                <select id="addon-category" name="addonCategory" class="config-select">
-                  <option value="all">All</option>
-                  <option value="plugins">Plugins</option>
-                  <option value="themes">Themes</option>
-                </select>
-                <input type="text" id="addon-search" class="config-input" placeholder="Search Addons">
-                <button onclick="window.open('https://forms.gle/QcnfUxXCc3UjChaG8', '_blank');">Submit New Addon</button>    '
-                   <div class="settings-item">
-                      <label for="use-proxy-checkbox">Use Proxy:</label>
-                      <input type="checkbox" id="use-proxy-checkbox" onchange="saveUseProxySetting(this.checked)">
-                   </div>  
-              </div>
-              <div class="addon-grid">
-              </div>
-              <script src="js/addons.js"></script>
-            </div>
+            <div class="plugins" id="game-hacks">
+                <div class="plugin">
+                    <img src="" alt="plugin icon">
+                    <span>
+                        <h2>Galaxy Theme</h2>
+                        <button onclick="localStorage.setItem('websiteCSS', 'https://cdn.z1g-project.pages.dev/sodium/themes/galaxy.css');">Install<i class="fa-solid fa-circle-down"></i></button>
+                    </span>
+                </div>
         </div>
         <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between;">
             <div style="display: flex; justify-content: space-between !important; align-items: left;">

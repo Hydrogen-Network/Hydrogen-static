@@ -7,13 +7,6 @@
       "categories": "all"
    },
    {
-      "name": "1",
-      "url": "https://raw.githack.com/3kh0/3kh0-Assets/main/1/index.html",
-      "img": "https://raw.githack.com/3kh0/3kh0-assets/main/1/meta/apple-touch-icon.png",
-      "desc": "Divide the numbers and get to the 1 tile!",
-      "categories": "all"
-   },
-   {
       "name": "1v1.lol",
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/1v1lol/index.html",
       "img": "https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co",
@@ -1136,8 +1129,5 @@
       "img": "https://hydrogen-network.github.io/img/xb.png",
       "name": "xx142-b2exe",
       "desc": "You are an AI weaponized virus built to infiltrate the alien network and deactivate all power generators and weapon systems."
-   },
-   {
-      "url": "'`let a = a; alert(a);"
    }
 ]

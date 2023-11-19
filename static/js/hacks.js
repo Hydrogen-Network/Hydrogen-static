@@ -122,14 +122,26 @@ function eggyCar() {
     };
 }
 
-function subwaySurfers() {
+function subwaySurfersCoin() {
     let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
 
     let newValue = prompt('Enter your new amount of Coins:');
 
-    Subway_sg.coins = Number(newValue);
+    Subway_sg.currencies.coins = Number(newValue);
 
     localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
 
     alert("Now refresh Hydrogen and your coins will be set!")
+}
+
+function SubwaySurferkey() {
+    let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
+
+    let newValue = prompt('Enter your new amount of Coins:');
+
+    Subway_sg.currencies.keys = Number(newValue);
+
+    localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
+
+    alert("Now refresh Hydrogen and your keys will be set!")
 }

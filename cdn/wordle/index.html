@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <title>Wordle Unlimited games - Wordle Today</title>
+      <meta name="description" content="Play Wordle unlimited. You can play as many times as you want. Also a Wordle solver is available">
+      <!-- FB Meta Tags -->
+      <meta property="og:url" content="https://wordleunlimited.org">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Wordle Unlimited games">
+      <meta property="og:description" content="Guess the hidden word in 6 tries. A new puzzle is available each day.">
+      <meta property="og:image" content="https://wordleunlimited.org/wordle_unlimited_1200_630.png">
+      <!-- Twitter Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:domain" content="wordleunlimited.org">
+      <meta name="theme-color" content="#6aaa64">
+      <link rel="manifest" href="manifest.json">
+      <link href="images/wordle_logo_32x32.png" rel="icon shortcut" sizes="3232">
+      <link href="images/wordle_logo_192x192.png" rel="apple-touch-icon">
+      <style>
+         /* Global Styles & Colors */
+         :root {
+         --green: #6aaa64;
+         --darkendGreen: #538d4e;
+         --yellow: #c9b458;
+         --darkendYellow: #b59f3b;
+         --lightGray: #d8d8d8;
+         --gray: #86888a;
+         --darkGray: #939598;
+         --white: #fff;
+         --black: #212121;
+         /* Colorblind colors */
+         --orange: #f5793a;
+         --blue: #85c0f9;
+         font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+         font-size: 16px;
+         --header-height: 50px;
+         --keyboard-height: 200px;
+         --game-max-width: 500px;
+         }
+         /* Light theme colors */
+         :root {
+         --color-tone-1: #1a1a1b;
+         --color-tone-2: #787c7e;
+         --color-tone-3: #878a8c;
+         --color-tone-4: #d3d6da;
+         --color-tone-5: #edeff1;
+         --color-tone-6: #f6f7f8;
+         --color-tone-7: #ffffff;
+         --opacity-50: rgba(255, 255, 255, 0.5);
+         }
+         /* Dark Theme Colors */
+         .nightmode {
+         --color-tone-1: #d7dadc;
+         --color-tone-2: #818384;
+         --color-tone-3: #565758;
+         --color-tone-4: #3a3a3c;
+         --color-tone-5: #272729;
+         --color-tone-6: #1a1a1b;
+         --color-tone-7: #121213;
+         --opacity-50: rgba(0, 0, 0, 0.5);
+         }
+         /* Constant colors and colors derived from theme */
+         :root,
+         .nightmode {
+         --color-background: var(--color-tone-7);
+         }
+         :root {
+         --color-present: var(--yellow);
+         --color-correct: var(--green);
+         --color-absent: var(--color-tone-2);
+         --tile-text-color: var(--color-tone-7);
+         --key-text-color: var(--color-tone-1);
+         --key-evaluated-text-color: var(--color-tone-7);
+         --key-bg: var(--color-tone-4);
+         --key-bg-present: var(--color-present);
+         --key-bg-correct: var(--color-correct);
+         --key-bg-absent: var(--color-absent);
+         --modal-content-bg: var(--color-tone-7);
+         }
+         .nightmode {
+         --color-present: var(--darkendYellow);
+         --color-correct: var(--darkendGreen);
+         --color-absent: var(--color-tone-4);
+         --tile-text-color: var(--color-tone-1);
+         --key-text-color: var(--color-tone-1);
+         --key-evaluated-text-color: var(--color-tone-1);
+         --key-bg: var(--color-tone-2);
+         --key-bg-present: var(--color-present);
+         --key-bg-correct: var(--color-correct);
+         --key-bg-absent: var(--color-absent);
+         --modal-content-bg: var(--color-tone-7);
+         }
+         .colorblind {
+         --color-correct: var(--orange);
+         --color-present: var(--blue);
+         --tile-text-color: var(--white);
+         --key-bg-present: var(--color-present);
+         --key-bg-correct: var(--color-correct);
+         --key-bg-absent: var(--color-absent);
+         }
+         html {
+         height: 100%;
+         }
+         body {
+         height: 100%;
+         background-color: var(--color-background);
+         margin: 0;
+         padding: 0;
+         /* Prevent scrollbar appearing on page transition 
+         overflow-y: hidden;
+         */
+         }
+      </style>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7330366239032869"
+     crossorigin="anonymous"></script>
+   </head>
+   <body>
+
+
+
+<script>
+       
+       
+      <script>
+         (function () {
+             // Defining the hash before the main bundle allows the bundle access window.hash
+             window.wordle = window.wordle || {};
+             window.wordle.hash = 'e65ce0a5';
+         })();
+      </script>
+      <script src="main.js"></script>
+      <game-app></game-app>
+      <style>
+         .instructions {
+         margin: auto;
+         width: 90%;
+         font-size: 16px;
+         color: var(--color-tone-1)
+         }
+         .examples {
+         border-bottom: 1px solid var(--color-tone-4);
+         border-top: 1px solid var(--color-tone-4);
+         }
+         .example {
+         margin-top: 24px;
+         margin-bottom: 24px;
+         }
+         game-tile {
+         width: 40px;
+         height: 40px;
+         }
+         :host([page]) section {
+         padding: 16px;
+         padding-top: 0px;
+         }
+         .instructions li {
+        padding: .4em 1em;
+    	list-style: none;
+        
+        border-radius: 1em;
+    	
+        margin: .4em 0;
+        font-size: 1.2em;
+        border: 1px #e2e2e2 solid;
+        }
+      </style>
+      <section>
+         <div class="instructions">
+             
+             
+             
+             <div style="margin: auto;border: 1px solid green;padding: 5px;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7330366239032869"
+     crossorigin="anonymous"></script>
+<!-- WordUnli top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7330366239032869"
+     data-ad-slot="1170802201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+            <h1>Wordle Unlimited</h1>
+            <hr>
+            <p>Guess the hidden word in 6 tries.</p>
+            <p>Each guess must be a valid 5 letter word, you cannot enter random letters. Hit the enter button to submit the guess.</p>
+            <p>After your submission, the color of the tiles will change as in the examples below.</p>
+            <div class="examples">
+               <p><strong>Examples</strong></p>
+               <div class="example">
+                  <div class="row">
+                     <game-tile letter="g" evaluation="correct" reveal=""></game-tile>
+                     <game-tile letter="a"></game-tile>
+                     <game-tile letter="m"></game-tile>
+                     <game-tile letter="e"></game-tile>
+                     <game-tile letter="s"></game-tile>
+                  </div>
+                  <p>The letter <strong>G</strong> is in the word and in the correct spot.</p>
+               </div>
+               <div class="example">
+                  <div class="row">
+                     <game-tile letter="h"></game-tile>
+                     <game-tile letter="o" evaluation="present" reveal=""></game-tile>
+                     <game-tile letter="t"></game-tile>
+                     <game-tile letter="e"></game-tile>
+                     <game-tile letter="l"></game-tile>
+                  </div>
+                  <p>The letter <strong>O</strong> is in the word but in the wrong spot.</p>
+               </div>
+               <div class="example">
+                  <div class="row">
+                     <game-tile letter="m"></game-tile>
+                     <game-tile letter="o"></game-tile>
+                     <game-tile letter="n"></game-tile>
+                     <game-tile letter="e" evaluation="absent" reveal=""></game-tile>
+                     <game-tile letter="y"></game-tile>
+                  </div>
+                  <p>The letter <strong>E</strong> is not in the word in any spot at all.</p>
+               </div>
+            </div>
+            <div class="examples">
+               <h2>Wordle Rules. How to play Wordle.</h2>
+               <p>In wordle you have to guess a 5 letter word, “the hidden word”. 
+                  There are versions of this game in which you have to guess 6 letter words or even 7 letters words, but the most popular is the 5 letter word game. 
+               </p>
+               <p>You have to guess the word in 6 tries. <br>
+                  So  basically you begin by typing a word, it has to be a real word found on the dictionary. Once you type in your guess and click Enter your guess is going to be submitted. The background of the letters will change color
+               </p>
+               <ul>
+                  <li>If the letter is in the word and in the right spot, it will turn green.</li>
+                  <li>If the letter is in the word, but not on the right spot, it will turn yellow.</li>
+                  <li>If the letter turns gray, the letter is not in the word at all.</li>
+               </ul>
+               <p>The best strategy is to begin with a word that has many vowels. Some find it helpful to begin with the word IRATE or ARISE. </p>
+               <p>If you want to erase your guess you can click the backspace button. As said, it has to be a real word, one which you can find in a dictionary, otherwise you will get an alert.</p>
+               <p>If you find the correct word, a popup window will appear with your statistics. You can choose to share the results with your friends or have the option to play again.</p>
+            </div>
+            <div class="examples">
+               <h3>Wordle FAQ. Frequently asked questions.</h3>
+               <p><strong>Can I play more than a game per day?</strong><br>
+                  Yes. In our website you can. In the original version of this game you could play only one game in 24 hours, which is why this game has gone viral. The more you restrict something, the more people will want it. 
+               </p>
+               <p><strong>Will Wordle remain free?</strong><br>
+                  This is one of the most asked question on this topic. People are afraid that it will no longer be free, due to its popularity, but this is not the case with wordle. There are a lot of websites like ours, all for free. Even if some of them decide to charge users, the others won’t. 
+               </p>
+               <p><strong>Will Wordle become an app?</strong><br>
+                  To date there is no official Wordle app, but you may find some copy-cats. You can decide to download any of the Wordle app in the Appstore or GooglePlay, but do you really need one more app on you phone?? Just use our website. Its easy to use and you don’t need to install anything on your phone.
+                  Wordle without daily limit? Why is Wordle only one word per day? 
+                  Maybe the original version of this game. In our website you can play as many games as you want, thus the name Wordle Unlimited.
+               </p>
+               <p><strong>Where can I find the archive of past games?</strong><br>
+                  Actually there is a website that not only has the complete Wordle Archive (opens in new window), but you can play those previous games. Just select the number of the play.
+               </p>
+               <p><strong>Is there any Wordle Solver?</strong><br>
+                  Yes. There is a website where you can easily find the answer to any wordle game. Use this website. Just type some words and click on the letters to change color like in the game. It will give suggest other words to use that has the best probability to guess the hidden word. At the end there is a list of possible solutions. The more words you enter, the less words remain as a possible solution till only one word remains. Usually you can find the answer in 3-4 tries, less than the 6 tries allowed in the game.
+               </p>
+               <p><strong>Why has Wordle gone viral?</strong><br>
+                  In the original game there was only one word for all players during 24 hours. So everybody had to guess the same word and this is the reason why wordle has gone viral. Everybody wants to share how many guesses they got the answer and they shared the result on twitter and other social media. The twitt did not have the website address in itself, just the colors, but everybody who had been playing the same game understood the meaning. It became like a badge of honor.
+               </p>
+               <p><strong>I am a foreigner, can I play Wordle in my own language?</strong><br>
+                  Yes many independent developers have make their own version of Wordle in their language. You can check some of them here.
+               <ul>
+                 <li><a href="https://wordleitaliano.com">Wordle Italiano (wordle in italian)</a></li>
+<li><a href="https://wordlefrancais.org">Wordle Français</a> (wordle in french)</li>
+<li><a href="https://wordleespanol.org">Wordle Español</a> (wordle in spanish)</li>
+<li><a href="https://wordledeutsch.org">Wordle Deutsch</a> (wordle in german)</li>
+<li>Woordle (wordle in dutch)</li>
+<li>Suggest us other languages as well if you do not find your own here in this list.</li>
+               </ul>
+               </p>
+               <p><strong>Can I challenge my friends on wordle?</strong><br>
+                  At this time there is no multiplayer version of Worlde, but you can challenge your friends in another way. Using this website (opens in other tab) you can create your own “hidden word”, you will get a link to a specific game that has as the answer the word you choose. You can share this link with your friends.
+               </p>
+               <p><strong>Can I get wordle of dark mode?</strong><br>
+                  The default is white background game, but you can change it. You can go to the settings icon and then activate the “dark mode”. This is especially helpful during night hours.
+               </p>
+               <p><strong>Wordle is easy for me, how to make things more complicated?</strong><br>
+                  Go to the settings icon and then activate the “Hard mode”.
+               </p>
+               <p><strong>Does wordle has a feature for color blinded people?</strong><br>
+                  Yes, we thought of that too. In the settings page you can activate “Color Blind Mode”. 
+               </p>
+            </div>
+            <div class="examples">
+               <h4>Download Wordle app.</h4>
+               <p><strong>Download wordle on Google Play.</strong><br>
+                  There are many apps to choose. 
+               <ul>
+                  <li>"W Challenge" by "Short Cut Games"</li>
+                  <li>Wordle by "Fat Cat Studios"</li>
+                  <li>"Wordaily-Word Puzzle Game" by "FreePanda Word PuzzleGames"</li>
+                  <li>"Word Challenge" by "MeeGame Studio"</li>
+                  <li>"Worded - Daily & Unlimited" by "Wekele Technologies"</li>
+                  <li>Wordus by "Ruby Game Studio"</li>
+                  <li>"Word Guess Challenge" by "Cider Software LLC"</li>
+                  <li>"Wordly - Daily Word Puzzle" by "Tech Tree Games"</li>
+                  <li>"Slang! Lingo word game" by Brain</li>
+                  <li>"Wordzy: Daily Word Game" by Cattus</li>
+                  <li>"Catch the Word" by "Skill Cap"</li>
+                  <li>"6 Tries 1 Word" by Hyperfun</li>
+                  <li>"Wordix: Word Puzzle" by "Casual Azur Games"</li>
+               </ul>
+               There are many more copy-cats for Wordle on Play Store.
+               </p>
+               <p><strong>Download wordle on Appstore.</strong><br>
+                  On the Appstore there are fewer apps for Wordle. Some of them are: 
+               <ul>
+                  <li>"Wordle! Daily Word Search Puzzles" by Steven Cravotta</li>
+                  <li>"WordLetter! Wordl!" by "Cem Erdogan"</li>
+                  <li>"PuzzWord: 5-letter Word Puzzle" by "Gavel-It LLC"</li>
+               </ul>
+               </p>
+            </div>
+            <div class="examples">
+               <b>Extras</b><br>
+               <p>
+<ul>
+<li>
+	<a href="https://wordleunlimited.org/wordle-uk/">Wordle UK</a>
+</li>
+<li>
+	<a href="https://wordleunlimited.org/wordle-words-that-start-with-a.php">Wordle words that start with the letter "A"</a>
+                  
+</li>
+<li>
+	<a href="https://wordleunlimited.org/wordle-words-that-start-with-b.php">Wordle words that start with the letter "B"</a>
+</li>
+</ul>
+               </p>
+            </div>
+            <div class="examples">
+               <p>This website is not affiliated with the original Wordle game. 
+                  <br>
+                  <a href="https://wordleunlimited.org/privacy.php">Privacy policy</a> | Sitemap | Terms and conditions
+               </p>
+            </div>
+         </div>
+      </section>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T2KLS5L89D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T2KLS5L89D');
+</script>
+
+   </body>
+</html>

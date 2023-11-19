@@ -122,26 +122,48 @@ function eggyCar() {
     };
 }
 
-function subwaySurfersCoin() {
-    let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
-
-    let newValue = prompt('Enter your new amount of Coins:');
-
-    Subway_sg.currencies.coins = Number(newValue);
-
-    localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
-
-    alert("Now refresh Hydrogen and your coins will be set!")
-}
-
-function SubwaySurferkey() {
-    let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
-
-    let newValue = prompt('Enter your new amount of Coins:');
-
-    Subway_sg.currencies.keys = Number(newValue);
-
-    localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
-
-    alert("Now refresh Hydrogen and your keys will be set!")
+function subwaySurfers() {
+    let prompt = prompt('what do you want?\n1. free coins\n2. free keys\n3. free headstarts.\n4. free Hoverboards.\n5. set Highscore\n6. Change your name\n7. Skip tutorial');
+    if (prompt = '1') {
+        let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
+        let newValue = prompt('Enter your new amount of Coins:');
+        Subway_sg.currencies.coins = Number(newValue);
+        localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your coins will be set!");
+    } else if (prompt = '2') {
+        let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
+        let newValue = prompt('Enter your new amount of Keys:');
+        Subway_sg.currencies.keys = Number(newValue);
+        localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your keys will be set!");
+    } else if (prompt = '3') {
+        let Subway_sg = JSON.parse(localStorage.getItem('ShopSettings'));
+        let newValue = prompt('Enter your new amount of Headstarts:');
+        Subway_sg.purchased.boosts.consumables.headstart = Number(newValue);
+        localStorage.setItem('ShopSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your headstarts will be set!");
+    } else if (prompt = '4') {
+        let Subway_sg = JSON.parse(localStorage.getItem('ShopSettings'));
+        let newValue = prompt('Enter your new amount of Hoverboards:');
+        Subway_sg.purchased.boosts.consumables.hoverboard = Number(newValue);
+        localStorage.setItem('ShopSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your Hoverboards will be set!");
+    } else if (prompt = '5') {
+        let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
+        let newValue = prompt('Enter your new amount of Highscore:');
+        Subway_sg.highscore = Number(newValue);
+        localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your Highscore will be set!");
+    } else if (prompt = '6') {
+        let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
+        let newValue = prompt('Enter your new name:');
+        Subway_sg.name = Number(newValue);
+        localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your name will be set!");
+    } else if (prompt = '7') {
+        let Subway_sg = JSON.parse(localStorage.getItem('GameSettings'));
+        Subway_sg.tutorial = true;
+        localStorage.setItem('GameSettings', JSON.stringify(Subway_sg));
+        alert("Now refresh Hydrogen and your name will be set!");
+    }
 }

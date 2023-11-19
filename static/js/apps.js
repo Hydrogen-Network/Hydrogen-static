@@ -10,7 +10,7 @@ fetch('/static/js/json/apps.json')
       const appEl = document.createElement('li');
       appEl.innerHTML = `
       <div class="appcard" data-category="${app.categories}">
-          <a href="#" onclick="localStorage.setItem('currentgame', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentgame', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentgamecheat', '${app.cheat}'); location.href='play.html';">
           <img src="${app.img}" class="gameimage"/>
               <div class="gameinfo">
                   <b>

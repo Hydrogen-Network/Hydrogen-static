@@ -48,6 +48,10 @@ function acceptCookieConsent() {
 	document.getElementById('cookieNotice').style.display = "none";
 }
 
+function IgnoreCookieConsent() {
+	localStorage.setItem('cookiesaccepted', 'ignore');
+	document.getElementById('cookieNotice').style.display = "none";
+}
 
 async function cookieconsent() {
         if(localStorage.getItem('cookiesaccepted') === null || localStorage.getItem('cookiesaccepted') === 'false') {

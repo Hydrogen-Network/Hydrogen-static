@@ -60,3 +60,5 @@ async function cookieconsent() {
 		document.getElementById('cookieNotice').style.display = "none";
         }
 }
+
+cookieconsent();

@@ -79,6 +79,8 @@ fork the repo then go to settings and in the `Code and automation` section press
 [https://3v3ry0n3.github.io/Hydrogen/](https://3v3ry0n3.github.io/Hydrogen/)
 <br/>
 [https://coding4hours.github.io/Hydrogen-Static/static/](https://coding4hours.github.io/Hydrogen-Static/static/)
+<br/>
+[https://hydrogen-network.github.io/](https://hydrogen-network.github.io/)
 
  <p align="right">(<a href="#readme">back to top</a>)</p>
 

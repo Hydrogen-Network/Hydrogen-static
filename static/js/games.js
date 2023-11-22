@@ -6,6 +6,9 @@ async function loadgame() {
 fetch('/static/js/json/games.json')
   .then((res) => res.json())
   .then((games) => {
+    games.sort(function (a, b) {
+      return a.title.localeCompare(b.title);
+    });
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const gameEl = document.createElement('li');

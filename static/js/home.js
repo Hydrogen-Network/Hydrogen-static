@@ -8,7 +8,7 @@ try {
 }
 
 // Cloaking Code
-if (window.location.href) {
+if (window.location.href == "https://brrrrrr.pages.dev/") {
     if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         const popup = open("about:blank", "_blank")
         if (!popup || popup.closed) {
@@ -34,7 +34,7 @@ if (window.location.href) {
 
             doc.head.appendChild(link);
             doc.body.appendChild(iframe)
-            location.replace("https://www.nasa.gov/")
+            location.replace("https://www.google.com/")
         }
     }
 }

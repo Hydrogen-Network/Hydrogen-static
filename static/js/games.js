@@ -1,14 +1,15 @@
 const gamesContainer = document.querySelector('.gamecontainer');
-
+let games = await fetch('/static/js/json/games.json');
+let agames = game.json();
+games.sort(function (a, b) {
+  return a.title.localeCompare(b.title);
+});
 
 async function loadgame() {
 // Fetch the games data from a JSON file
 fetch('/static/js/json/games.json')
   .then((res) => res.json())
   .then((games) => {
-    games.sort(function (a, b) {
-      return a.title.localeCompare(b.title);
-    });
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const gameEl = document.createElement('li');

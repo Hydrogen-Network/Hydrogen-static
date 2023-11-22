@@ -24,6 +24,7 @@
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/10-minutes-till-dawn/index.html",
       "img": "https://i.ibb.co/6PbJfV7/0LqGxb.png",
       "name": "10 Minutes Till Dawn",
+      "desc": "10 Minutes Till Dawn is an action game where you need to survive for 10 minutes.",
       "categories": "all 2P"
    },
    {
@@ -307,21 +308,21 @@
       "categories": "all 2P"
    },
    {
-      "url": "/static/tiw/hvtr%3A-%2Fau%60eq224%3Aim.aoo%2F",
+      "url": " ",
       "img": "https://cubes2048io.com/imgs/logo-cubes-2048-196.png ",
       "name": "Cubes 2048",
       "desc": "Cubes 2048.io is an addictive online game that fuses Snake and 2048.",
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main//crossyroad/index.html",
+      "url": "https://raw.githack.com/3kh0/3kh0-assets/main//crossyroad/index.html",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/crossyroad.png ",
       "name": "Crossy Road",
       "desc": "Crossy Road is a retro-arcade-styled game in which the player controls a chicken and a seemingly endless range of animals, in order to get across a busy road.",
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main//ctr/index.html",
+      "url": "https://raw.githack.com/3kh0/3kh0-assets/main//ctr/index.html",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/ctr.png ",
       "name": "Cut the Rope",
       "desc": "Cut the Rope is a physics-based puzzle game. The game revolves around feeding a creature named Om Nom with candy by cutting ropes in a certain manner.",
@@ -444,42 +445,35 @@
    {
       "url": "https://slope-game.github.io/fireboy-water-2/",
       "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
-      "name": "Fireboy and Watergirl",
+      "name": "Fireboy and Watergirl2",
       "desc": "Fireboy and Watergirl are exploring the Light Temple.",
-      "categories": "all 2P"
-   },
-   {
-      "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
-      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
-      "name": "Fireboy and Watergirl",
-      "desc": "Fireboy and Watergirl are exploring the Forest Temple in search of diamonds.",
       "categories": "all 2P"
    },
    {
       "url": "https://slope-game.github.io/fireboy-water-3/",
       "img": "https://img.gamedistribution.com/a55c9cc9c214fc683c8c6857f3d0c75-512x512.jpeg",
-      "name": "Fireboy and Watergirl",
+      "name": "Fireboy and Watergirl3",
       "desc": "Click here! this is so fun",
       "categories": "all 2P"
    },
    {
       "url": "https://slope-game.github.io/fireboy-water-4/",
       "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
-      "name": "Fireboy and Watergirl",
+      "name": "Fireboy and Watergirl4",
       "desc": "Fireboy and Watergirl are exploring the Crystal Temple in search of crystals.",
       "categories": "all 2P"
    },
    {
       "url": "https://slope-game.github.io/fireboy-water-5/",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjRWaerLDpxHaPNdfRCn8XuQosN4Al8tP5Lw&usqp=CAU",
-      "name": "Fireboy and Watergirl",
+      "name": "Fireboy and Watergirl5",
       "desc": "A 2 player game where you have to work together using logic and teamwork to get to the finish line.",
       "categories": "all 2P"
    },
    {
       "url": "https://slope-game.github.io/fireboy-water-6/",
       "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
-      "name": "Fireboy and Watergirl",
+      "name": "Fireboy and Watergirl6",
       "desc": "this is real?",
       "categories": "all 2P"
    },

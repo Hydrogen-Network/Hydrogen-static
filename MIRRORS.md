@@ -3,5 +3,5 @@ Mirrors are community maintained sites incase all the official sites are blocked
 
 | URL | Status |
 | - | - |
-|[https://3v3ry0n3.github.io/Hydrogen/](https://3v3ry0n3.github.io/Hydrogen/)|Up|
-|[https://coding4hours.github.io/Hydrogen-Static/static/](https://coding4hours.github.io/Hydrogen-Static/static/)| Up |
+|[3v3ry0n3.github.io/Hydrogen/](https://3v3ry0n3.github.io/Hydrogen/)|Up|
+|[coding4hours.github.io/Hydrogen-Static/](https://coding4hours.github.io/Hydrogen-Static/static/)| Up |

@@ -43,3 +43,27 @@ function showImages() {
     }
   }
 }
+
+function setPin(index) {
+  pins = localStorage.getItem("pinnedGames");
+  if(pins == null) {
+    pins = [];
+  }
+  if(pins == "") {
+    pins = [];
+  }
+  else {
+    pins = pins.split(",").map(Number);
+  }
+  if(pinContains(index,pins)) {
+    let remove = pins.indexOf(index);
+
+    pins.splice(remove, 1);
+
+  }
+  else {
+    pins.push(index);
+  }
+  localStorage.setItem("pinnedGames", pins);
+  location.reload();
+}

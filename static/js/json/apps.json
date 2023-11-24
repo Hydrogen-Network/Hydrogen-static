@@ -3,67 +3,148 @@
     "url": "https://forms.gle/5bAXNYzuN4Ymj5ve7",
     "img": "https://static.vecteezy.com/system/resources/previews/009/266/327/original/plus-sign-icon-free-png.png",
     "name": "Add App",
-    "desc": "Click the link to make a app request!"
+    "desc": "Click the link to make a app request!",
+    "categories": "all"
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Fcnkwctah%2Ctm%2F",
     "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(1).png?v=1681999592214",
     "name": "Aniwatch.to",
-    "desc": "Aniwatch.to Is a free anime software, it sends new anime that even comes out today."
+    "desc": "Aniwatch.to Is a free anime software, it sends new anime that even comes out today.",
+    "categories": "all media"
   },
   {
     "url": "https://chat.shuttle.rip/chat/",
     "img": "https://hydrogen-network.github.io/img/chatgptbroken.png",
     "name": "ChatGPT",
-    "desc": "ChatGPT but unblocked hee hee tee hee har har :)"
+    "desc": "ChatGPT but unblocked hee hee tee hee har har :)",
+    "categories": "all AI"
   },
+  {
+    "url": "https://canary.discord.com",
+    "img": "https://gointerstellar.app/images/icons/apps/discord.jpg",
+    "name": "Discord",
+    "desc": "Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities.",
+    "categories": "all social"
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Ffiqngyrlws%2Ccmm-",
     "img": "https://hydrogen-network.github.io/img/dnp.png",
     "name": "Disney+",
-    "desc": "Disney+ is the streaming home of Disney, Pixar, Marvel, Star Wars, National Geographic, and more."
+    "desc": "Disney+ is the streaming home of Disney, Pixar, Marvel, Star Wars, National Geographic, and more.",
+    "categories": "all stream"
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-eourefic.lev%2F%60eva-eoums-",
     "img": "https://emupedia.net/beta/emuos/assets/images/logos/emupedia/emupedia-logo-256.png",
     "name": "EmuOS",
-    "desc": "Free proxy!"
+    "desc": "Free proxy!",
+    "categories": "all"
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Flevfniz.aoo%2F",
     "img": "https://hydrogen-network.github.io/img/ntfx.png",
     "name": "Netflix",
-    "desc": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more!"
+    "desc": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more!",
+    "categories": "all stream"
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Fqpmtkf%7B.aoo%2F",
     "img": "https://cdn.glitch.global/82c5292a-89b3-4a53-84e2-abbc0fa27724/kOWO3V15_400x400.png?v=1679021879814",
     "name": "Spotify",
-    "desc": "Spotify is a digital music service that gives you access to millions of songs from thousands of authors."
+    "desc": "Spotify is a digital music service that gives you access to millions of songs from thousands of authors.",
+    "categories": "all media"
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Fqncpahct%2Ccmm-",
     "img": "https://cdn.glitch.global/82c5292a-89b3-4a53-84e2-abbc0fa27724/580b57fcd9996e24bc43c536.png?v=1679015503010",
     "name": "SnapChat",
-    "desc": "Snapchat lets you easily talk with friends, view Stories from around the world, and explore news in Discover."
+    "desc": "Snapchat lets you easily talk with friends, view Stories from around the world, and explore news in Discover.",
+    "categories": "all social"
   },
   {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Fviitmk%2Ccmm-",
     "img": "https://hydrogen-network.github.io/img/tt.png",
     "name": "Tiktok",
-    "desc": "TikTok offers personalized video feed based on what you watch, like, and share."
+    "desc": "TikTok offers personalized video feed based on what you watch, like, and share.",
+    "categories": "all social media"
   },
   {
     "url": "https://twitchls.com/",
     "img": "https://hydrogen-network.github.io/img/tch.png",
     "name": "Twitch",
-    "desc": "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more."
+    "desc": "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more.",
+    "categories": "all media"
   },
   {
     "url": "/cdn/wordle/",
     "img": "https://wordleunlimited.org/images/wordle_logo_192x192.png",
     "name": "Wordle",
     "desc": " ",
-    "cheat": "wordle"
-  }
+    "cheat": "wordle",
+    "categories": "all"
+  },
+  {
+    "url": "/cdn/amazon/",
+    "img": "https://gointerstellar.app/images/icons/apps/amazon.png",
+    "name": "Amazon",
+    "desc": " ",
+    "categories": "all media"
+  },
+  {
+    "url": "/cdn/buzzfeed/",
+    "img": "https://gointerstellar.app/images/icons/apps/buzzfeed.png",
+    "name": "BuzzFeed Quizzes",
+    "desc": " ",
+    "categories": "all media"
+  },
+  {
+    "url": "/cdn/movie/",
+    "img": "htttps://gointerstellar.app",
+    "name": "Movie Web",
+    "desc": " ",
+    "categories": "all media stream"
+  },
+  {
+    "url": "/cdn/scratch",
+    "img": "https://gointerstellar.app/images/icons/scratch.jpg",
+    "name": "Scratch",
+    "desc": " ", 
+    "categories": "all social game media"
+  },
+  {
+    "url": "/cdn/coolmathgames.html",
+    "img": "https://gointerstellar.app/images/icons/apps/coolmath.png",
+    "name": "Cool Math Games",
+    "desc": " ",
+    "categories": "all game"
+  },
+  {
+    "url": "/cdn/github.html",
+    "img": "https://gointerstellar.app/images/icons/apps/github.png",
+    "name": "Github",
+    "desc": " ",
+    "categories": "all media"
+  },
+  {
+    "url": "/cdn/google.html",
+    "img": "https://gointerstellar.app/images/icons/apps/google.png",
+    "name": "Google",
+    "desc": " ",
+    "categories": "all media"
+  },
+  {
+    "url": "/cdn/messenger.html",
+    "img": "https://gointerstellar.app/images/icons/apps/messenger.png",
+    "name": "Messenger",
+    "desc": "￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼",
+    "categories": "all social message"
+  },
+  {
+    "url": "/cdn/",
+    "img": "",
+    "name": "Amazon",
+    "desc": "",
+    "categories": ""
+  },
+  
 ]

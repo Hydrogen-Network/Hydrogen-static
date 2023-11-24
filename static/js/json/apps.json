@@ -140,11 +140,10 @@
     "categories": "all social message"
   },
   {
-    "url": "/cdn/",
-    "img": "",
-    "name": "Amazon",
-    "desc": "",
-    "categories": ""
-  },
-  
+    "url": "/cdn/pinterest",
+    "img": "https://gointerstellar.app/images/icons/apps/pinterest.png",
+    "name": "Pinterest",
+    "desc": " ",
+    "categories": "all media"
+  }
 ]

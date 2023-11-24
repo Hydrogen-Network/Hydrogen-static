@@ -196,7 +196,14 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/bobtherobber2/index.html",
+      "url": "/cdn/bobtherobber/",
+      "img": "https://tcf.admeen.org/category/3000/2948/400x400/bob-the-robber.jpg",
+      "name": "Bob the Robber",
+      "desc": " ",
+      "categories": "all"
+   },
+   {
+      "url": "/cdn/bobtherobber1",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/btr2.jpeg",
       "name": "Bob The Robber 2",
       "desc": "Enter locations around the town and loot them, picking locks, avoiding traps, lasers, and guards in this cute action adventure.",
@@ -436,7 +443,7 @@
       "categories": "all"
    },
    {
-      "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2Fc57c%3Bca9a23e6fa6%3A3a8a6%3A55f1d2c55-",
+      "url": "https://raw.githack.com/3kh0/3kh0-Assets/main/fireboywatergirlforesttemple/index.html",
       "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
       "name": "Fireboy and Watergirl",
       "desc": "Fireboy and Watergirl are exploring the Forest Temple in search of diamonds.",
@@ -472,7 +479,7 @@
    },
    {
       "url": "https://slope-game.github.io/fireboy-water-6/",
-      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg ",
+      "img": "https://kizicdn.com/system/static/thumbs/big_tile_thumb/25585/thumb300_fireboy-watergirl-6-300x300.jpg?1632908826",
       "name": "Fireboy and Watergirl 6",
       "desc": "this is real?",
       "categories": "all 2P"

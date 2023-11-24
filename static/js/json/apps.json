@@ -7,10 +7,24 @@
     "categories": "all"
   },
   {
+    "url": "/cdn/amazon/",
+    "img": "https://gointerstellar.app/images/icons/apps/amazon.png",
+    "name": "Amazon",
+    "desc": " ",
+    "categories": "all media"
+  },
+  {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Fcnkwctah%2Ctm%2F",
     "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(1).png?v=1681999592214",
     "name": "Aniwatch.to",
     "desc": "Aniwatch.to Is a free anime software, it sends new anime that even comes out today.",
+    "categories": "all media"
+  },
+  {
+    "url": "/cdn/buzzfeed/",
+    "img": "https://gointerstellar.app/images/icons/apps/buzzfeed.png",
+    "name": "BuzzFeed Quizzes",
+    "desc": " ",
     "categories": "all media"
   },
   {
@@ -77,28 +91,6 @@
     "categories": "all media"
   },
   {
-    "url": "/cdn/wordle/",
-    "img": "https://wordleunlimited.org/images/wordle_logo_192x192.png",
-    "name": "Wordle",
-    "desc": " ",
-    "cheat": "wordle",
-    "categories": "all"
-  },
-  {
-    "url": "/cdn/amazon/",
-    "img": "https://gointerstellar.app/images/icons/apps/amazon.png",
-    "name": "Amazon",
-    "desc": " ",
-    "categories": "all media"
-  },
-  {
-    "url": "/cdn/buzzfeed/",
-    "img": "https://gointerstellar.app/images/icons/apps/buzzfeed.png",
-    "name": "BuzzFeed Quizzes",
-    "desc": " ",
-    "categories": "all media"
-  },
-  {
     "url": "/cdn/movie/",
     "img": "htttps://gointerstellar.app",
     "name": "Movie Web",
@@ -146,5 +138,13 @@
     "name": "Pinterest",
     "desc": " ",
     "categories": "all media"
-  }
+  },
+  {
+    "url": "/cdn/wordle/",
+    "img": "https://wordleunlimited.org/images/wordle_logo_192x192.png",
+    "name": "Wordle",
+    "desc": " ",
+    "cheat": "wordle",
+    "categories": "all"
+  },
 ]

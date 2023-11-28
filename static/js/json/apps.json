@@ -119,6 +119,13 @@
     "categories": "all social game media"
   },  
   {
+    "url": "/cdn/soundcloud",
+    "img": "https://gointerstellar.app/images/icon/soundcloud.jpg",
+    "name": "Soundcloud",
+    "desc": " ", 
+    "categories": "all media"
+  },
+  {
     "url": "https://sodium-5h8.pages.dev/uv/service/hvtr%3A-%2Fqpmtkf%7B.aoo%2F",
     "img": "https://cdn.glitch.global/82c5292a-89b3-4a53-84e2-abbc0fa27724/kOWO3V15_400x400.png?v=1679021879814",
     "name": "Spotify",

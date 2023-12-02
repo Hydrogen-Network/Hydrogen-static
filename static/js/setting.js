@@ -1,89 +1,74 @@
-         let switches = document.getElementById('2');
+         const switches = document.getElementById('2');
+         const switche = document.getElementById('3');
+         const switchy = document.getElementById('4');
+         const swuthc = document.getElementById('5');
 
-         if(localStorage.getItem('v4Particles') != "") {
-           if(localStorage.getItem('v4Particles') == "true") {
-             switches.checked = true;
-           }
-           else {
-             switches.checked = false;
-           }
-         }
-
-         async function particles() {
-                  switches = document.getElementById('3');
-                  switches.addEventListener('change', (event) => {
-                    if (event.currentTarget.checked) {
-                      localStorage.setItem('v4Particles', 'true');
-                    } else {
-                      localStorage.setItem('v4Particles', 'false');
-                    }
-                  });
-         }
-
-
-
-         if(localStorage.getItem('RandomBG') != "") {
-           if(localStorage.getItem('RandomBG') == "true") {
-             switches.checked = true;
-           }
-           else {
-             switches.checked = false;
-           }
+         if (localStorage.getItem('RandomBG') != "") {
+             if (localStorage.getItem('RandomBG') == "true") {
+                 switches.checked = true;
+             } else {
+                 switches.checked = false;
+             }
          }
 
          switches.addEventListener('change', (event) => {
-           if (event.currentTarget.checked) {
-             localStorage.setItem('RandomBG', 'true');
-           } else {
-             localStorage.setItem('RandomBG', 'false');
-           }
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('RandomBG', 'true');
+             } else {
+                 localStorage.setItem('RandomBG', 'false');
+             }
          });
 
 
 
 
-
-         if(localStorage.getItem('cursor') != "") {
-           if(localStorage.getItem('cursor') == "true") {
-             switches.checked = true;
-           }
-           else {
-             switches.checked = false;
-           }
+         if (localStorage.getItem('v4Particles') != "") {
+             if (localStorage.getItem('v4Particles') == "true") {
+                 switches.checked = true;
+             } else {
+                 switches.checked = false;
+             }
          }
 
+         switche.addEventListener('change', (event) => {
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('v4Particles', 'true');
+             } else {
+                 localStorage.setItem('v4Particles', 'false');
+             }
+         });
 
-         async function cursor() {
-                  switches = document.getElementById('4');
-                  switches.addEventListener('change', (event) => {
-                    if (event.currentTarget.checked) {
-                      localStorage.setItem('cursor', 'true');
-                    } else {
-                      localStorage.setItem('cursor', 'false');
-                    }
-                  });         
+         if (localStorage.getItem('cursor') != "") {
+             if (localStorage.getItem('cursor') == "true") {
+                 switche.checked = true;
+             } else {
+                 switche.checked = false;
+             }
          }
 
+         switchy.addEventListener('change', (event) => {
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('cursor', 'true');
+             } else {
+                 localStorage.setItem('cursor', 'false');
+             }
+         });
 
 
 
 
-         if(localStorage.getItem('clickoff_cloaking') != "") {
-           if(localStorage.getItem('clickoff_cloaking') == "true") {
-             switches.checked = true;
-           }
-           else {
-             switches.checked = false;
-           }
+         if (localStorage.getItem('clickoff_cloaking') != "") {
+             if (localStorage.getItem('clickoff_cloaking') == "true") {
+                 swuthc.checked = true;
+             } else {
+                 swuthc.checked = false;
+             }
          }
 
-         async function clickofflcloak() {
-                  switches = document.getElementById('5');
-                  switches.addEventListener('change', (event) => {
-                    if (event.currentTarget.checked) {
-                      localStorage.setItem('clickoff_cloaking', 'true');
-                    } else {
-                      localStorage.setItem('clickoff_cloaking', 'false');
-                    }
-                  });         
-         }
+         swuthc.addEventListener('change', (event) => {
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('clickoff_cloaking', 'true');
+             } else {
+                 localStorage.setItem('clickoff_cloaking', 'false');
+             }
+         });

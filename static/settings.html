@@ -37,6 +37,57 @@
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <script>
+   if (localStorage.getItem('v4Particles') != "") {
+             if (localStorage.getItem('v4Particles') == "true") {
+                 switches.checked = true;
+             } else {
+                 switches.checked = false;
+             }
+         }
+
+         switche.addEventListener('change', (event) => {
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('v4Particles', 'true');
+             } else {
+                 localStorage.setItem('v4Particles', 'false');
+             }
+         });
+
+         if (localStorage.getItem('cursor') != "") {
+             if (localStorage.getItem('cursor') == "true") {
+                 switche.checked = true;
+             } else {
+                 switche.checked = false;
+             }
+         }
+
+         switchy.addEventListener('change', (event) => {
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('cursor', 'true');
+             } else {
+                 localStorage.setItem('cursor', 'false');
+             }
+         });
+
+
+
+
+         if (localStorage.getItem('clickoff_cloaking') != "") {
+             if (localStorage.getItem('clickoff_cloaking') == "true") {
+                 swuthc.checked = true;
+             } else {
+                 swuthc.checked = false;
+             }
+         }
+
+         swuthc.addEventListener('change', (event) => {
+             if (event.currentTarget.checked) {
+                 localStorage.setItem('clickoff_cloaking', 'true');
+             } else {
+                 localStorage.setItem('clickoff_cloaking', 'false');
+             }
+         });
+
    cookieconsent();
      function openImportFile() {
    const fileInput = document.getElementById('importFile');
@@ -235,7 +286,7 @@
           <h3>Particles</h3>
           <p>Add the particles from to the site.</p>
           <label class="switch">
-          <input onchange="particles();" type="checkbox" class="slider-checkbox" id="3">
+          <input type="checkbox" class="slider-checkbox" id="3">
           <span class="slider-round"></span>
           </label>
          </div>
@@ -243,7 +294,7 @@
           <h3>Cusor</h3>
           <p>Add a custom cursor to the site.</p>
           <label class="switch">
-          <input onchange="cursor();" type="checkbox" class="slider-checkbox" id="4">
+          <input type="checkbox" class="slider-checkbox" id="4">
           <span class="slider-round"></span>
           </label>
          </div>
@@ -251,7 +302,7 @@
             <h3>Clickoff Cloaking</h3>
             <p>Cloak on tab clickoff!</p>
             <label class="switch">
-            <input onchange="clickofflcloak();" type="checkbox" class="slider-checkbox" id="5">
+            <input type="checkbox" class="slider-checkbox" id="5">
             <span class="slider-round"></span>
             </label>
          </div>

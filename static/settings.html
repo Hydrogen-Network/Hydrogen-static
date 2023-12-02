@@ -37,6 +37,7 @@
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <script>
+   function abc(){
    if (localStorage.getItem('v4Particles') != "") {
              if (localStorage.getItem('v4Particles') == "true") {
                  switches.checked = true;
@@ -87,7 +88,8 @@
                  localStorage.setItem('clickoff_cloaking', 'false');
              }
          });
-
+   }
+   abc();
    cookieconsent();
      function openImportFile() {
    const fileInput = document.getElementById('importFile');

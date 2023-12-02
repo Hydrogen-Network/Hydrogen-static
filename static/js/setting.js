@@ -1,7 +1,5 @@
          const switches = document.getElementById('2');
-         const switche = document.getElementById('3');
-         const switchy = document.getElementById('4');
-         const swuthc = document.getElementById('5');
+
 
          if (localStorage.getItem('RandomBG') != "") {
              if (localStorage.getItem('RandomBG') == "true") {

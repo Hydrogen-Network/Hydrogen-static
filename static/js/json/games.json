@@ -301,11 +301,12 @@
       "categories": "all 2P"
    },
    {
-      "url": "https://raw.githack.com/3kh0/3kh0-Assets/main//cookie-clicker/index.html",
+      "url": "/cdn/cookie-clicker/index.html",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/cookie-clicker.jpeg",
       "name": "Cookie Clicker",
       "desc": "Cookie Clicker is an incremental web-browser game developed by Orteil. The goal of the game is to produce as many cookies as possible.",
-      "categories": "all"
+      "categories": "all",
+      "cheat": "cookie"
    },
    {
       "url": "https://thelandofreading.com/src/static/games/core-ball/index.html",

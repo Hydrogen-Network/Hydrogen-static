@@ -18,10 +18,10 @@
       "image":"./assets/bob-the-robber-2.png"
    },
    {
-      "testname":"Cookie Clicker Hack",
-      "testcreator":"coding4hours",
-      "testtarget":"cookieclicker",
-      "testimage":"./assets/cookie-clicker.png"
+      "name":"Cookie Clicker Hack",
+      "creator":"coding4hours",
+      "target":"cookie",
+      "image":"https://raw.githubusercontent.com/Skoolgq/v2/main/img/cookie-clicker.jpeg"
    },
    {
       "name":"Monkey Mart Coins",

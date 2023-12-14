@@ -33,7 +33,7 @@ form.addEventListener("submit", async (event) => {
 
   const url = search(address.value, searchEngine.value);
 	function a(){
-	document.getElementById("iframething").src = document.getElementById("urlbar");
+	document.getElementById("iframething").src = __uv$config.prefix + __uv$config.encodeUrl(document.getElementById("urlbar").value);
 	}
   var white = document.createElement('img');
 	white.style.cursor = "pointer";

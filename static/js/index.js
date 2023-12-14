@@ -6,11 +6,11 @@ const form = document.getElementById("uv-form");
 /**
  * @type {HTMLInputElement}
  */
-const address = document.getElementById("uv-address");
+const address = document.getElementById("uv-address") || document.getElementById("urlbar");
 /**
  * @type {HTMLInputElement}
  */
-const searchEngine = document.getElementById("uv-search-engine");
+const searchEngine = document.getElementById("uv-search-engine") || 'https://google.com/search?q=%s';
 /**
  * @type {HTMLParagraphElement}
  */
@@ -32,6 +32,9 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
+	function a(){
+	document.getElementById("iframething").src = document.getElementById("urlbar");
+	}
   var white = document.createElement('img');
 	white.style.cursor = "pointer";
 	white.style.position = "absolute";

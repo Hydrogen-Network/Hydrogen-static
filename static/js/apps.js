@@ -1,6 +1,5 @@
 const appsContainer = document.querySelector('.appcontainer');
 
-async function loadapp() {
 // Fetch the apps data from a JSON file
 fetch('/static/js/json/apps.json')
   .then((res) => res.json())
@@ -28,7 +27,7 @@ fetch('/static/js/json/apps.json')
   .catch((e) => {
     console.error('Could not load apps. '+e);
   });
-}
+
 
 
 function showImages() {

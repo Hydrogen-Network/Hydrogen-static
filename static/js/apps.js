@@ -4,7 +4,7 @@ async function loadapp() {
 // Fetch the apps data from a JSON file
 fetch('/static/js/json/apps.json')
   .then((res) => res.json())
-  .then((apps) => {
+  .then((apps.sort((a, b) => a.name.localeCompare(b.name))) => {
     // Loop through each app and create a new app element for it
     apps.forEach((app) => {
       const appEl = document.createElement('li');

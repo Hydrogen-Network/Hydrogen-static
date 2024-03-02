@@ -5,6 +5,11 @@ async function loadgame() {
 fetch('/static/js/json/games.json')
   .then((res) => res.json())
   .then((games) => {
+    games.sort((a, b) => {
+      if (a.isPinned && !b.isPinned) return -1;
+      if (!a.isPinned && b.isPinned return 1;
+      return a.name.localeCompare(b.name);
+    });
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const gameEl = document.createElement('li');
@@ -44,3 +49,13 @@ function showImages() {
     }
   }
 }
+
+function pin(number)  {
+fetch('/static/js/json/games.json')
+  .then((res) => res.json())
+  .then((games) => {
+    if (games[number].isPinned == true) {
+      games[number].isPinned == false;
+    }
+    games[number].isPinned == true;
+  }

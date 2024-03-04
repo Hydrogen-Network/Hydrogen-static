@@ -56,6 +56,8 @@ fetch('/static/js/json/games.json')
   .then((games) => {
     if (games[number].isPinned == true) {
       games[number].isPinned == false;
-    }
+    } else {
     games[number].isPinned == true;
+    }
   }
+}

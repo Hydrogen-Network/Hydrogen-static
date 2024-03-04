@@ -8,18 +8,12 @@
    },
    {
       "name": "1v1.lol",
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/1v1lol/index.html",
+      "url": __uv$config.prefix + __uv$config.encodeUrl("https://unblocked76.github.io/1v1lolunblocked/"),
       "img": "https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co",
       "desc": "1v1.lol is a fast-paced and action-packed multiplayer game where players compete against each other in a variety of challenges.",
       "categories": "all 2P"
    },
-   {
-      "url": "https://raw.githack.com/3kh0/3kh0-assets/main/1v1space/index.html",
-      "img": "https://raw.githubusercontent.com/3kh0/3kh0-assets/main/1v1space/splash.png",
-      "name": "1v1 space",
-      "desc": "Embark a thrilling adventure through the cosmos, navigating through galaxies, and engaging in intense space combat with an AI opponent.",
-      "categories": "all 2P"
-   },
+
    {
       "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/10-minutes-till-dawn/index.html",
       "img": "https://i.ibb.co/6PbJfV7/0LqGxb.png",

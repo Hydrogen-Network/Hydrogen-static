@@ -8,22 +8,22 @@
    },
    {
       "name": "1v1.lol",
-      "url": __uv$config.prefix + __uv$config.encodeUrl("https://unblocked76.github.io/1v1lolunblocked/"),
+      "url": "https://unblocked76.github.io/1v1lolunblocked/",
       "img": "https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co",
       "desc": "1v1.lol is a fast-paced and action-packed multiplayer game where players compete against each other in a variety of challenges.",
       "categories": "all 2P"
    },
 
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/10-minutes-till-dawn/index.html",
+      "url": "https://rawcdn.githack.com/Coding4Hours/10minutestilldawn/950d9b7f84b34454c66f6b3a60722a0a3384bf5a/index.html",
       "img": "https://i.ibb.co/6PbJfV7/0LqGxb.png",
       "name": "10 Minutes Till Dawn",
       "desc": "10 Minutes Till Dawn is an action game where you need to survive for 10 minutes.",
       "categories": "all 2P"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/2048/index.html",
-      "img": "https://2048.wtf/2048-multitask/meta/apple-touch-icon.png",
+      "url": "https://rawcdn.githack.com/Hydrogen-Network/Hydrogen-Assets/46f451cafd1f1334ea987ed68a948ae87dbbdd8d/2048.html",
+      "img": "https://play2048.co/meta/apple-touch-icon.png",
       "name": "2048",
       "desc": "Merge numbers to create 2048!",
       "categories": "all"

@@ -58,5 +58,5 @@ fetch('/static/js/json/games.json')
     } else {
     games[number].isPinned == true;
     }
-  }
+  })
 }

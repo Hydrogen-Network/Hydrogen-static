@@ -56,7 +56,7 @@
       "desc": "Aground is a resource-collection and crafting game focused on the theme of Progression.",
       "categories": "all 2P"
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/among-us/index.html",
+      "url": "",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/amongus.png",
       "name": "Among Us",
       "desc": "Among Us is a 2018 online multiplayer action social deduction game developed and published by American game studio Innersloth.",
@@ -84,7 +84,7 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/awesometanks2/index.html",
+      "url": "https://rawcdn.githack.com/Coding4Hours/awesome-tanks-2/bc12b094535e08082df92d8eb03bbfea6a236483/index.html",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/awesometanks.jpg",
       "name": " ",
       "desc": "Battle against other tanks in a 2D arena. Fire your cannons to tear down enemy tanks!",

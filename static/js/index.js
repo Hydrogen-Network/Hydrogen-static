@@ -125,7 +125,7 @@ form.addEventListener("submit", async (event) => {
 	iframe.id = "iframe";
 	iframe.style.zIndex = "9999999999999999";
 	iframe.style.border = "none";
-	iframe.src = "/dynamic/" + __uv$config.encodeUrl(url);
+	iframe.src = "/dynamic/" + __dynamic$.encodeUrl(url);
 	document.body.appendChild(iframe);
 
 	var x = document.createElement('img');

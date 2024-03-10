@@ -20,6 +20,7 @@ self.__uv$config = {
     },
 };
 
+/*
 
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.6.3.min.js'; 
@@ -73,3 +74,4 @@ $.ajax(url, {
     }
     }
 });   
+*/

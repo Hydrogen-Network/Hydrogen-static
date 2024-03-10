@@ -1,9 +1,10 @@
+/*
 window.addEventListener('load', () => {
   navigator.serviceWorker.register('sw.js?v=1', {
     scope: '/dynamic/',
   })
 })
-	
+*/	
 "use strict";
 /**
  * @type {HTMLFormElement}
@@ -39,7 +40,7 @@ form.addEventListener("submit", async (event) => {
 
   const url = search(address.value, searchEngine.value);
 
-	if(localStorage.getItem("dy") != "true") {
+	//if(localStorage.getItem("dy") != "true") {
   var white = document.createElement('img');
 	white.style.cursor = "pointer";
 	white.style.position = "absolute";
@@ -91,7 +92,7 @@ form.addEventListener("submit", async (event) => {
 	iframe.onload = "loading.style.display = 'hidden';";
 
 	document.body.appendChild(x);
-	} else if (localStorage.getItem("dy") == "true") {
+/*	} else if (localStorage.getItem("dy") == "true") {
  var white = document.createElement('img');
 	white.style.cursor = "pointer";
 	white.style.position = "absolute";
@@ -143,4 +144,5 @@ form.addEventListener("submit", async (event) => {
 	iframe.onload = "loading.style.display = 'hidden';";
 	document.body.appendChild(x);
 	}
+ */
 });

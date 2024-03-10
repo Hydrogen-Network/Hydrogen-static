@@ -1,21 +1,27 @@
-var cacheName = 'hydrocog';
-var filesToCache = [
-  '/js/sw.js'
-];
+importScripts('dy/config.js')
+importScripts('dy/worker.js')
+importScripts('uv/bundle.js')
+importScripts('uv/config.js')
+importScripts('uv/sw.js')
 
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
-    })
-  );
-  self.skipWaiting();
-});
+const uv = new UVServiceWorker()
+const dynamic = new Dynamic()
 
-self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
-  );
-});
+let userKey = new URL(location).searchParams.get('userkey')
+self.dynamic = dynamic
+
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    (async function () {
+      if (await dynamic.route(event)) {
+        return await dynamic.fetch(event)
+      }
+
+      if (event.request.url.startsWith(location.origin + '/dynamic/')) {
+        return await uv.fetch(event)
+      }
+
+      return await fetch(event.request)
+    })()
+  )
+})

@@ -39,7 +39,7 @@ form.addEventListener("submit", async (event) => {
 
   const url = search(address.value, searchEngine.value);
 
-	if(localStorage.getItem("dy") == "false") {
+	if(localStorage.getItem("dy") != "true") {
   var white = document.createElement('img');
 	white.style.cursor = "pointer";
 	white.style.position = "absolute";

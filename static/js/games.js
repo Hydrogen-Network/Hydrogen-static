@@ -28,9 +28,7 @@ fetch('/static/js/json/games.json')
       document.querySelector('.gamecontainer').appendChild(gameEl);
     });
   })
-  .catch((e) => {
-    console.error('Could not load games. '+e);
-  });
+ 
 
 
 

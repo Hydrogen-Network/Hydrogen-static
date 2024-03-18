@@ -534,9 +534,9 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/twitch-tetris/index.html",
+      "url": "https://www.swordslasher.com/games/switch/games/twitchtetris/game.html",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/hackertetris.png ",
-      "name": "Hacker Tetris",
+      "name": "Twitch Tetris",
       "desc": "Fast-paced puzzle tetris with a hacker theme. The goal is to fit all the pieces into the board. Look up how to play tetris if you dont get it.",
       "categories": "all"
    },
@@ -555,7 +555,7 @@
       "categories": "all"
    },
    {
-      "url": "https://rawcdn.githack.com/3kh0/3kh0-Assets/5cb61b353cff0365c082c9309e82bb561c027201/HexGL/index.html",
+      "url": "https://raw.githack.com/3kh0/3kh0-lite/main/projects/HexGL/index.html",
       "img": "https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.jpeg",
       "name": "HexGL",
       "desc": "Compete to capture and control territory on a hexagonal grid. With simple yet deep gameplay mechanics, HexGL offers a challenging and rewarding experience for players of all skill levels.",

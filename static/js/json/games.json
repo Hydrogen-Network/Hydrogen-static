@@ -715,6 +715,20 @@
       "categories": "all"
    },
    {
+      "url": "https://www.swordslasher.com/games/ovo2/",
+      "img": "https://imgs.search.brave.com/5akvYBOzZF7slWbM9AmoMXHaRiT9xbboUC5ufSIUnOw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/Z2FtZXBpeC5jb20v/Z2FtZXMvb3ZvL2Nv/dmVyL292by5wbmc_/d2lkdGg9MzIwJmhl/aWdodD0xODAmZml0/PWNvdmVyJnF1YWxp/dHk9OTA",
+      "name": "OvO2",
+      "desc": "OvO2 is a fast-paced platformer where you use precise parkour and free running skills to complete each level.",
+      "categories": "all"
+   },
+   {
+      "url": "https://www.swordslasher.com/games/ovo3/game.html",
+      "img": "https://imgs.search.brave.com/5akvYBOzZF7slWbM9AmoMXHaRiT9xbboUC5ufSIUnOw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/Z2FtZXBpeC5jb20v/Z2FtZXMvb3ZvL2Nv/dmVyL292by5wbmc_/d2lkdGg9MzIwJmhl/aWdodD0xODAmZml0/PWNvdmVyJnF1YWxp/dHk9OTA",
+      "name": "OvO3",
+      "desc": "OvO3 is a fast-paced platformer where you use precise parkour and free running skills to complete each level.",
+      "categories": "all"
+   },
+   {
       "url": "https://raw.githack.com/GikitSRC/duckos-games/main/tanktrouble/index.html",
       "img": "https://skyhax.xyz/system/apps/games/icons/tankt.png",
       "name": "Tank Trouble",
@@ -844,6 +858,37 @@
       "name": "Resturaunt Rush",
       "desc": "Manage a bustling restaurant, take orders, and serve food to hungry customers in this fast-paced time management game.",
       "categories": "all"
+   },
+   {
+      "url": "https://hydrogen-assets.onrender.com/retro-bowl",
+      "img": "https://dreamboxmath.org/src/static/icons/retrobowl.jpg",
+      "name": "Retro Bowl",
+      "cheat": "retrobowl",
+      "desc": "Play as a team from the 80s and 90s, complete with neon colors and pixelated graphics. The game features simple controls and a variety of game modes, including exhibition matches, tournaments, and even a mini-golf game. Can you lead your team to victory in this nostalgic throwback to classic football games?",
+      "categories": "all 2P sports"
+   },
+   {
+      "url": "https://www.swordslasher.com/games/riddleschool/year1/",
+      "img": "https://imgs.search.brave.com/rdWHJI40rMXH22-yZ-ft1j_1XoK7rHtxXbC8900V2RU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c3BlZWRydW4uY29t/L3N0YXRpYy9nYW1l/L2oxbG1sNGRnL2Nv/dmVyLmpwZz92PTZj/MTk4NzU",
+      "name": "Riddle School",
+      "desc": " ",
+      "categories": "all 2P sports"
+   },
+   {
+      "url": "https://hydrogen-assets.onrender.com/retro-bowl",
+      "img": "https://dreamboxmath.org/src/static/icons/retrobowl.jpg",
+      "name": "Retro Bowl",
+      "cheat": "retrobowl",
+      "desc": "Play as a team from the 80s and 90s, complete with neon colors and pixelated graphics. The game features simple controls and a variety of game modes, including exhibition matches, tournaments, and even a mini-golf game. Can you lead your team to victory in this nostalgic throwback to classic football games?",
+      "categories": "all 2P sports"
+   },
+   {
+      "url": "https://hydrogen-assets.onrender.com/retro-bowl",
+      "img": "https://dreamboxmath.org/src/static/icons/retrobowl.jpg",
+      "name": "Retro Bowl",
+      "cheat": "retrobowl",
+      "desc": "Play as a team from the 80s and 90s, complete with neon colors and pixelated graphics. The game features simple controls and a variety of game modes, including exhibition matches, tournaments, and even a mini-golf game. Can you lead your team to victory in this nostalgic throwback to classic football games?",
+      "categories": "all 2P sports"
    },
    {
       "url": "https://hydrogen-assets.onrender.com/retro-bowl",
@@ -1028,8 +1073,8 @@
       "categories": "all 2P"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/superhot/index.html",
-      "img": "//raw.githack.com/3kh0/3kh0-assets/main/superhot/hot.jpg",
+      "url": "https://55gms.com/misc/superhot/index.html",
+      "img": "https://55gms.com/misc/superhot/hot.jpg",
       "name": "SuperHot",
       "desc": "SUPERHOT is the first person shooter where time moves only when you move.",
       "categories": "all"
@@ -1042,7 +1087,7 @@
       "categories": "all"
    },
    {
-      "url": "//raw.githack.com/3kh0/3kh0-assets/main/flashtetris/index.html",
+      "url": "https://55gms.com/misc/flash/index.html?swf=https://55gms.com/misc/flash/swf/tetris.swf",
       "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/tetris.png",
       "name": "Tetris",
       "desc": "Tetris is a puzzle video game created by Soviet software engineer Alexey Pajitnov in 1984. Look up 'how to play tetris' for more info.",

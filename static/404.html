@@ -127,12 +127,12 @@
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
       document.getElementById("online").innerHTML =  navigator.onLine;
-      document.getElementById("latitude").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().latitude;});
-      document.getElementById("longtitude").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().longtitude;});;
-      document.getElementById("postal").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().postal;});;
-      document.getElementById("time").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().timezone;});;
-      document.getElementById("ipv6").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().ip;});;
-      document.getElementById("network").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().network;});;
+      document.getElementById("latitude").innerHTML = JSON.stringify(fetch("https://ipapi.co/json/").then(function (a) {return a.json().latitude;}));
+      document.getElementById("longtitude").innerHTML = JSON.stringify(fetch("https://ipapi.co/json/").then(function (a) {return a.json().longtitude;}));
+      document.getElementById("postal").innerHTML = JSON.stringify(fetch("https://ipapi.co/json/").then(function (a) {return a.json().postal;}));
+      document.getElementById("time").innerHTML = JSON.stringify(fetch("https://ipapi.co/json/").then(function (a) {return a.json().timezone;}));
+      document.getElementById("ipv6").innerHTML = JSON.stringify(fetch("https://ipapi.co/json/").then(function (a) {return a.json().ip;}));
+      document.getElementById("network").innerHTML = JSON.stringify(fetch("https://ipapi.co/json/").then(function (a) {return a.json().network;}));
       document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
     </script>
     <br/>

@@ -97,7 +97,7 @@
       Network IP: <span id="network">Fetching...</span><br />
       User agent: <span id="ua">Fetching...</span><br />
       OS platform: <span id="plat">Fetching...</span><br />
-      Longitude: <span id="longtitude">Fetching...</span><br />
+      Longitude: <span id="longitude">Fetching...</span><br />
       Latitude: <span id="latitude">Fetching...</span><br />
       Postal Code: <span id="postal">Fetching...</span><br />
       Timezone: <span id="time">Fetching...</span><br />
@@ -141,10 +141,11 @@
       }
       function set() {
          document.getElementById("latitude").innerHTML = item.latitude;
-         document.getElementById("longtitude").innerHTML = item.longtitude;
+         document.getElementById("longitude").innerHTML = item.longitude;
          document.getElementById("postal").innerHTML = item.postal;
          document.getElementById("time").innerHTML = item.timezone;
-         document.getElementById("ipv6").innerHTML = item.ipv6;
+         document.getElementById("ipv6").innerHTML = item.ip;
+         document.getElementById("network").innerHTML = item.network;
          document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
       }
     </script>

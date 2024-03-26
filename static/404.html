@@ -126,7 +126,7 @@
       document.getElementById("cookie").innerText = navigator.cookieEnabled;
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
-      var ipstuff = fetch("https://ipapi.co/json/").JSON();
+      var ipstuff = fetch("https://ipapi.co/json/").then(function (a) {return a.json();});
       document.getElementById("online").innerHTML =  navigator.onLine;
       document.getElementById("latitude").innerHTML = ipstuff.latitude;
       document.getElementById("longtitude").innerHTML = ipstuff.longtitude;

@@ -139,41 +139,9 @@
           item = response; 
       }
       document.getElementById("latitude").innerHTML = item.latitude;
-       request = new XMLHttpRequest();
-      request.open('GET', "https://ipapi.co/json/");
-      request.responseType = 'json';
-      request.send();
-      request.onload = function() {
-          const response = request.response;
-          const items  = response.longtitude; 
-      }
       document.getElementById("longtitude").innerHTML = item.longtitude;
-       request = new XMLHttpRequest();
-      request.open('GET', "https://ipapi.co/json/");
-      request.responseType = 'json';
-      request.send();
-      request.onload = function() {
-          const response = request.response;
-          const items  = response.postal; 
-      }
       document.getElementById("postal").innerHTML = item.postal;
-       request = new XMLHttpRequest();
-      request.open('GET', "https://ipapi.co/json/");
-      request.responseType = 'json';
-      request.send();
-      request.onload = function() {
-          const response = request.response;
-          const items  = response.timezone; 
-      }
       document.getElementById("time").innerHTML = item.timezone;
-       request = new XMLHttpRequest();
-      request.open('GET', "https://ipapi.co/json/");
-      request.responseType = 'json';
-      request.send();
-      request.onload = function() {
-          const response = request.response;
-          const items  = response.ip; 
-      }
       document.getElementById("ipv6").innerHTML = item.ipv6;
       document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
     </script>

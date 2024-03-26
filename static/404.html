@@ -116,16 +116,7 @@
           console.log("[ℹ️] Hiding the stats for nerds!");
         }
       }
-       let request = new XMLHttpRequest();
 
-      request.open('GET', "https://ipapi.co/json/");
-      request.responseType = 'json';
-      request.send();
-
-      request.onload = function() {
-          const response = request.response;
-          const items  = response.network; 
-      }
 
       document.getElementById("full").innerText = window.location.href;
       document.getElementById("title").innerText = document.title;
@@ -138,12 +129,52 @@
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
       document.getElementById("online").innerHTML =  navigator.onLine;
-      document.getElementById("latitude").innerHTML = request.response.latitude;
-      document.getElementById("longtitude").innerHTML = request.response.longtitude;
-      document.getElementById("postal").innerHTML = request.response.postal;
-      document.getElementById("time").innerHTML = request.response.timezone;
-      document.getElementById("ipv6").innerHTML = request.response.ip;
-      document.getElementById("network").innerHTML = request.response.network;
+      let item;
+      let request = new XMLHttpRequest();
+      request.open('GET', "https://ipapi.co/json/");
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+          const response = request.response;
+          item = response.latitude; 
+      }
+      document.getElementById("latitude").innerHTML = item;
+      request = new XMLHttpRequest();
+      request.open('GET', "https://ipapi.co/json/");
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+          const response = request.response;
+          const items  = response.longtitude; 
+      }
+      document.getElementById("longtitude").innerHTML = item;
+      request = new XMLHttpRequest();
+      request.open('GET', "https://ipapi.co/json/");
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+          const response = request.response;
+          const items  = response.postal; 
+      }
+      document.getElementById("postal").innerHTML = item;
+      request = new XMLHttpRequest();
+      request.open('GET', "https://ipapi.co/json/");
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+          const response = request.response;
+          const items  = response.timezone; 
+      }
+      document.getElementById("time").innerHTML = item;
+      request = new XMLHttpRequest();
+      request.open('GET', "https://ipapi.co/json/");
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+          const response = request.response;
+          const items  = response.ip; 
+      }
+      document.getElementById("ipv6").innerHTML = item;
       document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
     </script>
     <br/>

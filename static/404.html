@@ -139,7 +139,7 @@
           set();
       }
       let request1 = new XMLHttpRequest();
-      request1.open('GET', "https://ipapi.co/json/");
+      request1.open('GET', "https://api.ipify.org/");
       request1.responseType = 'json';
       request1.send();
       request1.onload = function() {

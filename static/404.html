@@ -139,6 +139,7 @@
           item = response.latitude; 
       }
       document.getElementById("latitude").innerHTML = item;
+       request = new XMLHttpRequest();
       request.open('GET', "https://ipapi.co/json/");
       request.responseType = 'json';
       request.send();
@@ -147,6 +148,7 @@
           const items  = response.longtitude; 
       }
       document.getElementById("longtitude").innerHTML = item;
+       request = new XMLHttpRequest();
       request.open('GET', "https://ipapi.co/json/");
       request.responseType = 'json';
       request.send();
@@ -155,6 +157,7 @@
           const items  = response.postal; 
       }
       document.getElementById("postal").innerHTML = item;
+       request = new XMLHttpRequest();
       request.open('GET', "https://ipapi.co/json/");
       request.responseType = 'json';
       request.send();
@@ -163,6 +166,7 @@
           const items  = response.timezone; 
       }
       document.getElementById("time").innerHTML = item;
+       request = new XMLHttpRequest();
       request.open('GET', "https://ipapi.co/json/");
       request.responseType = 'json';
       request.send();

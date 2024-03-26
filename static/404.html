@@ -126,14 +126,13 @@
       document.getElementById("cookie").innerText = navigator.cookieEnabled;
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
-      var ipstuff = fetch("https://ipapi.co/json/").then(function (a) {return a.json();});
       document.getElementById("online").innerHTML =  navigator.onLine;
-      document.getElementById("latitude").innerHTML = ipstuff.latitude;
-      document.getElementById("longtitude").innerHTML = ipstuff.longtitude;
-      document.getElementById("postal").innerHTML = ipstuff.postal;
-      document.getElementById("time").innerHTML = ipstuff.timezone;
-      document.getElementById("ipv6").innerHTML = ipstuff.ip;
-      document.getElementById("network").innerHTML = ipstuff.network;
+      document.getElementById("latitude").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().latitude;});
+      document.getElementById("longtitude").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().longtitude;});;
+      document.getElementById("postal").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().postal;});;
+      document.getElementById("time").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().timezone;});;
+      document.getElementById("ipv6").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().ip;});;
+      document.getElementById("network").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.json().network;});;
       document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
     </script>
     <br/>

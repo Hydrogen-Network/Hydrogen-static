@@ -92,8 +92,15 @@
       Window height: <span id="winheight">Fetching...</span><br />
       Window width: <span id="winwidth">Fetching...</span><br />
       Cookies: <span id="cookie">Fetching...</span><br />
+      IPv6: <span id="ipv6">Fetching...</span><br />
+      IPv4: <span id="ipv4">Fetching...</span><br />
+      Network IP: <span id="network">Fetching...</span><br />
       User agent: <span id="ua">Fetching...</span><br />
       OS platform: <span id="plat">Fetching...</span><br />
+      Longitude: <span id="longtitude">Fetching...</span><br />
+      Latitude: <span id="latitude">Fetching...</span><br />
+      Postal Code: <span id="postal">Fetching...</span><br />
+      Timezone: <span id="time">Fetching...</span><br />
       Online: <span id="online">Fetching...</span><br />
       Error code: 404<br />
     </div>
@@ -119,7 +126,15 @@
       document.getElementById("cookie").innerText = navigator.cookieEnabled;
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
-      document.getElementById("online").innerHTML = navigator.onLine;
+      var ipstuff = fetch("https://ipapi.co/json/", { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.7", "cache-control": "no-cache", "pragma": "no-cache", "sec-fetch-mode": "cors", "sec-fetch-site": "cross-site", "sec-gpc": "1" }, "body": null, "method": "GET", "mode": "cors", "credentials": "omit" }).JSON();
+      document.getElementById("online").innerHTML =  navigator.onLine;
+      document.getElementById("latitude").innerHTML = ipstuff.latitude;
+      document.getElementById("longtitude").innerHTML = ipstuff.longtitude;
+      document.getElementById("postal").innerHTML = ipstuff.postal;
+      document.getElementById("time").innerHTML = ipstuff.timezone;
+      document.getElementById("ipv6").innerHTML = ipstuff.ip;
+      document.getElementById("network").innerHTML = ipstuff.network;
+      document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
     </script>
     <br/>
     <br/>

@@ -116,6 +116,17 @@
           console.log("[ℹ️] Hiding the stats for nerds!");
         }
       }
+       let request = new XMLHttpRequest();
+
+      request.open('GET', "https://ipapi.co/json/");
+      request.responseType = 'json';
+      request.send();
+
+      request.onload = function() {
+          const response = request.response;
+          const items  = response.network; 
+      }
+
       document.getElementById("full").innerText = window.location.href;
       document.getElementById("title").innerText = document.title;
       document.getElementById("height").innerHTML = screen.height + "px";
@@ -127,12 +138,12 @@
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
       document.getElementById("online").innerHTML =  navigator.onLine;
-      document.getElementById("latitude").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.latitude;});
-      document.getElementById("longtitude").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.longtitude;});
-      document.getElementById("postal").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.postal;});
-      document.getElementById("time").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.timezone;});
-      document.getElementById("ipv6").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.ip;});
-      document.getElementById("network").innerHTML = fetch("https://ipapi.co/json/").then(function (a) {return a.network;});
+      document.getElementById("latitude").innerHTML = request.response.latitude;
+      document.getElementById("longtitude").innerHTML = request.response.longtitude;
+      document.getElementById("postal").innerHTML = request.response.postal;
+      document.getElementById("time").innerHTML = request.response.timezone;
+      document.getElementById("ipv6").innerHTML = request.response.ip;
+      document.getElementById("network").innerHTML = request.response.network;
       document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
     </script>
     <br/>

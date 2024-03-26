@@ -129,8 +129,7 @@
       document.getElementById("ua").innerHTML = navigator.userAgent;
       document.getElementById("plat").innerHTML = navigator.platform;
       document.getElementById("online").innerHTML =  navigator.onLine;
-      let item;
-      let request = new XMLHttpRequest();
+      let item, ga, request = new XMLHttpRequest();
       request.open('GET', "https://ipapi.co/json/");
       request.responseType = 'json';
       request.send();
@@ -139,6 +138,14 @@
           item = response; 
           set();
       }
+      let request1 = new XMLHttpRequest();
+      request1.open('GET', "https://ipapi.co/json/");
+      request1.responseType = 'json';
+      request1.send();
+      request1.onload = function() {
+          const response = request1.response;
+          ga = response; 
+      }
       function set() {
          document.getElementById("latitude").innerHTML = item.latitude;
          document.getElementById("longitude").innerHTML = item.longitude;
@@ -146,7 +153,7 @@
          document.getElementById("time").innerHTML = item.timezone;
          document.getElementById("ipv6").innerHTML = item.ip;
          document.getElementById("network").innerHTML = item.network;
-         document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
+         document.getElementById("ipv4").innerHTML = ga;
       }
     </script>
     <br/>

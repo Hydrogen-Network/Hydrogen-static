@@ -139,12 +139,12 @@
           set();
       }
       let request1 = new XMLHttpRequest();
-      request1.open('GET', "https://api.ipify.org/");
+      request1.open('GET', "https://api.ipify.org/?format=json");
       request1.responseType = 'json';
       request1.send();
       request1.onload = function() {
           const response = request1.response;
-          ga = response; 
+          ga = response.ip; 
       }
       function set() {
          document.getElementById("latitude").innerHTML = item.latitude;

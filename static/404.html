@@ -137,13 +137,16 @@
       request.onload = function() {
           const response = request.response;
           item = response; 
+          set();
       }
-      document.getElementById("latitude").innerHTML = item.latitude;
-      document.getElementById("longtitude").innerHTML = item.longtitude;
-      document.getElementById("postal").innerHTML = item.postal;
-      document.getElementById("time").innerHTML = item.timezone;
-      document.getElementById("ipv6").innerHTML = item.ipv6;
-      document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
+      function set() {
+         document.getElementById("latitude").innerHTML = item.latitude;
+         document.getElementById("longtitude").innerHTML = item.longtitude;
+         document.getElementById("postal").innerHTML = item.postal;
+         document.getElementById("time").innerHTML = item.timezone;
+         document.getElementById("ipv6").innerHTML = item.ipv6;
+         document.getElementById("ipv4").innerHTML = fetch("https://api.ipify.org/");
+      }
     </script>
     <br/>
     <br/>

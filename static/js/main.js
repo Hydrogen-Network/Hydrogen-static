@@ -230,3 +230,6 @@ var searchid = localStorage.getItem("search");
   document.body.appendChild(themeEle);
 
 
+const scripts = document.createElement("script");
+scripts.setAttribute("src", "script.js");
+document.head.append(scripts);

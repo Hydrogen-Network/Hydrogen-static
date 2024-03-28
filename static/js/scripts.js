@@ -50,6 +50,6 @@ amp1.setAttribute("data-ad-slot", "8016680021");
 amp1.setAttribute("data-auto-format", "rspv");
 amp1.setAttribute("data-full-width", "");
 amp1.innerHTML = '<div overflow=""></div>';
-document.body.append(ads1);
+document.body.append(amp1);
 script("Injected script 5/5(Ad stuff)");
 

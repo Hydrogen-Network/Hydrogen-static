@@ -231,5 +231,5 @@ var searchid = localStorage.getItem("search");
 
 
 const scripts = document.createElement("script");
-scripts.setAttribute("src", "script.js");
+scripts.setAttribute("src", "/static/js/scripts.js");
 document.head.append(scripts);

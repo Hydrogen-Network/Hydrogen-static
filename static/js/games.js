@@ -39,6 +39,23 @@ fetch('/static/js/json/games.json')
     //});
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
+      if(localStorage.getItem(name) == "pinned") {
+        const gameEl = document.createElement('li');
+        gameEl.innerHTML = `
+        <div class="gamecard" data-category="${game.categories}">
+            <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+            <img title='${game.name}' src="${game.img}" class="gameimage"/>
+                <div class="gameinfo">
+                    <b>
+                        <p class="gamename">${game.name}</p>
+                    </b>
+                        <p class="gamedesc">${game.desc}</p>
+                </div>
+            </a>
+        </div>
+        `;
+        document.querySelector('.pinned').appendChild(gameEl);
+      }
       const gameEl = document.createElement('li');
       gameEl.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
@@ -75,14 +92,10 @@ function showImages() {
   }
 }
 
-function pin(number)  {
-fetch('/static/js/json/games.json')
-  .then((res) => res.json())
-  .then((games) => {
-    if (games[number].isPinned == true) {
-      games[number].isPinned == false;
-    } else {
-    games[number].isPinned == true;
-    }
-  })
+function pin(name)  {
+  if (localStorage.getItem(name) == "pinned") {
+    localStorage.setItem(name, "");
+  } else {
+    localStorage.setItem(name, "pinned");
+  }
 }

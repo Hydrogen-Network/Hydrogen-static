@@ -362,6 +362,18 @@ li {
   padding: 10px;
 }
 
+.pinned {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+
 li {
   list-style-type: none;
   padding: 0;

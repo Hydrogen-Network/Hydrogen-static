@@ -19,7 +19,7 @@ fetch('/static/js/json/games.json')
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
                 <div class="gameinfo">
                     <b>
-                        <p class="gamename">${game.name}</p>
+                        <p class="gamename">${game.name}<button onclick="pin(${game.name})">PIN</button></p>
                     </b>
                         <p class="gamedesc">${game.desc}</p>
                 </div>
@@ -36,7 +36,7 @@ fetch('/static/js/json/games.json')
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
               <div class="gameinfo">
                   <b>
-                      <p class="gamename">${game.name}</p>
+                      <p class="gamename">${game.name}<button onclick="pin(${game.name})">PIN</button></p>
                   </b>
                       <p class="gamedesc">${game.desc}</p>
               </div>

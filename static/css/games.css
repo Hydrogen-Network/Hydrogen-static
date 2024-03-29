@@ -24,8 +24,17 @@ body {
 .gamename {
   font-size: 20px;
   font-family: "Nunito Sans";
+  /* test */
+  margin-bottom: 10px;
 }
-
+.pin-button {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 .gamedesc {
@@ -67,6 +76,10 @@ body {
   justify-content: left;
   float: left;
   box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
+  /*test*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gamecard:hover {

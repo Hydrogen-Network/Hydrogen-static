@@ -16,7 +16,7 @@ fetch('/static/js/json/games.json')
             <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
             </a>
-            <button onclick="pin('${game.name}');" title="Pin" style="float: right; background-color: rgb(45, 45, 45); border-radius: 50%; border-color: transparent; color: white; top: -200px; position: relative;"><i class="fa fa-map-pin" aria-hidden="true"></i></button>
+            <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
             <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
                 <div class="gameinfo">
                     <b>
@@ -36,7 +36,7 @@ fetch('/static/js/json/games.json')
           <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
           </a>
-          <button onclick="pin('${game.name}');" title="Pin" style="float: right; background-color: rgb(45, 45, 45); border-radius: 50%; border-color: transparent; color: white; top: -200px; position: relative;"><i class="fa fa-map-pin" aria-hidden="true"></i></button>
+          <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
           <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
               <div class="gameinfo">
                   <b>
@@ -67,7 +67,7 @@ fetch('/static/js/json/games.json')
             <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
             </a>
-            <button onclick="pin('${game.name}');" title="Pin" style="float: right; background-color: rgb(45, 45, 45); border-radius: 50%; border-color: transparent; color: white; top: -200px; position: relative;"><i class="fa fa-map-pin" aria-hidden="true"></i></button>
+            <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
             <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
                 <div class="gameinfo">
                     <b>
@@ -87,7 +87,7 @@ fetch('/static/js/json/games.json')
           <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
           </a>
-          <button onclick="pin('${game.name}');" title="Pin" style="float: right; background-color: rgb(45, 45, 45); border-radius: 50%; border-color: transparent; color: white; top: -200px; position: relative;"><i class="fa fa-map-pin" aria-hidden="true"></i></button>
+          <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
           <a href="#" onclick="localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
               <div class="gameinfo">
                   <b>

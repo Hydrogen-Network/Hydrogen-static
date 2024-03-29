@@ -27,15 +27,15 @@ body {
   /* test */
   margin-bottom: 10px;
 }
-.pin-button {
+.pin-icon {
   background-color: #ccc;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  /* Add any additional styling properties */
 }
-
 
 .gamedesc {
   /*font-family: "Nunito Sans";*/

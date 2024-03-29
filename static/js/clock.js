@@ -1,4 +1,4 @@
-async function showTime(){
+function showTime(){
   var date = new Date();
   var h = date.getHours(); // 0 - 23
   var m = date.getMinutes(); // 0 - 59

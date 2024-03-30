@@ -340,7 +340,7 @@
          <input type="file" id="importFile" style="display: none;" accept=".json">
          <button onclick="openImportFile()">Import Cache</button>
          <button onclick="exportCache()">Export Cache</button>
-         <button id="unregisterButton">Unregister Service Workers</button>
+         <button id="unregisterButton">Delete Service Workers</button>
       </div>
       <script src="js/setting.js"></script>
          <div class="settings-card">
@@ -368,14 +368,17 @@
             </label>
          </div>
          <div class="settings-card">
-            <h3>Addons</h3>
-            <p>Install addons!</p>
-            <a href="addons.html">Addons!</a>
+            <h3>Bare</h3>
+            <p>Change the proxy server!</p>
+            <input type="text" id="bare"></input>
+            <br/>
+            <button onclick="custombare();">Save</button>
+            <script>
+               function custombare() {
+                  localStorage.setItem('bare', `${document.getElementById('bare').value}`);
+               }
+            </script>
          </div>
-      <div class="settings-card">
-         <h3>Daily Reward!</h3>
-         <button id="dailreward">Claim!</button>
-      </div?
    </div>
    <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
       <div style="display: flex; justify-content: space-between !important; align-items: left;">

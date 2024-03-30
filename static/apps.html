@@ -24,7 +24,7 @@
     <meta name="description" content="warwarwarwarwarwar" />
     <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/games.css">
+    <link rel="stylesheet" href="./css/apps.css">
         <title id="dynamic-title">Hydrogen</title>
   </head>
    <!-- Google tag (gtag.js) -->
@@ -59,16 +59,51 @@
             <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
                 <a href="./apps.html">Apps</a>
                 <a href="./extras.html">Extras</a>
-                <a href="./games.html">Games</a>
+                <a href="./apps.html">Games</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="./settings.html">Settings</a>
             </div>
         </div>
-     <input type="text" id="myInput" onkeyup="myFunction()" placeholder='Search For A App...' title="Type in a app">
-         <div class="pinned-apps">
+<form>
+        <style>
+           #category {
+              background-color: #29304d;
+           }
+          #category .white {
+              color: white;
+           }
+        </style>
+         <p><a style="color: white;" href="apphacks.html"><h3>Game Hacks!!</h3></a></p>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder='Search For A Game...' title="Type in a app">
+     <select id="category" name="category" onchange="showImages()">
+        <option class="white" value="all">All</option>
+        <option class="white" value="2P">Multiplayer</option>
+        <option class="white" value="sports">Sports</option>
+        <option class="white" value="flash">Flash</option>
+        <option class="white" value="local">Local</option>
+      </select>
+      </form>
+     <div class="pinned-apps">
     </div>
+      <h3 style="color: white;">Pinned Apps</h3>
+      <div class="pinned" id="appscontainer">
+        
+     </div>
+     <br />
+     <h3 style="color: white;">All Apps</h3>
+     <div class="appcontainer" id="appscontainer">
     <div class="appcontainer" id="appscontainer">
-    </div>
+       <div class="appcard" data-category="all">
+            <a href="#" onclick="localStorage.setItem('currentapp', 'https://forms.gle/5bAXNYzuN4Ymj5ve7'); localStorage.setItem('currentappname', 'Add Game'); location.href='play.html';">
+            <img title='Add App' src="https://static.vecteezy.com/system/resources/previews/009/266/327/original/plus-sign-icon-free-png.png" class="appimage"/>
+                <div class="appinfo">
+                    <b>
+                        <p class="appname">Add App</p>
+                    </b>
+                        <p class="appdesc">Click the link to make a app request!</p>
+                </div>
+            </a>
+        </div>    </div>
         <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
     <div style="display: flex; justify-content: space-between !important; align-items: left;">
       <div style="margin-right:45rem;">
@@ -111,7 +146,7 @@
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
-        ul = document.getElementById("gamescontainer");
+        ul = document.getElementById("appscontainer");
         li = ul.getElementsByTagName("li");
         for (i = 0; i < li.length; i++) {
           a = li[i].getElementsByTagName("a")[0];

@@ -1,4 +1,4 @@
-const appsContainer = document.querySelector('.appcontainer');
+const gamescontainer = document.querySelector('.gamecontainer');
 
 // Fetch the apps data from a JSON file
 fetch('/static/js/json/apps.json')
@@ -47,7 +47,7 @@ fetch('/static/js/json/apps.json')
           </a>
       </div>
       `;
-      document.querySelector('.appcontainer').appendChild(appEl);
+      document.querySelector('.gamecontainer').appendChild(appEl);
     });
   })
   .catch(error => {
@@ -98,25 +98,11 @@ fetch('/static/js/json/apps.json')
           </a>
       </div>
       `;
-      document.querySelector('.appcontainer').appendChild(appEl);
+      document.querySelector('.gamecontainer').appendChild(appEl);
     });
   })
   })
  
-function showImages() {
-  var selectedCategories = Array.from(document.querySelectorAll("#category option:checked")).map(option => option.value);
-  var apps = document.getElementsByClassName("appcard");
-
-  for (var i = 0; i < apps.length; i++) {
-    var app = apps[i];
-    var categories = app.getAttribute("data-category").split(" ");
-    if (selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category))) {
-      app.style.display = "block";
-    } else {
-      app.style.display = "none";
-    }
-  }
-}
 
 function pin(name)  {
   if (localStorage.getItem(name) == "pinned") {

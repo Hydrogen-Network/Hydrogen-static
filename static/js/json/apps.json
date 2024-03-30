@@ -22,7 +22,7 @@
   },
   {
     "url": "https://chat.shuttle.rip/chat/",
-    "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/chatgptbroken.png",
+    "img": "https://gointerstellar.app/assets/media/icons/chatgpt.webp",
     "name": "ChatGPT",
     "desc": "ChatGPT but unblocked hee hee tee hee har har :)",
     "categories": "all AI"
@@ -78,7 +78,7 @@
   },
   {
     "url": "/cdn/movie/",
-    "img": "https://movie-web.app/apple-touch-icon.png",
+    "img": "https://gointerstellar.app/assets/media/icons/movie-web.webp",
     "name": "Movie Web",
     "desc": " ",
     "categories": "all media stream"

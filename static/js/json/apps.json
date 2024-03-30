@@ -1,7 +1,7 @@
 [
   {
     "url": "/cdn/amazon/",
-    "img": "https://gointerstellar.app/images/icons/apps/amazon.png",
+    "img": "https://gointerstellar.app/assets/media/icons/amazon.webp",
     "name": "Amazon",
     "desc": " ",
     "categories": "all media"
@@ -15,7 +15,7 @@
   },
   {
     "url": "/cdn/buzzfeed/",
-    "img": "https://gointerstellar.app/images/icons/apps/buzzfeed.png",
+    "img": "https://gointerstellar.app/assets/media/icons/buzzfeed.webp",
     "name": "BuzzFeed Quizzes",
     "desc": " ",
     "categories": "all media"
@@ -29,14 +29,14 @@
   },
   {
     "url": "/cdn/coolmathgames.html",
-    "img": "https://gointerstellar.app/images/icons/apps/coolmath.png",
+    "img": "https://gointerstellar.app/assets/media/icons/coolmath.webp",
     "name": "Cool Math Games",
     "desc": " ",
     "categories": "all game"
   },
   {
     "url": "https://canary.discord.com",
-    "img": "https://gointerstellar.app/images/icons/apps/discord.jpg",
+    "img": "https://gointerstellar.app/assets/media/icons/discord.webp",
     "name": "Discord",
     "desc": "Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities.",
     "categories": "all social"
@@ -57,21 +57,21 @@
   },
   {
     "url": "/cdn/github.html",
-    "img": "https://gointerstellar.app/images/icons/apps/github.png",
+    "img": "https://gointerstellar.app/assets/media/icons/github.webp",
     "name": "Github",
     "desc": " ",
     "categories": "all media"
   },
   {
     "url": "/cdn/google.html",
-    "img": "https://gointerstellar.app/images/icons/apps/google.png",
+    "img": "https://gointerstellar.app/assets/media/icons/google.webp",
     "name": "Google",
     "desc": " ",
     "categories": "all media"
   },
   {
     "url": "/cdn/messenger.html",
-    "img": "https://gointerstellar.app/images/icons/apps/messenger.png",
+    "img": "https://gointerstellar.app/assets/media/icons/messenger.webp",
     "name": "Messenger",
     "desc": "￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼",
     "categories": "all social message"
@@ -92,28 +92,28 @@
   },
   {
     "url": "/cdn/pinterest",
-    "img": "https://gointerstellar.app/images/icons/apps/pinterest.png",
+    "img": "https://gointerstellar.app/assets/media/icons/pinterest.webp",
     "name": "Pinterest",
     "desc": " ",
     "categories": "all media"
   },
   {
     "url": "/cdn/p0k8.html",
-    "img": "https://gointerstellar.app/images/icons/apps/poki.png",
+    "img": "https://gointerstellar.app/assets/media/icons/poki.webp",
     "name": "Poki",
     "desc": " ",
     "categories": "all game"
   },
   {
     "url": "/cdn/scratch",
-    "img": "https://gointerstellar.app/images/icons/scratch.jpg",
+    "img": "https://gointerstellar.app/assets/media/icons/scratch.webp",
     "name": "Scratch",
     "desc": " ", 
     "categories": "all social game media"
   },  
   {
     "url": "/cdn/soundcloud",
-    "img": "https://gointerstellar.app/images/icon/soundcloud.jpg",
+    "img": "https://gointerstellar.app/assets/media/icons/soundcloud.webp",
     "name": "Soundcloud",
     "desc": " ", 
     "categories": "all media"

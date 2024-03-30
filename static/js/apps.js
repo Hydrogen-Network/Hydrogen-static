@@ -12,7 +12,7 @@ fetch('/static/js/json/apps.json')
       if(localStorage.getItem(app.name) == "pinned") {
         const gasmeEl = document.createElement('li');
         gasmeEl.innerHTML = `
-        <div class="appcard" data-category="${app.categories}">
+        <div class="gamecard" data-category="${app.categories}">
             <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
             <img title='${app.name}' src="${app.img}" class="gameimage"/>
             </a>
@@ -32,7 +32,7 @@ fetch('/static/js/json/apps.json')
       
       const appEl = document.createElement('li');
       appEl.innerHTML = `
-      <div class="appcard" data-category="${app.categories}">
+      <div class="gamecard" data-category="${app.categories}">
           <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
           <img title='${app.name}' src="${app.img}" class="gameimage"/>
           </a>
@@ -63,7 +63,7 @@ fetch('/static/js/json/apps.json')
       if(localStorage.getItem(app.name) == "pinned") {
         const gasmeEl = document.createElement('li');
         gasmeEl.innerHTML = `
-        <div class="appcard" data-category="${app.categories}">
+        <div class="gamecard" data-category="${app.categories}">
             <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
             <img title='${app.name}' src="${app.img}" class="gameimage"/>
             </a>
@@ -83,7 +83,7 @@ fetch('/static/js/json/apps.json')
       
       const appEl = document.createElement('li');
       appEl.innerHTML = `
-      <div class="appcard" data-category="${app.categories}">
+      <div class="gamecard" data-category="${app.categories}">
           <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
           <img title='${app.name}' src="${app.img}" class="gameimage"/>
           </a>

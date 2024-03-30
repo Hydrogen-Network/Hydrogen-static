@@ -38,7 +38,6 @@
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <script>
-   function abc(){
                const switche = document.getElementById('3');
          const switchy = document.getElementById('4');
          const swuthc = document.getElementById('5');
@@ -60,9 +59,9 @@
 
          if (localStorage.getItem('cursor') != "") {
              if (localStorage.getItem('cursor') == "true") {
-                 switche.checked = true;
+                 switchy.checked = true;
              } else {
-                 switche.checked = false;
+                 switchy.checked = false;
              }
          }
 
@@ -92,8 +91,6 @@
                  localStorage.setItem('clickoff_cloaking', 'false');
              }
          });
-   }
-   abc();
    cookieconsent();
      function openImportFile() {
    const fileInput = document.getElementById('importFile');

@@ -13,16 +13,16 @@ fetch('/static/js/json/apps.json')
         const gasmeEl = document.createElement('li');
         gasmeEl.innerHTML = `
         <div class="appcard" data-category="${app.categories}">
-            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
-            <img title='${app.name}' src="${app.img}" class="appimage"/>
+            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+            <img title='${app.name}' src="${app.img}" class="gameimage"/>
             </a>
             <i onclick="pin('${app.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
                 <div class="appinfo">
                     <b>
-                        <p class="appname">${app.name}</p>
+                        <p class="gamename">${app.name}</p>
                     </b>
-                        <p class="appdesc">${app.desc}</p>
+                        <p class="gamedesc">${app.desc}</p>
                 </div>
             </a>
         </div>
@@ -33,16 +33,16 @@ fetch('/static/js/json/apps.json')
       const appEl = document.createElement('li');
       appEl.innerHTML = `
       <div class="appcard" data-category="${app.categories}">
-          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
-          <img title='${app.name}' src="${app.img}" class="appimage"/>
+          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+          <img title='${app.name}' src="${app.img}" class="gameimage"/>
           </a>
           <i onclick="pin('${app.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
               <div class="appinfo">
                   <b>
-                      <p class="appname">${app.name}</p>
+                      <p class="gamename">${app.name}</p>
                   </b>
-                      <p class="appdesc">${app.desc}</p>
+                      <p class="gamedesc">${app.desc}</p>
               </div>
           </a>
       </div>
@@ -64,16 +64,16 @@ fetch('/static/js/json/apps.json')
         const gasmeEl = document.createElement('li');
         gasmeEl.innerHTML = `
         <div class="appcard" data-category="${app.categories}">
-            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
-            <img title='${app.name}' src="${app.img}" class="appimage"/>
+            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+            <img title='${app.name}' src="${app.img}" class="gameimage"/>
             </a>
             <i onclick="pin('${app.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+            <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
                 <div class="appinfo">
                     <b>
-                        <p class="appname">${app.name}</p>
+                        <p class="gamename">${app.name}</p>
                     </b>
-                        <p class="appdesc">${app.desc}</p>
+                        <p class="gamedesc">${app.desc}</p>
                 </div>
             </a>
         </div>
@@ -84,16 +84,16 @@ fetch('/static/js/json/apps.json')
       const appEl = document.createElement('li');
       appEl.innerHTML = `
       <div class="appcard" data-category="${app.categories}">
-          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
-          <img title='${app.name}' src="${app.img}" class="appimage"/>
+          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+          <img title='${app.name}' src="${app.img}" class="gameimage"/>
           </a>
           <i onclick="pin('${app.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentappname', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentapp', '${app.url}'); localStorage.setItem('currentgamename', '${app.name}'); localStorage.setItem('currentappcheat', '${app.cheat}'); location.href='play.html';">
               <div class="appinfo">
                   <b>
-                      <p class="appname">${app.name}</p>
+                      <p class="gamename">${app.name}</p>
                   </b>
-                      <p class="appdesc">${app.desc}</p>
+                      <p class="gamedesc">${app.desc}</p>
               </div>
           </a>
       </div>

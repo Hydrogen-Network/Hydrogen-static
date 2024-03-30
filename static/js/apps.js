@@ -1,7 +1,7 @@
 const gamesContainer = document.querySelector('.gamecontainer');
 
 // Fetch the apps data from a JSON file
-fetch('/static/js/json/games.json')
+fetch('/static/js/json/apps.json')
   .then((res) => res.json())
   .then((games) => {
     games.sort(function (a, b) {

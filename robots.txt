@@ -1,0 +1,10 @@
+User-agent: * 
+Disallow: /other/
+
+User-agent: Googlebot 
+Disallow: 
+
+User-agent: bingbot 
+Disallow: 
+
+Sitemap: sitemap.xml

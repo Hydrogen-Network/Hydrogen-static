@@ -1,222 +1,203 @@
 <!DOCTYPE html>
 <head>
-   <link rel="shortcut icon" id="dynamic-favicon" href="./img/gas.png">
+   <!-- Modern search engines don't care; Note modern ;D  -->
+   <meta name="keywords" content="proxy, web proxy, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
    <title id="dynamic-title">Hydrogen</title>
-   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
-   <script src="./js/shortkey.js"></script>
-    <script src="./js/cookies.js" async defe>
-        cookieconsent();
-    </script>
-   <script src="./js/main.js"></script>
-   <script src="./js/scripts.js"></script>
-   <script src="./js/home.js"></script>
-    <script src="./js/clock.js" async defe>
-       //showTime();
-    </script>
-   <script src="./js/cloak.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
-   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-   <!-- Meta Data-->
-   <meta charset="UTF-8">
+   <meta name="description" content="Hydrogen is a secure web proxy service with support for many sites. Bypass filters and freely enjoy a safer private browsing experience or unblock websites on devices such as Chromebooks and at places like school or work without downloading anything."/>
+   <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="./img/gas.png">
+   <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
+   
+   <!-- Embed Properties; readable rich structure. Notice my descriptor switches -->
+   <meta property="og:site_name" content="Hydrogen">
+   <meta property="og:url" content="https://holyunblocker.net/">
+   <meta property="og:title" content="Hydrogen">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="Hydrogen is a web proxy service that helps you access websites that may be blocked by your network or browser. It does this securely and with additional features.">
+   <meta property="og:image" content="./img/gas.png">
+   <meta property="og:image:secure_url" content="./img/gas.png">
+   <meta property="twitter:image" content="./img/gas.png">
+   <meta name="twitter:site" content="@H">
+   <meta name="twitter:creator" content="@H">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Hydrogen">
+   <meta name="twitter:description" content="Hydrogen is a web proxy service that helps you access websites that may be blocked by your network or browser. It does this securely and with additional features.">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="keywords" content="Computer Science, Technology, Photography, Nature, Tech Support, Tech Help, Local Tech Support">
-   <!-- Site Stylesheets-->
+   
+   <!-- JS Stuff -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="./js/main.js"></script>
+   <script src="./js/settings.js"></script>
+   <script src="./js/shortkey.js"></script>
+   <script src="./js/cookies.js" async defe>
+      cookieconsent();
+   </script>    
+   <script src="./js/home.js"></script>
+   <script src="./js/cloak.js"></script>
+   <script src="./js/scripts.js"></script>
+   <script src="uv/uv.bundle.js" defer></script>
+   <script src="uv/uv.config.js" defer></script>
+   <script src="register-sw.js" defer></script>
+   <script src="search.js" defer></script>
+   <script src="index.js" defer></script>
+   <script src="error.js" defer></script>
+   <script src="js/panic.js"></script>
+   <script>
+      function custombare() {
+         localStorage.setItem('bare', `${document.getElementById('bare').value}`);
+      }
+      function customsearch() {
+      localStorage.setItem('search', 'https://' + `${document.getElementById('engine').value}`);
+      localStorage.setItem('customsearch', 'true');
+      }
+      const switche = document.getElementById('3');
+      const switchy = document.getElementById('4');
+      const swuthc = document.getElementById('5');
+      if (localStorage.getItem('v4Particles') != "") {
+      if (localStorage.getItem('v4Particles') == "true") {
+        switche.checked = true;
+      } else {
+        switche.checked = false;
+      }
+      }
+      
+      switche.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        localStorage.setItem('v4Particles', 'true');
+      } else {
+        localStorage.setItem('v4Particles', 'false');
+      }
+      });
+      
+      if (localStorage.getItem('cursor') != "") {
+      if (localStorage.getItem('cursor') == "true") {
+        switchy.checked = true;
+      } else {
+        switchy.checked = false;
+      }
+      }
+      
+      switchy.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        localStorage.setItem('cursor', 'true');
+      } else {
+        localStorage.setItem('cursor', 'false');
+      }
+      });
+      
+      
+      
+      
+      if (localStorage.getItem('clickoff_cloaking') != "") {
+      if (localStorage.getItem('clickoff_cloaking') == "true") {
+        swuthc.checked = true;
+      } else {
+        swuthc.checked = false;
+      }
+      }
+      
+      swuthc.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        localStorage.setItem('clickoff_cloaking', 'true');
+      } else {
+        localStorage.setItem('clickoff_cloaking', 'false');
+      }
+      });
+      cookieconsent();
+      function openImportFile() {
+      const fileInput = document.getElementById('importFile');
+      fileInput.addEventListener('change', handleImportFile, false);
+      fileInput.click();
+      }
+      
+      function handleImportFile(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function (e) {
+      try {
+      const importedData = JSON.parse(e.target.result);
+      Object.keys(importedData).forEach((key) => {
+      localStorage.setItem(key, importedData[key]);
+      });
+      alert('Cache data imported successfully.');
+      location.reload();
+      } catch (error) {
+      alert('Error importing cache data. Please check the file format.');
+      }
+      };
+      reader.readAsText(file);
+      }
+      
+      function exportCache() {
+      const cacheData = {};
+      Object.keys(localStorage).forEach((key) => {
+      cacheData[key] = localStorage.getItem(key);
+      });
+      const exportedData = JSON.stringify(cacheData);
+      
+      const blob = new Blob([exportedData], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'cache_data.json';
+      link.click();
+      URL.revokeObjectURL(url);
+      }
+   </script>
+   
+   <!-- CSS Stuff -->
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
    <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
    <link rel="stylesheet" href="./css/settings.css">
+   
+   <!-- SCHEMA -->
+   <!-- https://schema.org/docs/schemas.html -->
+   <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+           "@type": "Question",
+           "name": "What is Hydrogen?",
+           "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>Hydrogen is a new, outstanding proxy. Check it out to see what it has!</p>"
+           }
+        }]
+      }
+   </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1GKR3GL1R"></script>
-<script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-   
-   gtag('config', 'G-Y1GKR3GL1R');
-</script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-<script>
-   async function abc() {
-               const switche = document.getElementById('3');
-         const switchy = document.getElementById('4');
-         const swuthc = document.getElementById('5');
-   if (localStorage.getItem('v4Particles') != "") {
-             if (localStorage.getItem('v4Particles') == "true") {
-                 switche.checked = true;
-             } else {
-                 switche.checked = false;
-             }
-         }
-
-         switche.addEventListener('change', (event) => {
-             if (event.currentTarget.checked) {
-                 localStorage.setItem('v4Particles', 'true');
-             } else {
-                 localStorage.setItem('v4Particles', 'false');
-             }
-         });
-
-         if (localStorage.getItem('cursor') != "") {
-             if (localStorage.getItem('cursor') == "true") {
-                 switchy.checked = true;
-             } else {
-                 switchy.checked = false;
-             }
-         }
-
-         switchy.addEventListener('change', (event) => {
-             if (event.currentTarget.checked) {
-                 localStorage.setItem('cursor', 'true');
-             } else {
-                 localStorage.setItem('cursor', 'false');
-             }
-         });
-
-
-
-
-         if (localStorage.getItem('clickoff_cloaking') != "") {
-             if (localStorage.getItem('clickoff_cloaking') == "true") {
-                 swuthc.checked = true;
-             } else {
-                 swuthc.checked = false;
-             }
-         }
-
-         swuthc.addEventListener('change', (event) => {
-             if (event.currentTarget.checked) {
-                 localStorage.setItem('clickoff_cloaking', 'true');
-             } else {
-                 localStorage.setItem('clickoff_cloaking', 'false');
-             }
-         });
-   }
-   const switche = document.getElementById('3');
-         const switchy = document.getElementById('4');
-         const swuthc = document.getElementById('5');
-   if (localStorage.getItem('v4Particles') != "") {
-             if (localStorage.getItem('v4Particles') == "true") {
-                 switche.checked = true;
-             } else {
-                 switche.checked = false;
-             }
-         }
-
-         switche.addEventListener('change', (event) => {
-             if (event.currentTarget.checked) {
-                 localStorage.setItem('v4Particles', 'true');
-             } else {
-                 localStorage.setItem('v4Particles', 'false');
-             }
-         });
-
-         if (localStorage.getItem('cursor') != "") {
-             if (localStorage.getItem('cursor') == "true") {
-                 switchy.checked = true;
-             } else {
-                 switchy.checked = false;
-             }
-         }
-
-         switchy.addEventListener('change', (event) => {
-             if (event.currentTarget.checked) {
-                 localStorage.setItem('cursor', 'true');
-             } else {
-                 localStorage.setItem('cursor', 'false');
-             }
-         });
-
-
-
-
-         if (localStorage.getItem('clickoff_cloaking') != "") {
-             if (localStorage.getItem('clickoff_cloaking') == "true") {
-                 swuthc.checked = true;
-             } else {
-                 swuthc.checked = false;
-             }
-         }
-
-         swuthc.addEventListener('change', (event) => {
-             if (event.currentTarget.checked) {
-                 localStorage.setItem('clickoff_cloaking', 'true');
-             } else {
-                 localStorage.setItem('clickoff_cloaking', 'false');
-             }
-         });
-   abc();
-   abc();
-   abc();
-   cookieconsent();
-     function openImportFile() {
-   const fileInput = document.getElementById('importFile');
-   fileInput.addEventListener('change', handleImportFile, false);
-   fileInput.click();
-   }
-   
-   function handleImportFile(event) {
-   const file = event.target.files[0];
-   const reader = new FileReader();
-   reader.onload = function (e) {
-     try {
-       const importedData = JSON.parse(e.target.result);
-       Object.keys(importedData).forEach((key) => {
-         localStorage.setItem(key, importedData[key]);
-       });
-       alert('Cache data imported successfully.');
-       location.reload();
-     } catch (error) {
-       alert('Error importing cache data. Please check the file format.');
-     }
-   };
-   reader.readAsText(file);
-   }
-   
-   function exportCache() {
-   const cacheData = {};
-   Object.keys(localStorage).forEach((key) => {
-     cacheData[key] = localStorage.getItem(key);
-   });
-   const exportedData = JSON.stringify(cacheData);
-   
-   const blob = new Blob([exportedData], { type: 'application/json' });
-   const url = URL.createObjectURL(blob);
-   const link = document.createElement('a');
-   link.href = url;
-   link.download = 'cache_data.json';
-   link.click();
-   URL.revokeObjectURL(url);
-   }
-</script>
-         <div id="cookieNotice" class="light display-right" style="display: none;">
-             <div id="closeIcon" style="display: none;"></div>
-             <div class="title-wrap">
-                 <h4>Cookie Consent</h4>
-             </div>
-             <div class="content-wrap">
-                 <div class="msg-wrap">
-                     <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our <a style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a>
-                     </p>
-                     <div class="btn-wrap">
-                         <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
-                         <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
-                     </div>
-                 </div>
-             </div>
+<div id="cookieNotice" class="light display-right" style="display: none;">
+   <div id="closeIcon" style="display: none;"></div>
+   <div class="title-wrap">
+      <h4>Cookie Consent</h4>
+   </div>
+   <div class="content-wrap">
+      <div class="msg-wrap">
+         <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our <a style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a>
+         </p>
+         <div class="btn-wrap">
+            <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
+            <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
          </div>
+      </div>
+   </div>
+</div>
 <!-- Nav Bar Start-->
 <div class="navbar">
    <a href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png" /></a>
    <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
-        <a href="./apps.html">Apps</a>
-        <a href="./extras.html">Extras</a>
-        <a href="./games.html">Games</a>
-        <a href="./faq.html">FAQ</a>
-        <a href="./settings.html">Settings</a>
-     </div>
- </div>
+      <a href="./apps.html">Apps</a>
+      <a href="./extras.html">Extras</a>
+      <a href="./games.html">Games</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./settings.html">Settings</a>
+   </div>
+</div>
 <!-- Nav Bar End-->
 <div class="main">
    <div class="settings-container">
@@ -244,10 +225,10 @@
          <input type="text" id="background-input" placeholder="Enter image URL">
          <span><span>Random Background</span></span>
          <br/>
-          <label class="switch">
-          <input onchange="location.reload();" type="checkbox" class="slider-checkbox" id="2">
-          <span class="slider-round"></span>
-          </label>
+         <label class="switch">
+         <input onchange="location.reload();" type="checkbox" class="slider-checkbox" id="2">
+         <span class="slider-round"></span>
+         </label>
          <br/>
          <button class="key-button" id="save-button">Save</button>
          <button class="key-button" id="reset-button">Reset</button>
@@ -286,12 +267,6 @@
          <input type="text" name="search" id="engine"></input>
          <br/>
          <button onclick="customsearch();">Save</button>
-         <script>
-            function customsearch() {
-            localStorage.setItem('search', 'https://' + `${document.getElementById('engine').value}`);
-            localStorage.setItem('customsearch', 'true');
-            }
-         </script>
       </div>
       <div class="settings-card">
          <h3>Themes!</h3>
@@ -343,42 +318,37 @@
          <button id="unregisterButton">Delete Service Workers</button>
       </div>
       <script src="js/setting.js"></script>
-         <div class="settings-card">
-          <h3>Particles</h3>
-          <p>Add the particles from to the site.</p>
-          <label class="switch">
-          <input type="checkbox" class="slider-checkbox" id="3">
-          <span class="slider-round"></span>
-          </label>
-         </div>
-         <div class="settings-card">
-          <h3>Cusor</h3>
-          <p>Add a custom cursor to the site.</p>
-          <label class="switch">
-          <input type="checkbox" class="slider-checkbox" id="4">
-          <span class="slider-round"></span>
-          </label>
-         </div>
-         <div class="settings-card">
-            <h3>Clickoff Cloaking</h3>
-            <p>Cloak on tab clickoff!</p>
-            <label class="switch">
-            <input type="checkbox" class="slider-checkbox" id="5">
-            <span class="slider-round"></span>
-            </label>
-         </div>
-         <div class="settings-card">
-            <h3>Bare</h3>
-            <p>Change the proxy server!</p>
-            <input type="text" id="bare"></input>
-            <br/>
-            <button onclick="custombare();">Save</button>
-            <script>
-               function custombare() {
-                  localStorage.setItem('bare', `${document.getElementById('bare').value}`);
-               }
-            </script>
-         </div>
+      <div class="settings-card">
+         <h3>Particles</h3>
+         <p>Add the particles from to the site.</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="3">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Cusor</h3>
+         <p>Add a custom cursor to the site.</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="4">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Clickoff Cloaking</h3>
+         <p>Cloak on tab clickoff!</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="5">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Bare</h3>
+         <p>Change the proxy server!</p>
+         <input type="text" id="bare"></input>
+         <br/>
+         <button onclick="custombare();">Save</button>
+      </div>
    </div>
    <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
       <div style="display: flex; justify-content: space-between !important; align-items: left;">
@@ -389,18 +359,17 @@
                >Hydrogen Network</a
                >
             <p style="text-align: center; color: white; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;
-    position: absolute;
-    background-color: rgba(48, 48, 48, 0.693);
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
-    width: 150px;
-    font-size: 18px;
-    margin-bottom: 200px;
-    left: 50%;
-    right: 50%;
-    border-radius: 10px;
-    transform: translateX(-60%);
-    background-attachment: fixed;" id="time" class="clock"></p>
-            
+               position: absolute;
+               background-color: rgba(48, 48, 48, 0.693);
+               box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
+               width: 150px;
+               font-size: 18px;
+               margin-bottom: 200px;
+               left: 50%;
+               right: 50%;
+               border-radius: 10px;
+               transform: translateX(-60%);
+               background-attachment: fixed;" id="time" class="clock"></p>
             <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
                title="The Hydrogen Network Discord"
                href="https://discord.gg/Y3Amtwk27U"
@@ -413,18 +382,17 @@
       </div>
 </div>
 </footer>
-<script src="./js/settings.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6546c8fcf2439e1631ebd238/1hee828s0';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+   s1.async=true;
+   s1.src='https://embed.tawk.to/6546c8fcf2439e1631ebd238/1hee828s0';
+   s1.charset='UTF-8';
+   s1.setAttribute('crossorigin','*');
+   s0.parentNode.insertBefore(s1,s0);
+   })();
 </script>
 <!--End of Tawk.to Script-->
 </body>

@@ -6,3 +6,5 @@ Disallow:
 
 User-agent: bingbot 
 Disallow: 
+
+Sitemap: sitemap.xml

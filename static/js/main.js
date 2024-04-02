@@ -1,5 +1,5 @@
 //Loads custom icons
-
+onbeforeunload = (i) => 1;
 document.addEventListener("DOMContentLoaded", function(event) { 
   const icon = document.getElementById('dynamic-favicon');
   const name = document.getElementById('dynamic-title');

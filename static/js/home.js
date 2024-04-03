@@ -68,3 +68,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 document.addEventListener('keydown', function (event) {
       console.log('Keydown event:', event);
 });
+const d = document.createElement("script");
+d.setAttribute("src", "/static/js/scripts.js");

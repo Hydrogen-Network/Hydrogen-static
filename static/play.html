@@ -45,43 +45,8 @@
       <script src="uv.js" defer></script>
       <script src="uv-sw.js" defer></script>
       <script src="js/panic.js"></script>
-      <script>
-         cookieconsent();
-         document.addEventListener("keydown", function(event) {
-         if (event.code === "KeyF") fullscreen();
-         });
-         
-         function fullscreen() {
-         let iframe = document.getElementById('game-frame');
-         if (!iframe) iframe = document.getElementById('app-frame');
-         
-         if (iframe.requestFullscreen) iframe.requestFullscreen();
-         else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
-         else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
-         else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
-         };
-         document.getElementById('game-frame').src = localStorage.getItem("currentgame");
-         document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
-         let gamehaks = JSON.parse(localStorage.getItem('hacks'));
-         let game = localStorage.getItem('currentgamecheat');
-         let gameFunctions = {
-           "retrobowl": retroBowl,
-           "vexsix": vexSix,
-           "templeruntwo": templeRunTwo,
-           "bobtherobbertwo": bobTheRobberTwo,
-           "cookie": cookie,
-           "jetpackjoyride": jetPackJoyride,
-           "monkeymart": monkeyMart,
-           "eggycar": eggyCar,
-           "wordle": Wordle,
-           "subwaysurfers": subwaySurfers,
-           };
-         if (gamehaks.includes(game)) {
-           document.getElementById('hack').style.display = 'block';
-           document.getElementById('hack').onclick = gameFunctions[game];
-         }
-      </script>
       <!-- CSS Stuff -->
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
       <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
@@ -216,6 +181,42 @@
             </div>
             <i class="fa-solid fa-code hack"></i>
          </div>
+               <script>
+         cookieconsent();
+         document.addEventListener("keydown", function(event) {
+         if (event.code === "KeyF") fullscreen();
+         });
+         
+         function fullscreen() {
+         let iframe = document.getElementById('game-frame');
+         if (!iframe) iframe = document.getElementById('app-frame');
+         
+         if (iframe.requestFullscreen) iframe.requestFullscreen();
+         else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+         else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
+         else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+         };
+         document.getElementById('game-frame').src = localStorage.getItem("currentgame");
+         document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
+         let gamehaks = JSON.parse(localStorage.getItem('hacks'));
+         let game = localStorage.getItem('currentgamecheat');
+         let gameFunctions = {
+           "retrobowl": retroBowl,
+           "vexsix": vexSix,
+           "templeruntwo": templeRunTwo,
+           "bobtherobbertwo": bobTheRobberTwo,
+           "cookie": cookie,
+           "jetpackjoyride": jetPackJoyride,
+           "monkeymart": monkeyMart,
+           "eggycar": eggyCar,
+           "wordle": Wordle,
+           "subwaysurfers": subwaySurfers,
+           };
+         if (gamehaks.includes(game)) {
+           document.getElementById('hack').style.display = 'block';
+           document.getElementById('hack').onclick = gameFunctions[game];
+         }
+      </script>
       </div>
       <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
          <div style="display: flex; justify-content: space-between !important; align-items: left;">

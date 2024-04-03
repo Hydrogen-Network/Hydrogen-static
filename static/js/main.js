@@ -1,5 +1,4 @@
 //Loads custom icons
-onbeforeunload = (i) => 1;
 document.addEventListener("DOMContentLoaded", function(event) { 
   const icon = document.getElementById('dynamic-favicon');
   const name = document.getElementById('dynamic-title');
@@ -136,6 +135,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   if(themeid == "purple-blue") {
     themeEle.href = "/static/css/theme/gradient/purple-blue.css";
+  }
+  if(themeid == "hacker") {
+    themeEle.href = "/static/css/themes/hacker.css";
   }
   document.body.appendChild(themeEle);
 });

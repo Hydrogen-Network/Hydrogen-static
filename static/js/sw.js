@@ -1,4 +1,4 @@
-var cacheName = 'hydrocog';
+var cacheName = 'TIWcog';
 var filesToCache = [
   '/js/sw.js'
 ];

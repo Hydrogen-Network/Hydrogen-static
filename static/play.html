@@ -140,6 +140,7 @@
       </div>
       <div class="container">
          <h1 style="color:white;" id="gamename"></h1>
+         <h5 style="color:white;" id="gamedesc"></h5>
          <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
          <div class="controls">
             <div id="flbutton">
@@ -164,6 +165,7 @@
          };
          document.getElementById('game-frame').src = localStorage.getItem("currentgame");
          document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
+          document.getElementById('gamedesc').innerHTML = localStorage.getItem('currentgamedesc');
          let gamehaks = JSON.parse(localStorage.getItem('hacks'));
          let game = localStorage.getItem('currentgamecheat');
          let gameFunctions = {

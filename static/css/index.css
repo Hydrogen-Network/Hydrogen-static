@@ -16,6 +16,11 @@ body {
   background-color: #1e2124;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('/static/img/mainbg.gif');
+  background-size: cover;
+  /*background-color: #36393e;*/
+  color: black;
+  overflow-x: hidden;
 }
 
 .container {

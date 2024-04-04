@@ -70,3 +70,41 @@ document.addEventListener('keydown', function (event) {
 });
 const d = document.createElement("script");
 d.setAttribute("src", "/static/js/scripts.js");
+
+
+
+
+
+let batteryPromise = navigator.getBattery();
+batteryPromise.then(batteryCallback);
+
+function batteryCallback(batteryObject) {
+    printBatteryStatus(batteryObject);
+    batteryObject.addEventListener('chargingchange', function(ev){
+             printBatteryStatus(batteryObject);
+    });
+    batteryObject.addEventListener('levelchange', function(ev)
+    {
+             printBatteryStatus(batteryObject);
+    });
+}
+function printBatteryStatus(batteryObject) {
+    console.log("IsCharging", batteryObject.charging);
+    console.log("Percentage", batteryObject.level*100);
+   
+    console.log("charging Time", batteryObject.chargingTime);
+    console.log("DisCharging Time", batteryObject.dischargingTime);
+}
+
+
+
+navigator.getBattery().then((battery) => {
+
+    battery.ondischargingtimechange = (event) => { 
+       console.warn(`Discharging : `, event.target.level) 
+    };
+
+    battery.onchargingtimechange = (event) => { 
+       console.info(`Charging : `, event.target.level) ;
+    };
+});

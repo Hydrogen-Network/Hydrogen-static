@@ -29,8 +29,8 @@ fetch('/static/js/json/games.json')
         document.querySelector('.pinned').appendChild(gasmeEl);
       }
       
-      const gameEl = document.createElement('li');
-      gameEl.innerHTML = `
+      const gameE = document.createElement('li');
+      gameE.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
           <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
@@ -45,7 +45,7 @@ fetch('/static/js/json/games.json')
           </a>
       </div>
       `;
-      document.querySelector('.gamecontainer').appendChild(gameEl);
+      document.querySelector('.gamecontainer').appendChild(gameE);
     });
   })
   .catch(error => {
@@ -59,8 +59,8 @@ fetch('/static/js/json/games.json')
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       if(localStorage.getItem(game.name) == "pinned") {
-        const gasmeEl = document.createElement('li');
-        gasmeEl.innerHTML = `
+        const gasme = document.createElement('li');
+        gasme.innerHTML = `
         <div class="gamecard" data-category="${game.categories}">
             <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
@@ -75,11 +75,11 @@ fetch('/static/js/json/games.json')
             </a>
         </div>
         `;
-        document.querySelector('.pinned').appendChild(gasmeEl);
+        document.querySelector('.pinned').appendChild(gasme);
       }
       
-      const gameEl = document.createElement('li');
-      gameEl.innerHTML = `
+      const gameEll = document.createElement('li');
+      gameEll.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
           <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
@@ -94,7 +94,7 @@ fetch('/static/js/json/games.json')
           </a>
       </div>
       `;
-      document.querySelector('.gamecontainer').appendChild(gameEl);
+      document.querySelector('.gamecontainer').appendChild(gameEll);
     });
   })
   })

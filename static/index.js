@@ -7,11 +7,11 @@ const form = document.getElementById("uv-form");
 /**
  * @type {HTMLInputElement}
  */
-const address = document.getElementById("uv-address") || document.getElementById("urlbar");
+const address = document.getElementById("uv-address");
 /**
  * @type {HTMLInputElement}
  */
-const searchEngine = document.getElementById("uv-search-engine") || 'https://google.com/search?q=%s';
+const searchEngine = 'https://search.brave.com/search?q=%s';
 /**
  * @type {HTMLParagraphElement}
  */
@@ -32,30 +32,7 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search(address.value, searchEngine.value);
-
-  var white = document.createElement('img');
-	white.style.cursor = "pointer";
-	white.style.position = "absolute";
-	white.style.width = "100%";
-	white.style.height = "100%";
-	white.style.zIndex = "1";
-	white.src = "/static/img/black.jpeg";
-	white.style.right = "0px";
-	white.style.top = "0px";
-	document.body.appendChild(white);
-
-	var loading = document.createElement('img');
-	loading.style.cursor = "pointer";
-	loading.style.width = "125px";
-	loading.style.height = "125px";
-	loading.style.position = "absolute";
-	loading.style.zIndex = "2";
-	loading.src = "/static/img/loading.gif";
-	loading.style.top = "50%";
-	loading.style.left = "50%";
-	loading.style.transform = "translate(-50%, -50%)";
-	document.body.appendChild(loading);
+  const url = search(address.value, searchEngine);
 
 	var iframe = document.createElement('iframe');
 

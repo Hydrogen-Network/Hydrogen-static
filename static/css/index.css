@@ -9,6 +9,10 @@
     overflow-y: none;
 }
 
+.navbar {
+    display: "none";
+}
+
 body {
   font-family: "Comfortaa";
   font-size: "25px";

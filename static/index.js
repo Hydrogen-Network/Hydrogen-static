@@ -11,7 +11,7 @@ const address = document.getElementById("uv-address");
 /**
  * @type {HTMLInputElement}
  */
-const searchEngine = 'https://search.brave.com/search?q=%s';
+const searchEngine = 'https://google.com/search?q=%s';
 /**
  * @type {HTMLParagraphElement}
  */
@@ -32,7 +32,6 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search(address.value, searchEngine);
 
 	var iframe = document.createElement('iframe');
 
@@ -44,7 +43,7 @@ form.addEventListener("submit", async (event) => {
 	iframe.id = "iframe";
 	iframe.style.zIndex = "9999999999999999";
 	iframe.style.border = "none";
-	iframe.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+	iframe.src = __uv$config.prefix + __uv$config.encodeUrl(search(address.value, searchEngine));
 	document.body.appendChild(iframe);
 
 	var x = document.createElement('img');

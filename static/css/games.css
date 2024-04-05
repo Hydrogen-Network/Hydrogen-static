@@ -186,6 +186,6 @@ li {
   margin: 0;
 }
 
-i {
+i:hover {
   opacity: 80%;
 }

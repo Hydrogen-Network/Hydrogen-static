@@ -107,3 +107,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+iframe[src="about:blank"] {
+    display: none;
+}

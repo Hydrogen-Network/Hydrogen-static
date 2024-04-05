@@ -185,3 +185,7 @@ li {
   padding: 0;
   margin: 0;
 }
+
+i {
+  opacity: 80%;
+}

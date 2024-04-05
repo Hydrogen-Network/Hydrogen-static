@@ -16,7 +16,7 @@ fetch('/static/js/json/games.json')
             <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
             </a>
-            <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
+            <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
             <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
                 <div class="gameinfo">
                     <b>
@@ -35,7 +35,7 @@ fetch('/static/js/json/games.json')
           <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
           </a>
-          <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
+          <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
           <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
               <div class="gameinfo">
                   <b>
@@ -65,7 +65,7 @@ fetch('/static/js/json/games.json')
             <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
             </a>
-            <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
+            <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
             <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
                 <div class="gameinfo">
                     <b>
@@ -84,7 +84,7 @@ fetch('/static/js/json/games.json')
           <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
           </a>
-          <i onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
+          <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
           <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
               <div class="gameinfo">
                   <b>

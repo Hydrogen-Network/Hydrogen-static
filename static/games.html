@@ -44,7 +44,6 @@
       <script src="uv.js" defer></script>
       <script src="uv-sw.js" defer></script>
       <script src="js/panic.js"></script>
-      <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
       <script>
          cookieconsent();
             console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
@@ -56,6 +55,34 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
       <link rel="stylesheet" href="./css/index.css">
       <link rel="stylesheet" href="./css/games.css">
+      <style>
+         .title {
+         font-size: 3em;
+         color: var(--text);
+         text-align: center;
+         margin-top: 180px;
+         font-weight: bold;
+         margin-top: 10rem;
+         }
+         .message {
+         text-align: center;
+         color: var(--text);
+         font-size: 1.5rem;
+         margin: 1rem;
+         }
+         .navbar {
+         overflow: hidden;
+         background-color: #29304d;
+         }
+         .navbar a {
+         float: left;
+         font-size: 15px;
+         color: white;
+         text-align: center;
+         padding: 18px 16px;
+         text-decoration: none;
+         }
+      </style>
       <!-- SCHEMA -->
       <!-- https://schema.org/docs/schemas.html -->
       <script type="application/ld+json">
@@ -99,7 +126,8 @@
                </div>
             </div>
          </div>
-               <div class="navbar">
+      </div>
+      <div class="navbar">
          <a href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png" /></a>
          <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
             <a href="./apps.html">Apps</a>

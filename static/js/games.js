@@ -13,11 +13,11 @@ fetch('/static/js/json/games.json')
         const gasmeEl = document.createElement('li');
         gasmeEl.innerHTML = `
         <div class="gamecard" data-category="${game.categories}">
-            <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+            <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
             </a>
             <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-            <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+            <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
                 <div class="gameinfo">
                     <b>
                         <p class="gamename">${game.name}</p>
@@ -32,11 +32,11 @@ fetch('/static/js/json/games.json')
       const gameE = document.createElement('li');
       gameE.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
-          <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
           </a>
           <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-          <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
               <div class="gameinfo">
                   <b>
                       <p class="gamename">${game.name}</p>
@@ -62,11 +62,11 @@ fetch('/static/js/json/games.json')
         const gasme = document.createElement('li');
         gasme.innerHTML = `
         <div class="gamecard" data-category="${game.categories}">
-            <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+            <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
             <img title='${game.name}' src="${game.img}" class="gameimage"/>
             </a>
             <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-            <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+            <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
                 <div class="gameinfo">
                     <b>
                         <p class="gamename">${game.name}</p>
@@ -81,11 +81,11 @@ fetch('/static/js/json/games.json')
       const gameEll = document.createElement('li');
       gameEll.innerHTML = `
       <div class="gamecard" data-category="${game.categories}">
-          <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
           <img title='${game.name}' src="${game.img}" class="gameimage"/>
           </a>
           <i title="pin!" onclick="pin('${game.name}');" style="color:white;" class="fa fa-map-pin" aria-hidden="true"></i>
-          <a href="#" onclick="localStorage.setItem('currentgamedesc, '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
+          <a href="#" onclick="localStorage.setItem('currentgamedesc', '${game.desc}'); localStorage.setItem('currentgame', '${game.url}'); localStorage.setItem('currentgamename', '${game.name}'); localStorage.setItem('currentgamecheat', '${game.cheat}'); location.href='play.html';">
               <div class="gameinfo">
                   <b>
                       <p class="gamename">${game.name}</p>

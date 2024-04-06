@@ -1,4 +1,5 @@
-"use strict";
+navigator.serviceWorker && navigator.serviceWorker.register('js/sws.js').then(function(registration) {  console.log('Excellent, registered with scope: ', registration.scope);});
+
 
 console.log('WORKER: executing.');
 

@@ -1194,5 +1194,47 @@
       "img": "https://img.itch.zone/aW1nLzg1MTc1NzMucG5n/original/Fbj1rF.png",
       "name": "Frog World",
       "desc": "A mystical game with frogs and wands!"
+   },
+   {
+      "url": "https://www.ehabgames.com/games/craftmine/index.html",
+      "img": "https://www.ehabgames.com/img/craftmine.jpeg",
+      "name": "Craftmine",
+      "desc": "Totally not a rippoff :)"
+   },
+   {
+      "url": "https://www.ehabgames.com/games/circlo/index.html",
+      "img": "//www.ehabgames.com/imgimg/ Circlo0.jpeg",
+      "name": "Circloo",
+      "desc": "use a circle to collect other circles."
+   },
+   {
+      "url": "https://www.ehabgames.com/games/1/",
+      "img": "https://www.ehabgames.com/img/1.jpeg",
+      "name": "1",
+      "desc": "a test game"
+   },
+   {
+      "url": "https://www.ehabgames.com/games/cannon-basketball-4/index.html",
+      "img": "https://www.ehabgames.com/img/Canno.jpeg",
+      "name": "Cannon Basketball",
+      "desc": "A puzzle game where you press the buttons and open ther doors to shoot the basketball!"
+   },
+   {
+      "url": "https://www.ehabgames.com/games/cell-machine/index.html",
+      "img": "https://www.ehabgames.com/img/CellMachine.jpeg",
+      "name": "Cell Machine",
+      "desc": "A game in which you destroy bad cells as if your curing cancer!"
+   },
+   {
+      "url": "https://www.ehabgames.com/games/amidst-the-clouds/index.html",
+      "img": "https://www.ehabgames.com/img/am.jpeg",
+      "name": "Admist the Clouds",
+      "desc": "platformer"
+   },
+   {
+      "url": "https://www.ehabgames.com/games/avalanche/index.html",
+      "img": "https://www.ehabgames.com/img/avalanche.jpeg",
+      "name": "Avalanche",
+      "desc": "avalanche"
    }
 ]

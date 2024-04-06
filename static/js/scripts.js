@@ -63,3 +63,8 @@ const brevo = document.createElement("script");
 brevo.innerHTML = "(function(d, w, c) { w.BrevoConversationsID = '65d2cc78d5ef7768e562a305'; w[c] = w[c] || function() { (w[c].q = w[c].q || []).push(arguments); }; var s = d.createElement('script'); s.async = true; s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js'; if (d.head) d.head.appendChild(s); })(document, window, 'BrevoConversations');";
 document.head.append(brevo);
 script("Injected script 7/7(Brevo Chat)");
+
+const manfeist = document.createElement("link");
+manfeist.setAttribute("rel", "manifest");
+manfeist.setAttribute("href", "manifest.json");
+script("Injected Manfeist");

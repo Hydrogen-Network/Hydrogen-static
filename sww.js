@@ -1,3 +1,5 @@
+var CACHE_NAME = 'example';
+
 var offlineFundamentals = [
   '',
   'css/theme/gradient/black-blue.css',

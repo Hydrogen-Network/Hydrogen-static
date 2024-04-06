@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+  <title>Music</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/index.css" rel="stylesheet" type="text/css" />
+  <link href="hover.min.css" rel="stylesheet" type="text/css" />
+  <link href="library.css" rel="stylesheet" type="text/css" />
+  <script src="quick.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1GKR3GL1R"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+   
+   gtag('config', 'G-Y1GKR3GL1R');
+</script>
+<body>
+         <div id="cookieNotice" class="light display-right" style="display: none;">
+             <div id="closeIcon" style="display: none;"></div>
+             <div class="title-wrap">
+                 <h4>Cookie Consent</h4>
+             </div>
+             <div class="content-wrap">
+                 <div class="msg-wrap">
+                     <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our <a style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a>
+                     </p>
+                     <div class="btn-wrap">
+                         <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
+                     </div>
+                     <div class="btn-wrap">
+                         <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+  <script src="../js/cookies.js"></script>
+  <script>
+    cookieconsent();
+  </script>
+          <div class="navbar">
+         <a href="../"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png" /></a>
+         <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
+            <a href="../apps.html">Apps</a>
+            <a href="../extras.html">Extras</a>
+            <a href="../games.html">Games</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../settings.html">Settings</a>
+         </div>
+      </div>
+    <nav class="navbar">
+        <div class="navbar-container container"> <input type="checkbox" name="" id="">
+            <div class="hamburger-lines"> <span class="line line1"></span> <span class="line line2"></span> <span class="line line3"></span> </div>
+            <ul class="menu-items">
+                <li><a href="../">Home</a></li>
+                <li><a href="../games.html">Games</a></li>
+                <li><a href="../apps.html">Apps</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../settings.html">Settings</a></li>
+            </ul> <a class="logo" href="../"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="./img/gas.png" /></a>
+        </div>
+    </nav>
+    <script>
+        let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler')
+        let dropdownIsOpen = false
+        
+        // Handle dropdown menues
+        if (dropdowns.length) {
+          // Usually I don't recommend doing this (adding many event listeners to elements have the same handler)
+          // Instead use event delegation: https://javascript.info/event-delegation
+          // Why: https://gomakethings.com/why-event-delegation-is-a-better-way-to-listen-for-events-in-vanilla-js
+          // But since we only have two dropdowns, no problem with that. 
+          dropdowns.forEach((dropdown) => {
+            dropdown.addEventListener('click', (event) => {
+              let target = document.querySelector(`#${event.target.dataset.dropdown}`)
+        
+              if (target) {
+                if (target.classList.contains('show')) {
+         target.classList.remove('show')
+         dropdownIsOpen = false
+                } else {
+         target.classList.add('show')
+         dropdownIsOpen = true
+                }
+              }
+            })
+          })
+        }
+        
+        // Handle closing dropdowns if a user clicked the body
+        window.addEventListener('mouseup', (event) => {
+          if (dropdownIsOpen) {
+            dropdowns.forEach((dropdownButton) => {
+              let dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`)
+              let targetIsDropdown = dropdown == event.target
+        
+              if (dropdownButton == event.target) {
+                return
+              }
+        
+              if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
+                dropdown.classList.remove('show')
+              }
+            })
+          }
+        })
+        
+        function cloak() {
+          if (localStorage.getItem('cloaker')) {
+            function favicon(src) {
+              let link = document.createElement('link')
+              let oldLink = document.getElementById('dynamic-fav');
+            
+              link.id = 'dynamic-fav';
+              link.rel = 'shortcut icon';
+              link.href = src;
+              if (oldLink) document.head.removeChild(oldLink);
+              document.head.appendChild(link);
+            };
+          
+            let cloaker = JSON.parse(localStorage.getItem('cloaker'));
+            if (cloaker.title) document.title = cloaker.title;
+            if (cloaker.icon) favicon(cloaker.icon);
+          } else localStorage.setItem('cloaker', JSON.stringify({}));
+        };
+        
+        cloak();
+        
+        // Open links in mobiles
+        function handleSmallScreens() {
+          document.querySelector('.navbar-toggler')
+            .addEventListener('click', () => {
+              let navbarMenu = document.querySelector('.navbar-menu')
+        
+              if (!navbarMenu.classList.contains('active')) {
+                navbarMenu.classList.add('active')
+              } else {
+                navbarMenu.classList.remove('active')
+              }
+            })
+        }
+        
+        handleSmallScreens()
+    </script>
+<div class="mobile menuExpandClosed" id="menuExpanded"></div>
+<div class="hamburger-menu mobile" id="menuExpand">
+<svg id="hamburgerMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+</svg>
+</div>
+<div id="menuContent" class="menuContent">
+  
+</div>
+<div class="bottom-wrap desktop" id="sidebarWrap">
+  
+  <div class="song-photo">
+    <img src="/img/a3783174096_10.jpg" class="photo-style" alt="Song Photo" id="songPhoto">
+  </div>
+
+  <div class="song-title-container">
+    <p class="song-artist" id="songArtist">Uknown Artist</p>
+    <h1 class="song-title" id="songTitle"> Unknown Song</h1>
+    </div>
+
+  <div class="back-arrow" id="backArrow" onclick="goBack();">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="color:white;" class="w-6 h-6">
+      <path d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z" />
+    </svg> 
+   </div>
+
+   <div class="pause-play" id="pause" onclick="pausePlay();">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="color:white;" fill="currentColor" class="w-6 h-6">
+    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM9 8.25a.75.75 0 00-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75H9zm5.25 0a.75.75 0 00-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75h-.75z" clip-rule="evenodd" />
+  </svg>
+  </div>
+
+
+  <div class="forward-arrow" id="forwardArrow" onclick="goForward();">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="color:white;" class="w-6 h-6">
+    <path d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z" />
+  </svg>
+</div>
+
+<div class="progress-container">
+  <p style="position: absolute; margin-left: 7.2vh; font-size: 1.5vh;" id="currentTime">00:00/00:00</p>
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+<div class="volume-icon" id="mute" onclick="mutePlay();">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM18.584 5.106a.75.75 0 011.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 11-1.06-1.06 8.25 8.25 0 000-11.668.75.75 0 010-1.06z" />
+  <path d="M15.932 7.757a.75.75 0 011.061 0 6 6 0 010 8.486.75.75 0 01-1.06-1.061 4.5 4.5 0 000-6.364.75.75 0 010-1.06z" />
+</svg>
+</div>
+
+<div class="volume-icon-mute" id="muted">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+  <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM17.78 9.22a.75.75 0 10-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 001.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L20.56 12l1.72-1.72a.75.75 0 00-1.06-1.06l-1.72 1.72-1.72-1.72z" />
+</svg>
+</div>
+
+<div id="musicSettings" class="hide"></div>
+<div id="musicSettingsContainer" class="hide"></div>
+<div class="volume-container">
+  <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" class="volumeSlide">
+</div>
+</div>
+
+</div>
+  <div class="first-content">
+    <div class="top-page-bar">
+    <h1 class="top-page-bar-title">Hydrogen Music</h1>
+    <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+      <div class="upload-button">
+        <label for="f">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 011.06 0l4.5 4.5a.75.75 0 01-1.06 1.06l-3.22-3.22V16.5a.75.75 0 01-1.5 0V4.81L8.03 8.03a.75.75 0 01-1.06-1.06l4.5-4.5zM3 15.75a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V16.5a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V16.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+          </svg>
+        </label>    
+     </div>
+    <a onclick="clearDatabase();"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAY1BMVEX///8AAADz8/P39/fMzMzw8PD8/PzFxcWRkZHJycmioqKwsLCGhobo6OhERERTU1MWFhYcHBxqampYWFh+fn50dHTU1NQ4ODi3t7fd3d0vLy9lZWWYmJgRERFOTk6+vr4lJSV2ovVQAAAD4klEQVRoge1ZyYKrIBAU94iauO+j//+VT7oVIWqCE+adUifRsdI21RtjGF988YUCnFsdUC/6E256JwxxqJ/aQmqGqtTNXZANlWbXUCKi08odPRhnUvRhBey2TnKfMQ71fFW27NLXyB0NjBFlUrPL1NJHHoIvHLgup/kyc7RxN+CKHhf2oJc8B/01uICvyLVxR0TYQ1wE2sgxflxhkWjbzzIRbC0fWg13QzHiYdFqC/8SnEJxYYsLDcjAcFNYxNp0KNla6jXcSsFwXLgdeFwXt2y4BymmVjbszXP3h9Fl6HEsRp2paFZY+K9V5RHB1pFcMLxmXxk3p1bPuAseN2KQihq3gSWrcI+emXYfr0XNw1v0Sg1q8NX2yIdjJlbMkd1y4FZ3aMoemN9IvCePOiKj9Sw0/HFT4zYMrLX97r49kR1SvJkqGj7HW3WorFuyMg7JwNnxB093fw+3Drz9T662UqbSiIouStW5D9Ggs9pxdYDlbfQf9nERcseSb28/yP1hC+pgu/lc3C3sLRQi38m74uT7nBR9sssJWI7IWyFCU3Ock80ldA4eYrat9g9koHHJgWAd3iYXexMx976RubtId58NIzHk052iQf3jG/IW397VwaaVYzJ8ooe2ax/OMvwDrc24oQaJz5Nhm0t/Q1XECLLKnrxi4k+SZHZ2vU0/YilRIjdcrx6fnFIv7m4hGzi0WtmrgEsbxHi96W/S1RGrm82AJ6+WLnUW3KVcnBeeGxdgKnyP2W/WU2a9eSyDV3CCTX+B3Ao0Pn+SzQoM2MWgbHJUBty6I2EbVs6rRmzDLqt2t7RLNmYS08PYK0NJ+oNarXB98aWEnqU7t5RqhVrP74mvvJaAnfK/VOxAc660oHxnjmUvQTsp9vwYhB1VlBZ2oKoTP2zUoBxvDmy+as+C2Vl5nASRt8ojHN0H5TmcSyJfjeGt92vAd05X+oqFPYZ33DHLzz8CtF5c4OaeSWb1Rkya9zOfOuTKdsrspK9ByI99a4fAk5xr3EsnytEKmcMpt4DB4np9Ii9/BHIhuJs7qfh3BFeiU4TJ88AkOMVkblrHzUg8ybmIfsm8sdCSgJOTRT39s8uuwF7zerhKvoRM8oML63FdhyK4a7AWN6CdQTwDuVY7Jbjjyp6yQRCr6qIOlMpHjTkf34YwwmYgFU+dfuvxFVSSPB9OMXv+TioCmlTgnpY5GcdzouG4zNsiqmjQKyDDd32zGpzgwelzNs010Ld0ms75onCbamMfk0NyMR2+pH+aAT7fTRGN3GXpO/xEWAGfLshD6xk/0o85On86KyAfwY1oVt2Dv/mP0xdffPFf8Q/dVyiydPU6hAAAAABJRU5ErkJggg=="></img></a>
+    <script>
+      function clearDatabase() {
+  const openRequest = indexedDB.open("songs_db", 2);
+  openRequest.onsuccess = function(event) {
+    const db = event.target.result;
+    const transaction = db.transaction(["songs"], "readwrite");
+    const objectStore = transaction.objectStore("songs");
+    const objectStoreRequest = objectStore.clear();
+
+    objectStoreRequest.onsuccess = function(event) {
+      console.log("Successfully cleared the object store.");
+    };
+
+    objectStoreRequest.onerror = function(event) {
+      console.error("Failed to clear the object store: ", event.target.errorCode);
+    };
+  };
+  localStorage.setItem("loaded", "0");
+  openRequest.onerror = function(event) {
+    console.error("IndexedDB error: ", event.target.errorCode);
+  };
+}
+    </script>
+    <div class="grid-size" id="resizeColor" onclick="resizeGrid();">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z" clip-rule="evenodd" />
+      </svg>
+    </div>      
+      <div class="search-question" onclick="homeChange();">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+      </svg>
+    </div>  
+    <div class="theme-mode" onclick="darkLightSwitch();">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
+          </svg>          
+    </div>    
+    <div class="settings-mode" onclick="settingsChange();">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+          </svg>          
+    </div>
+    </div>
+  </div>
+  <h1 class="hide" id="nameTitle"> Hello, User! </h1>
+  <div class="styleish" id="siteContent">
+    <h1 class="subheading" id="pageTitle"> Recently Played... </h1>
+    <div id="recentlyPlayedv2"></div>  
+    <!--
+        Library Here
+    -->
+    <h1 class="subheading">Your Library</h1>
+    <div id="songsDiv">
+
+    </div>
+    <h1 class="subheading">Albums</h1>
+    <div id="albumsDiv">
+
+    </div>
+
+
+  </div>
+</body>
+<div class="hide">
+<h1> Your Library </h1>
+
+<input id="f" type="file" multiple/>
+<div id="songData">
+</div>
+</div>
+  <script>
+        console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
+        console.log('%cIf someone told you to copy/paste something here, you have an 11/10 chance you\'re being scammed.', 'font-weight: bold; color: red; font-size: 18px;');
+    </script>
+<script src="jsmediatags.min.js"></script>
+<script src="library.js"></script>
+<script src="script.js"></script>
+</html>

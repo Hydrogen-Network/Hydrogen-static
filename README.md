@@ -16,8 +16,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Hydrogenv-Network/Hydrogen/">
-    <img src="static/img/gas.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Hydrogen-Network/Hydrogen/">
+    <img src="favicon.ico" alt="Logo" width="80" height="80">
   </a>
 <h3 align="center">Hydrogen</h3>
   <p align="center">

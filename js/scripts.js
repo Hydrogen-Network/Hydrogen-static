@@ -115,3 +115,7 @@ script("Injected Color 1/2");
 const offline = document.createElement("script");
 offline.src = "offline.js"
 document.head.append(offline);
+
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);

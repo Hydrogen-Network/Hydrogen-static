@@ -66,7 +66,7 @@ script("Injected script 7/7(Brevo Chat)");
 
 const manfeist = document.createElement("link");
 manfeist.setAttribute("rel", "manifest");
-manfeist.setAttribute("href", "/site.webmanifest");
+manfeist.setAttribute("href", "/manfeist.json");
 document.head.append(manfeist);
 script("Injected Manfeist");
 

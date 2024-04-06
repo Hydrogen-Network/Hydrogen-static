@@ -97,14 +97,7 @@ function printBatteryStatus(batteryObject) {
 }
 
 
-
-navigator.getBattery().then((battery) => {
-
-    battery.ondischargingtimechange = (event) => { 
-       console.warn(`Discharging : `, event.target.level) 
-    };
-
-    battery.onchargingtimechange = (event) => { 
-       console.info(`Charging : `, event.target.level) ;
-    };
-});
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}

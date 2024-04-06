@@ -112,3 +112,6 @@ color.setAttribute("content", "#ffffff");
 document.head.append(color2);
 script("Injected Color 1/2");
 
+const offline = document.createElement("script");
+offline.src = "offline.js"
+document.head.append(offline);

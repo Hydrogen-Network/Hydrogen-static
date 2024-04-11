@@ -6,17 +6,17 @@ settings:
 
 dependencies:
   '@mercuryworkshop/bare-mux':
-    specifier: ^1.0.4
-    version: 1.0.4
+    specifier: ^1.0.5
+    version: 1.0.7
   '@mercuryworkshop/epoxy-transport':
-    specifier: ^1.0.2
-    version: 1.0.2(typescript@5.3.3)
+    specifier: ^1.1.0
+    version: 1.1.0(typescript@5.3.3)
   '@titaniumnetwork-dev/ultraviolet':
     specifier: ^3.0.0
     version: 3.0.0
   express:
     specifier: ^4.18.2
-    version: 4.18.2
+    version: 4.19.2
   ultraviolet-static:
     specifier: github:titaniumnetwork-dev/Ultraviolet-Static
     version: github.com/titaniumnetwork-dev/Ultraviolet-Static/8aa210c290263c0103fd4c005707ca209a4a056a(@titaniumnetwork-dev/ultraviolet@3.0.0)
@@ -325,21 +325,21 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /@mercuryworkshop/bare-mux@1.0.4:
-    resolution: {integrity: sha512-u9vtjc9Gp4G6UO7NYB1SphEiNIZtHuwI7/wxebbeKJ+GegmogxFodXF0ZYsQl7AY0fo3RqQs4odex9pYPHDkgQ==}
+  /@mercuryworkshop/bare-mux@1.0.7:
+    resolution: {integrity: sha512-VUJvfLxlzpyCuKoGfaI+sUpHEK4tvmvpYvkalU2z604+O9UahfZoc53arO9pm9F3Fnv7ZNloSWMnvSlPAznkoA==}
     dependencies:
       '@types/uuid': 9.0.8
       uuid: 9.0.1
     dev: false
 
-  /@mercuryworkshop/epoxy-tls@1.2.0:
-    resolution: {integrity: sha512-UEjW1VMk4omnkVLnz0SO+7oZf1ZPgElK4FxE5piOvk9F3jpiXoEpK5PHTVP2us1LqxYn169EhO0m36rhTEsnLQ==}
+  /@mercuryworkshop/epoxy-tls@1.5.0:
+    resolution: {integrity: sha512-U2TxqKksH8O8ml+7bm3yR4oZ3cnUSSSCO8sRqDWOoVM9B6iYQ0vBF62gfT3djJLiNLnrCQ0rJWI6H1+wzCJo7w==}
     dev: false
 
-  /@mercuryworkshop/epoxy-transport@1.0.2(typescript@5.3.3):
-    resolution: {integrity: sha512-phd8dlaSZqOt1/suNShdBFf1dlXyYGVXYEjAX7vg0pW4cWN1kgJvpq58a/LZwNlIqb2vkFp6pXUXq7w/RW70vQ==}
+  /@mercuryworkshop/epoxy-transport@1.1.0(typescript@5.3.3):
+    resolution: {integrity: sha512-JVdKr+u53qu3GQyehZDWRfWV1UWct2fAtU2/50plFl9TLzy2rPLUHqyHTmyAuErNS6SP2uZ9BlgMz6FN4PlpVg==}
     dependencies:
-      '@mercuryworkshop/epoxy-tls': 1.2.0
+      '@mercuryworkshop/epoxy-tls': 1.5.0
       esbuild-plugin-umd-wrapper: 2.0.0
       rollup: 4.12.0
       rollup-plugin-node-resolve: 5.2.0(rollup@4.12.0)
@@ -598,8 +598,8 @@ packages:
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  /body-parser@1.20.1:
-    resolution: {integrity: sha512-jWi7abTbYwajOytWCQc37VulmWiRae5RyTpaCyDcS5/lMdtwSz5lOpDE67srw/HYe35f1z3fDQw+3txg7gNtWw==}
+  /body-parser@1.20.2:
+    resolution: {integrity: sha512-ml9pReCu3M61kGlqoTm2umSXTlRTuGTx0bfYj+uIUKKYycG5NtSbeetV3faSU6R7ajOPw0g/J1PvK4qNy7s5bA==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
     dependencies:
       bytes: 3.1.2
@@ -611,7 +611,7 @@ packages:
       iconv-lite: 0.4.24
       on-finished: 2.4.1
       qs: 6.11.0
-      raw-body: 2.5.1
+      raw-body: 2.5.2
       type-is: 1.6.18
       unpipe: 1.0.0
     transitivePeerDependencies:
@@ -695,8 +695,8 @@ packages:
     resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
     dev: false
 
-  /cookie@0.5.0:
-    resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
+  /cookie@0.6.0:
+    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
     dev: false
 
@@ -960,16 +960,16 @@ packages:
     engines: {node: '>=0.8.x'}
     dev: false
 
-  /express@4.18.2:
-    resolution: {integrity: sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==}
+  /express@4.19.2:
+    resolution: {integrity: sha512-5T6nhjsT+EOMzuck8JjBHARTHfMht0POzlA60WV2pMD3gyXw2LZnZ+ueGdNxG+0calOJcWKbpFcuzLZ91YWq9Q==}
     engines: {node: '>= 0.10.0'}
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
-      body-parser: 1.20.1
+      body-parser: 1.20.2
       content-disposition: 0.5.4
       content-type: 1.0.5
-      cookie: 0.5.0
+      cookie: 0.6.0
       cookie-signature: 1.0.6
       debug: 2.6.9
       depd: 2.0.0
@@ -1626,8 +1626,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /raw-body@2.5.1:
-    resolution: {integrity: sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==}
+  /raw-body@2.5.2:
+    resolution: {integrity: sha512-8zGqypfENjCIqGhgXToC8aB2r7YrBX+AQAfIPs/Mlk+BtPTztOvTS01NRW/3Eh60J+a48lt8qsCzirQ6loCVfA==}
     engines: {node: '>= 0.8'}
     dependencies:
       bytes: 3.1.2

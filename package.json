@@ -1,5 +1,5 @@
 {
-  "name": "uv-app",
+  "name": "Hydrogen",
   "version": "1.0.0",
   "description": "Ultraviolet instance",
   "type": "module",
@@ -8,7 +8,7 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node start.js"
   },
   "keywords": [
     "proxy"

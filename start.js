@@ -68,23 +68,3 @@ server.on("listening", () => {
   );
 });
 
-// https://expressjs.com/en/advanced/healthcheck-graceful-shutdown.html
-process.on("SIGINT", shutdown);
-process.on("SIGTERM", shutdown);
-
-function shutdown() {
-  console.log("SIGTERM signal received: closing HTTP server");
-  server.close();
-  process.exit(0);
-}
-
-server.listen({
-  port,
-});
-
-
-
-
-
-
-

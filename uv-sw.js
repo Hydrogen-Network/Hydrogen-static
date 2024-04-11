@@ -1,6 +1,4 @@
-importScripts("https://aluu.xyz/libcurl/index.js");
-importScripts("https://aluu.xyz/epoxy/index.js");
-importScripts("https://aluu.xyz/bare_transport.js");
+importScripts('../epoxy/index.js');
 importScripts("/uv/uv.bundle.js");
 importScripts("/uv/uv.sw.js");
 importScripts(__uv$config.sw);

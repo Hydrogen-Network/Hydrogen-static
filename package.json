@@ -19,7 +19,7 @@
     "@titaniumnetwork-dev/ultraviolet": "^3.0.0",
     "@tomphttp/bare-server-node": "^2.0.3",
     "astro": "^4.4.1",
-     "express-rate-limit": "^7.0.2"
+     "express-rate-limit": "^7.0.2",
     "chalk": "^5.3.0",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",

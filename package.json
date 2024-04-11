@@ -1,0 +1,33 @@
+{
+  "name": "Hydrogen",
+  "version": "3.0.0",
+  "description": "Proxy site by Coding4hours",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hydrogen-Network/Hydrogen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hydrogen-Network/Hydrogen/issues"
+  },
+  "homepage": "https://github.com/Hydrogen-Network/Hydrogen#readme",
+  "dependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.5",
+    "@tomphttp/bare-server-node": "^1.2.2",
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.5",
+    "@tomphttp/bare-server-node": "^1.2.2",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "express-rate-limit": "^7.0.2"
+  }
+}

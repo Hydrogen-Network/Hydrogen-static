@@ -120,7 +120,7 @@
    },
    {
       "url": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@c0c9f32fd575688ff4b14309e9acf19b73f15e2a/build/bs/bs.xml&container=ig",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/basketballstars.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/basketballstars.png",
       "name": "Basketball stars",
       "desc": "Basketball Stars is the ultimate basketball/sports game where you can play as Lebron James, Stephen Curry, Derrick Williams, and more, created by Madpuffers.",
       "categories": "all 2P sports"
@@ -134,7 +134,7 @@
    },
    {
       "url": "https://games-cloudflare.defnotgxmes.ink/basket-random/",
-      "img": "https://img.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8-512x512.jpeg",
+      "img": "https://img.gamedistribution.com/bf1268dccb5d43e7970bb3edaa54afc8-512x512.png",
       "name": "Basket Random",
       "desc": "Basketball is here with its most funny and random way. In Basket Random game, try to score a basket by using only one key with different variations from each other!",
       "categories": "all 2P sports"
@@ -162,14 +162,14 @@
    },
    {
       "url": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbloons-td-3.xml&container=ig",
-      "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(3).jpeg?v=1682455359468",
+      "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(3).png?v=1682455359468",
       "name": "Bloons TD3",
       "desc": "Bloons Tower Defense 3 is a popular tower defense game originally released in Flash by Ninja Kiwi.",
       "categories": "all"
    },
    {
       "url": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fbloons-tower-defense-4.xml&container=ig",
-      "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(3).jpeg?v=1682455359468",
+      "img": "https://cdn.glitch.global/be163090-7063-4bdf-a18a-51662dd5380d/download%20(3).png?v=1682455359468",
       "name": "Bloons TD4",
       "desc": "Bloons Tower Defense 4 is a popular tower defense game originally released in Flash by Ninja Kiwi.",
       "categories": "all"
@@ -204,7 +204,7 @@
    },
    {
       "url": "https://hydrogen-assets.netlify.app/bobtherobber2/",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/btr2.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/btr2.png",
       "name": "Bob The Robber 2",
       "desc": "Enter locations around the town and loot them, picking locks, avoiding traps, lasers, and guards in this cute action adventure.",
       "categories": "all"
@@ -274,14 +274,14 @@
    },
    {
       "url": "https://hydrogen-assets.netlify.app/chromedino/",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/chromedino.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/chromedino.png",
       "name": "Chrome Dino",
       "desc": "Google Chrome's unblocked offline game when there is no access to the internet. Press the spacebar to start.",
       "categories": "all"
    },
    {
       "url": "https://dinoswords.gg/",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/chromedinomodded.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/chromedinomodded.png",
       "name": "Chrome Dino (Modded)",
       "desc": "Essentially the chrome dino game but better. Tags: action, mods, dino game",
       "categories": "all"
@@ -295,7 +295,7 @@
    },
    {
       "url": "https://html5.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d/",
-      "img": "https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.jpeg",
+      "img": "https://img.gamedistribution.com/79296a5336c84f08a9937b0cd3f4515d-512x512.png",
       "name": "Climb Racing 3D",
       "desc": "Characters, cars and maps are waiting for you in the car racing game full of fun and adventure with colorful visual effects.",
       "categories": "all 2P"
@@ -309,7 +309,7 @@
    },
    {
       "url": "https://hydrogen-assets.netlify.app/cookie-clicker/index.html",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/cookie-clicker.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/cookie-clicker.png",
       "name": "Cookie Clicker",
       "desc": "Cookie Clicker is an incremental web-browser game developed by Orteil. The goal of the game is to produce as many cookies as possible.",
       "categories": "all",
@@ -345,7 +345,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/cubefield/",
-      "img": "https://dreamboxmath.org/src/icons/cubefield.jpeg",
+      "img": "https://dreamboxmath.org/src/icons/cubefield.png",
       "name": "Cubefield",
       "categories": "all"
    },
@@ -438,7 +438,7 @@
    },
    {
       "url": "https://kazwire.com/game/fireboy-and-watergirl-forest-temple/index.html",
-      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
+      "img": "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.png",
       "name": "Fireboy and Watergirl",
       "desc": "Fireboy and Watergirl are exploring the Forest Temple in search of diamonds.",
       "categories": "all 2P"
@@ -521,7 +521,7 @@
    },
    {
       "url": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@e14f9d7fa2d076a4845a22c5b0e566f7cfd0ac4b/Getaway-Shootout.xml&container=ig",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/getawayshootout.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/getawayshootout.png",
       "name": "Getaway Shootout",
       "desc": "This is a chaotic two-player game where you race three others to the extraction point. You can only move by jumping left or right.",
       "categories": "all 2P"
@@ -569,14 +569,14 @@
    },
    {
       "url": "https://games-online.io/game/HappyWheels ",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/happywheels.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/happywheels.png",
       "name": "Happy Wheels",
       "desc": "Happy Wheels is an obstacle scooter extreme adventure game. Your goal is to reach the destination successfully. Obstacles on the road may kill you at any time!",
       "categories": "all"
    },
    {
       "url": "https://raw.githack.com/3kh0/3kh0-lite/main/projects/HexGL/index.html",
-      "img": "https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.jpeg",
+      "img": "https://img.gamedistribution.com/621ba0df8feb4a609b045a9e14ee5083-512x384.png",
       "name": "HexGL",
       "desc": "Compete to capture and control territory on a hexagonal grid. With simple yet deep gameplay mechanics, HexGL offers a challenging and rewarding experience for players of all skill levels.",
       "categories": "all"
@@ -604,7 +604,7 @@
    },
    {
       "url": "https://glitchyeet.github.io/IdleBreakout/",
-      "img": "https://55gms.com/misc/idle-mining-empire/img.jpeg",
+      "img": "https://55gms.com/misc/idle-mining-empire/img.png",
       "name": "Idle Mining empire",
       "desc": "Build the ultimate mining machine",
       "categories": "all"
@@ -638,7 +638,7 @@
    },
    {
       "url": "https://sodium-5h8.pages.dev/uv/service/hvtrs8%2F-wuw%2Cgmoelgtcgoalaeep.aoo%2Fetcg-jq%3Fkd%3FAU-110815%3A22",
-      "img": "https://cdn.glitch.global/40d8a6f7-c124-43fe-8544-1617c1dcc948/download%20(1).jpeg?v=1680006191209Kirka",
+      "img": "https://cdn.glitch.global/40d8a6f7-c124-43fe-8544-1617c1dcc948/download%20(1).png?v=1680006191209Kirka",
       "name": "Kirka",
       "desc": "Kirka is a multiplayer shooter game, its like fortnite but blocky",
       "categories": "all 2p"
@@ -666,7 +666,7 @@
    },
    {
       "url": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Flearn-to-fly-idle.xml&container=ig",
-      "img": "https://imgs.search.brave.com/0LBzayXEG0YgCVVfanNEF53kQL0vvDCttCFGkJWNbSY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHlua2VyLmNvbS9f/bmV4dC9pbWFnZS8_/dXJsPWh0dHBzOi8v/d3d3LnR5bmtlci5j/b20vcHJvamVjdHMv/c2NyZWVuc2hvdC81/YTIzNDMzNGIxMDJm/ZmE4N2I4YjQ1ODMv/bGVhcm4tdG8tZmx5/LWlkbGUucG5nJnc9/MjA0OCZxPTc1.jpeg",
+      "img": "https://imgs.search.brave.com/0LBzayXEG0YgCVVfanNEF53kQL0vvDCttCFGkJWNbSY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHlua2VyLmNvbS9f/bmV4dC9pbWFnZS8_/dXJsPWh0dHBzOi8v/d3d3LnR5bmtlci5j/b20vcHJvamVjdHMv/c2NyZWVuc2hvdC81/YTIzNDMzNGIxMDJm/ZmE4N2I4YjQ1ODMv/bGVhcm4tdG8tZmx5/LWlkbGUucG5nJnc9/MjA0OCZxPTc1.png",
       "name": "Learn to Fly Idle",
       "desc": "wow the second version",
       "categories": "all"
@@ -694,14 +694,14 @@
    },
    {
       "url": "https://minecraft-hosted.github.io/mc-1.8.8/",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/mc.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/mc.png",
       "name": "Minecraft (Java)",
       "desc": "Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds.",
       "categories": "all 2P"
    },
    {
       "url": "https://dreamboxmath.org/src/games/minesweeper/index.html",
-      "img": "https://dreamboxmath.org/src/icons/minesweeper.png",
+      "img": "https://imgs.search.brave.com/x1gIHcHrwXsHZHhCt0QEItVGKzFHwzDp_xj_WIveC98/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8xLzFiL0tt/aW5lc19FeHBlcnRf/R2FtZV93aXRoX051/bWJlcnNfMS04LnBu/Zy82NDBweC1LbWlu/ZXNfRXhwZXJ0X0dh/bWVfd2l0aF9OdW1i/ZXJzXzEtOC5wbmc",
       "name": "Minesweeper",
       "desc": "Minesweeper is a classic puzzle game where you navigate a grid of squares to avoid stepping on hidden mines. With simple gameplay and addictive challenges, Minesweeper is a timeless favorite for players of all ages.",
       "categories": "all"
@@ -771,7 +771,7 @@
    },
    {
       "url": "https://js13kgames.com/games/offline-paradise/index.html",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/ofpd.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/ofpd.png",
       "name": "Offline Paradise",
       "desc": "The world, a paradise, has gone offline; everything has become grey and dangerous. Traverse, jump, and dash over the obstacles to turn the world back into a paradise.",
       "categories": "all"
@@ -799,7 +799,7 @@
    },
    {
       "url": "https://hydrogen-assets.netlify.app/papermc/",
-      "img": "https://web.archive.org/web/20240106035736if_/https://feeshmaster.github.io/Assets/paper%20minecraft.jpeg",
+      "img": "https://web.archive.org/web/20240106035736if_/https://feeshmaster.github.io/Assets/paper%20minecraft.png",
       "name": "Paper Minecraft",
       "desc": "Minecraft but 2D!",
       "categories": "all"
@@ -875,7 +875,7 @@
    },
    {
       "url": "https://beta.sodium-5h8.pages.dev/service/route?url=https%3A%2F%2Fnow.gg",
-      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/nowggicon.jpeg",
+      "img": "https://raw.githubusercontent.com/Skoolgq/v2/main/img/nowggicon.png",
       "name": "Now.gg Games",
       "desc": "All of the now.gg games. Roblox, Call Of Duty, Stumble Guys, PUBG, Android VM, PUBG, and more!",
       "categories": "all"
@@ -911,7 +911,7 @@
    },
    {
       "url": "https://schoolarcade.glitch.me/games/rocketsoccer.html",
-      "img": "https://cdn.glitch.global/3903520d-41db-4f08-8519-64c816231d7b/download%20(5).jpeg?v=1683823623345",
+      "img": "https://cdn.glitch.global/3903520d-41db-4f08-8519-64c816231d7b/download%20(5).png?v=1683823623345",
       "name": "RocketSoccer",
       "desc": "Fast-paced multiplayer Cars playing soccer. PLay with bots or players and win the soccer game!!!",
       "categories": "all 2P"
@@ -938,7 +938,7 @@
    },
    {
       "url": "https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F2fca6448f1%3Ae6f5ac2g0363b6fgfc1%3B3-",
-      "img": "https://img.gamedistribution.com/0faa4468d18e4f7aa2e0161b4fefa193-512x512.jpeg",
+      "img": "https://img.gamedistribution.com/0faa4468d18e4f7aa2e0161b4fefa193-512x512.png",
       "name": "Rotate",
       "desc": "With the ability to rotate gravity, you traverse a series of test chambers. As you complete these challenges, the rogue intelligence running the facility reveals your purpose. And your time is almost up.",
       "categories": "all"
@@ -994,7 +994,7 @@
    },
    {
       "url": "https://beta.sodium-5h8.pages.dev/uv/service/hvtrs8%2F-hvmn5%2Cgcmgdksvrkbwtkol.aoo%2F10%3Ad%3A24f00236d5b%3B70f0505%3Ac%3Ad2a64-",
-      "img": "https://img.gamedistribution.com/308d826f20034d7b972f25258c8d0a44-512x512.jpeg",
+      "img": "https://img.gamedistribution.com/308d826f20034d7b972f25258c8d0a44-512x512.png",
       "name": "Soccer Random",
       "desc": "Football is here with its most funny and random way. In Soccer Random game, try to score a goal by using only one key with different variations from each other!",
       "categories": "all 2P"
@@ -1057,7 +1057,7 @@
    },
    {
       "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/index.html?core=autodetect&amp;rom=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/embed/roms/super-mario-advance-2-super-mario-world-usa.zip",
-      "img": "https://dreamboxmath.org/src/icons/sma2.jpeg",
+      "img": "https://dreamboxmath.org/src/icons/sma2.png",
       "name": "Super Mario Advance 2",
       "desc": "This boasts all 96 levels from the original Super NES game, from cheery Yoshi's Island through the sprawling Vanilla Dome to the grueling Star Road.",
       "categories": "all flash"
@@ -1151,20 +1151,20 @@
    },
    {
       "url": "https://hydrogen-assets.netlify.app/vex6/",
-      "img": "https://dreamboxmath.org/src/icons/vex6.jpeg",
+      "img": "https://dreamboxmath.org/src/icons/vex6.png",
       "name": "Vex6",
       "cheat": "vex6",
       "categories": "all"
    },
    {
       "url": "https://dreamboxmath.org/src/games/vex7/",
-      "img": "https://dreamboxmath.org/src/icons/vex7.jpeg",
+      "img": "https://dreamboxmath.org/src/icons/vex7.png",
       "name": "Vex7",
       "categories": "all"
    },
    {
       "url": "https://games-cloudflare.defnotgxmes.ink/volley-random/",
-      "img": "https://img.gamedistribution.com/b6f03bdc505e4d78a17379a5a83e206b-512x512.jpeg",
+      "img": "https://img.gamedistribution.com/b6f03bdc505e4d78a17379a5a83e206b-512x512.png",
       "name": "Volley Random",
       "desc": "The fun random game series continues with Volley Random. There is a Volleyball experience unlike any before. With fun ragdoll physics and a variety of variations!",
       "categories": "all 2P"
@@ -1197,43 +1197,43 @@
    },
    {
       "url": "https://www.ehabgames.com/games/craftmine/index.html",
-      "img": "https://www.ehabgames.com/img/craftmine.jpeg",
+      "img": "https://www.ehabgames.com/img/craftmine.png",
       "name": "Craftmine",
       "desc": "Totally not a rippoff :)"
    },
    {
       "url": "https://www.ehabgames.com/games/circlo/index.html",
-      "img": "//www.ehabgames.com/imgimg/ Circlo0.jpeg",
+      "img": "//www.ehabgames.com/imgimg/ Circlo0.png",
       "name": "Circloo",
       "desc": "use a circle to collect other circles."
    },
    {
       "url": "https://www.ehabgames.com/games/1/",
-      "img": "https://www.ehabgames.com/img/1.jpeg",
+      "img": "https://www.ehabgames.com/img/1.png",
       "name": "1",
       "desc": "a test game"
    },
    {
       "url": "https://www.ehabgames.com/games/cannon-basketball-4/index.html",
-      "img": "https://www.ehabgames.com/img/Canno.jpeg",
+      "img": "https://www.ehabgames.com/img/Canno.png",
       "name": "Cannon Basketball",
       "desc": "A puzzle game where you press the buttons and open ther doors to shoot the basketball!"
    },
    {
       "url": "https://www.ehabgames.com/games/cell-machine/index.html",
-      "img": "https://www.ehabgames.com/img/CellMachine.jpeg",
+      "img": "https://www.ehabgames.com/img/CellMachine.png",
       "name": "Cell Machine",
       "desc": "A game in which you destroy bad cells as if your curing cancer!"
    },
    {
       "url": "https://www.ehabgames.com/games/amidst-the-clouds/index.html",
-      "img": "https://www.ehabgames.com/img/am.jpeg",
+      "img": "https://www.ehabgames.com/img/am.png",
       "name": "Admist the Clouds",
       "desc": "platformer"
    },
    {
       "url": "https://www.ehabgames.com/games/avalanche/index.html",
-      "img": "https://www.ehabgames.com/img/avalanche.jpeg",
+      "img": "https://www.ehabgames.com/img/avalanche.png",
       "name": "Avalanche",
       "desc": "avalanche"
    }

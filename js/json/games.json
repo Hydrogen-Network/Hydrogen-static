@@ -29,14 +29,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/staticboy/games/a-dance-of-fire-and-ice/index.html",
-      "img": "https://dreamboxmath.org/src/icons/adofai.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/adofai.jpg",
       "name": "A Dance of Fire and Ice",
       "desc": "Control two orbiting planets as they travel down a winding path.",
       "categories": "all"
    },
    {
       "url": "https://dreamboxmath.org/src/games/adarkroom/index.html",
-      "img": "https://dreamboxmath.org/src/icons/adr.png",
+      "img": "https://dreamboxmath.org/src/static/icons/adr.png",
       "name": "A Dark Room",
       "desc": "Navigate a dark, mysterious world by clicking on objects to progress through a narrative that unfolds through cryptic messages and puzzles.",
       "categories": "all"
@@ -57,7 +57,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/asciispace/index.html",
-      "img": "https://dreamboxmath.org/src/icons/asciispace.png",
+      "img": "https://dreamboxmath.org/src/static/icons/asciispace.png",
       "name": "ASCII Space",
       "desc": "You are a lone astronaut adrift in a cosmic sea of ASCII. Explore procedurally generated galaxies, mine for resources, and build your own space station.",
       "categories": "all"
@@ -106,7 +106,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/ball-dodge/index.html",
-      "img": "https://dreamboxmath.org/src/icons/ball-dodge.png",
+      "img": "https://dreamboxmath.org/src/static/icons/ball-dodge.png",
       "name": "Ball Dodge",
       "desc": "Ball Dodge is a fast-paced, hilarious party game where players dodge balls while trying to score points by hitting their opponents with them. It's a fun and active game that's perfect for groups of all ages and skill levels.",
       "categories": "all"
@@ -183,7 +183,7 @@
    },
    {
       "url": "//dreamboxmath.org/src/games/bloxors",
-      "img": "https://dreamboxmath.org/src/icons/bloxorz.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/bloxorz.jpg",
       "name": "Bloxorz",
       "desc": "Manipulate a square block to move it through a maze and reach the exit. Use your wits and problem-solving skills to navigate through increasingly difficult levels, each with its unique obstacles and challenges.",
       "categories": "all"
@@ -232,7 +232,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/burger-and-frights/index.html",
-      "img": "https://dreamboxmath.org/src/icons/burger-frights.png",
+      "img": "https://dreamboxmath.org/src/static/icons/burger-frights.png",
       "name": "Burger Frights",
       "desc": "Burger Frights is a fast-paced, action-packed game where you play as a burger-delivery driver navigating through a spooky and hilarious world filled with ghostly customers, creepy kitchens, and boss battles.",
       "categories": "all"
@@ -246,7 +246,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/cars-simulator/index.html",
-      "img": "https://dreamboxmath.org/src/icons/cars-sim.png",
+      "img": "https://dreamboxmath.org/src/static/icons/cars-sim.png",
       "name": "Cars Simulator",
       "desc": "Race against other cars on various tracks, upgrade your ride, and climb the leaderboards to become the ultimate champion.",
       "categories": "all 2P"
@@ -288,7 +288,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/chill-radio/",
-      "img": "https://dreamboxmath.org/src/icons/chill-radio.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/chill-radio.jpg",
       "name": "Chill Radio",
       "desc": "Chill Radio: Your go-to destination for relaxing tunes and soothing sounds, designed to help you unwind and de-stress.",
       "categories": "all"
@@ -302,7 +302,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/cluster-rush/",
-      "img": "https://dreamboxmath.org/src/icons/cluster.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/cluster.jpg",
       "name": "Cluster Rush",
       "desc": "Cluster Rush is a fast-paced, action-packed game where players compete to group and eliminate clusters of the same color. With simple yet challenging gameplay, Cluster Rush will keep you on the edge of your seat!",
       "categories": "all 2P"
@@ -317,7 +317,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/core-ball/index.html",
-      "img": "https://dreamboxmath.org/src/icons/coreball.png",
+      "img": "https://dreamboxmath.org/src/static/icons/coreball.png",
       "name": "Coreball",
       "desc": "cool",
       "categories": "all 2P"
@@ -345,13 +345,13 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/cubefield/",
-      "img": "https://dreamboxmath.org/src/icons/cubefield.png",
+      "img": "https://dreamboxmath.org/src/static/icons/cubefield.png",
       "name": "Cubefield",
       "categories": "all"
    },
    {
       "url": "//dreamboxmath.org/src/games/death-run-3d/",
-      "img": "https://dreamboxmath.org/src/icons/deathrun.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/deathrun.jpg",
       "name": "Death Run",
       "desc": "Death Run is a fast-paced, high-stakes game where players navigate a challenging obstacle course while avoiding deadly traps and obstacles. With simple controls and a quick pace, Death Run is an adrenaline-fueled experience that will keep you on the edge of your seat.",
       "categories": "all"
@@ -372,7 +372,7 @@
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/drift/index.html",
-      "img": "https://dreamboxmath.org/src/icons/drift-hunters.jfif",
+      "img": "https://dreamboxmath.org/src/static/icons/drift-hunters.jfif",
       "name": "Drift Hunters",
       "categories": "all 2P"
    },
@@ -420,7 +420,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/soccer-skills/index.html",
-      "img": "https://dreamboxmath.org/src/icons/euro_soccer.png",
+      "img": "https://dreamboxmath.org/src/static/icons/euro_soccer.png",
       "name": "Euro Soccer",
       "categories": "all sports 2P"
    },
@@ -432,7 +432,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/falling-sand/boredhumans.com/falling_sand/index.html",
-      "img": "https://dreamboxmath.org/src/icons/falling-sand.png",
+      "img": "https://dreamboxmath.org/src/static/icons/falling-sand.png",
       "name": "Falling Sand",
       "categories": "all"
    },
@@ -487,7 +487,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/fridaynightfunkin/index.html",
-      "img": "https://dreamboxmath.org/src/icons/fnf.avif",
+      "img": "https://dreamboxmath.org/src/static/icons/fnf.avif",
       "name": "Friday Night Funkin",
       "categories": "all"
    },
@@ -535,13 +535,13 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/google-feud/index.html",
-      "img": "https://dreamboxmath.org/src/icons/feud.png",
+      "img": "https://dreamboxmath.org/src/static/icons/feud.png",
       "name": "Google Feud",
       "categories": "all"
    },
    {
       "url": "https://dreamboxmath.org/src/games/gravity-soccer/index.html",
-      "img": "https://dreamboxmath.org/src/icons/gravity-soccer.png",
+      "img": "https://dreamboxmath.org/src/static/icons/gravity-soccer.png",
       "name": "Gravity Soccer",
       "desc": "Gravity Soccer is a fast-paced, physics-based sports game where players control their characters with gravity-defying abilities to score goals in a futuristic arena.",
       "categories": "all sports 2P"
@@ -562,7 +562,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/hackertype/index.html",
-      "img": "https://dreamboxmath.org/src/icons/hack-type.png",
+      "img": "https://dreamboxmath.org/src/static/icons/hack-type.png",
       "name": "Hacker Typer",
       "desc": "The original HackerTyper. Turning all your hacker dreams into pseudo reality since 2011.",
       "categories": "all"
@@ -597,7 +597,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/holeio/index.html",
-      "img": "https://dreamboxmath.org/src/icons/holeio.ico",
+      "img": "https://dreamboxmath.org/src/static/icons/holeio.ico",
       "name": "Hole.io",
       "desc": "Survive the void by consuming everything in your path, while avoiding obstacles and other players in this fast-paced, massively multiplayer game.",
       "categories": "all 2P"
@@ -806,14 +806,14 @@
    },
    {
       "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/flash/index.html?swf=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/flash/pandemic.swf",
-      "img": "https://dreamboxmath.org/src/icons/pandemic.webp",
+      "img": "https://dreamboxmath.org/src/static/icons/pandemic.webp",
       "name": "Pandemic",
       "desc": "in Pandemic, players work together as disease control specialists to stop the spread of deadly diseases and save the world. With cooperative gameplay and challenging levels, this game is perfect for fans of teamwork and strategy.",
       "categories": "all 2P"
    },
    {
       "url": "https://dreamboxmath.org/src/games/pixelart/index.html",
-      "img": "https://dreamboxmath.org/src/icons/pixelart.png",
+      "img": "https://dreamboxmath.org/src/static/icons/pixelart.png",
       "name": "Pixel",
       "desc": "Pixel is a challenging platformer that takes place in a world made of pixels. Players must navigate through increasingly difficult levels, using their wits and reflexes to overcome obstacles and defeat enemies.",
       "categories": "all"
@@ -840,14 +840,14 @@
    },
    {
       "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/index.html?core=autodetect&amp;rom=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/embed/roms/Pokemon+Ruby.zip",
-      "img": "https://dreamboxmath.org/src/icons/pokemon-ruby.webp",
+      "img": "https://dreamboxmath.org/src/static/icons/pokemon-ruby.webp",
       "name": "Pokemon Ruby",
       "desc": "Pokémon Ruby is an adventure-filled video game where players embark on a journey to become the Pokémon Master. Explore the Hoenn region, catch and train Pokémon, and battle other trainers to become the champion.",
       "categories": "all flash"
    },
    {
       "url": "https://silvereen.s3.amazonaws.com/moonlight-network/Moon%20Light%20Unblocker/src/flash/index.html?swf=https://silvereen.s3.amazonaws.com/moonlight-network/Moon%20Light%20Unblocker/src/flash/gstore-master/portal.swf",
-      "img": "https://dreamboxmath.org/src/icons/portal.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/portal.jpg",
       "name": "Portal",
       "desc": "Control Chell, a test subject, as she navigates through a series of increasingly complex puzzles using a portal gun that allows her to teleport herself and objects between different locations.",
       "categories": "all flash"
@@ -861,14 +861,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/planetlife/index.html",
-      "img": "https://dreamboxmath.org/src/icons/planetlife.gif",
+      "img": "https://dreamboxmath.org/src/static/icons/planetlife.gif",
       "name": "Planet Life",
       "desc": "Planet Life is a relaxing and immersive sandbox game where you explore a beautiful, alien world, discovering new species, crafting tools, and uncovering the secrets of the planet.",
       "categories": "all"
    },
    {
       "url": "https://dreamboxmath.org/src/games/miniputt/index.html",
-      "img": "https://dreamboxmath.org/src/icons/miniputt.png",
+      "img": "https://dreamboxmath.org/src/static/icons/miniputt.png",
       "name": "Mini Putt",
       "desc": "Mini Putt is a fun and challenging miniature golf game that takes you on a journey through various themed courses, from ancient ruins to outer space. With simple controls and addictive gameplay, Mini Putt is perfect for players of all ages and skill levels.",
       "categories": "all sports"
@@ -882,14 +882,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/restaurant-rush/index.html",
-      "img": "https://dreamboxmath.org/src/icons/restaurant-rush.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/restaurant-rush.jpg",
       "name": "Resturaunt Rush",
       "desc": "Manage a bustling restaurant, take orders, and serve food to hungry customers in this fast-paced time management game.",
       "categories": "all"
    },
    {
       "url": "https://hydrogen-assets.netlify.app/retro-bowl",
-      "img": "https://dreamboxmath.org/src/icons/retrobowl.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/retrobowl.jpg",
       "name": "Retro Bowl",
       "cheat": "retrobowl",
       "desc": "Play as a team from the 80s and 90s, complete with neon colors and pixelated graphics. The game features simple controls and a variety of game modes, including exhibition matches, tournaments, and even a mini-golf game. Can you lead your team to victory in this nostalgic throwback to classic football games?",
@@ -945,14 +945,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/sandboxels/",
-      "img": "https://dreamboxmath.org/src/icons/sandboxels.png",
+      "img": "https://dreamboxmath.org/src/static/icons/sandboxels.png",
       "name": "Sandboxels",
       "desc": "Sandboxels is a colorful and creative sandbox game where you can build and explore a vibrant world filled with blocks, enemies, and secrets.",
       "categories": "all"
    },
    {
       "url": "https://dreamboxmath.org/src/games/sand-game/",
-      "img": "https://dreamboxmath.org/src/icons/sand-game.png",
+      "img": "https://dreamboxmath.org/src/static/icons/sand-game.png",
       "name": "Sand Game",
       "desc": " ",
       "categories": "all"
@@ -980,14 +980,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/slope-2-player-main/",
-      "img": "https://dreamboxmath.org/src/icons/slope2.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/slope2.jpg",
       "name": "Slope2",
       "desc": "Slope 2 is a brand new game in which you must use your balance skills to avoid obstacles and collect diamonds in order to purchase more balls.",
       "categories": "all"
    },
    {
       "url": "//dreamboxmath.org/src/games/snake/index.html",
-      "img": "https://dreamboxmath.org/src/icons/google-snake.webp",
+      "img": "https://dreamboxmath.org/src/static/icons/google-snake.webp",
       "name": "Snake",
       "desc": "Snake is a classic mobile game where you control a growing snake as it moves through a grid, eating food pellets to grow longer. Avoid running into walls or other snakes to survive!",
       "categories": "all"
@@ -1036,14 +1036,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/madalin-stunt-cars-2/index.html",
-      "img": "https://dreamboxmath.org/src/icons/stunt-cars-2.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/stunt-cars-2.jpg",
       "name": "Stunt Cars 2",
       "desc": "Stunt Cars 2 is a high-octane racing game where players compete in death-defying stunts and races on various tracks, showcasing their driving skills and creativity.",
       "categories": "all 2P"
    },
    {
       "url": "https://dreamboxmath.org/src/games/madalin-stunt-cars-3/index.html",
-      "img": "https://dreamboxmath.org/src/icons/stuntcars3.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/stuntcars3.jpg",
       "name": "Stunt Cars 3",
       "desc": "Stunt Cars 3 is a high-octane racing game where players perform death-defying stunts and tricks to earn points and beat their opponents. With a variety of cars and tracks, players can show off their driving skills and compete in intense races.",
       "categories": "all 2P"
@@ -1057,14 +1057,14 @@
    },
    {
       "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/index.html?core=autodetect&amp;rom=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/webretro-master/embed/roms/super-mario-advance-2-super-mario-world-usa.zip",
-      "img": "https://dreamboxmath.org/src/icons/sma2.png",
+      "img": "https://dreamboxmath.org/src/static/icons/sma2.png",
       "name": "Super Mario Advance 2",
       "desc": "This boasts all 96 levels from the original Super NES game, from cheery Yoshi's Island through the sprawling Vanilla Dome to the grueling Star Road.",
       "categories": "all flash"
    },
    {
       "url": "https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/flash/index.html?swf=https://silvereen.s3.us-east-2.amazonaws.com/moonlight-network/Moon+Light+Unblocker/src/flash/gstore-master/supermarioflash.swf",
-      "img": "https://dreamboxmath.org/src/icons/supermarioflash.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/supermarioflash.jpg",
       "name": "Super Mario Bros",
       "desc": "Control Mario or Luigi as they navigate through levels filled with obstacles, enemies, and power-ups to rescue Princess Peach from the clutches of the evil Bowser.",
       "categories": "all flash"
@@ -1085,7 +1085,7 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/synesthesia/index.html",
-      "img": "https://dreamboxmath.org/src/icons/synesthesia.png",
+      "img": "https://dreamboxmath.org/src/static/icons/synesthesia.png",
       "name": "Synesthesia",
       "desc": "Navigate a series of increasingly complex puzzles and challenges, all while uncovering the mysteries of the game's enigmatic narrative. With a unique blend of visual and auditory elements, Synesthesia is an experience unlike any other.",
       "categories": "all"
@@ -1099,14 +1099,14 @@
    },
    {
       "url": "https://dreamboxmath.org/src/games/tiny-fishing/index.html",
-      "img": "https://dreamboxmath.org/src/icons/tiny-fishing.png",
+      "img": "https://dreamboxmath.org/src/static/icons/tiny-fishing.png",
       "name": "Tiny Fishing",
       "desc": "Tiny Fishing is a relaxing and addictive fishing game where you navigate a small boat to catch fish in various locations. With simple controls and a calming atmosphere, it's easy to get hooked on this underwater adventure! 🎣🏞️",
       "categories": "all"
    },
    {
       "url": "https://templerun.netlify.app/",
-      "img": "https://dreamboxmath.org/src/icons/templerun.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/templerun.jpg",
       "name": "Temple Run",
       "categories": "all"
    },
@@ -1133,32 +1133,32 @@
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/vex3/index.html",
-      "img": "https://dreamboxmath.org/src/icons/vex3.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/vex3.jpg",
       "name": "Vex 3",
       "categories": "all"
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/vex4/index.html",
-      "img": "https://dreamboxmath.org/src/icons/vex4.png",
+      "img": "https://dreamboxmath.org/src/static/icons/vex4.png",
       "name": "Vex 4",
       "categories": "all"
    },
    {
       "url": "https://raw.githack.com/caracal-js/gfiles/main/vex5/index.html",
-      "img": "https://dreamboxmath.org/src/icons/vex5.jpg",
+      "img": "https://dreamboxmath.org/src/static/icons/vex5.jpg",
       "name": "Vex 5",
       "categories": "all"
    },
    {
       "url": "https://hydrogen-assets.netlify.app/vex6/",
-      "img": "https://dreamboxmath.org/src/icons/vex6.png",
+      "img": "https://dreamboxmath.org/src/static/icons/vex6.png",
       "name": "Vex6",
       "cheat": "vex6",
       "categories": "all"
    },
    {
       "url": "https://dreamboxmath.org/src/games/vex7/",
-      "img": "https://dreamboxmath.org/src/icons/vex7.png",
+      "img": "https://dreamboxmath.org/src/static/icons/vex7.png",
       "name": "Vex7",
       "categories": "all"
    },

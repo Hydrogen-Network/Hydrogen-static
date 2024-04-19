@@ -164,7 +164,7 @@ document.head.append(color2);
 script("Injected Color 1/2");
 
 const offline = document.createElement("script");
-offline.src = "offline.js"
+offline.src = "js/offline.js"
 document.head.append(offline);
 
 var script = document.createElement('script');

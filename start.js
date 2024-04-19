@@ -1,5 +1,7 @@
 import { libcurlPath } from "@mercuryworkshop/libcurl-transport";
 import express from "express";
+import { rateLimit } from 'express-rate-limit'
+import express from "express";
 import { createServer } from "node:http";
 import { publicPath } from "ultraviolet-static";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
@@ -8,30 +10,25 @@ import { baremuxPath } from "@mercuryworkshop/bare-mux";
 import { join } from "node:path";
 import { hostname } from "node:os";
 import wisp from "wisp-server-node"
-import { rateLimit } from 'express-rate-limit'
 
 const app = express();
-// Load our publicPath first and prioritize it over UV.
+
 app.use(express.static(publicPath));
-// Load vendor files last.
-// The vendor's uv.config.js won't conflict with our uv.config.js inside the publicPath directory.
+
 app.use("/uv/", express.static(uvPath));
 app.use("/epoxy/", express.static(epoxyPath));
 app.use("/baremux/", express.static(baremuxPath));
 app.use("/libcurl/", express.static(libcurlPath));
 
 const limiter = rateLimit({
-	windowMs: 15 * 60 * 1000, // 15 minutes
-	limit: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-	standardHeaders: 'draft-7', // draft-6: `RateLimit-*` headers; draft-7: combined `RateLimit` header
-	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-	// store: ... , // Use an external store for more precise rate limiting
+	windowMs: 15 * 60 * 1000,
+	limit: 100,
+	standardHeaders: 'draft-7',
+	legacyHeaders: false,
 })
 
-// Apply the rate limiting middleware to all requests
 app.use(limiter)
 
-// Error for everything else
 app.use((req, res) => {
   res.status(404);
   res.sendFile(join(publicPath, "404.html"));
@@ -57,9 +54,6 @@ if (isNaN(port)) port = 8080;
 
 server.on("listening", () => {
   const address = server.address();
-
-  // by default we are listening on 0.0.0.0 (every interface)
-  // we just need to list a few
   console.log("Listening on:");
   console.log(`\thttp://localhost:${address.port}`);
   console.log(`\thttp://${hostname()}:${address.port}`);
@@ -69,6 +63,3 @@ server.on("listening", () => {
   );
 });
 
-server.listen({
-  port,
-});

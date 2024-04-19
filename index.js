@@ -31,7 +31,7 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search(address.value, searchEngine.value);
+  const url = search(address.value, searchEngine);
 
   let frame = document.getElementById("uv-frame");
   frame.style.display = "block";

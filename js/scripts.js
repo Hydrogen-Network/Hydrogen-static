@@ -119,3 +119,10 @@ document.head.append(offline);
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
 document.getElementsByTagName('head')[0].appendChild(script);
+
+var a = document.createElement("script");
+a.src = 'https://uv.titaniumnetwork.dev/baremux/bare.cjs';
+document.head.append(a);
+var a = document.createElement("script");
+a.src = 'https://uv.titaniumnetwork.dev/epoxy/index.js';
+document.head.append(a);

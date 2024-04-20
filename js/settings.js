@@ -1,23 +1,181 @@
-/*test*/
-  const recordKeyButton = document.getElementById('recordKeyButton');
-  const selectedKeyDisplay = document.getElementById('selectedKey');
-  const selectedKey = localStorage.getItem('selectedKey');
-  recordKeyButton.addEventListener('click', function () {
-    selectedKeyDisplay.innerHTML = '<kbd>Press a key</kbd>';
-    document.addEventListener('keydown', function recordKey(event) {
-      const selectedKey = event.key;
-      selectedKeyDisplay.innerHTML = `<kbd>${selectedKey}</kbd>`;
-      localStorage.setItem('eventKey', selectedKey);
-      document.removeEventListener('keydown', recordKeyButton);
-    });
+// Ads
+document.addEventListener('DOMContentLoaded', function () {
+  function adChange(selectedValue) {
+    if (selectedValue === 'default') {
+      localStorage.setItem('ad', 'on')
+    } else if (selectedValue === 'off') {
+      localStorage.setItem('ad', 'off')
+    }
+  }
+
+  var adTypeElement = document.getElementById('adType')
+
+  if (adTypeElement) {
+    adTypeElement.addEventListener('change', function () {
+      var selectedOption = this.value
+      adChange(selectedOption)
+    })
+
+    var storedAd = localStorage.getItem('ad')
+    if (storedAd === 'on') {
+      adTypeElement.value = 'default'
+    } else if (storedAd === 'off') {
+      adTypeElement.value = 'off'
+    } else {
+      adTypeElement.value = 'default'
+    }
+  }
+  const iconElement = document.getElementById('icon')
+  const nameElement = document.getElementById('name')
+  const customIcon = localStorage.getItem('CustomIcon')
+  const customName = localStorage.getItem('CustomName')
+  iconElement.value = customIcon
+  nameElement.value = customName
+
+  localStorage.setItem('ab', true)
+  document.getElementById('ab-settings-switch').checked = true
+})
+
+// Dyn
+document.addEventListener('DOMContentLoaded', function () {
+  function pChange(selectedValue) {
+    if (selectedValue === 'uv') {
+      localStorage.setItem('uv', 'true')
+      localStorage.setItem('dy', 'false')
+    } else if (selectedValue === 'dy') {
+      localStorage.setItem('uv', 'false')
+      localStorage.setItem('dy', 'true')
+    }
+  }
+
+  var pChangeElement = document.getElementById('pChange')
+
+  if (pChangeElement) {
+    pChangeElement.addEventListener('change', function () {
+      var selectedOption = this.value
+      pChange(selectedOption)
+    })
+
+    var storedP = localStorage.getItem('uv')
+    if (storedP === 'true') {
+      pChangeElement.value = 'uv'
+    } else if (localStorage.getItem('dy') === 'true' || localStorage.getItem('dy') === 'auto') {
+      pChangeElement.value = 'dy'
+    } else {
+      pChangeElement.value = 'uv'
+    }
+  }
+})
+  
+const recordKeyButton = document.getElementById('recordKeyButton');
+const selectedKeyDisplay = document.getElementById('selectedKey');
+const selectedKey = localStorage.getItem('selectedKey');
+recordKeyButton.addEventListener('click', function () {
+  selectedKeyDisplay.innerHTML = '<kbd>Press a key</kbd>';
+  document.addEventListener('keydown', function recordKey(event) {
+    const selectedKey = event.key;
+    selectedKeyDisplay.innerHTML = `<kbd>${selectedKey}</kbd>`;
+    localStorage.setItem('eventKey', selectedKey);
+    document.removeEventListener('keydown', recordKeyButton);
   });
-/*test end*/
+});
 
 function searchChange(ele) {
   const selSearch = ele.value;
   localStorage.setItem('search', selSearch);
 
   window.location = window.location;
+}
+
+
+// Background Image
+document.addEventListener('DOMContentLoaded', function () {
+  var saveButton = document.getElementById('save-button')
+  saveButton.addEventListener('click', function () {
+    var backgroundInput = document.getElementById('background-input')
+    var imageURL = backgroundInput.value
+
+    if (imageURL !== '') {
+      localStorage.setItem('backgroundImage', imageURL)
+      document.body.style.backgroundImage = "url('" + imageURL + "')"
+      backgroundInput.value = ''
+    } else {
+    }
+  })
+
+  var resetButton = document.getElementById('reset-button')
+  resetButton.addEventListener('click', function () {
+    localStorage.removeItem('backgroundImage')
+    document.body.style.backgroundImage = "url('default-background.jpg')"
+  })
+
+  var savedBackgroundImage = localStorage.getItem('backgroundImage')
+  if (savedBackgroundImage) {
+    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')"
+  }
+})
+
+// AB Cloak
+function AB() {
+  let inFrame
+
+  try {
+    inFrame = window !== top
+  } catch (e) {
+    inFrame = true
+  }
+
+  if (!inFrame && !navigator.userAgent.includes('Firefox')) {
+    const popup = open('about:blank', '_blank')
+    if (!popup || popup.closed) {
+      alert('Please allow popups and redirects.')
+    } else {
+      const doc = popup.document
+      const iframe = doc.createElement('iframe')
+      const style = iframe.style
+      const link = doc.createElement('link')
+
+      const name = localStorage.getItem('name') || 'My Drive - Google Drive'
+      const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+
+      doc.title = name
+      link.rel = 'icon'
+      link.href = icon
+
+      iframe.src = location.href
+      style.position = 'fixed'
+      style.top = style.bottom = style.left = style.right = 0
+      style.border = style.outline = 'none'
+      style.width = style.height = '100%'
+
+      doc.head.appendChild(link)
+      doc.body.appendChild(iframe)
+
+      const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
+      location.replace(pLink)
+
+      const script = doc.createElement('script')
+      script.textContent = `
+        window.onbeforeunload = function (event) {
+          const confirmationMessage = 'Leave Site?';
+          (event || window.event).returnValue = confirmationMessage;
+          return confirmationMessage;
+        };
+      `
+      doc.head.appendChild(script)
+    }
+  }
+}
+
+function toggleAB() {
+  ab = localStorage.getItem('ab')
+  if (ab == null) {
+    localStorage.setItem('ab', 'false')
+  } else if (ab == 'true') {
+    localStorage.setItem('ab', 'false')
+  } else {
+    localStorage.setItem('ab', 'true')
+  }
 }
 
 // Key 

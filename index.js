@@ -32,8 +32,12 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine);
-
   let frame = document.getElementById("uv-frame");
   frame.style.display = "block";
-  frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+  if(localStorage.getItem('dy') == 'true') {
+    frame.src = '/a/q/' + __uv$config.encodeUrl(url)
+  } else {
+    frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+  }
 });
+

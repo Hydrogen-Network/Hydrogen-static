@@ -244,6 +244,9 @@
       <br/>
       <br/>
       <br/>
+         <script>
+               
+         </script>
       <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
          <div style="display: flex; justify-content: space-between !important; align-items: left;">
             <div style="margin-right:45rem;">
@@ -290,13 +293,14 @@
          })();
       </script>
       <!--End of Tawk.to Script-->
-    <script src="baremux/bare.cjs" defer></script>
-    <script src="epoxy/index.js" defer></script>
+    <script src="baremux/bare.cjs" defer async></script>
+    <script src="epoxy/index.js" defer async></script>
     <script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
     <script src="register-sw.js" defer></script>
     <script src="search.js" defer></script>
     <script src="index.js" defer></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/libcurl.js@latest/libcurl.js" onload="libcurl.load_wasm('https://cdn.jsdelivr.net/npm/libcurl.js@latest/libcurl.wasm');"></script>
 
    </body>
       

@@ -1,6 +1,7 @@
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/uv/service/',
+    bare: "https://bare.benrogo.net",
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: "uv/uv.handler.js",
@@ -18,7 +19,7 @@ self.__uv$config = {
        return ``;
     },
 };
-
+/*
 function checkServerStatus(url) {
     const startTime = performance.now();
     
@@ -53,3 +54,4 @@ if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
 } else if(checkServerStatus("https://uv.radon.games/bare4/") == true) {
     self.__uv$config.bare = "https://uv.radon.games/bare4/";
 }
+*/

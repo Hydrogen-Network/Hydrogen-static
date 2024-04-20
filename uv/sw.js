@@ -6,6 +6,7 @@
  * However, if a user changes the location of uv.bundle.js/uv.config.js or sw.js is not relative to them, they will need to modify this script locally.
  */
 try {
+  if(localStorage.getItem("proxy") == uv) {
   importScripts('../epoxy/index.js');
   importScripts('/libcurl/index.js');
   importScripts('/baremux/bare.js');
@@ -23,6 +24,7 @@ try {
     event.data.headers['user-agent'] =
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 HyperTabs/1.4.0';
   });
+  }
 } catch (e) {
   console.error(e);
 }

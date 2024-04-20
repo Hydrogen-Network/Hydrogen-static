@@ -31,6 +31,7 @@
         const CurlMod = window.CurlMod
         console.log("Dynamic Service Worker registered.");
  //   }
+    BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
 
 /*
 

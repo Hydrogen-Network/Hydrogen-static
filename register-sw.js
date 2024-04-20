@@ -32,7 +32,7 @@
         console.log("Dynamic Service Worker registered.");
  //   }
 
-
+/*
 
     
     if(localStorage.getItem("transport") == "bare") {
@@ -43,6 +43,7 @@
     } else if(localStorage.getItem("transport") == null || localStorage.getItem("transport") == "epoxy") {
       BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
     }
+    */
   }
   registerSW();
 

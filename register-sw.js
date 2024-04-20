@@ -1,34 +1,47 @@
-"use strict";
-/**
- * Distributed with Ultraviolet and compatible with most configurations.
- */
-const stockSW = "/uv/sw.js";
+window.addEventListener("DOMContentLoaded", (event) => {
 
-/**
- * List of hostnames that are allowed to run serviceworkers on http://
- */
-const swAllowedHostnames = ["localhost", "127.0.0.1"];
+  
+  const stockSW = "/uv/sw.js";
 
-/**
- * Global util
- * Used in 404.html and index.html
- */
-async function registerSW() {
-  if (!navigator.serviceWorker) {
-    if (
-      location.protocol !== "https:" &&
-      !swAllowedHostnames.includes(location.hostname)
-    )
-      throw new Error("Service workers cannot be registered without https.");
+  const swAllowedHostnames = ["localhost", "127.0.0.1"];
+  const wispserver = `${window.location.origin.replace(/^https?:\/\//, 'ws://')}/wisp/`;
+  async function registerSW() {
+    if (!navigator.serviceWorker) {
+      if (
+        location.protocol !== "https:" &&
+        !swAllowedHostnames.includes(location.hostname)
+      )
+        throw new Error("Service workers cannot be registered without https.");
 
-    throw new Error("Your browser doesn't support service workers.");
+      throw new Error("Your browser doesn't support service workers.");
+    }
+    
+    await navigator.serviceWorker.register("/sw.js", {
+      scope: '/uv/service/',
+    });
+    
+    console.log("UV Service Worker registered.");
+    await navigator.serviceWorker.register("dynsw.js", {
+      scope: '/a/q/',
+    });
+    
+    await navigator.serviceWorker.register(stockSW, {
+      scope: __uv$config.prefix,
+    });
+
+    const CurlMod = window.CurlMod
+    console.log("Dynamic Service Worker registered.");
+    
+    if(localStorage.getItem("transport") == "bare") {
+      BareMux.SetTransport("BareMod.BareClient", "https://server.flow-works.me/bare/" });
+    } else if(localStorage.getItem("transport") == "libcurl") {
+      BareMux.registerRemoteListener(navigator.serviceWorker.controller);
+      BareMux.SetTransport("CurlMod.LibcurlClient", { wisp: wispserver, wasm: "https://cdn.jsdelivr.net/npm/libcurl.js@v0.6.7/libcurl.wasm" });
+    } else if(localStorage.getitem("transport") == null || localStorage.getItem("transport") == "epoxy") {
+      BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
+    }
   }
+  registerSW();
+});
 
-  await navigator.serviceWorker.register(stockSW, {
-    scope: __uv$config.prefix,
-  });
 
-  // This is the line you change to change the wisp server (essential for static hosting ofc)
-  let wispUrl = "wss://nebulaproxy.io/wisp/"
-  //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
-}

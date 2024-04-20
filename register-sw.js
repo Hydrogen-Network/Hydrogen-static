@@ -15,7 +15,7 @@
       throw new Error("Your browser doesn't support service workers.");
     }
 
-    if(localStorage.getItem("proxy") == "uv" || localStorage.getItem("proxy") == null) {
+  //  if(localStorage.getItem("proxy") == "uv" || localStorage.getItem("proxy") == null) {
       await navigator.serviceWorker.register("/uv/sw.js", {
         scope: '/uv/service/',
       });
@@ -24,13 +24,13 @@
         scope: __uv$config.prefix,
       });
       console.log("UV Service Worker registered.");
-    } else if(localStorage.getItem("proxy") == "dynamic") {
+  //  } else if(localStorage.getItem("proxy") == "dynamic") {
       await navigator.serviceWorker.register("dynsw.js", {
         scope: '/a/q/',
       });
         const CurlMod = window.CurlMod
         console.log("Dynamic Service Worker registered.");
-    }
+ //   }
 
 
 

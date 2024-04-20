@@ -1,3 +1,4 @@
+if(localStorage.getItem("proxy") == "dynamic") {
 importScripts('/dynamic/dynamic.config.js');
 importScripts('/dynamic/dynamic.worker.js');
 
@@ -18,3 +19,4 @@ self.addEventListener('fetch',
         );
     }
 );
+}

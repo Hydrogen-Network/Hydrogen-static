@@ -1,7 +1,6 @@
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/uv/service/',
-    bare:  'https://bare.benrogo.net',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: "uv/uv.handler.js",
@@ -20,58 +19,37 @@ self.__uv$config = {
     },
 };
 
-/*
+function checkServerStatus(url) {=
+    const startTime = performance.now();
+    
+    return fetch(url, { method: 'HEAD' })
+        .then(response => {
+            const endTime = performance.now();
+            const ping = Math.round(endTime - startTime);
+      
+            if (response.status === 200) {
+                return true;
+            } else {
+                return false;
+            }
+        })
+        .catch(() => false);
+}
 
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.3.min.js'; 
-document.getElementsByTagName('head')[0].appendChild(script);
-
-var url = "https://worker-holy-smoke-5eb3.pres1234569.workers.dev/"
-$.ajax(url, {
-    statusCode: {
-        200: function() {
-        self.__uv$config = url;
-    }
-    }
-});   
-
-
-url = "https://uv.radon.games/bare1/";
-$.ajax(url, {
-    statusCode: {
-        200: function() {
-        self.__uv$config = url;
-    }
-    }
-});   
-
-
-url = "https://uv.radon.games/bare2/";
-$.ajax(url, {
-    statusCode: {
-        200: function() {
-        self.__uv$config = url;
-    }
-    }
-});   
-
-
-url = "https://uv.radon.games/bare3/";
-$.ajax(url, {
-    statusCode: {
-        200: function() {
-        self.__uv$config = url;
-    }
-    }
-});   
-
-
-url = "https://uv.radon.games/bare4/";
-$.ajax(url, {
-    statusCode: {
-        200: function() {
-        self.__uv$config = url;
-    }
-    }
-});   
-*/
+} if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
+    self.__uv$config.bare = localStorage.getItem("bareServer");
+} else if(checkServerStatus("https://server.flow-works.me/bare/") == true) {
+    self.__uv$config.bare = "https://server.flow-works.me/bare/";
+} else if(checkServerStatus("https://bare.benrogo.net") == true) {
+    self.__uv$config.bare = "https://bare.benrogo.net";
+} else if(checkServerStatus("https://worker-holy-smoke-5eb3.pres1234569.workers.dev/") == true) {
+    self.__uv$config.bare = "https://worker-holy-smoke-5eb3.pres1234569.workers.dev/";
+} else if(checkServerStatus("https://uv.radon.games/bare1/") == true) {
+    self.__uv$config.bare = "https://uv.radon.games/bare1/";
+} else if(checkServerStatus("https://uv.radon.games/bare2/") == true) {
+    self.__uv$config.bare = "https://uv.radon.games/bare2/";
+} else if(checkServerStatus("https://uv.radon.games/bare3/") == true) {
+    self.__uv$config.bare = "https://uv.radon.games/bare3/";
+} else if(checkServerStatus("https://uv.radon.games/bare4/") == true) {
+    self.__uv$config.bare = "https://uv.radon.games/bare4/";
+}

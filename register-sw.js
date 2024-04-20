@@ -23,16 +23,17 @@
       await navigator.serviceWorker.register(stockSW, {
         scope: __uv$config.prefix,
       });
-    } else if(localStorage.getItem("proxy") == "dynamic") {
       console.log("UV Service Worker registered.");
+    } else if(localStorage.getItem("proxy") == "dynamic") {
       await navigator.serviceWorker.register("dynsw.js", {
         scope: '/a/q/',
       });
+        const CurlMod = window.CurlMod
+        console.log("Dynamic Service Worker registered.");
     }
 
 
-    const CurlMod = window.CurlMod
-    console.log("Dynamic Service Worker registered.");
+
     
     if(localStorage.getItem("transport") == "bare") {
       BareMux.SetTransport("BareMod.BareClient", "https://server.flow-works.me/bare/" );

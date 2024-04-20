@@ -1,28 +1,26 @@
 self.__dynamic$config = {
-    prefix: '/service/',
-    encoding: 'xor',
-    mode: 'production', // development: zero caching, no minification, production: speed-oriented
-    logLevel: 0, // 0: none, 1: errors, 2: errors + warnings, 3: errors + warnings + info
-    bare: {
-      version: 2, // v3 is bad
-      path: 'https://server2.flow-works.me/bare',
-    },
-    tab: {
-      title: 'Service',
-      icon: null,
-      ua: null,
-    },
-    assets: {
-      prefix: '/dynamic/',
-      files: {
-        handler: 'dynamic.handler.js',
-        client: 'dynamic.client.js',
-        worker: 'dynamic.worker.js',
-        config: 'dynamic.config.js',
-        inject: null,
-      }
-    },
-    block: [
-    
-    ]
-  };
+  prefix: '/a/q/',
+  encoding: 'xor',
+  mode: 'production',
+  logLevel: 0,
+  bare: {
+    version: 2,
+    path: 'https://gointerstellar.app/o/',
+  },
+  tab: {
+    title: null,
+    icon: null,
+    ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.3'
+  },
+  assets: {
+    prefix: '/dy/',
+    files: {
+      handler: 'handler.js?v=4',
+      client: 'client.js?v=4',
+      worker: 'worker.js?v=4',
+      config: 'config.js?v=4',
+      inject: ''
+    }
+  },
+  block: []
+};

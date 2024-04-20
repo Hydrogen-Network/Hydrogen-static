@@ -39,7 +39,7 @@
     } else if(localStorage.getItem("transport") == "libcurl") {
       BareMux.registerRemoteListener(navigator.serviceWorker.controller);
       BareMux.SetTransport("CurlMod.LibcurlClient", { wisp: wispserver, wasm: "https://cdn.jsdelivr.net/npm/libcurl.js@v0.6.7/libcurl.wasm" });
-    } else if(localStorage.getitem("transport") == null || localStorage.getItem("transport") == "epoxy") {
+    } else if(localStorage.getItem("transport") == null || localStorage.getItem("transport") == "epoxy") {
       BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
     }
   }

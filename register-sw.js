@@ -14,19 +14,22 @@
 
       throw new Error("Your browser doesn't support service workers.");
     }
+
+    if(localStorage.getItem("proxy") == uv) {
+      await navigator.serviceWorker.register("/uv/sw.js", {
+        scope: '/uv/service/',
+      });
     
-    await navigator.serviceWorker.register("/uv/sw.js", {
-      scope: '/uv/service/',
-    });
+      await navigator.serviceWorker.register(stockSW, {
+        scope: __uv$config.prefix,
+      });
     
-    console.log("UV Service Worker registered.");
-    await navigator.serviceWorker.register("dynsw.js", {
-      scope: '/a/q/',
-    });
-    
-    await navigator.serviceWorker.register(stockSW, {
-      scope: __uv$config.prefix,
-    });
+      console.log("UV Service Worker registered.");
+      await navigator.serviceWorker.register("dynsw.js", {
+        scope: '/a/q/',
+      });
+    }
+
 
     const CurlMod = window.CurlMod
     console.log("Dynamic Service Worker registered.");

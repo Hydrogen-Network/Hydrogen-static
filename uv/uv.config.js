@@ -36,7 +36,7 @@ function checkServerStatus(url) {
         .catch(() => false);
 }
 
-} if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
+if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
     self.__uv$config.bare = localStorage.getItem("bareServer");
 } else if(checkServerStatus("https://server.flow-works.me/bare/") == true) {
     self.__uv$config.bare = "https://server.flow-works.me/bare/";

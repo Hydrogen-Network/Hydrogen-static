@@ -7,7 +7,6 @@
  */
 try {
   importScripts('../epoxy/index.js');
-  importScripts('/libcurl/index.js');
   importScripts('/baremux/bare.js');
   importScripts('/uv/uv.bundle.js');
   importScripts('/uv/uv.config.js');

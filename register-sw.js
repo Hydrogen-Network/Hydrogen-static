@@ -15,7 +15,7 @@
       throw new Error("Your browser doesn't support service workers.");
     }
 
-    if(localStorage.getItem("proxy") == uv) {
+    if(localStorage.getItem("proxy") == "uv" || localStorage.getItem("proxy") == null) {
       await navigator.serviceWorker.register("/uv/sw.js", {
         scope: '/uv/service/',
       });
@@ -23,7 +23,7 @@
       await navigator.serviceWorker.register(stockSW, {
         scope: __uv$config.prefix,
       });
-    
+    } else if(localStorage.getItem("proxy") == "dynamic") {
       console.log("UV Service Worker registered.");
       await navigator.serviceWorker.register("dynsw.js", {
         scope: '/a/q/',

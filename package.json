@@ -18,6 +18,7 @@
     "@tomphttp/bare-server-node": "^2.0.3",
     "express": "^4.19.2",
     "path": "^0.12.7",
+    "rammerhead": "https://github.com/NebulaServices/rammerhead/releases/download/rammerhead-1.2.41-nebula.8/rammerhead-1.2.41-nebula.7.tgz",
     "serve-static": "^1.15.0",
     "simplebar": "^6.2.5",
     "wisp-server-node": "^1.0.4",

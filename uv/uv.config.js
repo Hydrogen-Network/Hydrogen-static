@@ -19,7 +19,7 @@ self.__uv$config = {
     },
 };
 
-function checkServerStatus(url) {=
+function checkServerStatus(url) {
     const startTime = performance.now();
     
     return fetch(url, { method: 'HEAD' })

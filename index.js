@@ -10,7 +10,7 @@ const address = document.getElementById("uv-address");
 /**
  * @type {HTMLInputElement}
  */
-const searchEngine = 'https://google.com/search?q=%s';
+const searchEngine = document.getElementById("uv-search-engine") || 'https://google.com/search?q=%s';
 /**
  * @type {HTMLParagraphElement}
  */

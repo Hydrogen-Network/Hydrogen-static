@@ -3,7 +3,7 @@
   const stockSW = "/uv/sw.js";
 
   const swAllowedHostnames = ["localhost", "127.0.0.1"];
-  const wispserver = `${window.location.origin.replace(/^https?:\/\//, 'wss://')}/wisp/`;
+  const wispserver = `wss://nebulaproxy.io/wisp/`;
   async function registerSW() {
     if (!navigator.serviceWorker) {
       if (

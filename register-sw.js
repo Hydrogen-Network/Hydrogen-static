@@ -1,4 +1,3 @@
-window.addEventListener("DOMContentLoaded", (event) => {
 
   
   const stockSW = "/uv/sw.js";
@@ -33,7 +32,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     console.log("Dynamic Service Worker registered.");
     
     if(localStorage.getItem("transport") == "bare") {
-      BareMux.SetTransport("BareMod.BareClient", "https://server.flow-works.me/bare/" });
+      BareMux.SetTransport("BareMod.BareClient", "https://server.flow-works.me/bare/" );
     } else if(localStorage.getItem("transport") == "libcurl") {
       BareMux.registerRemoteListener(navigator.serviceWorker.controller);
       BareMux.SetTransport("CurlMod.LibcurlClient", { wisp: wispserver, wasm: "https://cdn.jsdelivr.net/npm/libcurl.js@v0.6.7/libcurl.wasm" });
@@ -42,6 +41,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   }
   registerSW();
-});
+
 
 

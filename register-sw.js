@@ -16,8 +16,8 @@
     }
 
 
-    await navigator.serviceWorker.register(stockSW, {
-      scope: __uv$config.prefix,
+    await navigator.serviceWorker.register("/uv/sw.js", {
+      scope: "/uv/service/",
     });
     console.log("UV Service Worker registered.");
     await navigator.serviceWorker.register("dynsw.js", {

@@ -5,27 +5,30 @@
   const swAllowedHostnames = ["localhost", "127.0.0.1"];
   const wispserver = `wss://nebulaproxy.io/wisp/`;
   async function registerSW() {
-    if (!navigator.serviceWorker) {
-      if (
-        location.protocol !== "https:" &&
-        !swAllowedHostnames.includes(location.hostname)
-      )
-        throw new Error("Service workers cannot be registered without https.");
+  if (!navigator.serviceWorker) {
+    if (
+      location.protocol !== "https:" &&
+      !swAllowedHostnames.includes(location.hostname)
+    )
+      throw new Error("Service workers cannot be registered without https.");
 
-      throw new Error("Your browser doesn't support service workers.");
-    }
+    throw new Error("Your browser doesn't support service workers.");
+  }
 
+  await navigator.serviceWorker.register(stockSW, {
+    scope: __uv$config.prefix,
+  });
 
-    await navigator.serviceWorker.register("/uv/sw.js", {
-      scope: "/uv/service/",
+  // Register the EpoxyClient transport to be used for network requests
+  let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
+  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
+
+    await navigator.serviceWorker.register("/sw.js", {
+      scope: "/service/",
     });
-    console.log("UV Service Worker registered.");
-    await navigator.serviceWorker.register("dynsw.js", {
-      scope: '/a/q/',
-    });
-    const CurlMod = window.CurlMod
-    console.log("Dynamic Service Worker registered.");
-    BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
+//    const CurlMod = window.CurlMod
+  //  console.log("Dynamic Service Worker registered.");
+    //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
 
 /*
 

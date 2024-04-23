@@ -36,9 +36,9 @@ form.addEventListener("submit", async (event) => {
   frame.style.display = "block";
   
   if(localStorage.getItem('dy') == 'true') {
-    frame.src = '/service/dynamic/' + __uv$config.encodeUrl(url)
+    frame.src = '/service/dynamic/' + url;
   } else {
-    frame.src = "/service/uv/" + __uv$config.encodeUrl(url);
+    frame.src = "/service/uv/" + url;
   }
 });
 

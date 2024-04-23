@@ -215,16 +215,13 @@ var searchid = localStorage.getItem("search");
   //changes search engine
   themeEle = document.createElement("script");
   if(searchid == "g") {
-    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.google.com/search?q=%s';";
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.google.com/search?q=';";
   }
   if(searchid == "b") {
-    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.bing.com/search?form=&q=%s';";
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.bing.com/search?form=&q=';";
   }
   if(searchid == "ddg") {
-    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://duckduckgo.com/?q=%s';";
-   }
-  if(searchid == "br") {
-    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://search.brave.com/search?q=%s';";
+    themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://duckduckgo.com/?q=';";
    }
   if(localStorage.getItem("customsearch") === "true") {
   themeEle.innerHTML = `document.getElementById("uv-search-engine").value=${localStorage.getItem('search')}`;

@@ -34,6 +34,7 @@ form.addEventListener("submit", async (event) => {
   const url = search(address.value, searchEngine);
   let frame = document.getElementById("uv-frame");
   frame.style.display = "block";
+  
   if(localStorage.getItem('dy') == 'true') {
     frame.src = '/service/dynamic/' + __uv$config.encodeUrl(url)
   } else {

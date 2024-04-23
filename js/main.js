@@ -222,7 +222,16 @@ var searchid = localStorage.getItem("search");
   }
   if(searchid == "ddg") {
     themeEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://duckduckgo.com/?q=';";
-   }
+  } else if(searchid == "searx") {
+    themEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://searxng.site/search?q=';";
+  } else if(searchid == "q") {
+      themEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.qwant.com/?q=';";
+  } else if(searchid == "e") {
+      themEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://www.ecosia.org/search?method=index&q=';";
+  } else if(searchid == "y") {
+      themEle.innerHTML = "document.getElementById('uv-search-engine').value = 'https://search.yahoo.com/search?p=';";
+  }
+
   if(localStorage.getItem("customsearch") === "true") {
   themeEle.innerHTML = `document.getElementById("uv-search-engine").value=${localStorage.getItem('search')}`;
   }

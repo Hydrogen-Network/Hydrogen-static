@@ -4,6 +4,7 @@ importScripts("/uv/uv.config.js");
 importScripts("/uv/uv.sw.js");
 importScripts("/dynamic/dynamic.config.js");
 importScripts("/dynamic/dynamic.worker.js");
+importScripts("/aero/worker.js");
 
 const sw = new UVServiceWorker();
 const dynamic = new Dynamic();

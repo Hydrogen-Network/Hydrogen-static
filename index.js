@@ -37,8 +37,17 @@ form.addEventListener("submit", async (event) => {
   
   if(localStorage.getItem('dy') == 'true') {
     frame.src = '/service/dynamic/' + url;
+  } else if(localStorage.getItem('aero') == 'true') {
+	e.preventDefault();
+
+	worker().then(e=>{
+		var val = document.querySelector('.dipinput').value;
+		if (!val.startsWith('http')) val = 'https://' + val;
+	
+		location.assign(window.__DIP.config.prefix + window.__DIP.encodeURL(val));
+	});
+
   } else {
     frame.src = "/service/uv/" + url;
-  }
 });
 

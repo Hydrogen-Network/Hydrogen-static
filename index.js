@@ -49,5 +49,6 @@ form.addEventListener("submit", async (event) => {
 
   } else {
     frame.src = "/service/uv/" + url;
+  }
 });
 

@@ -1,3 +1,4 @@
+/*
 let bare;
 
 function checkServerStatus(url) {
@@ -36,7 +37,7 @@ if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
 }
 
 
-
+*/
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/service/uv/',

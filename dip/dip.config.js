@@ -2,7 +2,7 @@ if (!self.__DIP) self.__DIP={};
 
 self.__DIP.config = {
   prefix: '/service/dip/',
-  encoding: 'xor',
+  encoding: 'plain',
   ws: true,
   cookies: true,
   worker: true,

@@ -111,3 +111,36 @@ body {
 iframe[src="about:blank"] {
     display: none;
 }
+
+#suggestions {
+  z-index: 5;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: width 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
+}
+
+.suggestions a {
+  z-index: 1;
+  display: block;
+  padding: 10px;
+  width: 230px;
+  font-family: "poppins";
+  color: white;
+  font-size: 0.8vw;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 2px;
+}
+
+.suggestions a:link {
+  text-decoration: none;
+  color: white;
+  font-family: "poppins"
+}
+
+.suggestions a:hover {
+  background-color: #a872ff5b;
+}
+

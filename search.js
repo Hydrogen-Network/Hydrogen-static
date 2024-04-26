@@ -30,7 +30,7 @@ function search(input, template) {
 
 async function fetchResults(searchText) {
 	try {
-		const response = await bare.fetch(`https://duckduckgo.com/ac/?q=${encodeURIComponent(searchText)}`);
+		const response = await fetch(`https://duckduckgo.com/ac/?q=${encodeURIComponent(searchText)}`);
 		const data = await response.json();
 		isRequestPending = false;
 		if (!Array.isArray(data)) {

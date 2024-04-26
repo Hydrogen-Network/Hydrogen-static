@@ -1,3 +1,6 @@
+window.bare = new Ultraviolet.BareClient(new URL(__uv$config.bare, window.location));
+
+
 "use strict";
 
 const searchInput = document.getElementById("uv-address");
@@ -30,7 +33,7 @@ function search(input, template) {
 
 async function fetchResults(searchText) {
 	try {
-		const response = await fetch(`https://duckduckgo.com/ac/?q=${encodeURIComponent(searchText)}`);
+		const response = await bare.fetch(`https://duckduckgo.com/ac/?q=${encodeURIComponent(searchText)}`);
 		const data = await response.json();
 		isRequestPending = false;
 		if (!Array.isArray(data)) {

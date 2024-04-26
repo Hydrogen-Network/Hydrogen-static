@@ -26,6 +26,11 @@
     await navigator.serviceWorker.register("/sw.js", {
       scope: "/service/",
     });
+    await navigator.serviceWorker.register("/aero.js", {
+      scope: "/~/aero",
+      module: true,
+      updateViaCache: "none"
+    });
 //    const CurlMod = window.CurlMod
   //  console.log("Dynamic Service Worker registered.");
     //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });

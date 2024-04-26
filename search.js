@@ -78,7 +78,7 @@ searchInput.addEventListener("input", (event) => {
 
 
 function erudaToggle() {
-	var elem = document.getElementById("uv-frame  ");
+	var elem = document.getElementById("uv-frame");
 	
 	if (erudaScript) {
 		elem.contentWindow.eruda.destroy(); 

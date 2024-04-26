@@ -7,8 +7,8 @@ self.__DIP.config = {
   cookies: true,
   worker: true,
   bare: {
-    version: 2,
-    path: '/bare/',
+    version: 3,
+    path: 'https://sodium-5h8.pages.dev/bare/',
   },
   tab: {
     title: 'Dynamic Interception Proxy',

@@ -40,7 +40,7 @@ if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/service/uv/',
-    bare: bare,
+    bare: "https://bare.benrogo.net",
     encodeUrl: Ultraviolet.codec.plain.encode,
     decodeUrl: Ultraviolet.codec.plain.decode,
     handler: "uv/uv.handler.js",

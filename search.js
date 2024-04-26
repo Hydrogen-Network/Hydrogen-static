@@ -2,7 +2,8 @@
 
 const searchInput = document.getElementById("uv-address");
 var erudaScript; 
-
+let debounceTimeout;
+let isRequestPending = false;
 /**
  *
  * @param {string} input

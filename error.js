@@ -18,3 +18,26 @@ registerButton.addEventListener("click", async () => {
     registerButton.classList.remove("show");
   }
 });
+
+
+
+
+
+
+
+
+
+  container.querySelector("#noctura-nav-input").onkeydown = function (e) {
+    if (e.key == "Enter") {
+      location.pathname.includes("/~/aero/")
+        ? new Function(
+            `return this.location.href = "/~/aero/${encodeURIComponent(
+              this.value
+            )}"`
+          )()
+        : new Function(`return this.location.href = "${this.value}"`)();
+      new Function(`return this.location.href = "${this.value}"`)();
+    }
+
+    return e;
+  };

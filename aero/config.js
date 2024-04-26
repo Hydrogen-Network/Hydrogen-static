@@ -1,5 +1,5 @@
 var __aero$config = {
-  scope: '/service/aero/',
+  scope: '/~/aero/',
   bare: 'https://noctura.tech/bare/',
-  prefix: '/service/aero/'
+  prefix: '/~/aero/'
 }

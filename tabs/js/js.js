@@ -66,17 +66,12 @@ function getIcon(id) {
   );
   if (urlIco !== null) {
     if (urlIco.href.includes("data:image/png;base64")) return urlIco.href;
-    return "//" + location.host + path + xor.encode(urlIco.href);
+    return "//" + location.host + path + urlIco.href;
   } else
     return (
       "//" +
       location.host +
-      path +
-      xor.encode(
-        "http://" +
-        CONTENT_WINDOW(id).document.domain +
-        "/favicon.ico"
-      )
+      path + "http://" + CONTENT_WINDOW(id).document.domain + "/favicon.ico"
     );
 }
 // Sets tab information
@@ -125,14 +120,10 @@ function setInfo(frameId) {
   )
     document.getElementsByClassName(frameId)[0].firstChild.data = CONTENT_WINDOW(frameId).document.getElementsByTagName("title")[0].firstChild.textContent;
   else
-    document.getElementsByClassName(frameId)[0].firstChild.data = xor.decode(
-      regUrl.split(path).slice(1).join(path)
-    );
+    document.getElementsByClassName(frameId)[0].firstChild.data = regUrl.split(path).slice(1).join(path)
   //set url bar
   if (getActiveFrameId() == frameId) {
-    URL_BAR.value = xor.decode(
-      regUrl.split(path).slice(1).join(path)
-    );
+    URL_BAR.value = regUrl.split(path).slice(1).join(path);
   }
   // set the favicon of page
   document.querySelector(
@@ -207,9 +198,7 @@ function opencity(frame) {
   document.getElementById(frame).focus();
 
   let regUrl = ACTIVE_WINDOW().location.href;
-  URL_BAR.value = xor.decode(
-    regUrl.split(path).slice(1).join(path)
-  );
+  URL_BAR.value = regUrl.split(path).slice(1).join(path)
   // listen for attribute changes with soon to be favicon (not done)
 }
 function skipAd() {
@@ -243,7 +232,7 @@ let newTab = (url, uxor = true) => {
   else if (uxor == false) {
     frame.setAttribute("src", url);
   } else {
-    frame.setAttribute("src", "//" + location.host + path + xor.encode(url));
+    frame.setAttribute("src", "//" + location.host + path + url);
   }
 
   frame.setAttribute("allow", "fullscreen");
@@ -270,11 +259,7 @@ document.querySelector("#urlbar").addEventListener("keydown", (event) => {
     // suggest searches
     try {
       fetch(
-        prefix +
-        xor.encode(
-          `https://duckduckgo.com/ac?q=${URL_BAR.value
-          }`
-        )
+        prefix + `https://duckduckgo.com/ac?q=${URL_BAR.value}`
       )
         .then((a) => a.text())
         .then((a) => JSON.parse(`[${a.split("\n")[5].slice(0, -1)}]`)[0])
@@ -325,10 +310,8 @@ document.querySelector("#urlbar").addEventListener("keydown", (event) => {
       "//" +
       location.host +
       path +
-      xor.encode(
         window.searchEngine +
-        encodeURIComponent(URL_BAR.value)
-      );
+        encodeURIComponent(URL_BAR.value);
     document.getElementById(getActiveFrameId()).src = value;
     addPageToHistory(getActiveFrameId(), value);
     return;

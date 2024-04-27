@@ -416,7 +416,7 @@ window.onbeforeunload = function () {
 
 window.searchEngine =
   localStorage.getItem("searchEngine") ||
-  "https://searx.degenerate.info/search?q=";
+  "https://searxng.site/search?q=";
 document.getElementById("customSearch").value = window.searchEngine;
 
 //bookmarks

@@ -338,14 +338,14 @@ document.querySelector("#urlbar").addEventListener("keydown", (event) => {
       "//" +
       location.host +
       path +
-      xor.encode("http://" + URL_BAR.value);
+      "https://" + URL_BAR.value;
     document.getElementById(getActiveFrameId()).src = value;
   } else {
     value =
       "//" +
       location.host +
       path +
-      xor.encode(URL_BAR.value);
+      URL_BAR.value;
     document.getElementById(getActiveFrameId()).src = value;
   }
 

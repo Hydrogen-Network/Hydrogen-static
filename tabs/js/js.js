@@ -306,29 +306,16 @@ document.querySelector("#urlbar").addEventListener("keydown", (event) => {
     !URL_BAR.value.includes(".") ||
     URL_BAR.value.includes(" ")
   ) {
-    value =
-      "//" +
-      location.host +
-      path +
-        window.searchEngine +
-        encodeURIComponent(URL_BAR.value);
+    value = "//" + location.host + path + window.searchEngine + encodeURIComponent(URL_BAR.value);
     document.getElementById(getActiveFrameId()).src = value;
     addPageToHistory(getActiveFrameId(), value);
     return;
   }
   if (!URL_BAR.value.startsWith("http://") && !URL_BAR.value.startsWith("https://")) {
-    value =
-      "//" +
-      location.host +
-      path +
-      "https://" + URL_BAR.value;
+    value = "//" + location.host + path + "https://" + URL_BAR.value;
     document.getElementById(getActiveFrameId()).src = value;
   } else {
-    value =
-      "//" +
-      location.host +
-      path +
-      URL_BAR.value;
+    value = "//" + location.host + path + URL_BAR.value;
     document.getElementById(getActiveFrameId()).src = value;
   }
 

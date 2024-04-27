@@ -27,7 +27,7 @@
       scope: "/service/",
     });
     await navigator.serviceWorker.register("/aero.js", {
-      scope: "/~/aero",
+      scope: "/service/",
       module: true,
       updateViaCache: "none"
     });

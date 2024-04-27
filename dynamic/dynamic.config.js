@@ -2,6 +2,11 @@ self.__dynamic$config = {
   prefix: '/service/dynamic/',
   encoding: 'plain',
   mode: 'production',
+    tab: {
+    title: 'Google',
+    icon: "https://google.com/favicon.ico",
+    ua: null,
+  },
   logLevel: 0,
   bare: {
     version: 2,

@@ -7,9 +7,9 @@ pluginUrls.forEach(pluginUrl => {
 
   if (useProxy) {
     if (proxyOption && proxyOption.toLowerCase() === 'dynamic') {
-      script.src = `${window.location.origin}/service/route?url=${pluginUrl}`;
+      script.src = `${window.location.origin}/service/dynamic/${pluginUrl}`;
     } else {
-      script.src = `${window.location.origin}/uv/service/${Ultraviolet.codec.xor.encode(pluginUrl)}`;
+      script.src = `${window.location.origin}/service/uv/${pluginUrl}`;
     }
   } else {
     script.src = pluginUrl;

@@ -416,7 +416,7 @@ window.onbeforeunload = function () {
 
 window.searchEngine =
   localStorage.getItem("searchEngine") ||
-  "https://searxng.site/search?q=";
+  "https://searxng.site/search?q=" + URL_BAR.value;
 document.getElementById("customSearch").value = window.searchEngine;
 
 //bookmarks

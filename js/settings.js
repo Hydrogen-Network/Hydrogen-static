@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   function pChange(selectedValue) {
     if (selectedValue === 'uv') {
-      localStorage.setItem('uv', 'true')
-      localStorage.setItem('dy', 'false')
+      localStorage.setItem('proxyOption', 'uv');
     } else if (selectedValue === 'dy') {
-      localStorage.setItem('uv', 'false')
-      localStorage.setItem('dy', 'true')
+      localStorage.setItem('proxyOption', 'dy');
+    } else if (selectedValue === 'aero') {
+      localStorage.setItem('proxyOption', 'aero');
     }
   }
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var storedP = localStorage.getItem('uv')
     if (storedP === 'true') {
       pChangeElement.value = 'uv'
-    } else if (localStorage.getItem('dy') === 'true' || localStorage.getItem('dy') === 'auto') {
+    } else if (localStorage.getItem('proxyOption') === 'dy') {
       pChangeElement.value = 'dy'
     } else {
       pChangeElement.value = 'uv'

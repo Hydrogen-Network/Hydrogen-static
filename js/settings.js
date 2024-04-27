@@ -1,329 +1,492 @@
-// Ads
-document.addEventListener('DOMContentLoaded', function () {
-  function adChange(selectedValue) {
-    if (selectedValue === 'default') {
-      localStorage.setItem('ad', 'on')
-    } else if (selectedValue === 'off') {
-      localStorage.setItem('ad', 'off')
-    }
-  }
+ // Ads
+ if (localStorage.getItem("ad") === null || localStorage.getItem("ad") === "default") {
+     localStorage.setItem("ad", "on")
+ }
 
-  var adTypeElement = document.getElementById('adType')
+ var advDiv = document.getElementById("adv")
+ if (advDiv && localStorage.getItem("ad") === "on") {
+     var script = document.createElement("script")
+     script.type = "text/javascript"
+     script.src = "//oysterscoldtiny.com/1c/c3/8a/1cc38a6899fdf8ba4dfe779bcc54627b.js"
+     advDiv.appendChild(script)
+     console.log("Script inserted inside the adv div.")
+ } else if (advDiv && localStorage.getItem("ad") === "off") {
+     advDiv.remove()
+     console.log("The adv div has been removed.")
+ }
 
-  if (adTypeElement) {
-    adTypeElement.addEventListener('change', function () {
-      var selectedOption = this.value
-      adChange(selectedOption)
-    })
+ // Dyn
+ document.addEventListener('DOMContentLoaded', function() {
+     function pChange(selectedValue) {
+         if (selectedValue === 'uv') {
+             localStorage.setItem('proxyOption', 'uv');
+         } else if (selectedValue === 'dy') {
+             localStorage.setItem('proxyOption', 'dy');
+         } else if (selectedValue === 'aero') {
+             localStorage.setItem('proxyOption', 'aero');
+         }
+     }
 
-    var storedAd = localStorage.getItem('ad')
-    if (storedAd === 'on') {
-      adTypeElement.value = 'default'
-    } else if (storedAd === 'off') {
-      adTypeElement.value = 'off'
-    } else {
-      adTypeElement.value = 'default'
-    }
-  }
-  const iconElement = document.getElementById('icon')
-  const nameElement = document.getElementById('name')
-  const customIcon = localStorage.getItem('CustomIcon')
-  const customName = localStorage.getItem('CustomName')
-  iconElement.value = customIcon
-  nameElement.value = customName
+     var pChangeElement = document.getElementById('pChange')
 
-  localStorage.setItem('ab', true)
-  document.getElementById('ab-settings-switch').checked = true
-})
+     if (pChangeElement) {
+         pChangeElement.addEventListener('change', function() {
+             var selectedOption = this.value
+             pChange(selectedOption)
+         })
 
-// Dyn
-document.addEventListener('DOMContentLoaded', function () {
-  function pChange(selectedValue) {
-    if (selectedValue === 'uv') {
-      localStorage.setItem('proxyOption', 'uv');
-    } else if (selectedValue === 'dy') {
-      localStorage.setItem('proxyOption', 'dy');
-    } else if (selectedValue === 'aero') {
-      localStorage.setItem('proxyOption', 'aero');
-    }
-  }
+         var storedP = localStorage.getItem('uv')
+         if (storedP === 'true') {
+             pChangeElement.value = 'uv'
+         } else if (localStorage.getItem('proxyOption') === 'dy') {
+             pChangeElement.value = 'dy'
+         } else {
+             pChangeElement.value = 'uv'
+         }
+     }
+ })
 
-  var pChangeElement = document.getElementById('pChange')
+ const recordKeyButton = document.getElementById('recordKeyButton');
+ const selectedKeyDisplay = document.getElementById('selectedKey');
+ const selectedKey = localStorage.getItem('selectedKey');
+ recordKeyButton.addEventListener('click', function() {
+     selectedKeyDisplay.innerHTML = '<kbd>Press a key</kbd>';
+     document.addEventListener('keydown', function recordKey(event) {
+         const selectedKey = event.key;
+         selectedKeyDisplay.innerHTML = `<kbd>${selectedKey}</kbd>`;
+         localStorage.setItem('eventKey', selectedKey);
+         document.removeEventListener('keydown', recordKeyButton);
+     });
+ });
 
-  if (pChangeElement) {
-    pChangeElement.addEventListener('change', function () {
-      var selectedOption = this.value
-      pChange(selectedOption)
-    })
+ function searchChange(ele) {
+     const selSearch = ele.value;
+     localStorage.setItem('search', selSearch);
 
-    var storedP = localStorage.getItem('uv')
-    if (storedP === 'true') {
-      pChangeElement.value = 'uv'
-    } else if (localStorage.getItem('proxyOption') === 'dy') {
-      pChangeElement.value = 'dy'
-    } else {
-      pChangeElement.value = 'uv'
-    }
-  }
-})
-  
-const recordKeyButton = document.getElementById('recordKeyButton');
-const selectedKeyDisplay = document.getElementById('selectedKey');
-const selectedKey = localStorage.getItem('selectedKey');
-recordKeyButton.addEventListener('click', function () {
-  selectedKeyDisplay.innerHTML = '<kbd>Press a key</kbd>';
-  document.addEventListener('keydown', function recordKey(event) {
-    const selectedKey = event.key;
-    selectedKeyDisplay.innerHTML = `<kbd>${selectedKey}</kbd>`;
-    localStorage.setItem('eventKey', selectedKey);
-    document.removeEventListener('keydown', recordKeyButton);
-  });
-});
-
-function searchChange(ele) {
-  const selSearch = ele.value;
-  localStorage.setItem('search', selSearch);
-
-  window.location = window.location;
-}
+     window.location = window.location;
+ }
 
 
-// Background Image
-document.addEventListener('DOMContentLoaded', function () {
-  var saveButton = document.getElementById('save-button')
-  saveButton.addEventListener('click', function () {
-    var backgroundInput = document.getElementById('background-input')
-    var imageURL = backgroundInput.value
+ // Background Image
+ document.addEventListener('DOMContentLoaded', function() {
+     var saveButton = document.getElementById('save-button')
+     saveButton.addEventListener('click', function() {
+         var backgroundInput = document.getElementById('background-input')
+         var imageURL = backgroundInput.value
 
-    if (imageURL !== '') {
-      localStorage.setItem('backgroundImage', imageURL)
-      document.body.style.backgroundImage = "url('" + imageURL + "')"
-      backgroundInput.value = ''
-    } else {
-    }
-  })
+         if (imageURL !== '') {
+             localStorage.setItem('backgroundImage', imageURL)
+             document.body.style.backgroundImage = "url('" + imageURL + "')"
+             backgroundInput.value = ''
+         } else {}
+     })
 
-  var resetButton = document.getElementById('reset-button')
-  resetButton.addEventListener('click', function () {
-    localStorage.removeItem('backgroundImage')
-    document.body.style.backgroundImage = "url('default-background.jpg')"
-  })
+     var resetButton = document.getElementById('reset-button')
+     resetButton.addEventListener('click', function() {
+         localStorage.removeItem('backgroundImage')
+         document.body.style.backgroundImage = "url('default-background.jpg')"
+     })
 
-  var savedBackgroundImage = localStorage.getItem('backgroundImage')
-  if (savedBackgroundImage) {
-    document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')"
-  }
-})
+     var savedBackgroundImage = localStorage.getItem('backgroundImage')
+     if (savedBackgroundImage) {
+         document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')"
+     }
+ })
 
-// AB Cloak
-function AB() {
-  let inFrame
+ // AB Cloak
+ function AB() {
+     let inFrame
 
-  try {
-    inFrame = window !== top
-  } catch (e) {
-    inFrame = true
-  }
+     try {
+         inFrame = window !== top
+     } catch (e) {
+         inFrame = true
+     }
 
-  if (!inFrame && !navigator.userAgent.includes('Firefox')) {
-    const popup = open('about:blank', '_blank')
-    if (!popup || popup.closed) {
-      alert('Please allow popups and redirects.')
-    } else {
-      const doc = popup.document
-      const iframe = doc.createElement('iframe')
-      const style = iframe.style
-      const link = doc.createElement('link')
+     if (!inFrame && !navigator.userAgent.includes('Firefox')) {
+         const popup = open('about:blank', '_blank')
+         if (!popup || popup.closed) {
+             alert('Please allow popups and redirects.')
+         } else {
+             const doc = popup.document
+             const iframe = doc.createElement('iframe')
+             const style = iframe.style
+             const link = doc.createElement('link')
 
-      const name = localStorage.getItem('name') || 'My Drive - Google Drive'
-      const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+             const name = localStorage.getItem('name') || 'My Drive - Google Drive'
+             const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
 
-      doc.title = name
-      link.rel = 'icon'
-      link.href = icon
+             doc.title = name
+             link.rel = 'icon'
+             link.href = icon
 
-      iframe.src = location.href
-      style.position = 'fixed'
-      style.top = style.bottom = style.left = style.right = 0
-      style.border = style.outline = 'none'
-      style.width = style.height = '100%'
+             iframe.src = location.href
+             style.position = 'fixed'
+             style.top = style.bottom = style.left = style.right = 0
+             style.border = style.outline = 'none'
+             style.width = style.height = '100%'
 
-      doc.head.appendChild(link)
-      doc.body.appendChild(iframe)
+             doc.head.appendChild(link)
+             doc.body.appendChild(iframe)
 
-      const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
-      location.replace(pLink)
+             const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
+             location.replace(pLink)
 
-      const script = doc.createElement('script')
-      script.textContent = `
+             const script = doc.createElement('script')
+             script.textContent = `
         window.onbeforeunload = function (event) {
           const confirmationMessage = 'Leave Site?';
           (event || window.event).returnValue = confirmationMessage;
           return confirmationMessage;
         };
       `
-      doc.head.appendChild(script)
-    }
-  }
-}
+             doc.head.appendChild(script)
+         }
+     }
+ }
 
-function toggleAB() {
-  ab = localStorage.getItem('ab')
-  if (ab == null) {
-    localStorage.setItem('ab', 'false')
-  } else if (ab == 'true') {
-    localStorage.setItem('ab', 'false')
-  } else {
-    localStorage.setItem('ab', 'true')
-  }
-}
+ function toggleAB() {
+     ab = localStorage.getItem('ab')
+     if (ab == null) {
+         localStorage.setItem('ab', 'false')
+     } else if (ab == 'true') {
+         localStorage.setItem('ab', 'false')
+     } else {
+         localStorage.setItem('ab', 'true')
+     }
+ }
 
-// Key 
-var eventKey = localStorage.getItem("eventKey") || "`";
-var panicLink = localStorage.getItem("panicLink") || "https://classroom.google.com/";
+ // Key 
+ var eventKey = localStorage.getItem("eventKey") || "`";
+ var panicLink = localStorage.getItem("panicLink") || "https://classroom.google.com/";
 
-document.addEventListener("keydown", function(event) {
-  if (event.key === eventKey) {
-    if (window.self !== window.top) {
-      window.parent.window.location.replace(panicLink);
-    } else {
-      window.parent.window.location.replace(panicLink);
-    }
-  }
-});
+ document.addEventListener("keydown", function(event) {
+     if (event.key === eventKey) {
+         if (window.self !== window.top) {
+             window.parent.window.location.replace(panicLink);
+         } else {
+             window.parent.window.location.replace(panicLink);
+         }
+     }
+ });
 
-var eventKeyInput = document.getElementById("eventKeyInput");
-eventKeyInput.addEventListener("input", function() {
-  eventKey = eventKeyInput.value;
-});
+ var eventKeyInput = document.getElementById("eventKeyInput");
+ eventKeyInput.addEventListener("input", function() {
+     eventKey = eventKeyInput.value;
+ });
 
-var linkInput = document.getElementById("linkInput");
-linkInput.addEventListener("input", function() {
-  panicLink = linkInput.value;
-});
+ var linkInput = document.getElementById("linkInput");
+ linkInput.addEventListener("input", function() {
+     panicLink = linkInput.value;
+ });
 
-function saveEventKey() {
-  eventKey = eventKeyInput.value;
-  localStorage.setItem("eventKey", eventKey);
-  localStorage.setItem("panicLink", panicLink);
-}
+ function saveEventKey() {
+     eventKey = eventKeyInput.value;
+     localStorage.setItem("eventKey", eventKey);
+     localStorage.setItem("panicLink", panicLink);
+ }
 
-// Tab Cloaker
-function saveName() {
-  const name = document.getElementById("name").value;
-  localStorage.setItem("name", name);
-}
+ // Tab Cloaker
+ function saveName() {
+     const name = document.getElementById("name").value;
+     localStorage.setItem("name", name);
+ }
 
-function saveIcon() {
-  const icon = document.getElementById("icon").value;
-  localStorage.setItem("icon", icon);
-}
+ function saveIcon() {
+     const icon = document.getElementById("icon").value;
+     localStorage.setItem("icon", icon);
+ }
 
-// Function to update favicon and title based on selected option
-function updateHeadSection(selectedValue) {
-    const icon = document.getElementById('dynamic-favicon');
-    const name = document.getElementById('dynamic-title');
-    
-    if (selectedValue === 'Google') {
-        icon.setAttribute('href', '/img/cloaks/google.png');
-        name.textContent = 'Google';
-        localStorage.setItem("name", "Google");
-        localStorage.setItem("icon", "/img/cloaks/google.png");
-    } 
-    else if (selectedValue === 'Drive') {
-        icon.setAttribute('href', '/img/cloaks/drive.png');
-        name.textContent = 'My Drive - Google Drive';
-        localStorage.setItem("name", "My Drive - Google Drive");
-        localStorage.setItem("icon", "/img/cloaks/drive.png");
-    } 
-    else if (selectedValue === 'Classroom') {
-        icon.setAttribute('href', '/img/cloaks/classroom.png');
-        name.textContent = 'Classes';
-        localStorage.setItem("name", "Classes");
-        localStorage.setItem("icon", "/img/cloaks/classroom.png");
-    }
-}
+ // Function to update favicon and title based on selected option
+ function updateHeadSection(selectedValue) {
+     const icon = document.getElementById("tab-favicon")
+     const name = document.getElementById("tab-title")
+     const selectedValue = localStorage.getItem("selectedOption")
 
-// Redirect
-function handleDropdownChange(selectElement) {
-    var selectedValue = selectElement.value;
-    redirectToMainDomain(selectedValue);
-}
 
-function redirectToMainDomain(selectedValue) {
-    var currentUrl = window.location.href;
-    var mainDomainUrl = currentUrl.replace(/\/[^\/]*$/, '');
-    
-    if (window != top) {
-        top.location.href = mainDomainUrl;
-    } else {
-        window.location.href = mainDomainUrl;
-    }
-}
+     function setCloak(nameValue, iconUrl) {
+         // Check for custom values in local storage
+         const customName = localStorage.getItem("CustomName")
+         const customIcon = localStorage.getItem("CustomIcon")
+         // If custom values exist, use them. Otherwise, use the provided values.
+         if (customName) {
+             nameValue = customName
+         }
+         if (customIcon) {
+             iconUrl = customIcon
+         }
 
-// Dropdown event listener
-const dropdown = document.getElementById('dropdown');
-dropdown.addEventListener('change', function() {
-    const selectedValue = dropdown.value;
-    updateHeadSection(selectedValue);
-    
-    // Save selected option to localStorage
-    localStorage.setItem('selectedOption', selectedValue);
-});
+         if (iconUrl) {
+             icon.setAttribute("href", iconUrl)
+             localStorage.setItem("icon", iconUrl)
+         }
+         if (nameValue) {
+             name.textContent = nameValue
+             localStorage.setItem("name", nameValue)
+         }
+     }
+     const options = {
+         Google: {
+             name: "Google",
+             icon: "/img/cloaks/google.png"
+         },
+         Drive: {
+             name: "My Drive - Google Drive",
+             icon: "/img/cloaks/drive.png"
+         },
+         Classroom: {
+             name: "Home",
+             icon: "/img/cloaks/classroom.png"
+         },
+         Schoology: {
+             name: "Home | Schoology",
+             icon: "/img/cloaks/schoology.png"
+         },
+         Gmail: {
+             name: "Gmail",
+             icon: "/img/cloaks/gmail.png"
+         },
+         Clever: {
+             name: "Clever | Portal",
+             icon: "/img/cloaks/clever.png"
+         },
+         Khan: {
+             name: "Dashboard | Khan Academy",
+             icon: "/img/cloaks/khan.png"
+         },
+         Campus: {
+             name: "Infinite Campus",
+             icon: "/img/cloaks/campus.png"
+         },
+         IXL: {
+             name: "IXL | Dashboard",
+             icon: "/img/cloaks/ixl.png"
+         },
+         Canvas: {
+             name: "Dashboard",
+             icon: "/img/cloaks/canvas.png"
+         },
+         LinkIt: {
+             name: "Test Taker",
+             icon: "/img/cloaks/linkit.ico"
+         },
+         Edpuzzle: {
+             name: "Edpuzzle",
+             icon: "/img/cloaks/edpuzzle.png"
+         },
+         "i-Ready Math": {
+             name: "Math To Do, i-Ready",
+             icon: "/img/cloaks/i-ready.ico"
+         },
+         "i-Ready Reading": {
+             name: "Reading To Do, i-Ready",
+             icon: "/img/cloaks/i-ready.ico"
+         },
+         "ClassLink Login": {
+             name: "Login",
+             icon: "/img/cloaks/classlink-login.png"
+         },
+         "Google Meet": {
+             name: "Google Meet",
+             icon: "/img/cloaks/google-meet.png"
+         },
+         "Google Docs": {
+             name: "Google Docs",
+             icon: "/img/cloaks/google-docs.ico"
+         },
+         "Google Slides": {
+             name: "Google Slides",
+             icon: "/img/cloaks/google-slides.ico"
+         },
+         Wikipedia: {
+             name: "Wikipedia",
+             icon: "/img/cloaks/wikipedia.png"
+         },
+         Britannica: {
+             name: "Encyclopedia Britannica | Britannica",
+             icon: "/img/cloaks/britannica.png"
+         },
+         Ducksters: {
+             name: "Ducksters",
+             icon: "/img/cloaks/ducksters.png"
+         },
+         Minga: {
+             name: "Minga – Creating Amazing Schools",
+             icon: "/img/cloaks/minga.png"
+         },
+         "i-Ready Learning Games": {
+             name: "Learning Games, i-Ready",
+             icon: "/img/cloaks/i-ready.ico"
+         },
+         "NoRedInk Home": {
+             name: "Student Home | NoRedInk",
+             icon: "/img/cloaks/noredink.webp"
+         },
+         "Newsela Binder": {
+             name: "Newsela | Binder",
+             icon: "/img/cloaks/newsela.png"
+         },
+         "Newsela Assignments": {
+             name: "Newsela | Assignments",
+             icon: "/img/cloaks/newsela.png"
+         },
+         "Newsela Home": {
+             name: "Newsela | Instructional Content Platform",
+             icon: "/img/cloaks/newsela.png"
+         },
+         "PowerSchool Sign In": {
+             name: "Student and Parent Sign In",
+             icon: "/img/cloaks/powerschool.png"
+         },
+         "PowerSchool Grades and Attendance": {
+             name: "Grades and Attendance",
+             icon: "/img/cloaks/powerschool.png",
+         },
+         "PowerSchool Teacher Comments": {
+             name: "Teacher Comments",
+             icon: "/img/cloaks/powerschool.png"
+         },
+         "PowerSchool Standards Grades": {
+             name: "Standards Grades",
+             icon: "/img/cloaks/powerschool.png"
+         },
+         "PowerSchool Attendance": {
+             name: "Attendance",
+             icon: "/img/cloaks/powerschool.png"
+         },
+         Nearpod: {
+             name: "Nearpod",
+             icon: "/img/cloaks/nearpod.png"
+         },
+         StudentVUE: {
+             name: "StudentVUE",
+             icon: "/img/cloaks/studentvue.ico"
+         },
+         "Quizlet Home": {
+             name: "Flashcards, learning tools and textbook solutions | Quizlet",
+             icon: "/img/cloaks/quizlet.webp",
+         },
+         "Google Forms Locked Mode": {
+             name: "Start your quiz",
+             icon: "/img/cloaks/googleforms.png"
+         },
+         DeltaMath: {
+             name: "DeltaMath",
+             icon: "/img/cloaks/deltamath.png"
+         },
+         Kami: {
+             name: "Kami",
+             icon: "/img/cloaks/kami.png"
+         },
+         "GoGuardian Admin Restricted": {
+             name: "Restricted",
+             icon: "/img/cloaks/goguardian-lock.png"
+         },
+         "GoGuardian Teacher Block": {
+             name: "Uh oh!",
+             icon: "/img/cloaks/goguardian.png"
+         },
+         "World History Encyclopedia": {
+             name: "World History Encyclopedia",
+             icon: "/img/cloaks/worldhistoryencyclopedia.png",
+         },
+         "Big Ideas Math Assignment Player": {
+             name: "Assignment Player",
+             icon: "/img/cloaks/bim.ico"
+         },
+         "Big Ideas Math": {
+             name: "Big Ideas Math",
+             icon: "/img/cloaks/bim.ico"
+         },
+     }
 
-var themeId = localStorage.getItem("theme");
-if(themeId=="") {themeId="d"}
+     if (options[selectedValue]) {
+         setCloak(options[selectedValue].name, options[selectedValue].icon)
+     }
+ }
 
-document.getElementsByClassName("td")[0].value = themeId;
+ // Redirect
+ function handleDropdownChange(selectElement) {
+     var selectedValue = selectElement.value;
+     redirectToMainDomain(selectedValue);
+ }
 
-const themeDropdown = document.getElementsByClassName('td');
-dropdown.addEventListener('change', function() {
-    const selectedValue = dropdown.value;
+ function redirectToMainDomain(selectedValue) {
+     var currentUrl = window.location.href;
+     var mainDomainUrl = currentUrl.replace(/\/[^\/]*$/, '');
 
-    localStorage.setItem('theme', selectedValue);
+     if (window != top) {
+         top.location.href = mainDomainUrl;
+     } else {
+         window.location.href = mainDomainUrl;
+     }
+ }
 
-    window.location=window.location;
-});
+ // Dropdown event listener
+ const dropdown = document.getElementById('dropdown');
+ dropdown.addEventListener('change', function() {
+     const selectedValue = dropdown.value;
+     updateHeadSection(selectedValue);
 
-function themeChange(ele) {
-  const selTheme = ele.value;
+     // Save selected option to localStorage
+     localStorage.setItem('selectedOption', selectedValue);
+ });
 
-  localStorage.setItem('theme', selTheme);
+ var themeId = localStorage.getItem("theme");
+ if (themeId == "") {
+     themeId = "d"
+ }
 
-  window.location=window.location;
-}
+ document.getElementsByClassName("td")[0].value = themeId;
 
-        function AB() {
-            let inFrame;
+ const themeDropdown = document.getElementsByClassName('td');
+ dropdown.addEventListener('change', function() {
+     const selectedValue = dropdown.value;
 
-            try {
-                inFrame = window !== top;
-            } catch (e) {
-                inFrame = true;
-            }
+     localStorage.setItem('theme', selectedValue);
 
-            if (!inFrame && !navigator.userAgent.includes("Firefox")) {
-                const popup = open("about:blank", "_blank");
-                if (!popup || popup.closed) {
-                    alert("Please allow popups and redirects.");
-                } else {
-                    const doc = popup.document;
-                    const iframe = doc.createElement("iframe");
-                    const style = iframe.style;
-                    const link = doc.createElement("link");
-                    const name = localStorage.getItem("name") || "My Drive - Google Drive";
-                    const icon = localStorage.getItem("icon") || "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
-                    doc.title = name;
-                    link.rel = "icon";
-                    link.href = icon;
-                    iframe.src = location.href;
-                    style.position = "fixed";
-                    style.top = style.bottom = style.left = style.right = 0;
-                    style.border = style.outline = "none";
-                    style.width = style.height = "100%";
-                    doc.head.appendChild(link);
-                    doc.body.appendChild(iframe);
-                    location.replace("https://classroom.google.com");
-                }
-            }
-        }
+     window.location = window.location;
+ });
+
+ function themeChange(ele) {
+     const selTheme = ele.value;
+
+     localStorage.setItem('theme', selTheme);
+
+     window.location = window.location;
+ }
+
+ function AB() {
+     let inFrame;
+
+     try {
+         inFrame = window !== top;
+     } catch (e) {
+         inFrame = true;
+     }
+
+     if (!inFrame && !navigator.userAgent.includes("Firefox")) {
+         const popup = open("about:blank", "_blank");
+         if (!popup || popup.closed) {
+             alert("Please allow popups and redirects.");
+         } else {
+             const doc = popup.document;
+             const iframe = doc.createElement("iframe");
+             const style = iframe.style;
+             const link = doc.createElement("link");
+             const name = localStorage.getItem("name") || "My Drive - Google Drive";
+             const icon = localStorage.getItem("icon") || "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+             doc.title = name;
+             link.rel = "icon";
+             link.href = icon;
+             iframe.src = location.href;
+             style.position = "fixed";
+             style.top = style.bottom = style.left = style.right = 0;
+             style.border = style.outline = "none";
+             style.width = style.height = "100%";
+             doc.head.appendChild(link);
+             doc.body.appendChild(iframe);
+             location.replace("https://classroom.google.com");
+         }
+     }
+ }

@@ -1,62 +1,1087 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/path-browserify/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/path-browserify/index.js ***!
-  \***********************************************/
+/***/ 160:
 /***/ ((module) => {
 
-eval("// 'path' module extracted from Node.js v8.11.1 (only the posix part)\n// transplited with Babel\n\n// Copyright Joyent, Inc. and other Node contributors.\n//\n// Permission is hereby granted, free of charge, to any person obtaining a\n// copy of this software and associated documentation files (the\n// \"Software\"), to deal in the Software without restriction, including\n// without limitation the rights to use, copy, modify, merge, publish,\n// distribute, sublicense, and/or sell copies of the Software, and to permit\n// persons to whom the Software is furnished to do so, subject to the\n// following conditions:\n//\n// The above copyright notice and this permission notice shall be included\n// in all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\n// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN\n// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\n// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\n// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE\n// USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\nfunction assertPath(path) {\n  if (typeof path !== 'string') {\n    throw new TypeError('Path must be a string. Received ' + JSON.stringify(path));\n  }\n}\n\n// Resolves . and .. elements in a path with directory names\nfunction normalizeStringPosix(path, allowAboveRoot) {\n  var res = '';\n  var lastSegmentLength = 0;\n  var lastSlash = -1;\n  var dots = 0;\n  var code;\n  for (var i = 0; i <= path.length; ++i) {\n    if (i < path.length)\n      code = path.charCodeAt(i);\n    else if (code === 47 /*/*/)\n      break;\n    else\n      code = 47 /*/*/;\n    if (code === 47 /*/*/) {\n      if (lastSlash === i - 1 || dots === 1) {\n        // NOOP\n      } else if (lastSlash !== i - 1 && dots === 2) {\n        if (res.length < 2 || lastSegmentLength !== 2 || res.charCodeAt(res.length - 1) !== 46 /*.*/ || res.charCodeAt(res.length - 2) !== 46 /*.*/) {\n          if (res.length > 2) {\n            var lastSlashIndex = res.lastIndexOf('/');\n            if (lastSlashIndex !== res.length - 1) {\n              if (lastSlashIndex === -1) {\n                res = '';\n                lastSegmentLength = 0;\n              } else {\n                res = res.slice(0, lastSlashIndex);\n                lastSegmentLength = res.length - 1 - res.lastIndexOf('/');\n              }\n              lastSlash = i;\n              dots = 0;\n              continue;\n            }\n          } else if (res.length === 2 || res.length === 1) {\n            res = '';\n            lastSegmentLength = 0;\n            lastSlash = i;\n            dots = 0;\n            continue;\n          }\n        }\n        if (allowAboveRoot) {\n          if (res.length > 0)\n            res += '/..';\n          else\n            res = '..';\n          lastSegmentLength = 2;\n        }\n      } else {\n        if (res.length > 0)\n          res += '/' + path.slice(lastSlash + 1, i);\n        else\n          res = path.slice(lastSlash + 1, i);\n        lastSegmentLength = i - lastSlash - 1;\n      }\n      lastSlash = i;\n      dots = 0;\n    } else if (code === 46 /*.*/ && dots !== -1) {\n      ++dots;\n    } else {\n      dots = -1;\n    }\n  }\n  return res;\n}\n\nfunction _format(sep, pathObject) {\n  var dir = pathObject.dir || pathObject.root;\n  var base = pathObject.base || (pathObject.name || '') + (pathObject.ext || '');\n  if (!dir) {\n    return base;\n  }\n  if (dir === pathObject.root) {\n    return dir + base;\n  }\n  return dir + sep + base;\n}\n\nvar posix = {\n  // path.resolve([from ...], to)\n  resolve: function resolve() {\n    var resolvedPath = '';\n    var resolvedAbsolute = false;\n    var cwd;\n\n    for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {\n      var path;\n      if (i >= 0)\n        path = arguments[i];\n      else {\n        if (cwd === undefined)\n          cwd = process.cwd();\n        path = cwd;\n      }\n\n      assertPath(path);\n\n      // Skip empty entries\n      if (path.length === 0) {\n        continue;\n      }\n\n      resolvedPath = path + '/' + resolvedPath;\n      resolvedAbsolute = path.charCodeAt(0) === 47 /*/*/;\n    }\n\n    // At this point the path should be resolved to a full absolute path, but\n    // handle relative paths to be safe (might happen when process.cwd() fails)\n\n    // Normalize the path\n    resolvedPath = normalizeStringPosix(resolvedPath, !resolvedAbsolute);\n\n    if (resolvedAbsolute) {\n      if (resolvedPath.length > 0)\n        return '/' + resolvedPath;\n      else\n        return '/';\n    } else if (resolvedPath.length > 0) {\n      return resolvedPath;\n    } else {\n      return '.';\n    }\n  },\n\n  normalize: function normalize(path) {\n    assertPath(path);\n\n    if (path.length === 0) return '.';\n\n    var isAbsolute = path.charCodeAt(0) === 47 /*/*/;\n    var trailingSeparator = path.charCodeAt(path.length - 1) === 47 /*/*/;\n\n    // Normalize the path\n    path = normalizeStringPosix(path, !isAbsolute);\n\n    if (path.length === 0 && !isAbsolute) path = '.';\n    if (path.length > 0 && trailingSeparator) path += '/';\n\n    if (isAbsolute) return '/' + path;\n    return path;\n  },\n\n  isAbsolute: function isAbsolute(path) {\n    assertPath(path);\n    return path.length > 0 && path.charCodeAt(0) === 47 /*/*/;\n  },\n\n  join: function join() {\n    if (arguments.length === 0)\n      return '.';\n    var joined;\n    for (var i = 0; i < arguments.length; ++i) {\n      var arg = arguments[i];\n      assertPath(arg);\n      if (arg.length > 0) {\n        if (joined === undefined)\n          joined = arg;\n        else\n          joined += '/' + arg;\n      }\n    }\n    if (joined === undefined)\n      return '.';\n    return posix.normalize(joined);\n  },\n\n  relative: function relative(from, to) {\n    assertPath(from);\n    assertPath(to);\n\n    if (from === to) return '';\n\n    from = posix.resolve(from);\n    to = posix.resolve(to);\n\n    if (from === to) return '';\n\n    // Trim any leading backslashes\n    var fromStart = 1;\n    for (; fromStart < from.length; ++fromStart) {\n      if (from.charCodeAt(fromStart) !== 47 /*/*/)\n        break;\n    }\n    var fromEnd = from.length;\n    var fromLen = fromEnd - fromStart;\n\n    // Trim any leading backslashes\n    var toStart = 1;\n    for (; toStart < to.length; ++toStart) {\n      if (to.charCodeAt(toStart) !== 47 /*/*/)\n        break;\n    }\n    var toEnd = to.length;\n    var toLen = toEnd - toStart;\n\n    // Compare paths to find the longest common path from root\n    var length = fromLen < toLen ? fromLen : toLen;\n    var lastCommonSep = -1;\n    var i = 0;\n    for (; i <= length; ++i) {\n      if (i === length) {\n        if (toLen > length) {\n          if (to.charCodeAt(toStart + i) === 47 /*/*/) {\n            // We get here if `from` is the exact base path for `to`.\n            // For example: from='/foo/bar'; to='/foo/bar/baz'\n            return to.slice(toStart + i + 1);\n          } else if (i === 0) {\n            // We get here if `from` is the root\n            // For example: from='/'; to='/foo'\n            return to.slice(toStart + i);\n          }\n        } else if (fromLen > length) {\n          if (from.charCodeAt(fromStart + i) === 47 /*/*/) {\n            // We get here if `to` is the exact base path for `from`.\n            // For example: from='/foo/bar/baz'; to='/foo/bar'\n            lastCommonSep = i;\n          } else if (i === 0) {\n            // We get here if `to` is the root.\n            // For example: from='/foo'; to='/'\n            lastCommonSep = 0;\n          }\n        }\n        break;\n      }\n      var fromCode = from.charCodeAt(fromStart + i);\n      var toCode = to.charCodeAt(toStart + i);\n      if (fromCode !== toCode)\n        break;\n      else if (fromCode === 47 /*/*/)\n        lastCommonSep = i;\n    }\n\n    var out = '';\n    // Generate the relative path based on the path difference between `to`\n    // and `from`\n    for (i = fromStart + lastCommonSep + 1; i <= fromEnd; ++i) {\n      if (i === fromEnd || from.charCodeAt(i) === 47 /*/*/) {\n        if (out.length === 0)\n          out += '..';\n        else\n          out += '/..';\n      }\n    }\n\n    // Lastly, append the rest of the destination (`to`) path that comes after\n    // the common path parts\n    if (out.length > 0)\n      return out + to.slice(toStart + lastCommonSep);\n    else {\n      toStart += lastCommonSep;\n      if (to.charCodeAt(toStart) === 47 /*/*/)\n        ++toStart;\n      return to.slice(toStart);\n    }\n  },\n\n  _makeLong: function _makeLong(path) {\n    return path;\n  },\n\n  dirname: function dirname(path) {\n    assertPath(path);\n    if (path.length === 0) return '.';\n    var code = path.charCodeAt(0);\n    var hasRoot = code === 47 /*/*/;\n    var end = -1;\n    var matchedSlash = true;\n    for (var i = path.length - 1; i >= 1; --i) {\n      code = path.charCodeAt(i);\n      if (code === 47 /*/*/) {\n          if (!matchedSlash) {\n            end = i;\n            break;\n          }\n        } else {\n        // We saw the first non-path separator\n        matchedSlash = false;\n      }\n    }\n\n    if (end === -1) return hasRoot ? '/' : '.';\n    if (hasRoot && end === 1) return '//';\n    return path.slice(0, end);\n  },\n\n  basename: function basename(path, ext) {\n    if (ext !== undefined && typeof ext !== 'string') throw new TypeError('\"ext\" argument must be a string');\n    assertPath(path);\n\n    var start = 0;\n    var end = -1;\n    var matchedSlash = true;\n    var i;\n\n    if (ext !== undefined && ext.length > 0 && ext.length <= path.length) {\n      if (ext.length === path.length && ext === path) return '';\n      var extIdx = ext.length - 1;\n      var firstNonSlashEnd = -1;\n      for (i = path.length - 1; i >= 0; --i) {\n        var code = path.charCodeAt(i);\n        if (code === 47 /*/*/) {\n            // If we reached a path separator that was not part of a set of path\n            // separators at the end of the string, stop now\n            if (!matchedSlash) {\n              start = i + 1;\n              break;\n            }\n          } else {\n          if (firstNonSlashEnd === -1) {\n            // We saw the first non-path separator, remember this index in case\n            // we need it if the extension ends up not matching\n            matchedSlash = false;\n            firstNonSlashEnd = i + 1;\n          }\n          if (extIdx >= 0) {\n            // Try to match the explicit extension\n            if (code === ext.charCodeAt(extIdx)) {\n              if (--extIdx === -1) {\n                // We matched the extension, so mark this as the end of our path\n                // component\n                end = i;\n              }\n            } else {\n              // Extension does not match, so our result is the entire path\n              // component\n              extIdx = -1;\n              end = firstNonSlashEnd;\n            }\n          }\n        }\n      }\n\n      if (start === end) end = firstNonSlashEnd;else if (end === -1) end = path.length;\n      return path.slice(start, end);\n    } else {\n      for (i = path.length - 1; i >= 0; --i) {\n        if (path.charCodeAt(i) === 47 /*/*/) {\n            // If we reached a path separator that was not part of a set of path\n            // separators at the end of the string, stop now\n            if (!matchedSlash) {\n              start = i + 1;\n              break;\n            }\n          } else if (end === -1) {\n          // We saw the first non-path separator, mark this as the end of our\n          // path component\n          matchedSlash = false;\n          end = i + 1;\n        }\n      }\n\n      if (end === -1) return '';\n      return path.slice(start, end);\n    }\n  },\n\n  extname: function extname(path) {\n    assertPath(path);\n    var startDot = -1;\n    var startPart = 0;\n    var end = -1;\n    var matchedSlash = true;\n    // Track the state of characters (if any) we see before our first dot and\n    // after any path separator we find\n    var preDotState = 0;\n    for (var i = path.length - 1; i >= 0; --i) {\n      var code = path.charCodeAt(i);\n      if (code === 47 /*/*/) {\n          // If we reached a path separator that was not part of a set of path\n          // separators at the end of the string, stop now\n          if (!matchedSlash) {\n            startPart = i + 1;\n            break;\n          }\n          continue;\n        }\n      if (end === -1) {\n        // We saw the first non-path separator, mark this as the end of our\n        // extension\n        matchedSlash = false;\n        end = i + 1;\n      }\n      if (code === 46 /*.*/) {\n          // If this is our first dot, mark it as the start of our extension\n          if (startDot === -1)\n            startDot = i;\n          else if (preDotState !== 1)\n            preDotState = 1;\n      } else if (startDot !== -1) {\n        // We saw a non-dot and non-path separator before our dot, so we should\n        // have a good chance at having a non-empty extension\n        preDotState = -1;\n      }\n    }\n\n    if (startDot === -1 || end === -1 ||\n        // We saw a non-dot character immediately before the dot\n        preDotState === 0 ||\n        // The (right-most) trimmed path component is exactly '..'\n        preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {\n      return '';\n    }\n    return path.slice(startDot, end);\n  },\n\n  format: function format(pathObject) {\n    if (pathObject === null || typeof pathObject !== 'object') {\n      throw new TypeError('The \"pathObject\" argument must be of type Object. Received type ' + typeof pathObject);\n    }\n    return _format('/', pathObject);\n  },\n\n  parse: function parse(path) {\n    assertPath(path);\n\n    var ret = { root: '', dir: '', base: '', ext: '', name: '' };\n    if (path.length === 0) return ret;\n    var code = path.charCodeAt(0);\n    var isAbsolute = code === 47 /*/*/;\n    var start;\n    if (isAbsolute) {\n      ret.root = '/';\n      start = 1;\n    } else {\n      start = 0;\n    }\n    var startDot = -1;\n    var startPart = 0;\n    var end = -1;\n    var matchedSlash = true;\n    var i = path.length - 1;\n\n    // Track the state of characters (if any) we see before our first dot and\n    // after any path separator we find\n    var preDotState = 0;\n\n    // Get non-dir info\n    for (; i >= start; --i) {\n      code = path.charCodeAt(i);\n      if (code === 47 /*/*/) {\n          // If we reached a path separator that was not part of a set of path\n          // separators at the end of the string, stop now\n          if (!matchedSlash) {\n            startPart = i + 1;\n            break;\n          }\n          continue;\n        }\n      if (end === -1) {\n        // We saw the first non-path separator, mark this as the end of our\n        // extension\n        matchedSlash = false;\n        end = i + 1;\n      }\n      if (code === 46 /*.*/) {\n          // If this is our first dot, mark it as the start of our extension\n          if (startDot === -1) startDot = i;else if (preDotState !== 1) preDotState = 1;\n        } else if (startDot !== -1) {\n        // We saw a non-dot and non-path separator before our dot, so we should\n        // have a good chance at having a non-empty extension\n        preDotState = -1;\n      }\n    }\n\n    if (startDot === -1 || end === -1 ||\n    // We saw a non-dot character immediately before the dot\n    preDotState === 0 ||\n    // The (right-most) trimmed path component is exactly '..'\n    preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {\n      if (end !== -1) {\n        if (startPart === 0 && isAbsolute) ret.base = ret.name = path.slice(1, end);else ret.base = ret.name = path.slice(startPart, end);\n      }\n    } else {\n      if (startPart === 0 && isAbsolute) {\n        ret.name = path.slice(1, startDot);\n        ret.base = path.slice(1, end);\n      } else {\n        ret.name = path.slice(startPart, startDot);\n        ret.base = path.slice(startPart, end);\n      }\n      ret.ext = path.slice(startDot, end);\n    }\n\n    if (startPart > 0) ret.dir = path.slice(0, startPart - 1);else if (isAbsolute) ret.dir = '/';\n\n    return ret;\n  },\n\n  sep: '/',\n  delimiter: ':',\n  win32: null,\n  posix: null\n};\n\nposix.posix = posix;\n\nmodule.exports = posix;\n\n\n//# sourceURL=webpack://dynamic-interception-proxy/./node_modules/path-browserify/index.js?");
+// 'path' module extracted from Node.js v8.11.1 (only the posix part)
+// transplited with Babel
+
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+function assertPath(path) {
+  if (typeof path !== 'string') {
+    throw new TypeError('Path must be a string. Received ' + JSON.stringify(path));
+  }
+}
+
+// Resolves . and .. elements in a path with directory names
+function normalizeStringPosix(path, allowAboveRoot) {
+  var res = '';
+  var lastSegmentLength = 0;
+  var lastSlash = -1;
+  var dots = 0;
+  var code;
+  for (var i = 0; i <= path.length; ++i) {
+    if (i < path.length)
+      code = path.charCodeAt(i);
+    else if (code === 47 /*/*/)
+      break;
+    else
+      code = 47 /*/*/;
+    if (code === 47 /*/*/) {
+      if (lastSlash === i - 1 || dots === 1) {
+        // NOOP
+      } else if (lastSlash !== i - 1 && dots === 2) {
+        if (res.length < 2 || lastSegmentLength !== 2 || res.charCodeAt(res.length - 1) !== 46 /*.*/ || res.charCodeAt(res.length - 2) !== 46 /*.*/) {
+          if (res.length > 2) {
+            var lastSlashIndex = res.lastIndexOf('/');
+            if (lastSlashIndex !== res.length - 1) {
+              if (lastSlashIndex === -1) {
+                res = '';
+                lastSegmentLength = 0;
+              } else {
+                res = res.slice(0, lastSlashIndex);
+                lastSegmentLength = res.length - 1 - res.lastIndexOf('/');
+              }
+              lastSlash = i;
+              dots = 0;
+              continue;
+            }
+          } else if (res.length === 2 || res.length === 1) {
+            res = '';
+            lastSegmentLength = 0;
+            lastSlash = i;
+            dots = 0;
+            continue;
+          }
+        }
+        if (allowAboveRoot) {
+          if (res.length > 0)
+            res += '/..';
+          else
+            res = '..';
+          lastSegmentLength = 2;
+        }
+      } else {
+        if (res.length > 0)
+          res += '/' + path.slice(lastSlash + 1, i);
+        else
+          res = path.slice(lastSlash + 1, i);
+        lastSegmentLength = i - lastSlash - 1;
+      }
+      lastSlash = i;
+      dots = 0;
+    } else if (code === 46 /*.*/ && dots !== -1) {
+      ++dots;
+    } else {
+      dots = -1;
+    }
+  }
+  return res;
+}
+
+function _format(sep, pathObject) {
+  var dir = pathObject.dir || pathObject.root;
+  var base = pathObject.base || (pathObject.name || '') + (pathObject.ext || '');
+  if (!dir) {
+    return base;
+  }
+  if (dir === pathObject.root) {
+    return dir + base;
+  }
+  return dir + sep + base;
+}
+
+var posix = {
+  // path.resolve([from ...], to)
+  resolve: function resolve() {
+    var resolvedPath = '';
+    var resolvedAbsolute = false;
+    var cwd;
+
+    for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+      var path;
+      if (i >= 0)
+        path = arguments[i];
+      else {
+        if (cwd === undefined)
+          cwd = process.cwd();
+        path = cwd;
+      }
+
+      assertPath(path);
+
+      // Skip empty entries
+      if (path.length === 0) {
+        continue;
+      }
+
+      resolvedPath = path + '/' + resolvedPath;
+      resolvedAbsolute = path.charCodeAt(0) === 47 /*/*/;
+    }
+
+    // At this point the path should be resolved to a full absolute path, but
+    // handle relative paths to be safe (might happen when process.cwd() fails)
+
+    // Normalize the path
+    resolvedPath = normalizeStringPosix(resolvedPath, !resolvedAbsolute);
+
+    if (resolvedAbsolute) {
+      if (resolvedPath.length > 0)
+        return '/' + resolvedPath;
+      else
+        return '/';
+    } else if (resolvedPath.length > 0) {
+      return resolvedPath;
+    } else {
+      return '.';
+    }
+  },
+
+  normalize: function normalize(path) {
+    assertPath(path);
+
+    if (path.length === 0) return '.';
+
+    var isAbsolute = path.charCodeAt(0) === 47 /*/*/;
+    var trailingSeparator = path.charCodeAt(path.length - 1) === 47 /*/*/;
+
+    // Normalize the path
+    path = normalizeStringPosix(path, !isAbsolute);
+
+    if (path.length === 0 && !isAbsolute) path = '.';
+    if (path.length > 0 && trailingSeparator) path += '/';
+
+    if (isAbsolute) return '/' + path;
+    return path;
+  },
+
+  isAbsolute: function isAbsolute(path) {
+    assertPath(path);
+    return path.length > 0 && path.charCodeAt(0) === 47 /*/*/;
+  },
+
+  join: function join() {
+    if (arguments.length === 0)
+      return '.';
+    var joined;
+    for (var i = 0; i < arguments.length; ++i) {
+      var arg = arguments[i];
+      assertPath(arg);
+      if (arg.length > 0) {
+        if (joined === undefined)
+          joined = arg;
+        else
+          joined += '/' + arg;
+      }
+    }
+    if (joined === undefined)
+      return '.';
+    return posix.normalize(joined);
+  },
+
+  relative: function relative(from, to) {
+    assertPath(from);
+    assertPath(to);
+
+    if (from === to) return '';
+
+    from = posix.resolve(from);
+    to = posix.resolve(to);
+
+    if (from === to) return '';
+
+    // Trim any leading backslashes
+    var fromStart = 1;
+    for (; fromStart < from.length; ++fromStart) {
+      if (from.charCodeAt(fromStart) !== 47 /*/*/)
+        break;
+    }
+    var fromEnd = from.length;
+    var fromLen = fromEnd - fromStart;
+
+    // Trim any leading backslashes
+    var toStart = 1;
+    for (; toStart < to.length; ++toStart) {
+      if (to.charCodeAt(toStart) !== 47 /*/*/)
+        break;
+    }
+    var toEnd = to.length;
+    var toLen = toEnd - toStart;
+
+    // Compare paths to find the longest common path from root
+    var length = fromLen < toLen ? fromLen : toLen;
+    var lastCommonSep = -1;
+    var i = 0;
+    for (; i <= length; ++i) {
+      if (i === length) {
+        if (toLen > length) {
+          if (to.charCodeAt(toStart + i) === 47 /*/*/) {
+            // We get here if `from` is the exact base path for `to`.
+            // For example: from='/foo/bar'; to='/foo/bar/baz'
+            return to.slice(toStart + i + 1);
+          } else if (i === 0) {
+            // We get here if `from` is the root
+            // For example: from='/'; to='/foo'
+            return to.slice(toStart + i);
+          }
+        } else if (fromLen > length) {
+          if (from.charCodeAt(fromStart + i) === 47 /*/*/) {
+            // We get here if `to` is the exact base path for `from`.
+            // For example: from='/foo/bar/baz'; to='/foo/bar'
+            lastCommonSep = i;
+          } else if (i === 0) {
+            // We get here if `to` is the root.
+            // For example: from='/foo'; to='/'
+            lastCommonSep = 0;
+          }
+        }
+        break;
+      }
+      var fromCode = from.charCodeAt(fromStart + i);
+      var toCode = to.charCodeAt(toStart + i);
+      if (fromCode !== toCode)
+        break;
+      else if (fromCode === 47 /*/*/)
+        lastCommonSep = i;
+    }
+
+    var out = '';
+    // Generate the relative path based on the path difference between `to`
+    // and `from`
+    for (i = fromStart + lastCommonSep + 1; i <= fromEnd; ++i) {
+      if (i === fromEnd || from.charCodeAt(i) === 47 /*/*/) {
+        if (out.length === 0)
+          out += '..';
+        else
+          out += '/..';
+      }
+    }
+
+    // Lastly, append the rest of the destination (`to`) path that comes after
+    // the common path parts
+    if (out.length > 0)
+      return out + to.slice(toStart + lastCommonSep);
+    else {
+      toStart += lastCommonSep;
+      if (to.charCodeAt(toStart) === 47 /*/*/)
+        ++toStart;
+      return to.slice(toStart);
+    }
+  },
+
+  _makeLong: function _makeLong(path) {
+    return path;
+  },
+
+  dirname: function dirname(path) {
+    assertPath(path);
+    if (path.length === 0) return '.';
+    var code = path.charCodeAt(0);
+    var hasRoot = code === 47 /*/*/;
+    var end = -1;
+    var matchedSlash = true;
+    for (var i = path.length - 1; i >= 1; --i) {
+      code = path.charCodeAt(i);
+      if (code === 47 /*/*/) {
+          if (!matchedSlash) {
+            end = i;
+            break;
+          }
+        } else {
+        // We saw the first non-path separator
+        matchedSlash = false;
+      }
+    }
+
+    if (end === -1) return hasRoot ? '/' : '.';
+    if (hasRoot && end === 1) return '//';
+    return path.slice(0, end);
+  },
+
+  basename: function basename(path, ext) {
+    if (ext !== undefined && typeof ext !== 'string') throw new TypeError('"ext" argument must be a string');
+    assertPath(path);
+
+    var start = 0;
+    var end = -1;
+    var matchedSlash = true;
+    var i;
+
+    if (ext !== undefined && ext.length > 0 && ext.length <= path.length) {
+      if (ext.length === path.length && ext === path) return '';
+      var extIdx = ext.length - 1;
+      var firstNonSlashEnd = -1;
+      for (i = path.length - 1; i >= 0; --i) {
+        var code = path.charCodeAt(i);
+        if (code === 47 /*/*/) {
+            // If we reached a path separator that was not part of a set of path
+            // separators at the end of the string, stop now
+            if (!matchedSlash) {
+              start = i + 1;
+              break;
+            }
+          } else {
+          if (firstNonSlashEnd === -1) {
+            // We saw the first non-path separator, remember this index in case
+            // we need it if the extension ends up not matching
+            matchedSlash = false;
+            firstNonSlashEnd = i + 1;
+          }
+          if (extIdx >= 0) {
+            // Try to match the explicit extension
+            if (code === ext.charCodeAt(extIdx)) {
+              if (--extIdx === -1) {
+                // We matched the extension, so mark this as the end of our path
+                // component
+                end = i;
+              }
+            } else {
+              // Extension does not match, so our result is the entire path
+              // component
+              extIdx = -1;
+              end = firstNonSlashEnd;
+            }
+          }
+        }
+      }
+
+      if (start === end) end = firstNonSlashEnd;else if (end === -1) end = path.length;
+      return path.slice(start, end);
+    } else {
+      for (i = path.length - 1; i >= 0; --i) {
+        if (path.charCodeAt(i) === 47 /*/*/) {
+            // If we reached a path separator that was not part of a set of path
+            // separators at the end of the string, stop now
+            if (!matchedSlash) {
+              start = i + 1;
+              break;
+            }
+          } else if (end === -1) {
+          // We saw the first non-path separator, mark this as the end of our
+          // path component
+          matchedSlash = false;
+          end = i + 1;
+        }
+      }
+
+      if (end === -1) return '';
+      return path.slice(start, end);
+    }
+  },
+
+  extname: function extname(path) {
+    assertPath(path);
+    var startDot = -1;
+    var startPart = 0;
+    var end = -1;
+    var matchedSlash = true;
+    // Track the state of characters (if any) we see before our first dot and
+    // after any path separator we find
+    var preDotState = 0;
+    for (var i = path.length - 1; i >= 0; --i) {
+      var code = path.charCodeAt(i);
+      if (code === 47 /*/*/) {
+          // If we reached a path separator that was not part of a set of path
+          // separators at the end of the string, stop now
+          if (!matchedSlash) {
+            startPart = i + 1;
+            break;
+          }
+          continue;
+        }
+      if (end === -1) {
+        // We saw the first non-path separator, mark this as the end of our
+        // extension
+        matchedSlash = false;
+        end = i + 1;
+      }
+      if (code === 46 /*.*/) {
+          // If this is our first dot, mark it as the start of our extension
+          if (startDot === -1)
+            startDot = i;
+          else if (preDotState !== 1)
+            preDotState = 1;
+      } else if (startDot !== -1) {
+        // We saw a non-dot and non-path separator before our dot, so we should
+        // have a good chance at having a non-empty extension
+        preDotState = -1;
+      }
+    }
+
+    if (startDot === -1 || end === -1 ||
+        // We saw a non-dot character immediately before the dot
+        preDotState === 0 ||
+        // The (right-most) trimmed path component is exactly '..'
+        preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
+      return '';
+    }
+    return path.slice(startDot, end);
+  },
+
+  format: function format(pathObject) {
+    if (pathObject === null || typeof pathObject !== 'object') {
+      throw new TypeError('The "pathObject" argument must be of type Object. Received type ' + typeof pathObject);
+    }
+    return _format('/', pathObject);
+  },
+
+  parse: function parse(path) {
+    assertPath(path);
+
+    var ret = { root: '', dir: '', base: '', ext: '', name: '' };
+    if (path.length === 0) return ret;
+    var code = path.charCodeAt(0);
+    var isAbsolute = code === 47 /*/*/;
+    var start;
+    if (isAbsolute) {
+      ret.root = '/';
+      start = 1;
+    } else {
+      start = 0;
+    }
+    var startDot = -1;
+    var startPart = 0;
+    var end = -1;
+    var matchedSlash = true;
+    var i = path.length - 1;
+
+    // Track the state of characters (if any) we see before our first dot and
+    // after any path separator we find
+    var preDotState = 0;
+
+    // Get non-dir info
+    for (; i >= start; --i) {
+      code = path.charCodeAt(i);
+      if (code === 47 /*/*/) {
+          // If we reached a path separator that was not part of a set of path
+          // separators at the end of the string, stop now
+          if (!matchedSlash) {
+            startPart = i + 1;
+            break;
+          }
+          continue;
+        }
+      if (end === -1) {
+        // We saw the first non-path separator, mark this as the end of our
+        // extension
+        matchedSlash = false;
+        end = i + 1;
+      }
+      if (code === 46 /*.*/) {
+          // If this is our first dot, mark it as the start of our extension
+          if (startDot === -1) startDot = i;else if (preDotState !== 1) preDotState = 1;
+        } else if (startDot !== -1) {
+        // We saw a non-dot and non-path separator before our dot, so we should
+        // have a good chance at having a non-empty extension
+        preDotState = -1;
+      }
+    }
+
+    if (startDot === -1 || end === -1 ||
+    // We saw a non-dot character immediately before the dot
+    preDotState === 0 ||
+    // The (right-most) trimmed path component is exactly '..'
+    preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
+      if (end !== -1) {
+        if (startPart === 0 && isAbsolute) ret.base = ret.name = path.slice(1, end);else ret.base = ret.name = path.slice(startPart, end);
+      }
+    } else {
+      if (startPart === 0 && isAbsolute) {
+        ret.name = path.slice(1, startDot);
+        ret.base = path.slice(1, end);
+      } else {
+        ret.name = path.slice(startPart, startDot);
+        ret.base = path.slice(startPart, end);
+      }
+      ret.ext = path.slice(startDot, end);
+    }
+
+    if (startPart > 0) ret.dir = path.slice(0, startPart - 1);else if (isAbsolute) ret.dir = '/';
+
+    return ret;
+  },
+
+  sep: '/',
+  delimiter: ':',
+  win32: null,
+  posix: null
+};
+
+posix.posix = posix;
+
+module.exports = posix;
+
 
 /***/ }),
 
-/***/ "./lib/dip.client/message.ts":
-/*!***********************************!*\
-  !*** ./lib/dip.client/message.ts ***!
-  \***********************************/
+/***/ 174:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar __classPrivateFieldGet = (undefined && undefined.__classPrivateFieldGet) || function (receiver, state, kind, f) {\n    if (kind === \"a\" && !f) throw new TypeError(\"Private accessor was defined without a getter\");\n    if (typeof state === \"function\" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError(\"Cannot read private member from an object whose class did not declare it\");\n    return kind === \"m\" ? f : kind === \"a\" ? f.call(receiver) : f ? f.value : state.get(receiver);\n};\nvar _window = self || window;\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(window) {\n    var _MessageEvent_message;\n    if (window === void 0) { window = _window; }\n    window.__DIP.message = function (target) {\n        if (target === void 0) { target = window; }\n        return function () {\n            if (target instanceof (target.MessagePort || /** @class */ (function () {\n                function MessagePort() {\n                }\n                return MessagePort;\n            }())) || target instanceof (window.MessagePort || /** @class */ (function () {\n                function MessagePort() {\n                }\n                return MessagePort;\n            }())))\n                return target.postMessage.apply(target, arguments);\n            var origin = '*';\n            var ports = false;\n            var portArg = undefined;\n            var noOrigin = false;\n            if (Array.isArray(arguments[2]) && (JSON.stringify(arguments[2].map(function (e) { return e instanceof window.MessagePort; })) == JSON.stringify(arguments[2].map(function (e) { return true; }))))\n                ports = true;\n            if (target instanceof window.MessagePort) {\n                noOrigin = true;\n                origin = undefined;\n            }\n            ;\n            if (target instanceof window.Worker) {\n                noOrigin = true;\n                origin = undefined;\n            }\n            ;\n            if (target instanceof (window.DedicatedWorkerGlobalScope || /** @class */ (function () {\n                function DedicatedWorkerGlobalScope() {\n                }\n                return DedicatedWorkerGlobalScope;\n            }()))) {\n                origin = undefined;\n                noOrigin = true;\n            }\n            ;\n            if (noOrigin && ports)\n                origin = arguments[2];\n            if (ports)\n                portArg = arguments[2];\n            var finalArgs = [];\n            finalArgs.push({ data: arguments[0], __origin: arguments[1] });\n            if (origin)\n                finalArgs.push(origin);\n            if (portArg)\n                finalArgs.push(portArg);\n            return target.postMessage.apply(target, finalArgs);\n        };\n    };\n    var MessageEvent = /** @class */ (function () {\n        function MessageEvent(event) {\n            _MessageEvent_message.set(this, { origin: '*', data: null });\n            for (var entry in (event)) {\n                if (entry == 'data' && !event[entry].__origin)\n                    event[entry].__origin = '';\n                if (entry !== 'origin')\n                    this[entry] = event[entry];\n            }\n        }\n        Object.defineProperty(MessageEvent.prototype, \"origin\", {\n            get: function () {\n                return __classPrivateFieldGet(this, _MessageEvent_message, \"f\").origin;\n            },\n            set: function (val) {\n                return __classPrivateFieldGet(this, _MessageEvent_message, \"f\").origin = val;\n            },\n            enumerable: false,\n            configurable: true\n        });\n        Object.defineProperty(MessageEvent.prototype, \"data\", {\n            get: function () {\n                return __classPrivateFieldGet(this, _MessageEvent_message, \"f\").data;\n            },\n            set: function (val) {\n                if (val.__origin !== undefined && val.data) {\n                    __classPrivateFieldGet(this, _MessageEvent_message, \"f\").origin = val.__origin;\n                    __classPrivateFieldGet(this, _MessageEvent_message, \"f\").data = val.data;\n                }\n                if (val.__origin !== undefined && val.data)\n                    val = val.data;\n                return __classPrivateFieldGet(this, _MessageEvent_message, \"f\").data = val;\n            },\n            enumerable: false,\n            configurable: true\n        });\n        return MessageEvent;\n    }());\n    _MessageEvent_message = new WeakMap();\n    Object.defineProperty(window, 'onmessage', {\n        get: function () {\n            return window.messageListener;\n        },\n        set: function (val) {\n            if (window.messageListener)\n                window.removeEventListener('message', window.messageListener);\n            window.messageListener = val;\n            window.addEventListener('message', val);\n        }\n    });\n    window.addEventListener = new Proxy(window.addEventListener, {\n        apply: function (t, g, a) {\n            if (a[0] == 'message') {\n                var original_1 = a[1];\n                a[1] = function (event) {\n                    event = new MessageEvent(event);\n                    return original_1(event);\n                };\n            }\n            return Reflect.apply(t, g, a);\n        }\n    });\n    window.Worker.prototype.addEventListener = new Proxy(window.Worker.prototype.addEventListener, {\n        apply: function (t, g, a) {\n            if (a[0] == 'message') {\n                var original_2 = a[1];\n                a[1] = function (event) {\n                    event = new MessageEvent(event);\n                    return original_2(event);\n                };\n            }\n            return Reflect.apply(t, g, a);\n        }\n    });\n}\n/*var _window = self||window\n\nexport default function(window = _window) {\n\n  window.__DIP.message = function(target = window) {\n    return function() {\n      //if (target instanceof target.MessagePort||target instanceof window.MessagePort) return target.postMessage(...arguments);\n      var origin = '*';\n      var ports = false;\n      var portArg = undefined;\n      var noOrigin = false;\n      if (Array.isArray(arguments[2])&&arguments[2].length&&(JSON.stringify(arguments[2].map(e=>e instanceof window.MessagePort))==JSON.stringify(arguments[2].map(e=>true)))) ports = true;\n      if (target instanceof window.MessagePort) {noOrigin = true; origin = undefined;};\n      if (target instanceof window.Worker) {noOrigin = true; origin = undefined;};\n      if (target instanceof (window.DedicatedWorkerGlobalScope||class{})) {\n        origin = undefined;\n        noOrigin = true;\n      };\n\n      if (noOrigin&&ports) origin = arguments[2];\n      if (ports) portArg = arguments[2];\n\n      var finalArgs = [];\n\n      finalArgs.push({data: arguments[0], __origin: arguments[1]});\n      if (origin) finalArgs.push(origin);\n      if (portArg) finalArgs.push(portArg);\n\n\n      return target.postMessage(...finalArgs);\n    }\n  }\n\n  class MessageEvent {\n    #message = {origin: '*', data: null};\n    change = true;\n    \n    constructor(event) {\n      if (event.data&&event.data.__origin=='*') this.change = false;\n      if (!event.data||!event.data.data||!event.data.__origin) this.change = false;\n      for (var entry in (event)) {\n        if (entry == 'data'&&!event[entry].__origin) event[entry].__origin = '';\n        if (entry!=='origin') this[entry] = event[entry];\n      }\n\n      console.log(this);\n    }\n  \n    get origin() {\n      return this.#message.origin;\n    }\n    set origin(val) {\n      return this.#message.origin = val;\n    }\n  \n    get data() {\n      return this.#message.data\n    }\n    set data(val) {\n      if (val.__origin!==undefined&&val.data==undefined) {\n        this.#message.origin = val.__origin;\n        this.#message.data = val.data;\n      }\n      if (val.__origin!==undefined&&val.data!==undefined) val = val.data;\n      return this.#message.data = val;\n    }\n  }\n  \n  Object.defineProperty(window, 'onmessage', {\n    get() {\n      return window.messageListener;\n    },\n    set(val) {\n      if (window.messageListener) window.removeEventListener('message', window.messageListener);\n      window.messageListener = val;\n      window.addEventListener('message', val);\n    }\n  })\n\n  Object.defineProperty(window.Worker.prototype, 'onmessage', {\n    get() {\n      return this.messageListener;\n    },\n    set(val) {\n      if (this.messageListener) this.removeEventListener('message', this.messageListener);\n      this.messageListener = val;\n      this.addEventListener('message', val);\n    }\n  })\n  \n  window.addEventListener = new Proxy(window.addEventListener, {\n    apply(t, g, a) {\n      if (a[0]=='message') {\n        const original = a[1];\n        \n        a[1] = function(event) {\n          //var og = event;\n          event = new MessageEvent(event);\n\n          //if (!event.change) event = og;\n  \n          return original(event);\n        }\n      }\n      return Reflect.apply(t, g, a);\n    }\n  })\n\n  window.Worker.prototype.addEventListener = new Proxy(window.Worker.prototype.addEventListener, {\n    apply(t, g, a) {\n      if (a[0]=='message') {\n        const original = a[1];\n        \n        a[1] = function(event) {\n          //var og = event;\n          event = new MessageEvent(event);\n\n          if (!event.change) event = og;\n  \n          //return original(event);\n        }\n      }\n      return Reflect.apply(t, g, a);\n    }\n  })\n\n  /*window.MessagePort.prototype.addEventListener = new Proxy(window.MessagePort.prototype.addEventListener, {\n    apply(t, g, a) {\n      if (a[0]=='message') {\n        const original = a[1];\n\n        delete a[2];\n        \n        a[1] = function(event) {\n          event = new MessageEvent(event);\n  \n          return original(event);\n        }\n      }\n      return Reflect.apply(t, g, a);\n    }\n  })\n\n  window.MessageChannel = new Proxy(window.MessageChannel, {\n    construct(t, a) {\n      var fake = Reflect.construct(t, a);\n\n      return fake;\n    }\n  })\n}*/ \n\n\n//# sourceURL=webpack://dynamic-interception-proxy/./lib/dip.client/message.ts?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _window = self || window;
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(window) {
+    if (window === void 0) { window = _window; }
+    window.__DIP.message = function (target) {
+        if (target === void 0) { target = window; }
+        return function () {
+            if (target instanceof (target.MessagePort || /** @class */ (function () {
+                function MessagePort() {
+                }
+                return MessagePort;
+            }())) || target instanceof (window.MessagePort || /** @class */ (function () {
+                function MessagePort() {
+                }
+                return MessagePort;
+            }())))
+                return target.postMessage.apply(target, arguments);
+            var origin = '*';
+            var ports = false;
+            var portArg = undefined;
+            var noOrigin = false;
+            if (Array.isArray(arguments[2]) && (JSON.stringify(arguments[2].map(function (e) { return e instanceof window.MessagePort; })) == JSON.stringify(arguments[2].map(function (e) { return true; }))))
+                ports = true;
+            if (target instanceof window.MessagePort) {
+                noOrigin = true;
+                origin = undefined;
+            }
+            ;
+            if (target instanceof window.Worker) {
+                noOrigin = true;
+                origin = undefined;
+            }
+            ;
+            if (target instanceof (window.DedicatedWorkerGlobalScope || /** @class */ (function () {
+                function DedicatedWorkerGlobalScope() {
+                }
+                return DedicatedWorkerGlobalScope;
+            }()))) {
+                origin = undefined;
+                noOrigin = true;
+            }
+            ;
+            if (noOrigin && ports)
+                origin = arguments[2];
+            if (ports)
+                portArg = arguments[2];
+            var finalArgs = [];
+            finalArgs.push({ data: arguments[0], __origin: arguments[1] });
+            if (origin)
+                finalArgs.push(origin);
+            if (portArg)
+                finalArgs.push(portArg);
+            return target.postMessage.apply(target, finalArgs);
+        };
+    };
+    var MessageEvent = /** @class */ (function () {
+        function MessageEvent(event) {
+            this.message = { origin: '*', data: null };
+            for (var entry in (event)) {
+                if (entry == 'data' && !event[entry].__origin)
+                    event[entry].__origin = '';
+                if (entry !== 'origin')
+                    this[entry] = event[entry];
+            }
+        }
+        Object.defineProperty(MessageEvent.prototype, "origin", {
+            get: function () {
+                return this.message.origin;
+            },
+            set: function (val) {
+                this.message.origin = val;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        Object.defineProperty(MessageEvent.prototype, "data", {
+            get: function () {
+                return this.message.data;
+            },
+            set: function (val) {
+                if (val.__origin !== undefined && val.data) {
+                    this.message.origin = val.__origin;
+                    this.message.data = val.data;
+                }
+                if (val.__origin !== undefined && val.data)
+                    val = val.data;
+                this.message.data = val;
+            },
+            enumerable: false,
+            configurable: true
+        });
+        return MessageEvent;
+    }());
+    Object.defineProperty(window, 'onmessage', {
+        get: function () {
+            return window.messageListener;
+        },
+        set: function (val) {
+            if (window.messageListener)
+                window.removeEventListener('message', window.messageListener);
+            window.messageListener = val;
+            window.addEventListener('message', val);
+        }
+    });
+    window.addEventListener = new Proxy(window.addEventListener, {
+        apply: function (t, g, a) {
+            if (a[0] == 'message') {
+                var original_1 = a[1];
+                if (!a[1])
+                    return Reflect.apply(t, g, a);
+                a[1] = function (event) {
+                    event = new MessageEvent(event);
+                    return original_1(event);
+                };
+            }
+            return Reflect.apply(t, g, a);
+        }
+    });
+    window.Worker.prototype.addEventListener = new Proxy(window.Worker.prototype.addEventListener, {
+        apply: function (t, g, a) {
+            if (a[0] == 'message') {
+                var original_2 = a[1];
+                a[1] = function (event) {
+                    event = new MessageEvent(event);
+                    return original_2(event);
+                };
+            }
+            return Reflect.apply(t, g, a);
+        }
+    });
+}
+/*var _window = self||window
+
+export default function(window = _window) {
+
+  window.__DIP.message = function(target = window) {
+    return function() {
+      //if (target instanceof target.MessagePort||target instanceof window.MessagePort) return target.postMessage(...arguments);
+      var origin = '*';
+      var ports = false;
+      var portArg = undefined;
+      var noOrigin = false;
+      if (Array.isArray(arguments[2])&&arguments[2].length&&(JSON.stringify(arguments[2].map(e=>e instanceof window.MessagePort))==JSON.stringify(arguments[2].map(e=>true)))) ports = true;
+      if (target instanceof window.MessagePort) {noOrigin = true; origin = undefined;};
+      if (target instanceof window.Worker) {noOrigin = true; origin = undefined;};
+      if (target instanceof (window.DedicatedWorkerGlobalScope||class{})) {
+        origin = undefined;
+        noOrigin = true;
+      };
+
+      if (noOrigin&&ports) origin = arguments[2];
+      if (ports) portArg = arguments[2];
+
+      var finalArgs = [];
+
+      finalArgs.push({data: arguments[0], __origin: arguments[1]});
+      if (origin) finalArgs.push(origin);
+      if (portArg) finalArgs.push(portArg);
+
+
+      return target.postMessage(...finalArgs);
+    }
+  }
+
+  class MessageEvent {
+    #message = {origin: '*', data: null};
+    change = true;
+    
+    constructor(event) {
+      if (event.data&&event.data.__origin=='*') this.change = false;
+      if (!event.data||!event.data.data||!event.data.__origin) this.change = false;
+      for (var entry in (event)) {
+        if (entry == 'data'&&!event[entry].__origin) event[entry].__origin = '';
+        if (entry!=='origin') this[entry] = event[entry];
+      }
+
+      console.log(this);
+    }
+  
+    get origin() {
+      return this.#message.origin;
+    }
+    set origin(val) {
+      return this.#message.origin = val;
+    }
+  
+    get data() {
+      return this.#message.data
+    }
+    set data(val) {
+      if (val.__origin!==undefined&&val.data==undefined) {
+        this.#message.origin = val.__origin;
+        this.#message.data = val.data;
+      }
+      if (val.__origin!==undefined&&val.data!==undefined) val = val.data;
+      return this.#message.data = val;
+    }
+  }
+  
+  Object.defineProperty(window, 'onmessage', {
+    get() {
+      return window.messageListener;
+    },
+    set(val) {
+      if (window.messageListener) window.removeEventListener('message', window.messageListener);
+      window.messageListener = val;
+      window.addEventListener('message', val);
+    }
+  })
+
+  Object.defineProperty(window.Worker.prototype, 'onmessage', {
+    get() {
+      return this.messageListener;
+    },
+    set(val) {
+      if (this.messageListener) this.removeEventListener('message', this.messageListener);
+      this.messageListener = val;
+      this.addEventListener('message', val);
+    }
+  })
+  
+  window.addEventListener = new Proxy(window.addEventListener, {
+    apply(t, g, a) {
+      if (a[0]=='message') {
+        const original = a[1];
+        
+        a[1] = function(event) {
+          //var og = event;
+          event = new MessageEvent(event);
+
+          //if (!event.change) event = og;
+  
+          return original(event);
+        }
+      }
+      return Reflect.apply(t, g, a);
+    }
+  })
+
+  window.Worker.prototype.addEventListener = new Proxy(window.Worker.prototype.addEventListener, {
+    apply(t, g, a) {
+      if (a[0]=='message') {
+        const original = a[1];
+        
+        a[1] = function(event) {
+          //var og = event;
+          event = new MessageEvent(event);
+
+          if (!event.change) event = og;
+  
+          //return original(event);
+        }
+      }
+      return Reflect.apply(t, g, a);
+    }
+  })
+
+  /*window.MessagePort.prototype.addEventListener = new Proxy(window.MessagePort.prototype.addEventListener, {
+    apply(t, g, a) {
+      if (a[0]=='message') {
+        const original = a[1];
+
+        delete a[2];
+        
+        a[1] = function(event) {
+          event = new MessageEvent(event);
+  
+          return original(event);
+        }
+      }
+      return Reflect.apply(t, g, a);
+    }
+  })
+
+  window.MessageChannel = new Proxy(window.MessageChannel, {
+    construct(t, a) {
+      var fake = Reflect.construct(t, a);
+
+      return fake;
+    }
+  })
+}*/ 
+
 
 /***/ }),
 
-/***/ "./lib/dip.handler/index.ts":
-/*!**********************************!*\
-  !*** ./lib/dip.handler/index.ts ***!
-  \**********************************/
+/***/ 181:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dip_client_message_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dip.client/message.ts */ \"./lib/dip.client/message.ts\");\n/* harmony import */ var _encoding_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../encoding.ts */ \"./lib/encoding.ts\");\n/* harmony import */ var _rewrite_url_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../rewrite/url.ts */ \"./lib/rewrite/url.ts\");\nif (!self.__DIP)\n    importScripts('/dip/dip_config.ts');\n\n\n\nvar encoding;\nswitch (self.__DIP.config.encoding) {\n    case \"xor\":\n        encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_1__[\"default\"].xor;\n        break;\n    case \"plain\":\n        encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_1__[\"default\"].plain;\n        break;\n    case \"base64\":\n        encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_1__[\"default\"].base64;\n        break;\n    case \"shuffle\":\n    default:\n        encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_1__[\"default\"].plain;\n        break;\n}\nself.__DIP.encodeURL = encoding.encode;\nself.__DIP.decodeURL = encoding.decode;\nself.__DIP.URL = new URL((self.__DIP.decodeURL((location.pathname).split(self.__DIP.config.prefix)[1]) + (location.search + location.hash)));\nself.__DIP.url = new _rewrite_url_ts__WEBPACK_IMPORTED_MODULE_2__[\"default\"](self.__DIP);\n(0,_dip_client_message_ts__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(self);\nself.importScripts = new Proxy(self.importScripts, {\n    apply: function (t, g, a) {\n        a.forEach(function (arg, i) { return a[i] = self.__DIP.url.encode(arg, self.__DIP.URL); });\n        console.log(a);\n        return Reflect.apply(t, g, a);\n    }\n});\n\n\n//# sourceURL=webpack://dynamic-interception-proxy/./lib/dip.handler/index.ts?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _window = self || window;
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(window) {
+    if (window === void 0) { window = _window; }
+    window._ReflectGet = window.Reflect.get;
+    window._ReflectSet = window.Reflect.set;
+    window.Reflect.get = new Proxy(window.Reflect.get, {
+        apply: function (t, g, a) {
+            var _a, _b;
+            var obj = a[0];
+            var prop = a[1];
+            var ObjWindow = ((_b = (_a = obj === null || obj === void 0 ? void 0 : obj.window) === null || _a === void 0 ? void 0 : _a.self) === null || _b === void 0 ? void 0 : _b.globalThis) !== undefined;
+            if (obj instanceof window.Location)
+                obj = window.__DIP.location;
+            //if (ObjWindow) obj = obj.__DIP.window;
+            return obj[prop];
+        }
+    });
+    window.Reflect.set = new Proxy(window.Reflect.set, {
+        apply: function (t, g, a) {
+            var obj = a[0];
+            var prop = a[1];
+            var value = a[2];
+            if (obj == window)
+                obj = window.__DIP.window;
+            if (prop == 'location')
+                obj = window.__DIP.location;
+        }
+    });
+}
+;
+
 
 /***/ }),
 
-/***/ "./lib/encoding.ts":
-/*!*************************!*\
-  !*** ./lib/encoding.ts ***!
-  \*************************/
+/***/ 173:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar xor = {\n    key: 2,\n    encode: function (str, key) {\n        if (!key)\n            key = xor.key;\n        if (!str)\n            return str;\n        var encoded = encodeURIComponent((str).split('').map(function (char, ind) { return ind % key ? String.fromCharCode(char.charCodeAt() ^ key) : char; }).join(''));\n        if (!encoded.endsWith('/'))\n            return encoded + '/';\n        else\n            return encoded;\n    },\n    decode: function (str, key) {\n        if (!key)\n            key = xor.key;\n        if (!str)\n            return str;\n        str = str.replace(new RegExp('\\/$', 'g'), '');\n        var encoded = (decodeURIComponent(str).split('').map(function (char, ind) { return ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char; }).join(''));\n        return encoded;\n    }\n};\nvar plain = {\n    encode: function (str) {\n        if (!str)\n            return str;\n        var encoded = (str);\n        return encoded;\n    },\n    decode: function (str) {\n        if (!str)\n            return str;\n        var encoded = decodeURIComponent(decodeURIComponent(str));\n        return str.replace('https://', 'https:/').replace('https:/', 'https://');\n    }\n};\nvar base64 = {\n    encode: function (str) {\n        if (!str)\n            return str;\n        var encoded = btoa(encodeURIComponent(str));\n        if (!encoded.endsWith('/'))\n            return encoded + '/';\n        else\n            return encoded;\n    },\n    decode: function (str) {\n        if (!str)\n            return str;\n        str = str.replace(new RegExp('\\/$', 'g'), '');\n        var encoded = decodeURIComponent(atob(str));\n        return encoded;\n    }\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ xor: xor, plain: plain, base64: base64 });\n\n\n//# sourceURL=webpack://dynamic-interception-proxy/./lib/encoding.ts?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _window = self || window;
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(window) {
+    if (window === void 0) { window = _window; }
+    window.__DIP.window = new Proxy(window, {
+        get: function (obj, prop) {
+            if (prop == 'location')
+                return window.__DIP.location;
+            if (prop == 'top')
+                return window.top.__DIP.window;
+            if (prop == 'parent')
+                return window.parent.__DIP.window;
+            return window._ReflectGet(window, prop);
+        },
+        set: function (obj, prop, value) {
+            window[prop] = value;
+            return !value ? true : value;
+        }
+    });
+}
+
 
 /***/ }),
 
-/***/ "./lib/rewrite/url.ts":
-/*!****************************!*\
-  !*** ./lib/rewrite/url.ts ***!
-  \****************************/
+/***/ 159:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _encoding_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../encoding.ts */ \"./lib/encoding.ts\");\n/* harmony import */ var path_browserify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path-browserify */ \"./node_modules/path-browserify/index.js\");\n/* harmony import */ var path_browserify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path_browserify__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar urlRewriter = /** @class */ (function () {\n    function urlRewriter(proxy) {\n        this.proxy = proxy;\n    }\n    urlRewriter.prototype.encoding = function () {\n        var encoding;\n        switch (this.proxy.config.encoding) {\n            case \"xor\":\n                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__[\"default\"].xor;\n                break;\n            case \"plain\":\n                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__[\"default\"].plain;\n                break;\n            case \"base64\":\n                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__[\"default\"].base64;\n                break;\n            case \"shuffle\":\n            default:\n                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__[\"default\"].plain;\n                break;\n        }\n        this.proxy.encodeURL = encoding.encode;\n        this.proxy.decodeURL = encoding.decode;\n    };\n    urlRewriter.prototype.encode = function (url, meta) {\n        if (!url && url !== '')\n            return url;\n        if (!this.proxy.decodeURL)\n            this.encoding();\n        if (!meta.url)\n            meta.url = meta;\n        url = String(url);\n        if (url == '')\n            url = meta.url.href;\n        if (url.match(/^(data:|#|about:|javascript:|mailto:|blob:)/g))\n            return url;\n        url = url.replace(/^\\/\\//g, meta.url.protocol + '//');\n        if (url.startsWith(this.proxy.config.prefix))\n            return url;\n        url = url.replace(location.host, meta.url.host);\n        if (url.match(/^(\\.\\.\\/|\\.\\/)/gi)) {\n            var dir = (path_browserify__WEBPACK_IMPORTED_MODULE_1___default().parse(meta.url.pathname)).dir;\n            url = path_browserify__WEBPACK_IMPORTED_MODULE_1___default().join(dir, url);\n        }\n        if ((!url.startsWith('http')) && (!url.startsWith('/'))) {\n            var parsed = path_browserify__WEBPACK_IMPORTED_MODULE_1___default().parse(meta.url.pathname);\n            if (!parsed.ext)\n                parsed.dir = parsed.root + parsed.base;\n            if (parsed.dir == '/')\n                parsed.dir = '';\n            url = (meta.origin + parsed.dir + '/' + url);\n            //console.log(url, parsed)\n            //url = meta.origin+url\n        }\n        if (!url.startsWith('http')) {\n            url = meta.origin + (url.startsWith('/') ? url : '/' + url);\n        }\n        ;\n        if (this.proxy.config.replit)\n            url = url.replace('https://', 'https:/');\n        return this.proxy.config.prefix + this.proxy.encodeURL(url);\n    };\n    urlRewriter.prototype.decode = function (url) {\n        if (!url)\n            return url;\n        if (!this.proxy.decodeURL)\n            this.encoding();\n        var index = url.indexOf(this.proxy.config.prefix);\n        if (index == -1) {\n            throw new Error('bad URL');\n        }\n        url = url.slice(index + this.proxy.config.prefix.length)\n            .replace('https://', 'https:/')\n            .replace('https:/', 'https://');\n        if (this.proxy.config.replit != undefined)\n            url = url.replace('https://', 'https:/');\n        if (this.proxy.config.encoding !== 'plain' && url.split('/').length > 1) {\n            var one = url.split('/');\n            var two = one.map(function (e, i) { if (i !== 0 && e)\n                return e + '/';\n            else\n                return ''; }).join('');\n            if (!url.endsWith('/'))\n                two = two.replace(/\\/$/g, '');\n            one = one[0];\n            if (two && (!this.proxy.decodeURL(one).endsWith('/')))\n                two = '/' + two;\n            try {\n                url = this.proxy.encodeURL(this.proxy.decodeURL(one) + two);\n            }\n            catch (e) {\n                console.log(e);\n            }\n        }\n        url = new URL(this.proxy.decodeURL(url));\n        return url;\n    };\n    return urlRewriter;\n}());\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (urlRewriter);\n;\n\n\n//# sourceURL=webpack://dynamic-interception-proxy/./lib/rewrite/url.ts?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var xor = {
+    key: 2,
+    encode: function (str, key) {
+        if (!key)
+            key = xor.key;
+        if (!str)
+            return str;
+        var encoded = encodeURIComponent((str).split('').map(function (char, ind) { return ind % key ? String.fromCharCode(char.charCodeAt() ^ key) : char; }).join(''));
+        if (!encoded.endsWith('/'))
+            return encoded + '/';
+        else
+            return encoded;
+    },
+    decode: function (str, key) {
+        if (!key)
+            key = xor.key;
+        if (!str)
+            return str;
+        str = str.replace(new RegExp('\/$', 'g'), '');
+        var encoded = (decodeURIComponent(str).split('').map(function (char, ind) { return ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char; }).join(''));
+        return encoded;
+    }
+};
+var plain = {
+    encode: function (str) {
+        if (!str)
+            return str;
+        var encoded = (str);
+        return encoded;
+    },
+    decode: function (str) {
+        if (!str)
+            return str;
+        var encoded = decodeURIComponent(decodeURIComponent(str));
+        return str.replace('https://', 'https:/').replace('https:/', 'https://');
+    }
+};
+var base64 = {
+    encode: function (str) {
+        if (!str)
+            return str;
+        var encoded = btoa(encodeURIComponent(str));
+        if (!encoded.endsWith('/'))
+            return encoded + '/';
+        else
+            return encoded;
+    },
+    decode: function (str) {
+        if (!str)
+            return str;
+        str = str.replace(new RegExp('\/$', 'g'), '');
+        var encoded = decodeURIComponent(atob(str));
+        return encoded;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({ xor: xor, plain: plain, base64: base64 });
+
+
+/***/ }),
+
+/***/ 158:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _encoding_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(159);
+/* harmony import */ var path_browserify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(160);
+/* harmony import */ var path_browserify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path_browserify__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var urlRewriter = /** @class */ (function () {
+    function urlRewriter(proxy) {
+        this.proxy = proxy;
+    }
+    urlRewriter.prototype.encoding = function () {
+        var encoding;
+        switch (this.proxy.config.encoding) {
+            case "xor":
+                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__["default"].xor;
+                break;
+            case "plain":
+                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__["default"].plain;
+                break;
+            case "base64":
+                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__["default"].base64;
+                break;
+            case "shuffle":
+            default:
+                encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_0__["default"].plain;
+                break;
+        }
+        this.proxy.encodeURL = encoding.encode;
+        this.proxy.decodeURL = encoding.decode;
+    };
+    urlRewriter.prototype.encode = function (url, meta) {
+        if (!url && url !== '')
+            return url;
+        if (!this.proxy.decodeURL)
+            this.encoding();
+        if (!meta.url)
+            meta.url = meta;
+        url = String(url);
+        if (url == '')
+            url = meta.url.href;
+        if (url.match(/^(data:|#|about:|javascript:|mailto:|blob:)/g))
+            return url;
+        url = url.replace(/^\/\//g, meta.url.protocol + '//');
+        if (url.startsWith(this.proxy.config.prefix))
+            return url;
+        url = url.replace(location.host, meta.url.host);
+        if (url.match(/^(\.\.\/|\.\/)/gi)) {
+            var dir = (path_browserify__WEBPACK_IMPORTED_MODULE_1___default().parse(meta.url.pathname)).dir;
+            url = path_browserify__WEBPACK_IMPORTED_MODULE_1___default().join(dir, url);
+        }
+        if ((!url.startsWith('http')) && (!url.startsWith('/'))) {
+            var parsed = path_browserify__WEBPACK_IMPORTED_MODULE_1___default().parse(meta.url.pathname);
+            //console.log(parsed)
+            //if (!parsed.ext) parsed.dir = parsed.root+parsed.base;
+            if (parsed.dir == '/')
+                parsed.dir = '';
+            url = (meta.origin + parsed.dir + '/' + url);
+            //console.log(url, parsed)
+            //url = meta.origin+url
+        }
+        if (!url.startsWith('http')) {
+            url = meta.origin + (url.startsWith('/') ? url : '/' + url);
+        }
+        ;
+        if (this.proxy.config.replit)
+            url = url.replace('https://', 'https:/');
+        return this.proxy.config.prefix + this.proxy.encodeURL(url);
+    };
+    urlRewriter.prototype.decode = function (url) {
+        if (!url)
+            return url;
+        if (!this.proxy.decodeURL)
+            this.encoding();
+        var index = url.indexOf(this.proxy.config.prefix);
+        if (index == -1) {
+            throw new Error('bad URL');
+        }
+        url = url.slice(index + this.proxy.config.prefix.length)
+            .replace('https://', 'https:/')
+            .replace('https:/', 'https://');
+        if (this.proxy.config.replit != undefined)
+            url = url.replace('https://', 'https:/');
+        if (this.proxy.config.encoding !== 'plain' && url.split('/').length > 1) {
+            var one = url.split('/');
+            var two = one.map(function (e, i) { if (i !== 0 && e)
+                return e + '/';
+            else
+                return ''; }).join('');
+            if (!url.endsWith('/'))
+                two = two.replace(/\/$/g, '');
+            one = one[0];
+            if (two && (!this.proxy.decodeURL(one).endsWith('/')))
+                two = '/' + two;
+            try {
+                url = this.proxy.encodeURL(this.proxy.decodeURL(one) + two);
+            }
+            catch (e) {
+                console.log(e);
+            }
+        }
+        url = new URL(this.proxy.decodeURL(url));
+        return url;
+    };
+    return urlRewriter;
+}());
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (urlRewriter);
+;
+
 
 /***/ })
 
@@ -128,11 +1153,57 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./lib/dip.handler/index.ts");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _dip_client_message_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(174);
+/* harmony import */ var _dip_client_window_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(173);
+/* harmony import */ var _dip_client_reflect_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(181);
+/* harmony import */ var _encoding_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(159);
+/* harmony import */ var _rewrite_url_ts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(158);
+if (!self.__DIP)
+    importScripts('/dip/dip.config.js');
+
+
+
+
+
+(function (self) {
+    var encoding;
+    switch (self.__DIP.config.encoding) {
+        case "xor":
+            encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_3__["default"].xor;
+            break;
+        case "plain":
+            encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_3__["default"].plain;
+            break;
+        case "base64":
+            encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_3__["default"].base64;
+            break;
+        case "shuffle":
+        default:
+            encoding = _encoding_ts__WEBPACK_IMPORTED_MODULE_3__["default"].plain;
+            break;
+    }
+    self.__DIP.encodeURL = encoding.encode;
+    self.__DIP.decodeURL = encoding.decode;
+    self.__DIP.URL = new URL((self.__DIP.decodeURL((location.pathname).split(self.__DIP.config.prefix)[1]) + (location.search + location.hash)));
+    self.__DIP.location = self.__DIP.URL;
+    self.__DIP.url = new _rewrite_url_ts__WEBPACK_IMPORTED_MODULE_4__["default"](self.__DIP);
+    (0,_dip_client_message_ts__WEBPACK_IMPORTED_MODULE_0__["default"])(self);
+    (0,_dip_client_reflect_ts__WEBPACK_IMPORTED_MODULE_2__["default"])(self);
+    (0,_dip_client_window_ts__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
+    self.importScripts = new Proxy(self.importScripts, {
+        apply: function (t, g, a) {
+            a.forEach(function (arg, i) { return a[i] = self.__DIP.url.encode(arg, self.__DIP.URL); });
+            console.log(a, 'importScripts');
+            return _dip_client_reflect_ts__WEBPACK_IMPORTED_MODULE_2__["default"].apply(t, g, a);
+        }
+    });
+});
+
+})();
+
 /******/ })()
 ;

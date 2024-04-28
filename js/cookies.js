@@ -62,3 +62,4 @@ async function cookieconsent() {
 }
 
 cookieconsent();
+cookieconsent();

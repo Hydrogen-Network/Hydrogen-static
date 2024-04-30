@@ -30,6 +30,6 @@ self.addEventListener("fetch", (event) => {
   } 
   if (event.request.url.startsWith(location.origin + __uv$config.prefix)) event.respondWith(sw.fetch(event));
   if (event.request.url.startsWith(location.origin+'/service/dip/')) event.respondWith(dip.fetch(event));
-  if (event.request.url.startsWith(localation.origin+'/service/ampere')) event.respondWith(ampere.fetch(event));
+  if (event.request.url.startsWith(location.origin+'/service/ampere')) event.respondWith(ampere.fetch(event));
 
 });

@@ -1,10 +1,8 @@
 importScripts('/epoxy/index.js');
-importScripts("/uv/uv.bundle.js");
-importScripts("/uv/uv.config.js");
 importScripts("/uv/uv.sw.js");
 importScripts("/dynamic/dynamic.config.js");
 importScripts("/dynamic/dynamic.worker.js");
-importScripts('./dip/dip.worker.js');
+importScripts('/dip/dip.worker.js');
 importScripts("/amphere/config.js");
 importScripts("/amphere/bundle.js");
 importScripts("/amphere/worker.js");

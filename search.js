@@ -1,5 +1,4 @@
-window.bare = new Ultraviolet.BareClient(new URL(__uv$config.bare, window.location));
-
+window.bare = new UVClient();
 
 "use strict";
 

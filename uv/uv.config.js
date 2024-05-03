@@ -38,12 +38,11 @@ if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
 
 
 */
-/*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/service/uv/',
     bare: 'https://collegeapp.me/v/',
-    encodeUrl: Ultraviolet.codec.plain.encode,
-    decodeUrl: Ultraviolet.codec.plain.decode,
+    encodeUrl: Ultraviolet.codec.xor.encode,
+    decodeUrl: Ultraviolet.codec.xor.decode,
     handler: "/uv/uv.handler.js",
     bundle: "/uv/uv.bundle.js",
     config: "/uv/uv.config.js",

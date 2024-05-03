@@ -42,8 +42,8 @@ if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
 self.__uv$config = {
     prefix: '/service/uv/',
     bare: "https://uv.radon.games/bare4/",
-    encodeUrl: Ultraviolet.codec.aes.encode,
-    decodeUrl: Ultraviolet.codec.aes.decode,
+    encodeUrl: Ultraviolet.codec.plain.encode,
+    decodeUrl: Ultraviolet.codec.plain.decode,
     handler: "uv/uv.handler.js",
     bundle: "uv/uv.bundle.js",
     config: "uv/uv.config.js",

@@ -18,6 +18,7 @@ self.dynamic = dynamic;
 
 self.addEventListener("fetch", (event) => {
   if (event.request.url.startsWith(location.origin + self.__dynamic$config.prefix)) {
+    console.log(dynamic.fetch(event));
     event.respondWith(
       (async function () {
         if (await dynamic.route(event)) {
@@ -28,7 +29,10 @@ self.addEventListener("fetch", (event) => {
       })()
     );
   } 
-  if (event.request.url.startsWith(location.origin + __uv$config.prefix)) event.respondWith(sw.fetch(event));
+  if (event.request.url.startsWith(location.origin + __uv$config.prefix)) {
+    event.respondWith(sw.fetch(event));
+    console.log(sw.fetch(event));
+  }
   //if (event.request.url.startsWith(location.origin+'/service/dip/')) event.respondWith(dip.fetch(event));
   //if (event.request.url.startsWith(location.origin+'/service/ampere')) event.respondWith(ampere.fetch(event));
 

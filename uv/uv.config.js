@@ -41,13 +41,13 @@ if(checkServerStatus(localStorage.getItem("bareServer")) == true) {
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/service/uv/',
-    bare: "https://uv.radon.games/bare4/",
+    bare: 'https://collegeapp.me/v/',
     encodeUrl: Ultraviolet.codec.plain.encode,
     decodeUrl: Ultraviolet.codec.plain.decode,
-    handler: "uv/uv.handler.js",
-    bundle: "uv/uv.bundle.js",
-    config: "uv/uv.config.js",
-    sw: "uv/uv.sw.js",
+    handler: "/uv/uv.handler.js",
+    bundle: "/uv/uv.bundle.js",
+    config: "/uv/uv.config.js",
+    sw: "/uv/uv.sw.js",
     inject: async (url) => {
        if (url.host === 'discord.com') {
            return `

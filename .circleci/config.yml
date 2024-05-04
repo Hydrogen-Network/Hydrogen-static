@@ -12,7 +12,7 @@ jobs:
       # Replace this with a real test runner invocation
       - run:
           name: Run tests
-          command: echo "uv doesn't work" && false
+          command: python3 -m http.server
   build:
     docker:
       - image: cimg/base:stable

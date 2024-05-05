@@ -1,4 +1,4 @@
-window.bare = new UVClient();
+//window.bare = new UVClient();
 
 "use strict";
 

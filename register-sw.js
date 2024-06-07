@@ -28,8 +28,8 @@
       updateViaCache: "none"
     });
   let wispUrl = "wss://nebulaproxy.io/wisp/"
-  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
-
+  //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
+  BareMux.SetTransport("BareMod.BareClient", "https://bare.bareproxy.workers.dev/");
     
     if(localStorage.getItem("transport") == "bare") {
       BareMux.SetTransport("BareMod.BareClient", "https://server.flow-works.me/bare/" );

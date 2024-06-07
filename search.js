@@ -28,7 +28,7 @@ function search(input, template) {
 
   return template + input;
 }
-
+/*
 
 async function fetchResults(searchText) {
 	try {
@@ -97,3 +97,5 @@ function erudaToggle() {
 		};
 	}
 }
+
+*/

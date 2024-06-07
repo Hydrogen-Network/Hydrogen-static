@@ -2,6 +2,7 @@
 
 self.__uv$config = {
   prefix: "/uv/service/",
+      bare: 'https://bare.bareproxy.workers.dev/',
   encodeUrl: Ultraviolet.codec.plain.encode,
   decodeUrl: Ultraviolet.codec.plain.decode,
   handler: "/uv/uv.handler.js",

@@ -42,7 +42,7 @@ form.addEventListener("submit", async (event) => {
     } else if(localStorage.getItem('proxyOption') == 'aero') {
       frame.src = '/service/aero/' + url;
     } else {
-      frame.src = "/service/uv/" + url;
+      frame.src = "/service/" + url;
     }
   }
 });

@@ -27,11 +27,8 @@
       module: true,
       updateViaCache: "none"
     });
-//    const CurlMod = window.CurlMod
-  //  console.log("Dynamic Service Worker registered.");
-    //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
-
-/*
+  let wispUrl = "wss://nebulaproxy.io/wisp/"
+  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
 
     
     if(localStorage.getItem("transport") == "bare") {
@@ -42,7 +39,7 @@
     } else if(localStorage.getItem("transport") == null || localStorage.getItem("transport") == "epoxy") {
       BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
     }
-    */
+    
   }
   registerSW();
 

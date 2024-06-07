@@ -22,11 +22,6 @@
     await navigator.serviceWorker.register("/sw.js", {
       scope: "/service/",
     });
-    await navigator.serviceWorker.register("/aero.js", {
-      scope: "/service/",
-      module: true,
-      updateViaCache: "none"
-    });
   let wispUrl = "wss://nebulaproxy.io/wisp/"
   //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
   BareMux.SetTransport("BareMod.BareClient", "https://bare.bareproxy.workers.dev/");

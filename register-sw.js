@@ -20,10 +20,10 @@
   BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
 
     await navigator.serviceWorker.register("/sw.js", {
-      scope: "/",
+      scope: "/service/",
     });
     await navigator.serviceWorker.register("/aero.js", {
-      scope: "/",
+      scope: "/service/",
       module: true,
       updateViaCache: "none"
     });

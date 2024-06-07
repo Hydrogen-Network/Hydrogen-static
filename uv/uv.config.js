@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/service/uv/',
-    bare: 'https://collegeapp.me/v/',
+    bare: 'https://bare.bareproxy.workers.dev/',
     encodeUrl: Ultraviolet.codec.plain.encode,
     decodeUrl: Ultraviolet.codec.plain.decode,
     handler: "/uv/uv.handler.js",

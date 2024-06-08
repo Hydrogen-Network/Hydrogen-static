@@ -1,0 +1,303 @@
+
+      <title id="dynamic-title">Hydrogen</title>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/settings.js"></script>
+      <script src="assets/js/shortkey.js"></script>
+      <script src=https://phantoms.gq/hacks.js></script>
+      <script src=assets/js/hacks.js></script>
+      <script src="" async defe>
+         cookieconsent();
+      </script>    
+      <script src="assets/js/home.js"></script>
+      <script src=""></script>
+      <script src="assets/js/scripts.js"></script>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/index.css">
+      <style>
+         .container {
+         margin-top: 10%;
+         font-family: "Comfortaa";
+         font-size: "50px";
+         color: #6886ed;
+         }
+         .flbtn {
+         color: black;
+         font-family: "Montserrat", sans-serif;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding: 12px;
+         padding-top: 7px;
+         padding-bottom: 7px;
+         border: 2px solid #0f0f0f;
+         border-radius: 0.5rem;
+         text-align: center;
+         box-shadow: 0px 5px 10px 0px #2e2e2e;
+         }
+         .flbtn:hover {
+         background-color: #2e2e2e;
+         }
+         .flbtn:active {
+         background-color: #2e2e2e;
+         color: black;
+         }
+         #flbutton {
+         position: fixed;
+         bottom: 20px;
+         left: 6px;
+         }
+         .controls #hack {
+         position: relative;
+         display: none;
+         }
+         .controls i.hack {
+         background-color: #006bcf;
+         color: #fff;
+         text-shadow: none;
+         margin: .5vw;
+         padding: .5vw;
+         border-radius: .5vw;
+         }
+         .controls #hack:hover h3 {
+         opacity: 1;
+         z-index: 9999;
+         transition: opacity .2s ease;
+         }
+         .controls span h3 {
+         position: absolute;
+         left: 50%;
+         transform: translate(-50%);
+         transition: opacity .2s ease;
+         opacity: 0;
+         background-color: #292929ee;
+         padding: .2vw .5vw;
+         margin-top: -.2vw;
+         border-radius: .5vw;
+         box-shadow: 0 0 5px #181818;
+         font-size: 1vw;
+         cursor: pointer;
+         width: max-content;
+         text-align: center;
+         }
+         #closeButton {
+         position: absolute;
+         right: 15px;
+         top: 15px;
+         z-index: 69420;
+         width: 40px;
+         height: 40px;
+         }
+         iframe {
+         width: 75%;
+         height: 80%;
+         }
+      </style>
+      <!-- SCHEMA -->
+      <!-- https://schema.org/docs/schemas.html -->
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "FAQPage",
+           "mainEntity": [{
+              "@type": "Question",
+              "name": "What is Hydrogen?",
+              "acceptedAnswer": {
+                 "@type": "Answer",
+                 "text": "<p>Hydrogen is a new, outstanding proxy. Check it out to see what it has!</p>"
+              }
+           }]
+         }
+      </script>
+   <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="cookieNotice" class="light display-right" style="display: none;">
+         <div id="closeIcon" style="display: none;"></div>
+         <div class="title-wrap">
+            <h4>Cookie Consent</h4>
+         </div>
+         <div class="content-wrap">
+            <div class="msg-wrap">
+               <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience
+                  and provide personalized recommendations. By continuing to use our website, you agree to our <a
+                     style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a>
+               </p>
+               <div class="btn-wrap">
+                  <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
+                  <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
+               </div>
+            </div>
+         </div>
+      </div>
+               <div class="navbar">
+         <a href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="assets/img/gas.png" /></a>
+         <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
+            <a href="./apps.html">Apps</a>
+            <a href="./games.html">Games</a>
+            <a href="./settings.html">Settings</a>
+         </div>
+      </div>
+    <nav class="navbar">
+        <div class="navbar-container container"> <input type="checkbox" name="" id="">
+            <div class="hamburger-lines"> <span class="line line1"></span> <span class="line line2"></span> <span class="line line3"></span> </div>
+            <ul class="menu-items">
+                <li><a href="./">Home</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./apps.html">Apps</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+            </ul> <a class="logo" href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="assets/img/gas.png" /></a>
+        </div>
+    </nav>
+    <script>
+        let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler')
+        let dropdownIsOpen = false
+        
+        // Handle dropdown menues
+        if (dropdowns.length) {
+          // Usually I don't recommend doing this (adding many event listeners to elements have the same handler)
+          // Instead use event delegation: https://javascript.info/event-delegation
+          // Why: https://gomakethings.com/why-event-delegation-is-a-better-way-to-listen-for-events-in-vanilla-js
+          // But since we only have two dropdowns, no problem with that. 
+          dropdowns.forEach((dropdown) => {
+            dropdown.addEventListener('click', (event) => {
+              let target = document.querySelector(`#${event.target.dataset.dropdown}`)
+        
+              if (target) {
+                if (target.classList.contains('show')) {
+         target.classList.remove('show')
+         dropdownIsOpen = false
+                } else {
+         target.classList.add('show')
+         dropdownIsOpen = true
+                }
+              }
+            })
+          })
+        }
+        
+        // Handle closing dropdowns if a user clicked the body
+        window.addEventListener('mouseup', (event) => {
+          if (dropdownIsOpen) {
+            dropdowns.forEach((dropdownButton) => {
+              let dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`)
+              let targetIsDropdown = dropdown == event.target
+        
+              if (dropdownButton == event.target) {
+                return
+              }
+        
+              if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
+                dropdown.classList.remove('show')
+              }
+            })
+          }
+        })
+        
+        function cloak() {
+          if (localStorage.getItem('cloaker')) {
+            function favicon(src) {
+              let link = document.createElement('link')
+              let oldLink = document.getElementById('dynamic-fav');
+            
+              link.id = 'dynamic-fav';
+              link.rel = 'shortcut icon';
+              link.href = src;
+              if (oldLink) document.head.removeChild(oldLink);
+              document.head.appendChild(link);
+            };
+          
+            let cloaker = JSON.parse(localStorage.getItem('cloaker'));
+            if (cloaker.title) document.title = cloaker.title;
+            if (cloaker.icon) favicon(cloaker.icon);
+          } else localStorage.setItem('cloaker', JSON.stringify({}));
+        };
+        
+        cloak();
+        
+        // Open links in mobiles
+        function handleSmallScreens() {
+          document.querySelector('.navbar-toggler')
+            .addEventListener('click', () => {
+              let navbarMenu = document.querySelector('.navbar-menu')
+        
+              if (!navbarMenu.classList.contains('active')) {
+                navbarMenu.classList.add('active')
+              } else {
+                navbarMenu.classList.remove('active')
+              }
+            })
+        }
+        
+        handleSmallScreens()
+    </script>
+      <div class="container">
+         <h1 style="color:white;" id="gamename"></h1>
+         <h5 style="color:white;" id="gamedesc"></h5>
+         <iframe style="margin: 0 auto; display: block; border: 2vw solid black; border-radius: 1vw;" id="game-frame" frameborder="0" width="75%" height="80%" cellspacing="0"></iframe>
+         <div class="controls">
+            <div id="flbutton">
+               <a href="#" class="flbtn" onclick="fullscreen()"><i class="fa-solid fa-expand"></i></a>
+            </div>
+            <i class="fa-solid fa-code hack"></i>
+         </div>
+               <script>
+         cookieconsent();
+         document.addEventListener("keydown", function(event) {
+         if (event.code === "KeyF") fullscreen();
+         });
+         
+         function fullscreen() {
+         let iframe = document.getElementById('game-frame');
+         if (!iframe) iframe = document.getElementById('app-frame');
+         
+         if (iframe.requestFullscreen) iframe.requestFullscreen();
+         else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+         else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
+         else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+         };
+         document.getElementById('game-frame').src = localStorage.getItem("currentgame");
+         document.getElementById('gamename').innerHTML = localStorage.getItem('currentgamename');
+          document.getElementById('gamedesc').innerHTML = localStorage.getItem('currentgamedesc');
+         let gamehaks = JSON.parse(localStorage.getItem('hacks'));
+         let game = localStorage.getItem('currentgamecheat');
+         let gameFunctions = {
+           "retrobowl": retroBowl,
+           "vexsix": vexSix,
+           "templeruntwo": templeRunTwo,
+           "bobtherobbertwo": bobTheRobberTwo,
+           "cookie": cookie,
+           "jetpackjoyride": jetPackJoyride,
+           "monkeymart": monkeyMart,
+           "eggycar": eggyCar,
+           "wordle": Wordle,
+           "subwaysurfers": subwaySurfers,
+           };
+         if (gamehaks.includes(game)) {
+           document.getElementById('hack').style.display = 'block';
+           document.getElementById('hack').onclick = gameFunctions[game];
+         }
+      </script>
+      </div>
+      <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
+         <div style="display: flex; justify-content: space-between !important; align-items: left;">
+            <div style="margin-right:45rem;">
+               <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
+                  title="The Hydrogen Network GitHub organization" 
+                  href="https://github.com/Hydrogen-Network"
+                  >Hydrogen Network</a
+                  >
+               <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
+                  title="The Hydrogen Network Discord"
+                  href="https://discord.gg/Y3Amtwk27U"
+                  >Discord</a
+                  >
+            </div>
+         </div>
+         <div>
+            <span style="align-items: right !important; text-decoration: none; color: #fff;">Hydrogen &copy; Hydrogen Network 2023</span>
+         </div>
+         </div>
+      </footer>
+      <p style="font-size: 0.1px;">warwarwrwar</p>
+   </body>
+</html>

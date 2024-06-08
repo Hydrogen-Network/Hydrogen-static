@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@200&display=swap);
+
+body {
+  font-family: "Comfortaa";
+  font-size: "25px";
+  text-align: center;
+  background-color: #1e2124;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.appcontainer {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.gamename {
+  font-size: 20px;
+  font-family: "Nunito Sans";
+  /* test */
+  margin-bottom: 10px;
+}
+
+.pin-icon {
+  background-color: #ccc;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  /* Add any additional styling properties */
+}
+
+.gamedesc {
+  /*font-family: "Nunito Sans";*/
+  font-family: "Open Sans";
+  font-size: 8px;
+  text-align: center;
+}
+
+.gamescategory {
+  background-color: #1f2124;
+  border-radius: 20px;
+  margin: auto;
+  width: 200px;
+  height: 55px;
+  box-shadow: 0px 5px 10px 0px #2e2e2e;
+  font-family: "Lilita One";
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.gameinfo {
+  color: white;
+  text-align: center;
+  padding: 3px;
+  font-size: 10px;
+  font-family: "Nunito Sans";
+}
+
+.gamecard {
+  width: 170px;
+  height: 270px;
+  background-color: #2e2e2e;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: transform 0.5s;
+  justify-content: left;
+  float: left;
+  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
+  /*test*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gamecard:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 3px 0px #2e2e2e;
+}
+
+#myInput {
+  left: 50%;
+  right: 50%;
+  width: 400px;
+  height: 65px;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  background-color: #1e2124;
+  color: #fff;
+  border-radius: 15px;
+  border-style: hidden;
+  box-shadow: 0px 5px 10px 0px #2e2e2e;
+}
+
+.frame {
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  margin: auto;
+
+  border: none;
+
+  height: calc(100vh - 80px);
+  width: calc(100vw - 30px);
+}
+
+.gameinfo {
+  color: white;
+  text-align: center;
+  padding: 3px;
+  font-size: 10px;
+  font-family: "Nunito Sans";
+}
+
+.gameimage {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 20px;
+}
+
+.gamecard {
+  width: 170px;
+  height: 270px;
+  background-color: #2e2e2e;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  transition: transform 0.5s;
+  justify-content: left;
+  float: left;
+  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 1px 0px #2e2e2e;
+}
+
+.gamecard:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px 0px #2e2e2e, 0px 0px 3px 0px #2e2e2e;
+}
+
+.gamecontainer {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pinned {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+i:hover {
+  opacity: 80%;
+}

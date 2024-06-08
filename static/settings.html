@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html manifest="offline.manifest">
+<head>
+   <!-- Modern search engines don't care; Note modern ;D  -->
+   <meta name="keywords" content="proxy, web proxy, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked">
+   <title id="dynamic-title">Hydrogen</title>
+   <meta name="description" content="Hydrogen is a secure web proxy service with support for many sites. Bypass filters and freely enjoy a safer private browsing experience or unblock websites on devices such as Chromebooks and at places like school or work without downloading anything."/>
+   <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="assets/img/gas.png">
+   <meta name="google-site-verification" content="DrEILn1k0ldsT4IXAsUkFZSVJfZvIogS82T82tKWy8c" />
+   
+   <!-- Embed Properties; readable rich structure. Notice my descriptor switches -->
+   <meta property="og:site_name" content="Hydrogen">
+   <meta property="og:url" content=`${location.href}`>
+   <meta property="og:title" content="Hydrogen">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="Hydrogen is a web proxy service that helps you access websites that may be blocked by your network or browser. It does this securely and with additional features.">
+   <meta property="og:image" content="assets/img/gas.png">
+   <meta property="og:image:secure_url" content="assets/img/gas.png">
+   <meta property="twitter:image" content="assets/img/gas.png">
+   <meta name="twitter:site" content="@H">
+   <meta name="twitter:creator" content="@H">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Hydrogen">
+   <meta name="twitter:description" content="Hydrogen is a web proxy service that helps you access websites that may be blocked by your network or browser. It does this securely and with additional features.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- JS Stuff -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/settings.js"></script>
+   <script src="assets/js/shortkey.js"></script>
+   <script src="" async defe>
+      cookieconsent();
+   </script>    
+   <script src="assets/js/home.js"></script>
+   <script src=""></script>
+   <script src="assets/js/scripts.js"></script>
+   <script src="assets/uv/uv.bundle.js" defer></script>
+   <script src="assets/uv/uv.config.js" defer></script>
+   <script src="assets/js/register-sw.js" defer></script>
+   <script src="assets/js/search.js" defer></script>
+   <script src="assets/js/index.js" defer></script>
+   <script src="assets/js/error.js" defer></script>
+   <script src="assets/js/sw.js" defer></script>
+   <script src="uv.js" defer></script>
+   <script src="uv-sw.js" defer></script>
+   <script>
+      function custombare() {
+         localStorage.setItem('bareServer', `${document.getElementById('bare').value}`);
+         const bareServerUrl = localStorage.getItem('bareServer') || 'https://server.flow-works.me/bare/';
+      }
+      function customsearch() {
+      localStorage.setItem('search', 'https://' + `${document.getElementById('engine').value}`);
+      localStorage.setItem('customsearch', 'true');
+      }
+      const switche = document.getElementById('3');
+      const switchy = document.getElementById('4');
+      const swuthc = document.getElementById('5');
+      if (localStorage.getItem('v4Particles') != "") {
+      if (localStorage.getItem('v4Particles') == "true") {
+        switche.checked = true;
+      } else {
+        switche.checked = false;
+      }
+      }
+      
+      switche.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        localStorage.setItem('v4Particles', 'true');
+      } else {
+        localStorage.setItem('v4Particles', 'false');
+      }
+      });
+      
+      if (localStorage.getItem('cursor') != "") {
+      if (localStorage.getItem('cursor') == "true") {
+        switchy.checked = true;
+      } else {
+        switchy.checked = false;
+      }
+      }
+      
+      switchy.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        localStorage.setItem('cursor', 'true');
+      } else {
+        localStorage.setItem('cursor', 'false');
+      }
+      });
+      
+      
+      
+      
+      if (localStorage.getItem('clickoff_cloaking') != "") {
+      if (localStorage.getItem('clickoff_cloaking') == "true") {
+        swuthc.checked = true;
+      } else {
+        swuthc.checked = false;
+      }
+      }
+      
+      swuthc.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        localStorage.setItem('clickoff_cloaking', 'true');
+      } else {
+        localStorage.setItem('clickoff_cloaking', 'false');
+      }
+      });
+      cookieconsent();
+      function openImportFile() {
+      const fileInput = document.getElementById('importFile');
+      fileInput.addEventListener('change', handleImportFile, false);
+      fileInput.click();
+      }
+      
+      function handleImportFile(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function (e) {
+      try {
+      const importedData = JSON.parse(e.target.result);
+      Object.keys(importedData).forEach((key) => {
+      localStorage.setItem(key, importedData[key]);
+      });
+      alert('Cache data imported successfully.');
+      location.reload();
+      } catch (error) {
+      alert('Error importing cache data. Please check the file format.');
+      }
+      };
+      reader.readAsText(file);
+      }
+      
+      function exportCache() {
+      const cacheData = {};
+      Object.keys(localStorage).forEach((key) => {
+      cacheData[key] = localStorage.getItem(key);
+      });
+      const exportedData = JSON.stringify(cacheData);
+      
+      const blob = new Blob([exportedData], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'cache_data.json';
+      link.click();
+      URL.revokeObjectURL(url);
+      }
+   </script>
+   
+   <!-- CSS Stuff -->
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+   <link rel="stylesheet" href="assets/css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+   <link rel="stylesheet" href="assets/css/settings.css">
+   
+   <!-- SCHEMA -->
+   <!-- https://schema.org/docs/schemas.html -->
+   <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+           "@type": "Question",
+           "name": "What is Hydrogen?",
+           "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<p>Hydrogen is a new, outstanding proxy. Check it out to see what it has!</p>"
+           }
+        }]
+      }
+   </script>
+</head>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="cookieNotice" class="light display-right" style="display: none;">
+   <div id="closeIcon" style="display: none;"></div>
+   <div class="title-wrap">
+      <h4>Cookie Consent</h4>
+   </div>
+   <div class="content-wrap">
+      <div class="msg-wrap">
+         <p>We use cookies! This website uses cookies or similar technologies to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our <a style="color: grey;" href="cookieconsentpolicy.html">Cookie Policy</a>
+         </p>
+         <div class="btn-wrap">
+            <button class="popupbutton" onclick="acceptCookieConsent();">Accept</button>
+            <button class="popupbutton" onclick="IgnoreCookieConsent();">Ignore</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Nav Bar Start-->
+      <div class="navbar">
+         <a href="./"><img style="width: 50% height: auto;" class="shaking" width="40" height="40" src="assets/img/gas.png" /></a>
+         <div class="navitems" style="gap: 5px; display: flex !important; justify-content: center; align-items: center;">
+            <a href="./apps.html">Apps</a>
+            <a href="./games.html">Games</a>
+            <a href="./settings.html">Settings</a>
+         </div>
+      </div>
+<!-- Nav Bar End-->
+<div class="main">
+   <div class="settings-container">
+        <div class="settings-card">
+          <h3>About:Blank</h3>
+          <p>Cloak the site in an about:blank page and toggle about:blank on startup (enabled by default)</p>
+          <div id="ab-settings">
+            <div id="ab-settings-container">
+              <label class="switch">
+                <input type="checkbox" id="ab-settings-switch" class="slider-checkbox" onchange="toggleAB()" />
+                <span class="slider-round"></span>
+              </label>
+            </div>
+            <button onclick="AB()" class="key-button">Open Popup</button>
+          </div>
+        </div>
+      <div class="settings-card">
+         <h3>Set Panic Key</h3>
+         <p>Quickly open a educational site, when the teacher comes.</p>
+         <input type="text" id="eventKeyInput" placeholder="Panic Key" class="key-form">
+         <input class="key-form" placeholder="Panic Link" type="text" id="linkInput" value>
+         <div class="record-key">
+            <span id="selectedKeyDisplay"><span id="selectedKey">Press a key</span></span>
+            <br/>
+            <button id="recordKeyButton"><i class="fa-solid fa-microphone"></i>Auto-detect</button>
+         </div>
+         <button class="key-button" value="Save" onclick="saveEventKey()">Save</button>
+         </input>
+      </div>
+      <div class="settings-card">
+         <h3>Set Background Image</h3>
+         <p>Change the site's background image.</p>
+         <input type="text" id="background-input" placeholder="Enter image URL">
+         <span><span>Random Background</span></span>
+         <br/>
+         <label class="switch">
+         <input onchange="location.reload();" type="checkbox" class="slider-checkbox" id="2">
+         <span class="slider-round"></span>
+         </label>
+         <br/>
+         <button class="key-button" id="save-button">Save</button>
+         <button class="key-button" id="reset-button">Reset</button>
+      </div>
+        <div class="settings-card">
+          <h3>Set Background Image</h3>
+          <p>Change the site's background image.</p>
+          <input type="text" id="background-input" placeholder="Enter image URL" />
+          <button class="key-button" id="save-button">Save</button>
+          <button class="key-button" id="reset-button">Reset</button>
+        </div>
+        <div class="settings-card">
+          <h3>Advertisement</h3>
+          <p>
+            Advertisements are crucial in order to keep the site running. Please consider donating or hosting your own
+            links to go ad-free. If not, you can still disable them below.
+          </p>
+          <select id="adType" onchange="adChange(this)">
+            <option value="default">Default</option>
+            <option value="off">Off</option>
+          </select>
+        </div>
+      <div class="settings-card">
+         <h3>Tab Cloaker</h3>
+         <p>Makes the site look educational.</p>
+          <select id="dropdown" onchange="handleDropdownChange(this)">
+            <option value="Classroom">Default</option>
+            <option value="Clever">Clever</option>
+            <option value="Canvas">Canvas</option>
+            <option value="Edpuzzle">Edpuzzle</option>
+            <option value="Google">Google</option>
+            <option value="Google Meet">Google Meet</option>
+            <option value="Classroom">Google Classroom</option>
+            <option value="Drive">Google Drive</option>
+            <option value="Google Docs">Google Docs</option>
+            <option value="Google Slides">Google Slides</option>
+            <option value="Gmail">Gmail</option>
+            <option value="Khan">Khan Academy</option>
+            <option value="Campus">Infinite Campus</option>
+            <option value="IXL">IXL</option>
+            <option value="LinkIt">LinkIt!</option>
+            <option value="Schoology">Schoology</option>
+            <option value="i-Ready Math">i-Ready Math</option>
+            <option value="i-Ready Reading">i-Ready Reading</option>
+            <option value="ClassLink Login">ClassLink Login</option>
+            <option value="Wikipedia">Wikipedia</option>
+            <option value="Britannica">Britannica</option>
+            <option value="Ducksters">Ducksters</option>
+            <option value="Minga">Minga</option>
+            <option value="i-Ready Learning Games">i-Ready Learning Games</option>
+            <option value="NoRedInk Home">NoRedInk Home</option>
+            <option value="Newsela Binder">Newsela Binder</option>
+            <option value="Newsela Assignments">Newsela Assignments</option>
+            <option value="Newsela Home">Newsela Home</option>
+            <option value="PowerSchool Sign In">PowerSchool Sign In</option>
+            <option value="PowerSchool Grades and Attendance">PowerSchool Grades and Attendance</option>
+            <option value="PowerSchool Teacher Comments">PowerSchool Teacher Comments</option>
+            <option value="PowerSchool Standards Grades">PowerSchool Standards Grades</option>
+            <option value="PowerSchool Attendance">PowerSchool Attendance</option>
+            <option value="Nearpod">Nearpod</option>
+            <option value="StudentVUE">StudentVUE</option>
+            <option value="Quizlet Home">Quizlet Home</option>
+            <option value="Google Forms Locked Mode">Google Forms - Locked Mode</option>
+            <option value="DeltaMath">DeltaMath</option>
+            <option value="Kami">Kami</option>
+            <option value="GoGuardian Admin Restricted">GoGuardian Admin Block</option>
+            <option value="GoGuardian Teacher Block">GoGuardian Teacher Block</option>
+            <option value="World History Encyclopedia">World History Encyclopedia</option>
+            <option value="Big Ideas Math">Big Ideas Math</option>
+            <option value="Big Ideas Math Assignment Player">Big Ideas Math Assignment Player</option>
+          </select>
+          <input class="key-form" type="text" id="icon" placeholder="Change Tab Icon" name="icon" />
+          <input class="key-form" type="text" id="name" name="name" placeholder="Change Tab Name" />
+          <button class="key-button" value="Save" onclick="CustomIcon(); CustomName(); redirectToMainDomain();">
+            Save
+          </button>
+          <button class="key-button" value="Reset" onclick="ResetCustomCloak(); redirectToMainDomain();">
+            Reset Cloak
+          </button>
+         <script>
+            function CustomIcon() {
+  const iconElement = document.getElementById('icon')
+  const iconValue = iconElement.value
+  console.log('saveIcon function called with icon value:', iconValue)
+  localStorage.setItem('CustomIcon', iconValue)
+}
+
+function CustomName() {
+  const nameElement = document.getElementById('name')
+  const nameValue = nameElement.value
+  console.log('saveName function called with name value:', nameValue)
+  localStorage.setItem('CustomName', nameValue)
+}
+function ResetCustomCloak() {
+  localStorage.removeItem('CustomName')
+  localStorage.removeItem('CustomIcon')
+  document.getElementById('icon').value = ''
+  document.getElementById('name').value = ''
+}
+
+function redirectToMainDomain() {
+  var currentUrl = window.location.href
+  var mainDomainUrl = currentUrl.replace(/\/[^\/]*$/, '')
+  if (window != top) {
+    top.location.href = mainDomainUrl + window.location.pathname
+  } else {
+    window.location.href = mainDomainUrl + window.location.pathname
+  }
+}
+
+         </script>
+      </div>
+      <div class="settings-card">
+         <h3>Search Engine</h3>
+         <p>Change the Search Engine used.</p>
+         <select id="dropdown" class="td" onchange="searchChange(this)">
+            <option value="d">Default</option>
+            <option value="g">Google</option>
+            <option value="b">Bing</option>
+            <option value="y">Yahoo</option>
+            <option value="ddg">DuckDuckGo</option>
+            <option value="searx">Searx</option>
+            <option value="q">Qwant</option>
+            <option value="e">Ecosia</option>
+         </select>
+         <br/>
+         <br/>
+         <input type="text" name="search" id="engine"></input>
+         <br/>
+         <button onclick="customsearch();">Save</button>
+      </div>
+        <div class="settings-card">
+          <h3>Choose your <b>Pr</b>oxy</h3>
+          <p>
+            Ultra<xn>vio</xn>let is the main <xn>pro</xn>xy, but Dynamic is faster and supports more sites! (Dynamic is
+            still in beta, so it has some bugs.)
+          </p>
+          <select id="pChange">
+            <option value="uv">Ultraviolet (Default)</option>
+            <option value="dy">Dynamic</option>
+          </select>
+        </div>
+      <div class="settings-card">
+         <h3>Themes!</h3>
+         <p>Choose through a selection of themes!</p>
+         <select placeholder="Solid Color Themes" id="dropdown" class="td" onchange="themeChange(this)">
+            <option disabled selected>Solid Color Themes</option>
+            <option value="d">Default</option>
+            <option value="midnight">Dark Mode</option>
+            <option value="light">Light Mode</option>
+            <option value="ocean-blue">Ocean Blue</option>
+            <option value="black-red">Black Red</option>
+            <option value="black-blue">Black Blue</option>
+            <option value="black-green">Black Green</option>
+            <option value="black-purple">Black Purple</option>
+            <option value="black-coral">Black Coral</option>
+            <option value="black-ruby">Black Ruby</option>
+            <option value="black-orange">Black Orange</option>
+            <option value="black-yellow">Black Yellow</option>
+            <option value="black-pink">Black Pink</option>
+            <option value="black-white">Black White</option>
+            <option value="bg">Blue Green</option>
+            <option value="cr">Dark Red</option>
+            <option value="fg">Dark Green</option>
+            <option value="red">Red</option>
+            <option value="purple">Purple</option>
+            <option value="dark-purple">Dark Purple</option>
+            <option value="nb">Dark Blue</option>
+            <option value="purple-blue">Purple Blue</option>
+            <option value="sunset">Sunset</option>
+            <option value="indigo">Indigo</option>
+            <option value="fire-ice">Fire and Ice</option>
+            <option disabled selected>Gradient Themes</option>
+            <option value="m">Milkshake</option>
+            <option disabled selected>Bonus Themes</option>
+            <option value="v4">Legacy V4 Theme</option>
+            <option value="hacker">Hacker</option>
+         </select>
+         <br/>
+         <input type="color" onchange="localStorage.setItem('customcolor', 'true'); localStorage.setItem('backdrop-color', this.value);">
+         <br/>
+         <button onclick="localStorage.setItem('customcolor', 'false'); localStorage.setItem('backdrop-color', null);">Reset</button>
+      </div>
+      <div class="settings-card">
+         <h3>Cache</h3>
+         <p>Change the cache!</p>
+         <button onclick="localStorage.clear();console.log('Local Storage cache has been cleared.');location.reload();">Clear Cache</button>
+         <input type="file" id="importFile" style="display: none;" accept=".json">
+         <button onclick="openImportFile()">Import Cache</button>
+         <button onclick="exportCache()">Export Cache</button>
+         <button id="unregisterButton">Delete Service Workers</button>
+      </div>
+      <div class="settings-card">
+         <h3>Particles</h3>
+         <p>Add the particles from to the site.</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="3">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Cusor</h3>
+         <p>Add a custom cursor to the site.</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="4">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Clickoff Cloaking</h3>
+         <p>Cloak on tab clickoff!</p>
+         <label class="switch">
+         <input type="checkbox" class="slider-checkbox" id="5">
+         <span class="slider-round"></span>
+         </label>
+      </div>
+      <div class="settings-card">
+         <h3>Bare</h3>
+         <p>Change the proxy server!</p>
+         <input type="text" id="bare"></input>
+         <br/>
+         <button onclick="custombare();">Save</button>
+      </div>
+        <div class="settings-card">
+          <h3>Site Info</h3>
+          <p>Version: 3.4.1</p>
+          <p id="last-updated">Last Updated: April 19th, 2024</p>
+        </div>
+   </div>
+   <footer style="width: 100%; padding: 0; margin: 0; margin-top: 100px; display: flex; flex-direction: row; justify-content: center; align-items: space-between; ">
+      <div style="display: flex; justify-content: space-between !important; align-items: left;">
+         <div style="margin-right:45rem;">
+            <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
+               title="The Hydrogen Network GitHub organization" 
+               href="https://github.com/Hydrogen-Network"
+               >Hydrogen Network</a
+               >
+            <p style="text-align: center; color: white; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;
+               position: absolute;
+               background-color: rgba(48, 48, 48, 0.693);
+               box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.4);
+               width: 150px;
+               font-size: 18px;
+               margin-bottom: 200px;
+               left: 50%;
+               right: 50%;
+               border-radius: 10px;
+               transform: translateX(-60%);
+               background-attachment: fixed;" id="time" class="clock"></p>
+            <a style="align-items: left; text-decoration: none; color: #fff; margin-right: 1.4rem;"
+               title="The Hydrogen Network Discord"
+               href="https://discord.gg/Y3Amtwk27U"
+               >Discord</a
+               >
+         </div>
+      </div>
+      <div>
+         <span style="align-items: right !important; text-decoration: none; color: #fff;">Hydrogen &copy; Hydrogen Network 2023</span>
+      </div>
+</div>
+</footer>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+   s1.async=true;
+   s1.src='https://embed.tawk.to/6546c8fcf2439e1631ebd238/1hee828s0';
+   s1.charset='UTF-8';
+   s1.setAttribute('crossorigin','*');
+   s0.parentNode.insertBefore(s1,s0);
+   })();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</head>

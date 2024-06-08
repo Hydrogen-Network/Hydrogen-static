@@ -228,175 +228,175 @@
      const options = {
          Google: {
              name: "Google",
-             icon: "/img/cloaks/google.png"
+             icon: "assets/img/cloaks/google.png"
          },
          Drive: {
              name: "My Drive - Google Drive",
-             icon: "/img/cloaks/drive.png"
+             icon: "assets/img/cloaks/drive.png"
          },
          Classroom: {
              name: "Home",
-             icon: "/img/cloaks/classroom.png"
+             icon: "assets/img/cloaks/classroom.png"
          },
          Schoology: {
              name: "Home | Schoology",
-             icon: "/img/cloaks/schoology.png"
+             icon: "assets/img/cloaks/schoology.png"
          },
          Gmail: {
              name: "Gmail",
-             icon: "/img/cloaks/gmail.png"
+             icon: "assets/img/cloaks/gmail.png"
          },
          Clever: {
              name: "Clever | Portal",
-             icon: "/img/cloaks/clever.png"
+             icon: "assets/img/cloaks/clever.png"
          },
          Khan: {
              name: "Dashboard | Khan Academy",
-             icon: "/img/cloaks/khan.png"
+             icon: "assets/img/cloaks/khan.png"
          },
          Campus: {
              name: "Infinite Campus",
-             icon: "/img/cloaks/campus.png"
+             icon: "assets/img/cloaks/campus.png"
          },
          IXL: {
              name: "IXL | Dashboard",
-             icon: "/img/cloaks/ixl.png"
+             icon: "assets/img/cloaks/ixl.png"
          },
          Canvas: {
              name: "Dashboard",
-             icon: "/img/cloaks/canvas.png"
+             icon: "assets/img/cloaks/canvas.png"
          },
          LinkIt: {
              name: "Test Taker",
-             icon: "/img/cloaks/linkit.ico"
+             icon: "assets/img/cloaks/linkit.ico"
          },
          Edpuzzle: {
              name: "Edpuzzle",
-             icon: "/img/cloaks/edpuzzle.png"
+             icon: "assets/img/cloaks/edpuzzle.png"
          },
          "i-Ready Math": {
              name: "Math To Do, i-Ready",
-             icon: "/img/cloaks/i-ready.ico"
+             icon: "assets/img/cloaks/i-ready.ico"
          },
          "i-Ready Reading": {
              name: "Reading To Do, i-Ready",
-             icon: "/img/cloaks/i-ready.ico"
+             icon: "assets/img/cloaks/i-ready.ico"
          },
          "ClassLink Login": {
              name: "Login",
-             icon: "/img/cloaks/classlink-login.png"
+             icon: "assets/img/cloaks/classlink-login.png"
          },
          "Google Meet": {
              name: "Google Meet",
-             icon: "/img/cloaks/google-meet.png"
+             icon: "assets/img/cloaks/google-meet.png"
          },
          "Google Docs": {
              name: "Google Docs",
-             icon: "/img/cloaks/google-docs.ico"
+             icon: "assets/img/cloaks/google-docs.ico"
          },
          "Google Slides": {
              name: "Google Slides",
-             icon: "/img/cloaks/google-slides.ico"
+             icon: "assets/img/cloaks/google-slides.ico"
          },
          Wikipedia: {
              name: "Wikipedia",
-             icon: "/img/cloaks/wikipedia.png"
+             icon: "assets/img/cloaks/wikipedia.png"
          },
          Britannica: {
              name: "Encyclopedia Britannica | Britannica",
-             icon: "/img/cloaks/britannica.png"
+             icon: "assets/img/cloaks/britannica.png"
          },
          Ducksters: {
              name: "Ducksters",
-             icon: "/img/cloaks/ducksters.png"
+             icon: "assets/img/cloaks/ducksters.png"
          },
          Minga: {
              name: "Minga – Creating Amazing Schools",
-             icon: "/img/cloaks/minga.png"
+             icon: "assets/img/cloaks/minga.png"
          },
          "i-Ready Learning Games": {
              name: "Learning Games, i-Ready",
-             icon: "/img/cloaks/i-ready.ico"
+             icon: "assets/img/cloaks/i-ready.ico"
          },
          "NoRedInk Home": {
              name: "Student Home | NoRedInk",
-             icon: "/img/cloaks/noredink.webp"
+             icon: "assets/img/cloaks/noredink.webp"
          },
          "Newsela Binder": {
              name: "Newsela | Binder",
-             icon: "/img/cloaks/newsela.png"
+             icon: "assets/img/cloaks/newsela.png"
          },
          "Newsela Assignments": {
              name: "Newsela | Assignments",
-             icon: "/img/cloaks/newsela.png"
+             icon: "assets/img/cloaks/newsela.png"
          },
          "Newsela Home": {
              name: "Newsela | Instructional Content Platform",
-             icon: "/img/cloaks/newsela.png"
+             icon: "assets/img/cloaks/newsela.png"
          },
          "PowerSchool Sign In": {
              name: "Student and Parent Sign In",
-             icon: "/img/cloaks/powerschool.png"
+             icon: "assets/img/cloaks/powerschool.png"
          },
          "PowerSchool Grades and Attendance": {
              name: "Grades and Attendance",
-             icon: "/img/cloaks/powerschool.png",
+             icon: "assets/img/cloaks/powerschool.png",
          },
          "PowerSchool Teacher Comments": {
              name: "Teacher Comments",
-             icon: "/img/cloaks/powerschool.png"
+             icon: "assets/img/cloaks/powerschool.png"
          },
          "PowerSchool Standards Grades": {
              name: "Standards Grades",
-             icon: "/img/cloaks/powerschool.png"
+             icon: "assets/img/cloaks/powerschool.png"
          },
          "PowerSchool Attendance": {
              name: "Attendance",
-             icon: "/img/cloaks/powerschool.png"
+             icon: "assets/img/cloaks/powerschool.png"
          },
          Nearpod: {
              name: "Nearpod",
-             icon: "/img/cloaks/nearpod.png"
+             icon: "assets/img/cloaks/nearpod.png"
          },
          StudentVUE: {
              name: "StudentVUE",
-             icon: "/img/cloaks/studentvue.ico"
+             icon: "assets/img/cloaks/studentvue.ico"
          },
          "Quizlet Home": {
              name: "Flashcards, learning tools and textbook solutions | Quizlet",
-             icon: "/img/cloaks/quizlet.webp",
+             icon: "assets/img/cloaks/quizlet.webp",
          },
          "Google Forms Locked Mode": {
              name: "Start your quiz",
-             icon: "/img/cloaks/googleforms.png"
+             icon: "assets/img/cloaks/googleforms.png"
          },
          DeltaMath: {
              name: "DeltaMath",
-             icon: "/img/cloaks/deltamath.png"
+             icon: "assets/img/cloaks/deltamath.png"
          },
          Kami: {
              name: "Kami",
-             icon: "/img/cloaks/kami.png"
+             icon: "assets/img/cloaks/kami.png"
          },
          "GoGuardian Admin Restricted": {
              name: "Restricted",
-             icon: "/img/cloaks/goguardian-lock.png"
+             icon: "assets/img/cloaks/goguardian-lock.png"
          },
          "GoGuardian Teacher Block": {
              name: "Uh oh!",
-             icon: "/img/cloaks/goguardian.png"
+             icon: "assets/img/cloaks/goguardian.png"
          },
          "World History Encyclopedia": {
              name: "World History Encyclopedia",
-             icon: "/img/cloaks/worldhistoryencyclopedia.png",
+             icon: "assets/img/cloaks/worldhistoryencyclopedia.png",
          },
          "Big Ideas Math Assignment Player": {
              name: "Assignment Player",
-             icon: "/img/cloaks/bim.ico"
+             icon: "assets/img/cloaks/bim.ico"
          },
          "Big Ideas Math": {
              name: "Big Ideas Math",
-             icon: "/img/cloaks/bim.ico"
+             icon: "assets/img/cloaks/bim.ico"
          },
      }
 

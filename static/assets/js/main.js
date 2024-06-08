@@ -6,42 +6,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (selectedValue) {
       switch (selectedValue) {
           case 'Google':
-              icon.setAttribute('href', '/img/cloaks/google.png');
+              icon.setAttribute('href', 'assets/img/cloaks/google.png');
               name.textContent = 'Google';
               localStorage.setItem("name", "Google");
-              localStorage.setItem("icon", "/img/cloaks/google.png");
+              localStorage.setItem("icon", "assets/img/cloaks/google.png");
           case 'Drive':
-              icon.setAttribute('href', '/img/cloaks/drive.png');
+              icon.setAttribute('href', 'assets/img/cloaks/drive.png');
               name.textContent = 'My Drive - Google Drive';
               localStorage.setItem("name", "My Drive - Google Drive");
-              localStorage.setItem("icon", "/img/cloaks/drive.png");
+              localStorage.setItem("icon", "assets/img/cloaks/drive.png");
           case 'Classroom':
-              icon.setAttribute('href', '/img/cloaks/classroom.png');
+              icon.setAttribute('href', 'assets/img/cloaks/classroom.png');
               name.textContent = 'Classes';
               localStorage.setItem("name", "Classes");
-              localStorage.setItem("icon", "/img/cloaks/classroom.png");
+              localStorage.setItem("icon", "assets/img/cloaks/classroom.png");
           case 'Schoology':
-              icon.setAttribute('href', '/img/cloaks/schoology.png');
+              icon.setAttribute('href', 'assets/img/cloaks/schoology.png');
               name.textContent = 'Home | Schoology';
               localStorage.setItem("name", "Home | Schoology");
-              localStorage.setItem("icon", "/img/cloaks/schoology.png");
+              localStorage.setItem("icon", "assets/img/cloaks/schoology.png");
           case 'Gmail':
-              icon.setAttribute('href', '/img/cloaks/gmail.png');
+              icon.setAttribute('href', 'assets/img/cloaks/gmail.png');
               name.textContent = 'Gmail';
               localStorage.setItem("name", "Gmail");
-              localStorage.setItem("icon", "/img/cloaks/gmail.png");
+              localStorage.setItem("icon", "assets/img/cloaks/gmail.png");
 
           case 'Clever':
-              icon.setAttribute('href', '/img/cloaks/clever.png');
+              icon.setAttribute('href', 'assets/img/cloaks/clever.png');
               name.textContent = 'Clever | Portal';
               localStorage.setItem("name", "Clever | Portal");
-              localStorage.setItem("icon", "/img/cloaks/clever.png");
+              localStorage.setItem("icon", "assets/img/cloaks/clever.png");
 
           case 'Khan':
-              icon.setAttribute('href', '/img/cloaks/khan.png');
+              icon.setAttribute('href', 'assets/img/cloaks/khan.png');
               name.textContent = 'Dashboard | Khan Academy';
               localStorage.setItem("name", "Dashboard | Khan Academy");
-              localStorage.setItem("icon", "/img/cloaks/khan.png");
+              localStorage.setItem("icon", "assets/img/cloaks/khan.png");
               break;
           default:
               break;
@@ -56,94 +56,94 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (themeid) {
       switch (themeid) {
           case 'b':
-              themeEle.href = "/css/themes/bannana.css";
+              themeEle.href = "assets/css/themes/bannana.css";
               break;
           case 'bg':
-              themeEle.href = "/css/themes/blue-green.css";
+              themeEle.href = "assets/css/themes/blue-green.css";
               break;
           case 'cr':
-              themeEle.href = "/css/themes/cherryRed.css";
+              themeEle.href = "assets/css/themes/cherryRed.css";
               break;
           case 'd':
-              themeEle.href = "/css/themes/dark.css";
+              themeEle.href = "assets/css/themes/dark.css";
               break;
           case 'fg':
-              themeEle.href = "/css/themes/forestGreen.css";
+              themeEle.href = "assets/css/themes/forestGreen.css";
               break;
           case 'light':
-              themeEle.href = "/css/themes/solid/light.css";
+              themeEle.href = "assets/css/themes/solid/light.css";
               break;
           case 'm':
-              themeEle.href = "/css/themes/milkshake.css";
+              themeEle.href = "assets/css/themes/milkshake.css";
               break;
           case 'nb':
-              themeEle.href = "/css/themes/nightBlue.css";
+              themeEle.href = "assets/css/themes/nightBlue.css";
               break;
           case 'rb':
-              themeEle.href = "/css/themes/red-black.css";
+              themeEle.href = "assets/css/themes/red-black.css";
               break;
           case 'v4':
-              themeEle.href = "/css/themes/solid/legacy.css";
+              themeEle.href = "assets/css/themes/solid/legacy.css";
               break;
           case 'midnight':
-              themeEle.href = "/css/themes/solid/midnight.css";
+              themeEle.href = "assets/css/themes/solid/midnight.css";
               break;
           case 'black-red':
-              themeEle.href = "/css/themes/gradient/black-red.css";
+              themeEle.href = "assets/css/themes/gradient/black-red.css";
               break;
           case 'black-blue':
-              themeEle.href = "/css/themes/gradient/black-blue.css";
+              themeEle.href = "assets/css/themes/gradient/black-blue.css";
               break;
           case 'black-green':
-              themeEle.href = "/css/themes/gradient/black-green.css";
+              themeEle.href = "assets/css/themes/gradient/black-green.css";
               break;
           case 'red':
-              themeEle.href = "/css/themes/gradient/red.css";
+              themeEle.href = "assets/css/themes/gradient/red.css";
               break;
           case 'purple':
-              themeEle.href = "/css/themes/gradient/purple.css";
+              themeEle.href = "assets/css/themes/gradient/purple.css";
               break;
           case 'black-orange':
-              themeEle.href = "/css/themes/gradient/black-orange.css";
+              themeEle.href = "assets/css/themes/gradient/black-orange.css";
               break;
           case 'ocean-blue':
-              themeEle.href = "/css/themes/solid/ocean-blue.css";
+              themeEle.href = "assets/css/themes/solid/ocean-blue.css";
               break;
           case 'black-purple':
-              themeEle.href = "/css/themes/gradient/black-purple.css";
+              themeEle.href = "assets/css/themes/gradient/black-purple.css";
               break;
           case 'black-coral':
-              themeEle.href = "/css/themes/gradient/black-coral.css";
+              themeEle.href = "assets/css/themes/gradient/black-coral.css";
               break;
           case 'black-ruby':
-              themeEle.href = "/css/themes/gradient/black-ruby.css";
+              themeEle.href = "assets/css/themes/gradient/black-ruby.css";
               break;
           case 'black-yellow':
-              themeEle.href = "/css/themes/gradient/black-yellow.css";
+              themeEle.href = "assets/css/themes/gradient/black-yellow.css";
               break;
           case 'black-pink':
-              themeEle.href = "/css/themes/gradient/black-pink.css";
+              themeEle.href = "assets/css/themes/gradient/black-pink.css";
               break;
           case 'black-white':
-              themeEle.href = "/css/themes/gradient/black-white.css";
+              themeEle.href = "assets/css/themes/gradient/black-white.css";
               break;
           case 'dark-purple':
-              themeEle.href = "/css/themes/gradient/dark-purple.css";
+              themeEle.href = "assets/css/themes/gradient/dark-purple.css";
               break;
           case 'sunset':
-              themeEle.href = "/css/themes/gradient/sunset.css";
+              themeEle.href = "assets/css/themes/gradient/sunset.css";
               break;
           case 'indigo':
-              themeEle.href = "/css/themes/gradient/indigo.css";
+              themeEle.href = "assets/css/themes/gradient/indigo.css";
               break;
           case 'fire-ice':
-              themeEle.href = "/css/themes/gradient/fire-ice.css";
+              themeEle.href = "assets/css/themes/gradient/fire-ice.css";
               break;
           case 'purple-blue':
-              themeEle.href = "/css/themes/gradient/purple-blue.css";
+              themeEle.href = "assets/css/themes/gradient/purple-blue.css";
               break;
           case 'hacker':
-              themeEle.href = "/css/themes/hacker.css";
+              themeEle.href = "assets/css/themes/hacker.css";
               break;
       }
   }

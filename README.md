@@ -103,6 +103,11 @@ Distributed under the MIT License. See [`LICENSE`](https://github.com/Hydrogen-N
 
 <p align="right">(<a href="#readme">back to top</a>)</p>
 
+## Credits
+
+- Skool
+- Polaris
+- Interstellar
 
 
 <!-- CONTACT -->

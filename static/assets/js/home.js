@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const bg = await fetch("/js/json/bg.json");
+    const bg = await fetch("assets/js/json/bg.json");
     const bga = await bg.json();
     const randombg = bga[Math.floor(Math.random() * bga.length)];
     if (localStorage.getItem('RandomBG') === "true") {

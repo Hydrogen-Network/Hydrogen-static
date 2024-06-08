@@ -9,7 +9,7 @@ const sw = new UVServiceWorker();
 const dynamic = new Dynamic();
 
 self.dynamic = dynamic;
-
+/*
 self.addEventListener("fetch", (event) => {
   if (
     event.request.url.startsWith(location.origin + self.__dynamic$config.prefix)
@@ -28,3 +28,5 @@ self.addEventListener("fetch", (event) => {
   if (event.request.url.startsWith(location.origin + "/uv/service/"))
     event.respondWith(sw.fetch(event));
 });
+*/
+self.addEventListener("fetch", (event) => event.respondWith(sw.fetch(event)));

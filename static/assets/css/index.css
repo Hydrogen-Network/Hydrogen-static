@@ -1,6 +1,6 @@
-@import url(assets/css/navbar.css);
-@import url(assets/css/buttons.css);
-@import url(assets/css/other.css);
+@import url(navbar.css);
+@import url(buttons.css);
+@import url(other.css);
 
 * {
     scroll-behavior: smooth;

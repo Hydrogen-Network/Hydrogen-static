@@ -36,18 +36,11 @@ form.addEventListener("submit", async (event) => {
   const url = search(address.value, searchEngine);
   let frame = document.getElementById("uv-frame");
   frame.style.display = "block";
-  if (
-    url.value.startsWith("javascript:") ||
-    url.value.startsWith("data:") ||
-    url.value.startsWith("vbscript:")
-  ) {
-  } else {
     if (localStorage.getItem("proxyOption") == "dy") {
       frame.src = "/service/assets/dynamic/" + url;
     } else if (localStorage.getItem("proxyOption") == "aero") {
       frame.src = "/service/aero/" + url;
     } else {
-      frame.src = "/service/" + url;
+      frame.src = "/uv/service/" + url;
     }
-  }
 });

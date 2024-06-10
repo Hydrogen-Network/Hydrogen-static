@@ -13,7 +13,7 @@
 [![Issues](https://img.shields.io/github/issues/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/issues)
 [![MIT License](https://img.shields.io/github/license/Hydrogen-Network/Hydrogen.svg?style=for-the-badge)](https://github.com/Hydrogen-Network/Hydrogen/blob/master/LICENSE.txt)
 
-# Great News!!! You have bragging rights bc I absoloutly no commenn sense and cant spell basic words!!! Go tell your friends that i have no brain at all!!!
+# Great News!!! You have bragging rights bc I absoloutly no commenn sense and cant spell basic words!!! Go tell your friends that i have no brain at all!!! Also, please spam random issues!
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">

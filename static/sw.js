@@ -3,6 +3,8 @@ importScripts("/assets/dynamic/dynamic.worker.js")
 importScripts("/assets/uv/uv.bundle.js")
 importScripts("/assets/uv/uv.config.js")
 importScripts(__uv$config.sw || "/assets/uv/uv.sw.js")
+importScripts("/assets/epoxy/index.js")
+importScripts("/assets/libcurl/index.js")
 
 const uv = new UVServiceWorker()
 const dynamic = new Dynamic()

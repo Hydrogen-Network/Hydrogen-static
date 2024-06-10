@@ -1,9 +1,9 @@
 //importScripts("assets/dynamic/dynamic.config.js");
 //importScripts("assets/dynamic/dynamic.worker.js");
-importScripts("assets/epoxy/index.js");
-importScripts("assets/uv/uv.bundle.js");
-importScripts("assets/uv/uv.config.js");
-importScripts(__uv$config.sw || "uv.sw.js");
+importScripts("/assets/epoxy/index.js");
+importScripts("/assets/uv/uv.bundle.js");
+importScripts("/assets/uv/uv.config.js");
+importScripts("/assets/uv/uv.sw.js");
 
 const sw = new UVServiceWorker();
 //const dynamic = new Dynamic();

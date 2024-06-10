@@ -17,8 +17,11 @@ async function registerSW() {
     scope: "/service/",
   });
   let wispUrl = "wss://nebulaproxy.io/wisp/";
-  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
-
+  //BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
+    BareMux.SetTransport("CurlMod.LibcurlClient", {
+      wisp: wispserver,
+      wasm: "https://cdn.jsdelivr.net/npm/libcurl.js@v0.6.7/libcurl.wasm",
+    });
   if (localStorage.getItem("transport") == "bare") {
     BareMux.SetTransport(
       "BareMod.BareClient",

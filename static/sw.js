@@ -13,6 +13,7 @@ self.dynamic = dynamic
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
+    (async function () {
       if (await dynamic.route(event)) {
         return await dynamic.fetch(event)
       }
@@ -22,5 +23,6 @@ self.addEventListener("fetch", (event) => {
       }
 
       return await fetch(event.request)
+    })()
   )
 })

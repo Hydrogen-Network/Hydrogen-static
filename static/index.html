@@ -32,7 +32,12 @@
          cookieconsent();
       </script>    
       <script src="assets/js/home.js"></script>
-      <script src=""></script>
+      <script>
+            document.addEventListener("libcurl_load", ()=>{
+                  libcurl.set_websocket(`wss://nebulaproxy.io/wisp/`);
+                  console.log("libcurl.js ready!");
+            });
+      </script>
       <script src="assets/js/scripts.js"></script>
       <script>
             console.log('%cHold Up!', 'font-weight: bold; font-size: 20px; color: red; font-size: 18px;');
